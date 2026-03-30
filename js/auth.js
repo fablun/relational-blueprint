@@ -14,7 +14,7 @@ import {
 } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 import { getUserProfile, createUserProfile } from './db.js';
 
-let currentUser = null;
+let currentUser = undefined;   // undefined = non ancora noto; null = noto, non loggato
 let currentProfile = null;
 const authListeners = [];
 
