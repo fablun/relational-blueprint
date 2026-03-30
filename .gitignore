@@ -1,6 +1,3 @@
-# Firebase credentials — NEVER commit
-firebase-config.js
-
 # OS
 .DS_Store
 Thumbs.db
@@ -11,3 +8,4 @@ Thumbs.db
 
 # Logs
 *.log
+.vercel
