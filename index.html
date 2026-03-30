@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relational Blueprint — Il Tuo Manuale</title>
+  <meta name="description" content="Decodifica la tua psicologia relazionale in istruzioni operative pratiche.">
+  <meta name="theme-color" content="#0d1117">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LANGUAGE SWITCHER (visible on landing)
+     ═══════════════════════════════════════════════════════════ -->
+<div class="lang-switcher" id="lang-switcher">
+  <button class="lang-btn" data-lang="it">IT</button>
+  <button class="lang-btn" data-lang="en">EN</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     APP HEADER (hidden on landing)
+     ═══════════════════════════════════════════════════════════ -->
+<header class="app-header" id="app-header" style="display:none">
+  <div class="container--wide" style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+    <div class="app-logo">
+      <span class="tag">RB</span>
+      Relational Blueprint
+    </div>
+
+    <nav class="app-nav">
+      <button class="nav-btn" data-view="dashboard">
+        Dashboard
+      </button>
+      <button class="nav-btn" data-view="manual">
+        Manual
+      </button>
+      <button class="nav-btn nav-sync" data-view="sync">
+        ⟲ Sync
+      </button>
+      <button class="nav-btn" data-view="report">
+        Report
+      </button>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="lang-switcher" id="lang-switcher-header" style="position:static">
+        <button class="lang-btn" data-lang="it">IT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="user-chip" id="user-chip"><!-- filled by JS --></div>
+      <button class="btn-signout" id="btn-signout">Sign out</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIEW: LANDING / AUTH
+     ═══════════════════════════════════════════════════════════ -->
+<section class="view view-landing active" id="view-landing">
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 20px">
+
+    <div class="landing-logo">
+      Relational <em>Blueprint</em>
+    </div>
+    <div class="landing-tagline">Il tuo manuale operativo per le relazioni</div>
+
+    <!-- Feature grid -->
+    <div class="landing-grid">
+      <div class="landing-feature">
+        <div class="landing-feature-code">MOD.01</div>
+        <div class="landing-feature-title">Attaccamento</div>
+        <div class="landing-feature-desc">Come gestisci vicinanza e distanza nelle relazioni</div>
+      </div>
+      <div class="landing-feature">
+        <div class="landing-feature-code">MOD.02</div>
+        <div class="landing-feature-title">Linguaggi Amore</div>
+        <div class="landing-feature-desc">Come preferisci dare e ricevere affetto</div>
+      </div>
+      <div class="landing-feature">
+        <div class="landing-feature-code">MOD.03</div>
+        <div class="landing-feature-title">Big Five OCEAN</div>
+        <div class="landing-feature-desc">I tuoi 5 tratti di personalità dominanti</div>
+      </div>
+      <div class="landing-feature">
+        <div class="landing-feature-code">MOD.04</div>
+        <div class="landing-feature-title">Comunicazione</div>
+        <div class="landing-feature-desc">Rapport Talk vs Report Talk</div>
+      </div>
+    </div>
+
+    <!-- Auth box -->
+    <div class="auth-box">
+      <h3>Inizia a costruire il tuo Manuale</h3>
+      <p>Accedi per salvare il tuo profilo e connetterti con il partner</p>
+
+      <button class="btn-auth btn-auth-google" id="btn-google">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        Continua con Google
+      </button>
+
+      <button class="btn-auth btn-auth-github" id="btn-github">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+        Continua con GitHub
+      </button>
+    </div>
+
+    <div style="margin-top:32px;font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.2);text-align:center;max-width:400px;line-height:1.6">
+      I dati psicologici sono salvati in modo sicuro su Firebase e non condivisi con terze parti.
+      Il manuale è visibile solo a te e al partner che scegli di collegare.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIEW: DASHBOARD
+     ═══════════════════════════════════════════════════════════ -->
+<section class="view" id="view-dashboard">
+
+  <!-- Page header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="page-header-text">
+        <div class="page-header-section">PANNELLO DI CONTROLLO</div>
+        <h1 class="page-header-title">Ciao, <span id="dash-user-name">—</span></h1>
+        <p class="page-header-sub">Costruisci il tuo profilo relazionale completando i 4 moduli</p>
+      </div>
+      <div class="page-header-meta">
+        <div class="text-faint">Partner Code</div>
+        <div class="meta-value" id="dash-partner-code" style="font-size:20px;letter-spacing:0.1em">——</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-bottom:60px">
+
+    <!-- Progress -->
+    <div style="margin-bottom:32px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+        <span class="text-mono text-xs text-faint">COMPLETAMENTO PROFILO</span>
+        <span class="text-mono text-xs text-faint" id="dash-progress-label">0/4 moduli</span>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="dash-progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <!-- CTA banner -->
+    <div class="dashboard-cta" id="dash-cta">
+      <div class="dashboard-cta-text">
+        <h3>Inizia con il Modulo 01</h3>
+        <p>Scopri il tuo stile di attaccamento — il fondamento di ogni relazione</p>
+      </div>
+      <button class="btn-primary" onclick="window.app.navigate('test', 'attachment')">
+        → Inizia
+      </button>
+    </div>
+
+    <!-- Test grid -->
+    <div class="dashboard-grid" id="tests-grid">
+      <!-- Filled by JS -->
+    </div>
+
+    <!-- Partner status -->
+    <div class="divider-label">SYNC PARTNER</div>
+    <div id="dash-partner-status">
+      <!-- Filled by JS -->
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIEW: TEST
+     ═══════════════════════════════════════════════════════════ -->
+<section class="view test-view" id="view-test">
+
+  <!-- Progress bar (sticky) -->
+  <div class="test-progress-bar">
+    <div class="container">
+      <span class="test-progress-label" id="test-progress-label">MODULO</span>
+      <div class="test-progress-track">
+        <div class="test-progress-fill" id="test-progress-fill" style="width:0%"></div>
+      </div>
+      <span class="test-progress-count" id="test-progress-count">—</span>
+    </div>
+  </div>
+
+  <div class="test-body">
+    <div class="container" id="test-content">
+      <!-- Filled by JS: intro or question -->
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIEW: MANUAL
+     ═══════════════════════════════════════════════════════════ -->
+<section class="view" id="view-manual">
+
+  <!-- Manual cover -->
+  <div class="manual-cover">
+    <div class="container">
+      <div class="manual-doc-info">
+        <span>DOCUMENTO RISERVATO</span>
+        <span>RELATIONAL BLUEPRINT™</span>
+        <span id="manual-completeness">0% completo</span>
+      </div>
+      <h1 class="manual-title">Manuale di<br><em style="font-style:normal;color:var(--accent)">Me</em></h1>
+      <div class="manual-owner" id="manual-owner-name">—</div>
+      <div class="manual-version" id="manual-version">—</div>
+
+      <div class="manual-partner-code">
+        <span>Partner Code:</span>
+        <strong id="manual-partner-code-val">——</strong>
+        <button class="btn-copy" onclick="
+          navigator.clipboard.writeText(document.getElementById('manual-partner-code-val').textContent);
+          this.textContent='✓';
+          setTimeout(()=>this.textContent='Copia',2000)
+        ">Copia</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Manual body -->
+  <div class="manual-body" id="manual-body">
+    <!-- Filled by JS -->
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIEW: SYNC (Partner pairing)
+     ═══════════════════════════════════════════════════════════ -->
+<section class="view sync-view" id="view-sync">
+  <div class="page-header">
+    <div class="container">
+      <div class="page-header-section">CONNESSIONE PARTNER</div>
+      <h1 class="page-header-title">⟲ Sync</h1>
+      <p class="page-header-sub">Collega il tuo profilo a quello del partner per generare il Report di Interfaccia</p>
+    </div>
+  </div>
+  <div style="padding:40px 20px" id="sync-content">
+    <!-- Filled by JS -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIEW: COUPLE REPORT
+     ═══════════════════════════════════════════════════════════ -->
+<section class="view report-view" id="view-report">
+
+  <div class="report-header">
+    <div class="container">
+      <div class="page-header-section">REPORT DI INTERFACCIA</div>
+      <h1 class="report-title">Analisi di Coppia</h1>
+      <div class="report-pair">
+        <span class="report-pair-name" id="report-my-name">—</span>
+        <span class="report-pair-sep">⟷</span>
+        <span class="report-pair-name" id="report-partner-name">—</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="report-body" id="report-body">
+    <div id="report-content">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     Scripts — ES Modules
+     ═══════════════════════════════════════════════════════════ -->
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

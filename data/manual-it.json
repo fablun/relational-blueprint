@@ -1,0 +1,345 @@
+{
+  "attachment": {
+    "secure": {
+      "label": "Attaccamento Sicuro",
+      "code": "ATT-SEC",
+      "summary": "Sei emotivamente stabile nelle relazioni. Riesci a gestire sia la vicinanza che la distanza senza ansia o evitamento.",
+      "instructions": [
+        {
+          "title": "Protocollo di Conflitto",
+          "content": "Posso gestire il conflitto direttamente e razionalmente. Non ho bisogno di tempo fuori né di eccessive rassicurazioni. Preferisco affrontare il problema quando entrambi siamo calmi."
+        },
+        {
+          "title": "Bisogni di Intimità",
+          "content": "Sono a mio agio sia con la vicinanza emotiva che con lo spazio personale. Non devo essere rassicurato/a continuamente, ma apprezzo la comunicazione onesta."
+        },
+        {
+          "title": "In Caso di Stress",
+          "content": "Sotto pressione rimango relativamente stabile. Se mi vedete chiudervi fuori, chiedetemi direttamente cosa sta succedendo — rispondo bene alla comunicazione diretta."
+        }
+      ]
+    },
+    "anxious": {
+      "label": "Attaccamento Ansioso",
+      "code": "ATT-ANX",
+      "summary": "Sei ipersensibile ai segnali della relazione. La paura dell'abbandono amplifica i segnali ambigui del partner.",
+      "instructions": [
+        {
+          "title": "Protocollo di Conflitto",
+          "content": "Durante il conflitto, il mio sistema nervoso legge il silenzio o la distanza come abbandono imminente. Prima di discutere del problema, ho bisogno di sentire che la relazione è al sicuro. Una frase come 'Sono arrabbiato/a con te ma non me ne vado' mi aiuta a restare regolato/a."
+        },
+        {
+          "title": "Bisogni di Rassicurazione",
+          "content": "Ho bisogno di conferme verbali esplicite più spesso della media. Non è dipendenza patologica — è il mio sistema di attaccamento che cerca dati di sicurezza. Un messaggio inaspettato 'Penso a te' può evitare un'intera spirale di ansia."
+        },
+        {
+          "title": "Segnali di Allarme",
+          "content": "Quando divento insistente o 'clingy', segnala che il mio sistema di attaccamento è attivato. La cosa più sbagliata è aumentare la distanza in quel momento. La cosa giusta: breve rassicurazione, poi conversazione."
+        },
+        {
+          "title": "In Caso di Silenzio del Partner",
+          "content": "Il silenzio prolungato mi fa automaticamente assumere il peggio. Se avete bisogno di spazio, ditemi esplicitamente quando tornerete disponibili: 'Ho bisogno di 2 ore per me, poi parliamo'. Questo disattiva l'ansia."
+        }
+      ]
+    },
+    "avoidant": {
+      "label": "Attaccamento Evitante",
+      "code": "ATT-EVI",
+      "summary": "Proteggi la tua autonomia distanziandoti emotivamente quando ti senti sopraffatto. L'intimità intensa ti attiva difensivamente.",
+      "instructions": [
+        {
+          "title": "Protocollo di Conflitto",
+          "content": "In caso di conflitto ad alta intensità emotiva, ho bisogno di 20-30 minuti di isolamento per calmarmi prima di poter conversare in modo produttivo. Non inseguirmi in questa fase — farlo mi farà chiudere ulteriormente. Il ritiro non è rifiuto, è autoregolazione."
+        },
+        {
+          "title": "Come Raggiungermi",
+          "content": "Approcciatemi con tono calmo e non accusatorio. Le frasi che iniziano con 'Ti sento' funzionano meglio di quelle che iniziano con 'Tu fai sempre'. Ho bisogno di sentirmi al sicuro prima di potermi aprire."
+        },
+        {
+          "title": "Segnali di Sopraffazione",
+          "content": "Quando divento distaccato/a, monosillabico/a o fisicamente mi allontano — non è indifferenza. È il mio sistema nervoso che ha superato la soglia di tolleranza. Il forcing peggiorerà tutto."
+        },
+        {
+          "title": "Bisogni Profondi",
+          "content": "Nonostante l'apparenza, mi importa della relazione. Ho semplicemente imparato che dipendere dagli altri porta dolore. Mostrami nel tempo — con azioni consistenti — che è sicuro affidarsi."
+        }
+      ]
+    },
+    "fearful": {
+      "label": "Attaccamento Disorganizzato",
+      "code": "ATT-DIS",
+      "summary": "Desideri intimità ma la temi allo stesso tempo. Il partner è sia fonte di comfort che potenziale minaccia.",
+      "instructions": [
+        {
+          "title": "Protocollo di Conflitto",
+          "content": "Durante il conflitto, posso sembrare contemporaneamente distaccato/a e iperreattivo/a. Internamente sono sopraffatto/a. Ho bisogno sia di spazio che di rassicurazione — in quest'ordine: prima brevissimo spazio (10 min), poi rassicurazione verbale semplice ('Sono qui, non vado da nessuna parte')."
+        },
+        {
+          "title": "Navigare la Vicinanza",
+          "content": "Posso avvicinarmi e poi improvvisamente ritirarmi — questo non è manipolazione. È il risultato di aver imparato che le relazioni intime possono essere sia fonte di cura che di dolore. Abbiate pazienza con i movimenti oscillatori."
+        },
+        {
+          "title": "Quando Evito Contatto",
+          "content": "Se mi ritiro dopo un momento di intimità, non significa che mi sia pentito/a. Significa che la vicinanza ha attivato il mio sistema di allerta. Lasciatemi il tempo di ricalibrarmi senza interpretarlo come rifiuto."
+        }
+      ]
+    }
+  },
+
+  "loveLanguages": {
+    "words": {
+      "label": "Parole di Affermazione",
+      "code": "LANG-W",
+      "summary": "Le parole sono la tua valuta emotiva primaria. Detto e non detto ha peso concreto su come ti senti nella relazione.",
+      "instructions": [
+        {
+          "title": "Come Farmi Sentire Amato/a",
+          "content": "Dimmi esplicitamente che mi apprezzi, che sono importante per te, che hai fatto la scelta giusta con me. Non darlo per scontato. Le parole pronunciate ad alta voce hanno per me un valore sproporzionato rispetto ai gesti."
+        },
+        {
+          "title": "Regola delle 5:1",
+          "content": "Per ogni critica, anche costruttiva, il mio sistema ha bisogno di circa 5 apprezzamenti per tornare in equilibrio. Non è fragilità — è come sono costruito/a emotivamente. Critica pure quando serve, ma bilancia."
+        },
+        {
+          "title": "Cosa Evitare",
+          "content": "Le critiche sprezzanti, il sarcasmo persistente o le parole dette in modo brusco mi feriscono più a lungo di quanto possa sembrare. Posso dimenticare l'azione, ma ricordo le parole."
+        }
+      ]
+    },
+    "time": {
+      "label": "Tempo di Qualità",
+      "code": "LANG-T",
+      "summary": "La tua valuta emotiva è la presenza indivisa. Non vuoi solo che l'altro sia fisicamente presente — vuoi la sua attenzione completa.",
+      "instructions": [
+        {
+          "title": "Cosa Significa Tempo di Qualità",
+          "content": "Non è quantità di tempo, ma qualità. Un'ora di vera presenza (telefono giù, occhi su di me, conversazione attiva) vale più di un intero weekend in cui siete fisicamente vicini ma mentalmente altrove."
+        },
+        {
+          "title": "Segnali che Mi Feriscono",
+          "content": "Controllare il telefono mentre parliamo, rispondere a messaggi durante una cena, guardare altrove mentre racconto qualcosa — per me sono segnali chiari che non sono una priorità."
+        },
+        {
+          "title": "Cosa Chiedo",
+          "content": "Creiamo rituali di presenza: una cena alla settimana senza schermi, una passeggiata insieme senza auricolari. Non importa cosa facciamo — importa che siamo pienamente lì."
+        }
+      ]
+    },
+    "gifts": {
+      "label": "Doni e Regali",
+      "code": "LANG-G",
+      "summary": "I simboli fisici dell'affetto hanno per te un valore emotivo profondo. Non è materialismo — è come decodifichi l'amore.",
+      "instructions": [
+        {
+          "title": "Perché i Regali Contano",
+          "content": "Per me un regalo fisico — anche piccolo, anche gratuito — è la prova tangibile che hai pensato a me. Non compro l'oggetto, compro il pensiero dietro l'oggetto. Un fiore colto per strada conta quanto un gioiello."
+        },
+        {
+          "title": "Cosa Mi Colpisce",
+          "content": "I regali più potenti per me sono quelli 'senza motivo' — non per il compleanno o l'anniversario, ma un giorno qualunque in cui ti sei ricordato/a di qualcosa che mi piace. Significa che pensi a me anche quando non ci sei."
+        },
+        {
+          "title": "Dimenticare le Occasioni",
+          "content": "Se dimentichi un anniversario o un compleanno, per me non è solo una svista organizzativa. È un dato sulla mia priorità nella tua vita. Non perché sia irragionevole — ma perché così funziona il mio sistema emotivo."
+        }
+      ]
+    },
+    "acts": {
+      "label": "Atti di Servizio",
+      "code": "LANG-A",
+      "summary": "Le azioni concrete di cura parlano più di mille parole. Quando fai qualcosa per me senza che te lo chieda, mi sento profondamente amato/a.",
+      "instructions": [
+        {
+          "title": "Come Dimostrarmi Amore",
+          "content": "Il modo più diretto per farmi sentire amato/a è fare qualcosa per me — non dirmelo. Preparare il caffè senza che te lo chieda, aiutarmi con un compito difficile, risolvere un problema prima che io te lo chieda. Questi gesti mi riempiono emotivamente."
+        },
+        {
+          "title": "Promesse Non Mantenute",
+          "content": "Se mi dici che farai qualcosa e non lo fai, per me non è solo un'inefficienza. È un segnale che la mia comodità non è una priorità. Meglio non promettere che promettere e non mantenere."
+        },
+        {
+          "title": "Come Chiedo Aiuto",
+          "content": "Faccio fatica a chiedere aiuto direttamente — mi aspetto che tu veda cosa ho bisogno. Questo può creare fraintendimenti. La soluzione è che entrambi impariamo: io a chiedere, tu a notare."
+        }
+      ]
+    },
+    "touch": {
+      "label": "Contatto Fisico",
+      "code": "LANG-P",
+      "summary": "Il contatto fisico non sessuale è il tuo regolatore emotivo primario. Ti connette, ti calma, ti fa sentire sicuro/a.",
+      "instructions": [
+        {
+          "title": "Il Potere del Contatto",
+          "content": "Un abbraccio, una mano tenuta, una carezza — queste cose mi regolano emotivamente in modo che le parole non riescono a fare. Non è sessualità — è connessione neurologica. Il contatto fisico abbassa letteralmente il mio livello di cortisolo."
+        },
+        {
+          "title": "Cosa Chiedo",
+          "content": "Abbracciami quando sono stressato/a prima di chiedermi cosa è successo. Tienimi la mano in pubblico. Metti una mano sulla mia spalla mentre parliamo. Questi gesti piccoli hanno un impatto grande sulla mia percezione di sicurezza nella relazione."
+        },
+        {
+          "title": "Mancanza di Contatto",
+          "content": "Se passiamo giorni senza contatto fisico significativo, comincio a sentirmi distante e disconnesso/a dalla relazione, indipendentemente da quante cose belle facciamo o diciamo. Il touch è non negoziabile per me."
+        }
+      ]
+    }
+  },
+
+  "bigFive": {
+    "openness": {
+      "high": {
+        "label": "Alta Apertura Mentale",
+        "code": "OCEAN-O+",
+        "instructions": [
+          { "title": "Come Stimolarmi", "content": "Portami conversazioni profonde, idee insolite, esperienze nuove. Stimolarmi intellettualmente è uno dei modi più potenti per connetterti con me emotivamente. Le discussioni filosofiche o creative non sono un lusso per me — sono nutrimento." },
+          { "title": "Come Non Annoiarmi", "content": "Routine rigide, conversazioni superficiali e resistenza al cambiamento mi spengono lentamente. Non ti chiedo di diventare una persona diversa — ti chiedo di restare curioso/a con me." }
+        ]
+      },
+      "low": {
+        "label": "Bassa Apertura Mentale",
+        "code": "OCEAN-O-",
+        "instructions": [
+          { "title": "Il Mio Approccio", "content": "Preferisco ciò che è concreto, pratico e familiare. Non sono chiuso/a al cambiamento, ma ho bisogno di capire il valore pratico prima di abbracciarlo. Rispetta i miei ritmi." },
+          { "title": "Come Proporre Cambiamenti", "content": "Non impormi novità improvvise. Proponi i cambiamenti con anticipo, con una spiegazione logica e lasciami il tempo di elaborare. Il mio 'no' iniziale spesso diventa 'sì' dopo riflessione." }
+        ]
+      }
+    },
+    "conscientiousness": {
+      "high": {
+        "label": "Alta Coscienziosità",
+        "code": "OCEAN-C+",
+        "instructions": [
+          { "title": "Rispetta i Miei Piani", "content": "Ho bisogno di struttura e prevedibilità. Cambiare piani all'ultimo minuto, essere in ritardo sistematicamente o fare promesse vaghe crea in me ansia reale. Non è inflessibilità — è come il mio sistema funziona." },
+          { "title": "Promesse = Contratti", "content": "Per me una promessa è un contratto. Se dici che farai qualcosa, lo aspetto davvero. Se sai che non puoi mantenere, non promettere. Il follow-through è per me un segnale primario di rispetto." }
+        ]
+      },
+      "low": {
+        "label": "Bassa Coscienziosità",
+        "code": "OCEAN-C-",
+        "instructions": [
+          { "title": "Il Mio Rapporto con la Struttura", "content": "Non sono disorganizzato/a — sono flessibile. Lavoro meglio con libertà che con regole rigide. Non interpretare la mia mancanza di pianificazione come mancanza di interesse." },
+          { "title": "Supporto Pratico", "content": "Apprezzo quando mi aiuti a strutturare le cose senza farmi sentire giudicato/a. Offri sistemi semplici, non sermoni sull'organizzazione." }
+        ]
+      }
+    },
+    "extraversion": {
+      "high": {
+        "label": "Alta Estroversione",
+        "code": "OCEAN-E+",
+        "instructions": [
+          { "title": "Il Mio Carburante Sociale", "content": "Ricarico energia stando con gli altri. L'isolamento prolungato mi deprime letteralmente, non è metafora. Ho bisogno di uscite, socializzazione, stimoli. Non interpretare questo come fuga da te." },
+          { "title": "Equilibrio Sociale", "content": "Se sei più introverso/a di me, non devi partecipare a tutto. Ma supporta la mia vita sociale senza fartela pesare. Il mio bisogno di uscire non è una critica alla nostra vita insieme." }
+        ]
+      },
+      "low": {
+        "label": "Alta Introversione",
+        "code": "OCEAN-E-",
+        "instructions": [
+          { "title": "Il Mio Sistema Energetico", "content": "Ricarico energia in solitudine. Dopo eventi sociali, anche piacevoli, ho bisogno di tempo da solo/a per rielaborare. Non è moodiness — è biologia. Rispetta i miei momenti di ritiro." },
+          { "title": "Come Interagire con Me", "content": "Approcciatemi con tono basso nei momenti di ricarica. Non interpretate il mio silenzio come umore. Le conversazioni migliori con me avvengono in contesti intimi, non affollati." }
+        ]
+      }
+    },
+    "agreeableness": {
+      "high": {
+        "label": "Alta Gradevolezza",
+        "code": "OCEAN-A+",
+        "instructions": [
+          { "title": "Il Mio Sì Nascosto No", "content": "Difficilmente dico no direttamente. Se sembra che vada bene con tutto, non è vero — sto evitando il conflitto o proteggendo il tuo umore. Incoraggiatemi a esprimere il disaccordo senza temere reazioni negative." },
+          { "title": "Evito il Conflitto", "content": "Preferisco cedere piuttosto che scontrarmi, anche quando avrei ragione. Questo può portarmi a un accumulo di risentimento silenzioso. Il segnale che qualcosa non va di solito arriva tardi, quando è già accumulato." }
+        ]
+      },
+      "low": {
+        "label": "Bassa Gradevolezza",
+        "code": "OCEAN-A-",
+        "instructions": [
+          { "title": "La Mia Franchezza", "content": "Dico quello che penso, anche se può essere scomodo. Non è scortesia — è rispetto. Preferisco una conversazione difficile a un accordo falso." },
+          { "title": "Come Gestire il Mio Disaccordo", "content": "Quando non sono d'accordo, lo dico. Non interpretarlo come attacco personale — è il mio modo di rispettarti abbastanza da essere onesto/a." }
+        ]
+      }
+    },
+    "neuroticism": {
+      "high": {
+        "label": "Alto Nevroticismo",
+        "code": "OCEAN-N+",
+        "instructions": [
+          { "title": "La Mia Intensità Emotiva", "content": "Elaboro le emozioni più intensamente della media. Questo non è drama o manipolazione — è come il mio sistema nervoso è configurato. Quello che per te è un inconveniente, per me può essere vissuto come una crisi." },
+          { "title": "Come Supportarmi", "content": "Quando sono in ansia, la cosa meno utile è dirmi 'non è un problema' o 'stai esagerando'. La cosa più utile: ascoltare, validare ('capisco che per te è difficile'), poi aiutarmi a contestualizzare." },
+          { "title": "Dopo la Tempesta", "content": "Mi riprendo. La mia reattività emotiva è intensa ma non permanente. Se mi dai spazio e non ampliai la reazione, torno al baseline relativamente in fretta." }
+        ]
+      },
+      "low": {
+        "label": "Basso Nevroticismo",
+        "code": "OCEAN-N-",
+        "instructions": [
+          { "title": "La Mia Stabilità", "content": "Sono emotivamente stabile e difficilmente mi turbano le pressioni. Questo può farmi sembrare distaccato/a in momenti di alta emozione. Non è insensibilità — è che la mia baseline è semplicemente più calma." }
+        ]
+      }
+    }
+  },
+
+  "communication": {
+    "rapport": {
+      "label": "Rapport Talk",
+      "code": "COMM-RP",
+      "summary": "Comunichi per creare connessione, intimità e comprensione reciproca. Per te una conversazione è riuscita quando entrambi vi siete sentiti capiti.",
+      "instructions": [
+        {
+          "title": "Quando Ti Racconto un Problema",
+          "content": "Quando condivido qualcosa di difficile, cerco prima connessione emotiva, non una soluzione rapida. Ascoltami per almeno 5-10 minuti senza proporre fix. Una frase come 'capisco come ti senti' vale più di qualsiasi consiglio tecnico."
+        },
+        {
+          "title": "Come Parlo dei Problemi",
+          "content": "Quando racconto qualcosa, non sto necessariamente chiedendo una soluzione. Spesso sto processando ad alta voce. Se vuoi darmi un consiglio, chiedimi prima: 'Vuoi che ti aiuti a trovare una soluzione o hai bisogno di essere ascoltato/a?'"
+        },
+        {
+          "title": "Il Silenzio Mi Disturba",
+          "content": "Il silenzio durante una conversazione emotiva mi segnala disinteresse o disapprovazione. Dammi feedback verbale mentre parlo — anche solo 'capisco', 'sì', 'mm' — per farmi sapere che sei presente."
+        }
+      ]
+    },
+    "report": {
+      "label": "Report Talk",
+      "code": "COMM-RT",
+      "summary": "Comunichi per scambiare informazioni, risolvere problemi e raggiungere obiettivi concreti. Per te una conversazione è riuscita quando si è arrivati a qualcosa di utile.",
+      "instructions": [
+        {
+          "title": "Quando Ti Racconto un Problema",
+          "content": "Quando condivido qualcosa di difficile, cerco efficienza e soluzioni. Non ho necessariamente bisogno di lunga elaborazione emotiva. Dimmi cosa pensi, proponi opzioni concrete — questo per me è supporto."
+        },
+        {
+          "title": "Come Parlo dei Problemi",
+          "content": "Vado diretto/a al punto. Non aspettarti grandi preamble emotivi. Se voglio parlare di qualcosa, lo dico. Se non lo dico, non c'è nulla da indovinare."
+        },
+        {
+          "title": "Il Mio Limite",
+          "content": "Posso sembrare freddo/a o sbrigativo/a nelle conversazioni emotivamente intense. Non è indifferenza — è che il mio modo di prendermi cura degli altri è trovare soluzioni. Se ho bisogno di rallentare, dimmelo esplicitamente."
+        }
+      ]
+    }
+  },
+
+  "coupleReport": {
+    "frictionPatterns": {
+      "avoidant_anxious": {
+        "name": "Dinamica Persecutore-Distanziatore",
+        "description": "Una delle dinamiche più comuni e dolorose: più uno si avvicina, più l'altro si allontana — creando un ciclo di escalation.",
+        "protocol": "Quando si attiva il ciclo: il partner ansioso deve fare un passo indietro PRIMA di raggiungere la soglia (non aspettare il panico). Il partner evitante deve dare un check-in verbale breve prima di ritirarsi ('Ho bisogno di 30 min, poi torno'). Il ritiro senza spiegazione è il trigger primario."
+      },
+      "report_rapport": {
+        "name": "Incomprensione da Traduzione",
+        "description": "Chi usa Report Talk propone soluzioni quando l'altro cerca ascolto. Chi usa Rapport Talk continua a parlare quando l'altro vorrebbe concludere.",
+        "protocol": "Prima di ogni conversazione su un problema, il partner Rapport chiede: 'Ho bisogno di essere ascoltato/a per 10 min — poi possiamo parlare di soluzioni.' Il partner Report usa il timer: 10 minuti di ascolto attivo puro, poi propone. Entrambi rispettano il contratto."
+      },
+      "different_love_languages": {
+        "name": "Investimento Non Riconosciuto",
+        "description": "Stai dando amore nel tuo linguaggio, ma il partner lo riceve in un altro. Entrambi vi state sforzando e entrambi vi sentite non amati.",
+        "protocol": "Una volta al mese, identificate un'azione specifica nel linguaggio dell'altro: se il tuo partner usa 'Atti di Servizio' e tu 'Parole', fai qualcosa di concreto per lui/lei. Se tu usi 'Tempo di Qualità' e il partner 'Contatto Fisico', cercalo/la fisicamente durante il tempo insieme."
+      },
+      "high_neuroticism_low": {
+        "name": "Gap di Intensità Emotiva",
+        "description": "Chi ha alto nevroticismo amplifica; chi ha basso nevroticismo minimizza. Entrambi sentono di non essere capiti.",
+        "protocol": "Il partner stabile non dice 'stai esagerando' — dice 'capisco che per te è intenso'. Il partner reattivo avvisa quando si sente in escalation: 'Sto iniziando ad attivarmi — ho bisogno di 5 minuti.' Non aspettare di esplodere."
+      }
+    }
+  }
+}

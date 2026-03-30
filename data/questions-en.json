@@ -1,0 +1,110 @@
+{
+  "attachment": {
+    "id": "attachment",
+    "name": "Attachment Styles",
+    "subtitle": "How you manage closeness and distance in relationships",
+    "description": "Based on the ECR-R model (Experiences in Close Relationships). Measures two dimensions: Anxiety (fear of abandonment) and Avoidance (discomfort with intimacy).",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 7, "labels": ["Strongly disagree", "", "", "Neutral", "", "", "Strongly agree"] },
+    "questions": [
+      { "id": "av1",  "text": "I feel uncomfortable when someone gets emotionally close to me.", "dimension": "avoidance" },
+      { "id": "av2",  "text": "I prefer not to show my partner how I really feel.", "dimension": "avoidance" },
+      { "id": "av3",  "text": "When my partner wants a lot of intimacy, I feel tense.", "dimension": "avoidance" },
+      { "id": "av4",  "text": "I find it difficult to rely emotionally on my partner.", "dimension": "avoidance" },
+      { "id": "av5",  "text": "I prefer not to depend on the people I love.", "dimension": "avoidance" },
+      { "id": "av6",  "text": "I'm not comfortable sharing my deepest thoughts with others.", "dimension": "avoidance" },
+      { "id": "av7",  "text": "I'm afraid of becoming too attached to my partner.", "dimension": "avoidance" },
+      { "id": "av8",  "text": "I find it hard to let partners get emotionally close to me.", "dimension": "avoidance" },
+      { "id": "av9",  "text": "I avoid opening up even when I genuinely care about the person.", "dimension": "avoidance" },
+      { "id": "av10", "text": "I feel uncomfortable when I'm asked for direct emotional support.", "dimension": "avoidance" },
+      { "id": "an1",  "text": "I'm afraid of being abandoned by my partner.", "dimension": "anxiety" },
+      { "id": "an2",  "text": "I need frequent confirmation that my partner loves me.", "dimension": "anxiety" },
+      { "id": "an3",  "text": "When my partner is unavailable, I feel anxious.", "dimension": "anxiety" },
+      { "id": "an4",  "text": "I often worry that my partner is interested in someone else.", "dimension": "anxiety" },
+      { "id": "an5",  "text": "I fear my partner doesn't care about me as much as I care about them.", "dimension": "anxiety" },
+      { "id": "an6",  "text": "I worry about not being interesting enough for my partner.", "dimension": "anxiety" },
+      { "id": "an7",  "text": "When I don't hear from my partner for a few hours, I feel uneasy.", "dimension": "anxiety" },
+      { "id": "an8",  "text": "The idea that my partner might leave me deeply distresses me.", "dimension": "anxiety" },
+      { "id": "an9",  "text": "I get nervous if my partner doesn't respond to messages quickly.", "dimension": "anxiety" },
+      { "id": "an10", "text": "I often need to feel that my partner is satisfied with our relationship.", "dimension": "anxiety" }
+    ]
+  },
+
+  "loveLanguages": {
+    "id": "loveLanguages",
+    "name": "Love Languages",
+    "subtitle": "How you prefer to give and receive affection",
+    "description": "Based on Gary Chapman's model. Identifies your primary love language among the 5 love languages.",
+    "duration": "4 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"] },
+    "questions": [
+      { "id": "w1",  "text": "I feel loved when my partner explicitly tells me how much they care about me.", "dimension": "words" },
+      { "id": "w2",  "text": "Sincere compliments recharge me emotionally more than any gesture.", "dimension": "words" },
+      { "id": "w3",  "text": "A verbal insult hurts me more than an unkind action.", "dimension": "words" },
+      { "id": "t1",  "text": "I feel loved when my partner dedicates time just to me, without phone or distractions.", "dimension": "time" },
+      { "id": "t2",  "text": "The most important thing for me is that my partner is present, not what we do.", "dimension": "time" },
+      { "id": "t3",  "text": "I feel neglected when my partner seems elsewhere even if physically here.", "dimension": "time" },
+      { "id": "g1",  "text": "When my partner brings me even a small unexpected gift, it makes me feel special.", "dimension": "gifts" },
+      { "id": "g2",  "text": "For me, gifts aren't objects — they're visible symbols of my partner's love.", "dimension": "gifts" },
+      { "id": "g3",  "text": "I hold on to objects or symbols that my partner has given me.", "dimension": "gifts" },
+      { "id": "a1",  "text": "I feel loved when my partner helps me with something practical without being asked.", "dimension": "acts" },
+      { "id": "a2",  "text": "A partner who does things for me speaks louder than a thousand words.", "dimension": "acts" },
+      { "id": "a3",  "text": "I feel unloved when my partner promises to do something and doesn't follow through.", "dimension": "acts" },
+      { "id": "p1",  "text": "A hug, held hand, or caress calms me and makes me feel connected.", "dimension": "touch" },
+      { "id": "p2",  "text": "Physical contact (even non-sexual) is essential for my well-being in a relationship.", "dimension": "touch" },
+      { "id": "p3",  "text": "Lack of physical touch in a relationship makes me feel distant and alone.", "dimension": "touch" }
+    ]
+  },
+
+  "bigFive": {
+    "id": "bigFive",
+    "name": "OCEAN Profile",
+    "subtitle": "Your 5 dominant personality traits",
+    "description": "Short version of the Big Five model. Measures the 5 core traits: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism.",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Doesn't describe me", "", "Neutral", "", "Describes me perfectly"] },
+    "questions": [
+      { "id": "o1",  "text": "I'm curious and love exploring new and complex ideas.", "dimension": "openness" },
+      { "id": "o2",  "text": "I deeply appreciate art, music, or literature.", "dimension": "openness" },
+      { "id": "o3",  "text": "I often have original thoughts and a vivid imagination.", "dimension": "openness" },
+      { "id": "o4",  "text": "I'm open to viewpoints very different from my own.", "dimension": "openness" },
+      { "id": "c1",  "text": "I'm organized and methodical in how I approach things.", "dimension": "conscientiousness" },
+      { "id": "c2",  "text": "I always follow through on what I start, even when it gets hard.", "dimension": "conscientiousness" },
+      { "id": "c3",  "text": "I meet deadlines and keep commitments rigorously.", "dimension": "conscientiousness" },
+      { "id": "c4",  "text": "I'm detail-oriented and it bothers me to make mistakes.", "dimension": "conscientiousness" },
+      { "id": "e1",  "text": "In groups, I like being the center of attention.", "dimension": "extraversion" },
+      { "id": "e2",  "text": "I feel energized after socializing for a long time.", "dimension": "extraversion" },
+      { "id": "e3",  "text": "I'm naturally outgoing and talk easily with strangers.", "dimension": "extraversion" },
+      { "id": "e4",  "text": "I prefer being with others rather than alone.", "dimension": "extraversion" },
+      { "id": "ag1", "text": "I'm genuinely interested in the well-being of others.", "dimension": "agreeableness" },
+      { "id": "ag2", "text": "In a conflict, I always seek a fair compromise.", "dimension": "agreeableness" },
+      { "id": "ag3", "text": "I find it easy to forgive people who have hurt me.", "dimension": "agreeableness" },
+      { "id": "ag4", "text": "It comes naturally to me to be considerate of others' needs.", "dimension": "agreeableness" },
+      { "id": "n1",  "text": "I worry often, even about things others find trivial.", "dimension": "neuroticism" },
+      { "id": "n2",  "text": "I get easily upset by stress or difficulties.", "dimension": "neuroticism" },
+      { "id": "n3",  "text": "I tend to feel anxious or emotionally tense.", "dimension": "neuroticism" },
+      { "id": "n4",  "text": "I sometimes feel overwhelmed by emotions.", "dimension": "neuroticism" }
+    ]
+  },
+
+  "communication": {
+    "id": "communication",
+    "name": "Communication Style",
+    "subtitle": "Rapport Talk vs Report Talk",
+    "description": "Based on Deborah Tannen's research. Identifies whether you tend to communicate to build connection (Rapport) or to exchange information and solve problems (Report).",
+    "duration": "3 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Doesn't describe me", "", "Neutral", "", "Describes me perfectly"] },
+    "questions": [
+      { "id": "rp1", "text": "When a friend tells me about a problem, I share a similar experience to make them feel less alone.", "dimension": "rapport" },
+      { "id": "rp2", "text": "In a conversation, I care more about understanding how the other feels than finding a solution.", "dimension": "rapport" },
+      { "id": "rp3", "text": "When discussing something, the listening process feels as important as the outcome.", "dimension": "rapport" },
+      { "id": "rp4", "text": "I often share personal things about myself to create intimacy and connection.", "dimension": "rapport" },
+      { "id": "rp5", "text": "In discussions, I seek consensus and harmony more than winning the point.", "dimension": "rapport" },
+      { "id": "rt1", "text": "When someone describes a problem, my instinct is to suggest practical solutions.", "dimension": "report" },
+      { "id": "rt2", "text": "In conversations, I prefer to get straight to the point without detours.", "dimension": "report" },
+      { "id": "rt3", "text": "I find it frustrating to talk about a problem for a long time without reaching a concrete conclusion.", "dimension": "report" },
+      { "id": "rt4", "text": "In discussions, content and facts seem more important to me than emotional tone.", "dimension": "report" },
+      { "id": "rt5", "text": "When someone talks to me, I focus on what they should do, not on how they feel.", "dimension": "report" }
+    ]
+  }
+}

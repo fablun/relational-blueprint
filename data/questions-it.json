@@ -1,0 +1,110 @@
+{
+  "attachment": {
+    "id": "attachment",
+    "name": "Stili di Attaccamento",
+    "subtitle": "Come gestisci vicinanza e distanza nelle relazioni",
+    "description": "Basato sul modello ECR-R (Experiences in Close Relationships). Valuta due dimensioni: Ansia (paura dell'abbandono) e Evitamento (disagio con l'intimità).",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 7, "labels": ["Fortemente in disaccordo", "", "", "Neutro", "", "", "Fortemente d'accordo"] },
+    "questions": [
+      { "id": "av1",  "text": "Mi sento a disagio quando qualcuno si avvicina emotivamente a me.", "dimension": "avoidance" },
+      { "id": "av2",  "text": "Preferisco non mostrare al partner come mi sento davvero.", "dimension": "avoidance" },
+      { "id": "av3",  "text": "Quando il partner vuole molta intimità, mi sento teso/a.", "dimension": "avoidance" },
+      { "id": "av4",  "text": "Ho difficoltà a fare affidamento emotivo sul partner.", "dimension": "avoidance" },
+      { "id": "av5",  "text": "Preferisco non dipendere da chi amo.", "dimension": "avoidance" },
+      { "id": "av6",  "text": "Non mi sento a mio agio nel condividere i miei pensieri più profondi.", "dimension": "avoidance" },
+      { "id": "av7",  "text": "Mi spaventa diventare troppo unito/a al partner.", "dimension": "avoidance" },
+      { "id": "av8",  "text": "Fatico a permettere ai partner di avvicinarsi emotivamente a me.", "dimension": "avoidance" },
+      { "id": "av9",  "text": "Evito di aprirmi troppo anche quando ci tengo davvero alla persona.", "dimension": "avoidance" },
+      { "id": "av10", "text": "Mi sento scomodo/a se mi si chiede supporto emotivo diretto.", "dimension": "avoidance" },
+      { "id": "an1",  "text": "Ho paura di essere abbandonato/a dal partner.", "dimension": "anxiety" },
+      { "id": "an2",  "text": "Ho bisogno di frequenti conferme che il partner mi vuole bene.", "dimension": "anxiety" },
+      { "id": "an3",  "text": "Quando il partner non è disponibile, mi sento in ansia.", "dimension": "anxiety" },
+      { "id": "an4",  "text": "Mi preoccupo spesso che il partner si interessi a qualcun altro.", "dimension": "anxiety" },
+      { "id": "an5",  "text": "Temo che il partner non si curi di me quanto io mi curo di lui/lei.", "dimension": "anxiety" },
+      { "id": "an6",  "text": "Mi preoccupo di non essere abbastanza interessante per il partner.", "dimension": "anxiety" },
+      { "id": "an7",  "text": "Quando non sento il partner per alcune ore, mi sento a disagio.", "dimension": "anxiety" },
+      { "id": "an8",  "text": "L'idea che il partner possa lasciarmi mi angoscia profondamente.", "dimension": "anxiety" },
+      { "id": "an9",  "text": "Mi innervosisco se il partner non risponde subito ai messaggi.", "dimension": "anxiety" },
+      { "id": "an10", "text": "Ho bisogno di sentire spesso che il partner è soddisfatto della nostra relazione.", "dimension": "anxiety" }
+    ]
+  },
+
+  "loveLanguages": {
+    "id": "loveLanguages",
+    "name": "Linguaggi dell'Amore",
+    "subtitle": "Come preferisci ricevere e dare affetto",
+    "description": "Basato sul modello di Gary Chapman. Identifica il tuo linguaggio primario tra i 5 linguaggi dell'amore.",
+    "duration": "4 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Mai", "Raramente", "A volte", "Spesso", "Sempre"] },
+    "questions": [
+      { "id": "w1",  "text": "Mi fa sentire amato/a quando il partner mi dice esplicitamente quanto gli/le importo.", "dimension": "words" },
+      { "id": "w2",  "text": "I complimenti sinceri mi ricaricano emotivamente più di qualsiasi gesto.", "dimension": "words" },
+      { "id": "w3",  "text": "Mi ferisce di più un'offesa verbale che un'azione scorretta.", "dimension": "words" },
+      { "id": "t1",  "text": "Mi sento amato/a quando il partner dedica tempo solo a me, senza telefono o distrazioni.", "dimension": "time" },
+      { "id": "t2",  "text": "La cosa più importante per me è che il partner sia presente, non cosa facciamo.", "dimension": "time" },
+      { "id": "t3",  "text": "Mi fa sentire trascurato/a quando il partner sembra altrove anche se è fisicamente qui.", "dimension": "time" },
+      { "id": "g1",  "text": "Quando il partner mi porta anche un piccolo regalo inaspettato, mi fa sentire speciale.", "dimension": "gifts" },
+      { "id": "g2",  "text": "Per me i regali non sono oggetti, ma simboli visibili dell'amore del partner.", "dimension": "gifts" },
+      { "id": "g3",  "text": "Mi ricordo a lungo di oggetti o simboli che il partner mi ha dato.", "dimension": "gifts" },
+      { "id": "a1",  "text": "Mi sento amato/a quando il partner mi aiuta con qualcosa di pratico senza che glielo chieda.", "dimension": "acts" },
+      { "id": "a2",  "text": "Il partner che fa qualcosa per me vale più di mille parole d'amore.", "dimension": "acts" },
+      { "id": "a3",  "text": "Mi fa sentire non amato/a quando il partner promette di fare qualcosa e non lo fa.", "dimension": "acts" },
+      { "id": "p1",  "text": "Un abbraccio, una mano tenuta, o una carezza mi calma e mi fa sentire connesso/a.", "dimension": "touch" },
+      { "id": "p2",  "text": "Il contatto fisico (anche non sessuale) è fondamentale per il mio benessere nella coppia.", "dimension": "touch" },
+      { "id": "p3",  "text": "La mancanza di contatto fisico in una relazione mi fa sentire distante e solo/a.", "dimension": "touch" }
+    ]
+  },
+
+  "bigFive": {
+    "id": "bigFive",
+    "name": "Profilo OCEAN",
+    "subtitle": "I tuoi 5 tratti di personalità dominanti",
+    "description": "Versione ridotta del modello Big Five. Misura i 5 tratti fondamentali: Apertura, Coscienziosità, Estroversione, Gradevolezza, Nevroticismo.",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Non mi descrive", "", "Neutro", "", "Mi descrive perfettamente"] },
+    "questions": [
+      { "id": "o1",  "text": "Sono curioso/a e amo esplorare idee nuove, anche complesse.", "dimension": "openness" },
+      { "id": "o2",  "text": "Apprezzo l'arte, la musica o la letteratura in modo profondo.", "dimension": "openness" },
+      { "id": "o3",  "text": "Ho spesso pensieri originali e un'immaginazione vivace.", "dimension": "openness" },
+      { "id": "o4",  "text": "Sono aperto/a a punti di vista molto diversi dal mio.", "dimension": "openness" },
+      { "id": "c1",  "text": "Sono organizzato/a e metodico/a nel mio approccio alle cose.", "dimension": "conscientiousness" },
+      { "id": "c2",  "text": "Porto sempre a termine quello che inizio, anche se diventa difficile.", "dimension": "conscientiousness" },
+      { "id": "c3",  "text": "Rispetto le scadenze e gli impegni presi in modo rigoroso.", "dimension": "conscientiousness" },
+      { "id": "c4",  "text": "Sono attento/a ai dettagli e mi disturba fare errori.", "dimension": "conscientiousness" },
+      { "id": "e1",  "text": "Nei gruppi, mi piace essere al centro dell'attenzione.", "dimension": "extraversion" },
+      { "id": "e2",  "text": "Mi sento energizzato/a dopo aver socializzato a lungo.", "dimension": "extraversion" },
+      { "id": "e3",  "text": "Sono spontaneamente estroverso/a e parlo facilmente con gli estranei.", "dimension": "extraversion" },
+      { "id": "e4",  "text": "Preferisco stare in compagnia piuttosto che da solo/a.", "dimension": "extraversion" },
+      { "id": "ag1", "text": "Sono sinceramente interessato/a al benessere degli altri.", "dimension": "agreeableness" },
+      { "id": "ag2", "text": "In un conflitto, cerco sempre un compromesso equo.", "dimension": "agreeableness" },
+      { "id": "ag3", "text": "Non trovo difficile perdonare chi mi ha ferito.", "dimension": "agreeableness" },
+      { "id": "ag4", "text": "Mi viene naturale essere premuroso/a e considerare i bisogni altrui.", "dimension": "agreeableness" },
+      { "id": "n1",  "text": "Mi preoccupo spesso, anche per cose che altri trovano banali.", "dimension": "neuroticism" },
+      { "id": "n2",  "text": "Mi turbo facilmente di fronte allo stress o alle difficoltà.", "dimension": "neuroticism" },
+      { "id": "n3",  "text": "Tendo a sentirmi ansioso/a o emotivamente teso/a.", "dimension": "neuroticism" },
+      { "id": "n4",  "text": "A volte mi sento sopraffatto/a dalle emozioni.", "dimension": "neuroticism" }
+    ]
+  },
+
+  "communication": {
+    "id": "communication",
+    "name": "Stile Comunicativo",
+    "subtitle": "Rapport Talk vs Report Talk",
+    "description": "Basato sulla ricerca di Deborah Tannen. Identifica se tendi a comunicare per creare connessione (Rapport) o per trasmettere informazioni e risolvere problemi (Report).",
+    "duration": "3 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Non mi descrive", "", "Neutro", "", "Mi descrive perfettamente"] },
+    "questions": [
+      { "id": "rp1", "text": "Quando un amico mi racconta un problema, condivido una mia esperienza simile per farlo sentire meno solo/a.", "dimension": "rapport" },
+      { "id": "rp2", "text": "In una conversazione, mi importa più capire come si sente l'altro che trovare una soluzione.", "dimension": "rapport" },
+      { "id": "rp3", "text": "Quando mi confronto con qualcuno, il processo di ascolto mi sembra importante quanto l'esito.", "dimension": "rapport" },
+      { "id": "rp4", "text": "Parlo spesso di me per creare intimità e connessione con l'altro.", "dimension": "rapport" },
+      { "id": "rp5", "text": "Nelle discussioni cerco il consenso e l'armonia più che vincere il punto.", "dimension": "rapport" },
+      { "id": "rt1", "text": "Quando qualcuno mi descrive un problema, il mio istinto è proporre soluzioni pratiche.", "dimension": "report" },
+      { "id": "rt2", "text": "Nelle conversazioni preferisco andare dritto al punto senza troppi giri di parole.", "dimension": "report" },
+      { "id": "rt3", "text": "Trovo frustrante parlare a lungo di un problema senza arrivare a una conclusione concreta.", "dimension": "report" },
+      { "id": "rt4", "text": "Nelle discussioni, il contenuto e i fatti mi sembrano più importanti del tono emotivo.", "dimension": "report" },
+      { "id": "rt5", "text": "Quando qualcuno mi parla, mi concentro su cosa dovrebbe fare, non su come si sente.", "dimension": "report" }
+    ]
+  }
+}
