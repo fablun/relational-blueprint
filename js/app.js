@@ -23,31 +23,35 @@ const state = {
 // ── Init ──────────────────────────────────────────────────
 
 async function init() {
+  // Mostra schermata di caricamento finché Firebase non risolve la sessione
+  showInitLoader();
+
   await Promise.all([
     loadQuestions(state.lang),
     loadManualTemplates(state.lang)
   ]);
 
-  initAuth(state.lang);
+  // Prima onAuthChange risolve lo stato, poi avviamo il router
+  await new Promise(resolve => {
+    initAuth(state.lang);
 
-  onAuthChange(async (user, profile) => {
-    if (user && profile) {
-      // Load test results
-      state.testResults = await getTestResults(user.uid);
-
-      // Load partner if linked
-      if (profile.partnerId) {
-        state.partnerProfile = await getPartnerProfile(profile.partnerId);
+    onAuthChange(async (user, profile) => {
+      if (user && profile) {
+        state.testResults = await getTestResults(user.uid);
+        if (profile.partnerId) {
+          state.partnerProfile = await getPartnerProfile(profile.partnerId);
+        }
+        updateAuthUI(user, profile);
+        document.getElementById('app-header').style.display = 'flex';
+        hideInitLoader();
+        navigate('dashboard');
+      } else {
+        document.getElementById('app-header').style.display = 'none';
+        hideInitLoader();
+        navigate('landing');
       }
-
-      updateAuthUI(user, profile);
-      document.getElementById('app-header').style.display = 'flex';
-
-      if (state.currentView === 'landing') navigate('dashboard');
-    } else {
-      document.getElementById('app-header').style.display = 'none';
-      navigate('landing');
-    }
+      resolve(); // dopo il primo fire non serve più aspettare
+    });
   });
 
   setupRouter();
@@ -55,11 +59,41 @@ async function init() {
   setupSignOutBtn();
 }
 
+function showInitLoader() {
+  const el = document.createElement('div');
+  el.id = 'init-loader';
+  el.style.cssText = `
+    position:fixed;inset:0;background:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    z-index:9999;flex-direction:column;gap:16px;
+  `;
+  el.innerHTML = `
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#fff;letter-spacing:-0.02em">
+      Relational <span style="color:#0ea5e9;border-bottom:2px solid #0ea5e9">Blueprint</span>
+    </div>
+    <div style="width:32px;height:32px;border:2px solid rgba(255,255,255,0.1);
+      border-top-color:#0ea5e9;border-radius:50%;animation:spin 0.7s linear infinite">
+    </div>
+  `;
+  document.body.appendChild(el);
+}
+
+function hideInitLoader() {
+  const el = document.getElementById('init-loader');
+  if (!el) return;
+  el.style.opacity = '0';
+  el.style.transition = 'opacity 0.2s';
+  setTimeout(() => el.remove(), 200);
+}
+
 // ── Router ────────────────────────────────────────────────
 
 function setupRouter() {
-  window.addEventListener('hashchange', () => routeFromHash());
-  routeFromHash();
+  // routeFromHash() solo su navigazione successiva (back/forward)
+  // Il primo render è già gestito da onAuthChange
+  window.addEventListener('hashchange', () => {
+    if (getCurrentUser()) routeFromHash();
+  });
 }
 
 function routeFromHash() {
