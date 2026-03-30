@@ -120,9 +120,11 @@ h1, h2, h3, .heading { font-family: var(--mono); }
    ============================================================ */
 .view-landing {
   background: var(--ink);
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
   min-height: 100vh;
   padding: 40px 20px;
+}
+.view-landing.active {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
 .landing-logo {
   font-family: var(--mono);
