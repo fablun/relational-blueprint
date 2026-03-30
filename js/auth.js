@@ -1,13 +1,16 @@
 // ============================================================
-// AUTH MODULE — Google & GitHub sign-in
+// AUTH MODULE — Google + Email/Password
 // ============================================================
 import { auth } from './firebase.js';
 import {
   GoogleAuthProvider,
-  GithubAuthProvider,
   signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  updateProfile,
   signOut,
-  onAuthStateChanged
+  onAuthStateChanged,
+  sendPasswordResetEmail
 } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 import { getUserProfile, createUserProfile } from './db.js';
 
@@ -17,14 +20,12 @@ const authListeners = [];
 
 export function onAuthChange(callback) {
   authListeners.push(callback);
-  // Fire immediately if already known
   if (currentUser !== undefined) callback(currentUser, currentProfile);
 }
 
 export function getCurrentUser()    { return currentUser; }
 export function getCurrentProfile() { return currentProfile; }
 
-// Internal: called once on app init
 export function initAuth(lang) {
   onAuthStateChanged(auth, async (user) => {
     currentUser = user;
@@ -32,9 +33,9 @@ export function initAuth(lang) {
       let profile = await getUserProfile(user.uid);
       if (!profile) {
         await createUserProfile(user.uid, {
-          displayName: user.displayName,
+          displayName: user.displayName || user.email.split('@')[0],
           email: user.email,
-          photoURL: user.photoURL,
+          photoURL: user.photoURL || '',
           lang
         });
         profile = await getUserProfile(user.uid);
@@ -47,6 +48,8 @@ export function initAuth(lang) {
   });
 }
 
+// ── Google ────────────────────────────────────────────────
+
 export async function signInGoogle() {
   const provider = new GoogleAuthProvider();
   provider.setCustomParameters({ prompt: 'select_account' });
@@ -57,14 +60,24 @@ export async function signInGoogle() {
   }
 }
 
-export async function signInGithub() {
-  const provider = new GithubAuthProvider();
-  try {
-    await signInWithPopup(auth, provider);
-  } catch (err) {
-    if (err.code !== 'auth/popup-closed-by-user') throw err;
+// ── Email / Password ──────────────────────────────────────
+
+export async function signInEmail(email, password) {
+  await signInWithEmailAndPassword(auth, email, password);
+}
+
+export async function signUpEmail(email, password, displayName) {
+  const credential = await createUserWithEmailAndPassword(auth, email, password);
+  if (displayName) {
+    await updateProfile(credential.user, { displayName });
   }
 }
+
+export async function resetPassword(email) {
+  await sendPasswordResetEmail(auth, email);
+}
+
+// ── Sign out ──────────────────────────────────────────────
 
 export async function signOutUser() {
   await signOut(auth);

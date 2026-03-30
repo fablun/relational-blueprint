@@ -2,7 +2,8 @@
 // APP.JS — Main SPA Router & Controller
 // ============================================================
 import { initAuth, onAuthChange, getCurrentUser, getCurrentProfile,
-         signInGoogle, signInGithub, signOutUser, refreshProfile } from './auth.js';
+         signInGoogle, signInEmail, signUpEmail, resetPassword,
+         signOutUser, refreshProfile } from './auth.js';
 import { loadQuestions, renderTestIntro, renderTestRunner, getTestList } from './test-engine.js';
 import { loadManualTemplates, generateManual, generateCoupleReport } from './manual-generator.js';
 import { getTestResults, findUserByPartnerCode, linkPartners,
@@ -662,14 +663,62 @@ function setupSignOutBtn() {
 // ── Auth buttons (landing) ────────────────────────────────
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  // Google
   document.getElementById('btn-google')?.addEventListener('click', async () => {
     try { await signInGoogle(); }
-    catch (e) { showToast(e.message, 'error'); }
+    catch (e) { showAuthError(e); }
   });
 
-  document.getElementById('btn-github')?.addEventListener('click', async () => {
-    try { await signInGithub(); }
-    catch (e) { showToast(e.message, 'error'); }
+  // Toggle login / registrazione
+  document.getElementById('toggle-auth-mode')?.addEventListener('click', () => {
+    const isLogin = document.getElementById('auth-form').dataset.mode !== 'register';
+    setAuthMode(isLogin ? 'register' : 'login');
+  });
+
+  // Password reset
+  document.getElementById('btn-forgot')?.addEventListener('click', async () => {
+    const email = document.getElementById('auth-email').value.trim();
+    if (!email) { showAuthError({ message: state.lang === 'it' ? 'Inserisci l\'email prima' : 'Enter email first' }); return; }
+    try {
+      await resetPassword(email);
+      showToast(state.lang === 'it' ? 'Email di reset inviata!' : 'Reset email sent!', 'success');
+    } catch(e) { showAuthError(e); }
+  });
+
+  // Submit form (login o registrazione)
+  document.getElementById('auth-submit')?.addEventListener('click', async () => {
+    const mode     = document.getElementById('auth-form').dataset.mode || 'login';
+    const email    = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+    const name     = document.getElementById('auth-name')?.value.trim();
+
+    if (!email || !password) {
+      showAuthError({ message: state.lang === 'it' ? 'Compila tutti i campi' : 'Fill in all fields' });
+      return;
+    }
+    if (mode === 'register' && password.length < 6) {
+      showAuthError({ message: state.lang === 'it' ? 'Password minimo 6 caratteri' : 'Password min 6 characters' });
+      return;
+    }
+
+    const btn = document.getElementById('auth-submit');
+    btn.disabled = true;
+    btn.textContent = '...';
+
+    try {
+      if (mode === 'register') {
+        await signUpEmail(email, password, name);
+      } else {
+        await signInEmail(email, password);
+      }
+    } catch(e) {
+      showAuthError(e);
+      btn.disabled = false;
+      btn.textContent = mode === 'register'
+        ? (state.lang === 'it' ? 'Crea account' : 'Create account')
+        : (state.lang === 'it' ? 'Accedi' : 'Sign in');
+    }
   });
 
   // Nav links
@@ -677,6 +726,49 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => navigate(btn.dataset.view));
   });
 });
+
+function setAuthMode(mode) {
+  const form    = document.getElementById('auth-form');
+  const nameEl  = document.getElementById('auth-name-group');
+  const submit  = document.getElementById('auth-submit');
+  const toggle  = document.getElementById('toggle-auth-mode');
+  const forgot  = document.getElementById('btn-forgot');
+  const title   = document.getElementById('auth-title');
+  const sub     = document.getElementById('auth-sub');
+
+  form.dataset.mode = mode;
+  document.getElementById('auth-error').textContent = '';
+
+  if (mode === 'register') {
+    if (nameEl) nameEl.style.display = 'block';
+    if (forgot) forgot.style.display = 'none';
+    submit.textContent  = state.lang === 'it' ? 'Crea account' : 'Create account';
+    toggle.textContent  = state.lang === 'it' ? 'Hai già un account? Accedi' : 'Already have an account? Sign in';
+    title.textContent   = state.lang === 'it' ? 'Crea il tuo account' : 'Create your account';
+    sub.textContent     = state.lang === 'it' ? 'Inizia a costruire il tuo Manuale' : 'Start building your Manual';
+  } else {
+    if (nameEl) nameEl.style.display = 'none';
+    if (forgot) forgot.style.display = 'block';
+    submit.textContent  = state.lang === 'it' ? 'Accedi' : 'Sign in';
+    toggle.textContent  = state.lang === 'it' ? 'Non hai un account? Registrati' : "Don't have an account? Sign up";
+    title.textContent   = state.lang === 'it' ? 'Bentornato' : 'Welcome back';
+    sub.textContent     = state.lang === 'it' ? 'Accedi per continuare' : 'Sign in to continue';
+  }
+}
+
+function showAuthError(err) {
+  const el = document.getElementById('auth-error');
+  if (!el) return;
+  const map = {
+    'auth/user-not-found':       state.lang === 'it' ? 'Account non trovato' : 'Account not found',
+    'auth/wrong-password':       state.lang === 'it' ? 'Password errata' : 'Wrong password',
+    'auth/email-already-in-use': state.lang === 'it' ? 'Email già registrata' : 'Email already in use',
+    'auth/invalid-email':        state.lang === 'it' ? 'Email non valida' : 'Invalid email',
+    'auth/weak-password':        state.lang === 'it' ? 'Password troppo debole' : 'Password too weak',
+    'auth/invalid-credential':   state.lang === 'it' ? 'Email o password errati' : 'Wrong email or password',
+  };
+  el.textContent = map[err.code] || err.message;
+}
 
 // Expose navigate globally for onclick handlers
 window.app = { navigate };
