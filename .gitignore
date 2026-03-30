@@ -1,3 +1,6 @@
+# Firebase credentials — generate via build.js from Vercel env vars
+firebase-config.js
+
 # OS
 .DS_Store
 Thumbs.db

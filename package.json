@@ -1,0 +1,8 @@
+{
+  "name": "relational-blueprint",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "vercel-build": "node build.js"
+  }
+}

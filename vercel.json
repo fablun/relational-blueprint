@@ -1,6 +1,8 @@
 {
+  "buildCommand": "node build.js",
+  "outputDirectory": ".",
   "rewrites": [
-    { "source": "/((?!js|data|assets|style\\.css|firebase-config\\.js).*)", "destination": "/index.html" }
+    { "source": "/((?!js|data|assets|style\\.css|firebase-config\\.js|build\\.js|package\\.json).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
