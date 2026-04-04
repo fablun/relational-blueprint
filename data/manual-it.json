@@ -19,12 +19,24 @@
         }
       ],
       "antiPatterns": [
-        { "title": "Minimizzazione inconsapevole", "content": "La tua stabilità ti porta a sottovalutare il disagio degli altri. Puoi sembrare distante quando dici 'non è poi così grave', anche se vuoi essere rassicurante. Con partner ansiosi o evitanti, questo approccio diretto può essere vissuto come pressione o svalutazione." },
-        { "title": "Eccessiva fiducia nel dialogo razionale", "content": "Dai per scontato che entrambi possano affrontare i problemi 'razionalmente' e 'con calma'. Quando il partner è emotivamente attivato, aspettarsi razionalità lo/la fa sentire incompreso/a. Prima si regola l'emozione, poi si ragiona." }
+        {
+          "title": "Minimizzazione inconsapevole",
+          "content": "La tua stabilità ti porta a sottovalutare il disagio degli altri. Puoi sembrare distante quando dici 'non è poi così grave', anche se vuoi essere rassicurante. Con partner ansiosi o evitanti, questo approccio diretto può essere vissuto come pressione o svalutazione."
+        },
+        {
+          "title": "Eccessiva fiducia nel dialogo razionale",
+          "content": "Dai per scontato che entrambi possano affrontare i problemi 'razionalmente' e 'con calma'. Quando il partner è emotivamente attivato, aspettarsi razionalità lo/la fa sentire incompreso/a. Prima si regola l'emozione, poi si ragiona."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come comunicare con lui/lei", "content": "Il tuo partner risponde bene alla comunicazione diretta. Non indovinare — chiedi. Non aspettare — parla. La sua calma durante i conflitti non è indifferenza: è il suo punto di forza. Usalo chiedendogli/le di fare da ancora quando sei sopraffatto/a." },
-        { "title": "Cosa ricordare", "content": "Non interpretare la sua stabilità come mancanza di profondità emotiva. Sente — elabora in modo diverso. Quando condividi un problema, digli/le esplicitamente se vuoi essere ascoltato/a o se cerchi soluzioni: risponde bene a entrambe le modalità, ma preferisce saperlo." }
+        {
+          "title": "Come comunicare con lui/lei",
+          "content": "Il tuo partner risponde bene alla comunicazione diretta. Non indovinare — chiedi. Non aspettare — parla. La sua calma durante i conflitti non è indifferenza: è il suo punto di forza. Usalo chiedendogli/le di fare da ancora quando sei sopraffatto/a."
+        },
+        {
+          "title": "Cosa ricordare",
+          "content": "Non interpretare la sua stabilità come mancanza di profondità emotiva. Sente — elabora in modo diverso. Quando condividi un problema, digli/le esplicitamente se vuoi essere ascoltato/a o se cerchi soluzioni: risponde bene a entrambe le modalità, ma preferisce saperlo."
+        }
       ]
     },
     "anxious": {
@@ -50,13 +62,28 @@
         }
       ],
       "antiPatterns": [
-        { "title": "Il Double-Text Spiral", "content": "Quando non ricevi risposta, mandi messaggi multipli in sequenza. Ogni messaggio aumenta la tua ansia e riduce la probabilità di una risposta rapida — e genera nel partner la sensazione di essere braccato/a." },
-        { "title": "L'Interpretazione Catastrofica", "content": "Trasformi ogni segnale ambiguo (ritardo nella risposta, tono di voce, silenzio) in prova di rifiuto imminente, anche in assenza di prove reali. Questo porta a reazioni sproporzionate che allontanano il partner." },
-        { "title": "Il Test Nascosto", "content": "A volte metti inconsciamente alla prova il partner (diventando freddo/a, distante) per vedere se 'resterà comunque'. Questo crea esattamente il distacco che temi e può diventare una profezia che si autoavvera." }
+        {
+          "title": "Il Double-Text Spiral",
+          "content": "Quando non ricevi risposta, mandi messaggi multipli in sequenza. Ogni messaggio aumenta la tua ansia e riduce la probabilità di una risposta rapida — e genera nel partner la sensazione di essere braccato/a."
+        },
+        {
+          "title": "L'Interpretazione Catastrofica",
+          "content": "Trasformi ogni segnale ambiguo (ritardo nella risposta, tono di voce, silenzio) in prova di rifiuto imminente, anche in assenza di prove reali. Questo porta a reazioni sproporzionate che allontanano il partner."
+        },
+        {
+          "title": "Il Test Nascosto",
+          "content": "A volte metti inconsciamente alla prova il partner (diventando freddo/a, distante) per vedere se 'resterà comunque'. Questo crea esattamente il distacco che temi e può diventare una profezia che si autoavvera."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Regola principale", "content": "Non scomparire senza avvisare — anche solo 'sono impegnato/a, ci sentiamo dopo' è sufficiente. Il silenzio non comunicato attiva il suo sistema d'allarme in modo automatico e proporzionale alla durata. Pochi secondi di testo prevengono ore di spirale." },
-        { "title": "Strategia preventiva", "content": "La rassicurazione data PRIMA del problema vale 10 volte quella data durante la crisi. Un messaggio spontaneo nel corso della giornata ('sto pensando a te') previene intere spirali d'ansia. Non aspettare che chieda — anticipalo." }
+        {
+          "title": "Regola principale",
+          "content": "Non scomparire senza avvisare — anche solo 'sono impegnato/a, ci sentiamo dopo' è sufficiente. Il silenzio non comunicato attiva il suo sistema d'allarme in modo automatico e proporzionale alla durata. Pochi secondi di testo prevengono ore di spirale."
+        },
+        {
+          "title": "Strategia preventiva",
+          "content": "La rassicurazione data PRIMA del problema vale 10 volte quella data durante la crisi. Un messaggio spontaneo nel corso della giornata ('sto pensando a te') previene intere spirali d'ansia. Non aspettare che chieda — anticipalo."
+        }
       ]
     },
     "avoidant": {
@@ -82,12 +109,24 @@
         }
       ],
       "antiPatterns": [
-        { "title": "Il Silenzio come Comunicazione", "content": "Quando sei sopraffatto/a, sparisci senza avvisare. Per il partner, questo silenzio è incomprensibile e spesso vissuto come rifiuto o punizione. Il ritiro non comunicato è uno dei trigger più potenti nei partner ansiosi." },
-        { "title": "Il Muro Emotivo", "content": "Razionalizzi le emozioni invece di sentirle. Dici 'sto bene' quando non lo sei, poi esplodi su qualcosa di secondario quando la tensione accumulata diventa insostenibile. Il partner non capisce mai cosa ha fatto." }
+        {
+          "title": "Il Silenzio come Comunicazione",
+          "content": "Quando sei sopraffatto/a, sparisci senza avvisare. Per il partner, questo silenzio è incomprensibile e spesso vissuto come rifiuto o punizione. Il ritiro non comunicato è uno dei trigger più potenti nei partner ansiosi."
+        },
+        {
+          "title": "Il Muro Emotivo",
+          "content": "Razionalizzi le emozioni invece di sentirle. Dici 'sto bene' quando non lo sei, poi esplodi su qualcosa di secondario quando la tensione accumulata diventa insostenibile. Il partner non capisce mai cosa ha fatto."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Quando si ritira", "content": "Non inseguirlo/a quando si ritira — ottieni l'effetto opposto. Dagli/le spazio con una deadline: 'Prenditi il tempo che ti serve, sono qui quando sei pronto/a.' Poi aspetta davvero. Il rientro avviene — ma i tentativi di forzarlo lo rallentano." },
-        { "title": "Come costruire fiducia", "content": "Per raggiungere il suo cuore, usa le azioni più delle parole. La coerenza nel tempo — non l'intensità nel momento — costruisce la sua fiducia. Ogni promessa mantenuta conta più di mille dichiarazioni d'amore." }
+        {
+          "title": "Quando si ritira",
+          "content": "Non inseguirlo/a quando si ritira — ottieni l'effetto opposto. Dagli/le spazio con una deadline: 'Prenditi il tempo che ti serve, sono qui quando sei pronto/a.' Poi aspetta davvero. Il rientro avviene — ma i tentativi di forzarlo lo rallentano."
+        },
+        {
+          "title": "Come costruire fiducia",
+          "content": "Per raggiungere il suo cuore, usa le azioni più delle parole. La coerenza nel tempo — non l'intensità nel momento — costruisce la sua fiducia. Ogni promessa mantenuta conta più di mille dichiarazioni d'amore."
+        }
       ]
     },
     "fearful": {
@@ -109,16 +148,27 @@
         }
       ],
       "antiPatterns": [
-        { "title": "L'Oscillazione Destabilizzante", "content": "Ti avvicini e poi ti ritiri in modo imprevedibile. Anche se non è intenzionale, il partner inizia a camminare sulle uova, non sapendo mai cosa aspettarsi. Questo crea un clima di incertezza cronica." },
-        { "title": "Il Sabotaggio dell'Intimità", "content": "Quando la relazione va bene e ti senti vicino/a, inconsciamente fai qualcosa per creare distanza. La felicità ti spaventa quanto il dolore — entrambi segnalano che sei vulnerabile." }
+        {
+          "title": "L'Oscillazione Destabilizzante",
+          "content": "Ti avvicini e poi ti ritiri in modo imprevedibile. Anche se non è intenzionale, il partner inizia a camminare sulle uova, non sapendo mai cosa aspettarsi. Questo crea un clima di incertezza cronica."
+        },
+        {
+          "title": "Il Sabotaggio dell'Intimità",
+          "content": "Quando la relazione va bene e ti senti vicino/a, inconsciamente fai qualcosa per creare distanza. La felicità ti spaventa quanto il dolore — entrambi segnalano che sei vulnerabile."
+        }
       ],
       "partnerInstructions": [
-        { "title": "La tua arma più potente", "content": "La coerenza è tutto con questo partner. Fai quello che dici, sii prevedibile, mantieni le promesse piccole. Ogni azione coerente abbassa di un millimetro la sua guardia — e quei millimetri si accumulano nel tempo." },
-        { "title": "Quando si ritira dopo intimità", "content": "Non interpretarlo come rifiuto. Aspetta senza pressione. Un messaggio leggero dopo qualche ora ('sto pensando a te') funziona meglio di una chiamata urgente. La costanza senza intensità è il linguaggio che capisce." }
+        {
+          "title": "La tua arma più potente",
+          "content": "La coerenza è tutto con questo partner. Fai quello che dici, sii prevedibile, mantieni le promesse piccole. Ogni azione coerente abbassa di un millimetro la sua guardia — e quei millimetri si accumulano nel tempo."
+        },
+        {
+          "title": "Quando si ritira dopo intimità",
+          "content": "Non interpretarlo come rifiuto. Aspetta senza pressione. Un messaggio leggero dopo qualche ora ('sto pensando a te') funziona meglio di una chiamata urgente. La costanza senza intensità è il linguaggio che capisce."
+        }
       ]
     }
   },
-
   "loveLanguages": {
     "words": {
       "label": "Parole di Affermazione",
@@ -216,23 +266,34 @@
       ]
     }
   },
-
   "bigFive": {
     "openness": {
       "high": {
         "label": "Alta Apertura Mentale",
         "code": "OCEAN-O+",
         "instructions": [
-          { "title": "Come Stimolarmi", "content": "Portami conversazioni profonde, idee insolite, esperienze nuove. Stimolarmi intellettualmente è uno dei modi più potenti per connetterti con me emotivamente. Le discussioni filosofiche o creative non sono un lusso per me — sono nutrimento." },
-          { "title": "Come Non Annoiarmi", "content": "Routine rigide, conversazioni superficiali e resistenza al cambiamento mi spengono lentamente. Non ti chiedo di diventare una persona diversa — ti chiedo di restare curioso/a con me." }
+          {
+            "title": "Come Stimolarmi",
+            "content": "Portami conversazioni profonde, idee insolite, esperienze nuove. Stimolarmi intellettualmente è uno dei modi più potenti per connetterti con me emotivamente. Le discussioni filosofiche o creative non sono un lusso per me — sono nutrimento."
+          },
+          {
+            "title": "Come Non Annoiarmi",
+            "content": "Routine rigide, conversazioni superficiali e resistenza al cambiamento mi spengono lentamente. Non ti chiedo di diventare una persona diversa — ti chiedo di restare curioso/a con me."
+          }
         ]
       },
       "low": {
         "label": "Bassa Apertura Mentale",
         "code": "OCEAN-O-",
         "instructions": [
-          { "title": "Il Mio Approccio", "content": "Preferisco ciò che è concreto, pratico e familiare. Non sono chiuso/a al cambiamento, ma ho bisogno di capire il valore pratico prima di abbracciarlo. Rispetta i miei ritmi." },
-          { "title": "Come Proporre Cambiamenti", "content": "Non impormi novità improvvise. Proponi i cambiamenti con anticipo, con una spiegazione logica e lasciami il tempo di elaborare. Il mio 'no' iniziale spesso diventa 'sì' dopo riflessione." }
+          {
+            "title": "Il Mio Approccio",
+            "content": "Preferisco ciò che è concreto, pratico e familiare. Non sono chiuso/a al cambiamento, ma ho bisogno di capire il valore pratico prima di abbracciarlo. Rispetta i miei ritmi."
+          },
+          {
+            "title": "Come Proporre Cambiamenti",
+            "content": "Non impormi novità improvvise. Proponi i cambiamenti con anticipo, con una spiegazione logica e lasciami il tempo di elaborare. Il mio 'no' iniziale spesso diventa 'sì' dopo riflessione."
+          }
         ]
       }
     },
@@ -241,16 +302,28 @@
         "label": "Alta Coscienziosità",
         "code": "OCEAN-C+",
         "instructions": [
-          { "title": "Rispetta i Miei Piani", "content": "Ho bisogno di struttura e prevedibilità. Cambiare piani all'ultimo minuto, essere in ritardo sistematicamente o fare promesse vaghe crea in me ansia reale. Non è inflessibilità — è come il mio sistema funziona." },
-          { "title": "Promesse = Contratti", "content": "Per me una promessa è un contratto. Se dici che farai qualcosa, lo aspetto davvero. Se sai che non puoi mantenere, non promettere. Il follow-through è per me un segnale primario di rispetto." }
+          {
+            "title": "Rispetta i Miei Piani",
+            "content": "Ho bisogno di struttura e prevedibilità. Cambiare piani all'ultimo minuto, essere in ritardo sistematicamente o fare promesse vaghe crea in me ansia reale. Non è inflessibilità — è come il mio sistema funziona."
+          },
+          {
+            "title": "Promesse = Contratti",
+            "content": "Per me una promessa è un contratto. Se dici che farai qualcosa, lo aspetto davvero. Se sai che non puoi mantenere, non promettere. Il follow-through è per me un segnale primario di rispetto."
+          }
         ]
       },
       "low": {
         "label": "Bassa Coscienziosità",
         "code": "OCEAN-C-",
         "instructions": [
-          { "title": "Il Mio Rapporto con la Struttura", "content": "Non sono disorganizzato/a — sono flessibile. Lavoro meglio con libertà che con regole rigide. Non interpretare la mia mancanza di pianificazione come mancanza di interesse." },
-          { "title": "Supporto Pratico", "content": "Apprezzo quando mi aiuti a strutturare le cose senza farmi sentire giudicato/a. Offri sistemi semplici, non sermoni sull'organizzazione." }
+          {
+            "title": "Il Mio Rapporto con la Struttura",
+            "content": "Non sono disorganizzato/a — sono flessibile. Lavoro meglio con libertà che con regole rigide. Non interpretare la mia mancanza di pianificazione come mancanza di interesse."
+          },
+          {
+            "title": "Supporto Pratico",
+            "content": "Apprezzo quando mi aiuti a strutturare le cose senza farmi sentire giudicato/a. Offri sistemi semplici, non sermoni sull'organizzazione."
+          }
         ]
       }
     },
@@ -259,16 +332,28 @@
         "label": "Alta Estroversione",
         "code": "OCEAN-E+",
         "instructions": [
-          { "title": "Il Mio Carburante Sociale", "content": "Ricarico energia stando con gli altri. L'isolamento prolungato mi deprime letteralmente, non è metafora. Ho bisogno di uscite, socializzazione, stimoli. Non interpretare questo come fuga da te." },
-          { "title": "Equilibrio Sociale", "content": "Se sei più introverso/a di me, non devi partecipare a tutto. Ma supporta la mia vita sociale senza fartela pesare. Il mio bisogno di uscire non è una critica alla nostra vita insieme." }
+          {
+            "title": "Il Mio Carburante Sociale",
+            "content": "Ricarico energia stando con gli altri. L'isolamento prolungato mi deprime letteralmente, non è metafora. Ho bisogno di uscite, socializzazione, stimoli. Non interpretare questo come fuga da te."
+          },
+          {
+            "title": "Equilibrio Sociale",
+            "content": "Se sei più introverso/a di me, non devi partecipare a tutto. Ma supporta la mia vita sociale senza fartela pesare. Il mio bisogno di uscire non è una critica alla nostra vita insieme."
+          }
         ]
       },
       "low": {
         "label": "Alta Introversione",
         "code": "OCEAN-E-",
         "instructions": [
-          { "title": "Il Mio Sistema Energetico", "content": "Ricarico energia in solitudine. Dopo eventi sociali, anche piacevoli, ho bisogno di tempo da solo/a per rielaborare. Non è moodiness — è biologia. Rispetta i miei momenti di ritiro." },
-          { "title": "Come Interagire con Me", "content": "Approcciatemi con tono basso nei momenti di ricarica. Non interpretate il mio silenzio come umore. Le conversazioni migliori con me avvengono in contesti intimi, non affollati." }
+          {
+            "title": "Il Mio Sistema Energetico",
+            "content": "Ricarico energia in solitudine. Dopo eventi sociali, anche piacevoli, ho bisogno di tempo da solo/a per rielaborare. Non è moodiness — è biologia. Rispetta i miei momenti di ritiro."
+          },
+          {
+            "title": "Come Interagire con Me",
+            "content": "Approcciatemi con tono basso nei momenti di ricarica. Non interpretate il mio silenzio come umore. Le conversazioni migliori con me avvengono in contesti intimi, non affollati."
+          }
         ]
       }
     },
@@ -277,16 +362,28 @@
         "label": "Alta Gradevolezza",
         "code": "OCEAN-A+",
         "instructions": [
-          { "title": "Il Mio Sì Nascosto No", "content": "Difficilmente dico no direttamente. Se sembra che vada bene con tutto, non è vero — sto evitando il conflitto o proteggendo il tuo umore. Incoraggiatemi a esprimere il disaccordo senza temere reazioni negative." },
-          { "title": "Evito il Conflitto", "content": "Preferisco cedere piuttosto che scontrarmi, anche quando avrei ragione. Questo può portarmi a un accumulo di risentimento silenzioso. Il segnale che qualcosa non va di solito arriva tardi, quando è già accumulato." }
+          {
+            "title": "Il Mio Sì Nascosto No",
+            "content": "Difficilmente dico no direttamente. Se sembra che vada bene con tutto, non è vero — sto evitando il conflitto o proteggendo il tuo umore. Incoraggiatemi a esprimere il disaccordo senza temere reazioni negative."
+          },
+          {
+            "title": "Evito il Conflitto",
+            "content": "Preferisco cedere piuttosto che scontrarmi, anche quando avrei ragione. Questo può portarmi a un accumulo di risentimento silenzioso. Il segnale che qualcosa non va di solito arriva tardi, quando è già accumulato."
+          }
         ]
       },
       "low": {
         "label": "Bassa Gradevolezza",
         "code": "OCEAN-A-",
         "instructions": [
-          { "title": "La Mia Franchezza", "content": "Dico quello che penso, anche se può essere scomodo. Non è scortesia — è rispetto. Preferisco una conversazione difficile a un accordo falso." },
-          { "title": "Come Gestire il Mio Disaccordo", "content": "Quando non sono d'accordo, lo dico. Non interpretarlo come attacco personale — è il mio modo di rispettarti abbastanza da essere onesto/a." }
+          {
+            "title": "La Mia Franchezza",
+            "content": "Dico quello che penso, anche se può essere scomodo. Non è scortesia — è rispetto. Preferisco una conversazione difficile a un accordo falso."
+          },
+          {
+            "title": "Come Gestire il Mio Disaccordo",
+            "content": "Quando non sono d'accordo, lo dico. Non interpretarlo come attacco personale — è il mio modo di rispettarti abbastanza da essere onesto/a."
+          }
         ]
       }
     },
@@ -295,21 +392,32 @@
         "label": "Alto Nevroticismo",
         "code": "OCEAN-N+",
         "instructions": [
-          { "title": "La Mia Intensità Emotiva", "content": "Elaboro le emozioni più intensamente della media. Questo non è drama o manipolazione — è come il mio sistema nervoso è configurato. Quello che per te è un inconveniente, per me può essere vissuto come una crisi." },
-          { "title": "Come Supportarmi", "content": "Quando sono in ansia, la cosa meno utile è dirmi 'non è un problema' o 'stai esagerando'. La cosa più utile: ascoltare, validare ('capisco che per te è difficile'), poi aiutarmi a contestualizzare." },
-          { "title": "Dopo la Tempesta", "content": "Mi riprendo. La mia reattività emotiva è intensa ma non permanente. Se mi dai spazio e non ampliai la reazione, torno al baseline relativamente in fretta." }
+          {
+            "title": "La Mia Intensità Emotiva",
+            "content": "Elaboro le emozioni più intensamente della media. Questo non è drama o manipolazione — è come il mio sistema nervoso è configurato. Quello che per te è un inconveniente, per me può essere vissuto come una crisi."
+          },
+          {
+            "title": "Come Supportarmi",
+            "content": "Quando sono in ansia, la cosa meno utile è dirmi 'non è un problema' o 'stai esagerando'. La cosa più utile: ascoltare, validare ('capisco che per te è difficile'), poi aiutarmi a contestualizzare."
+          },
+          {
+            "title": "Dopo la Tempesta",
+            "content": "Mi riprendo. La mia reattività emotiva è intensa ma non permanente. Se mi dai spazio e non ampliai la reazione, torno al baseline relativamente in fretta."
+          }
         ]
       },
       "low": {
         "label": "Basso Nevroticismo",
         "code": "OCEAN-N-",
         "instructions": [
-          { "title": "La Mia Stabilità", "content": "Sono emotivamente stabile e difficilmente mi turbano le pressioni. Questo può farmi sembrare distaccato/a in momenti di alta emozione. Non è insensibilità — è che la mia baseline è semplicemente più calma." }
+          {
+            "title": "La Mia Stabilità",
+            "content": "Sono emotivamente stabile e difficilmente mi turbano le pressioni. Questo può farmi sembrare distaccato/a in momenti di alta emozione. Non è insensibilità — è che la mia baseline è semplicemente più calma."
+          }
         ]
       }
     }
   },
-
   "communication": {
     "rapport": {
       "label": "Rapport Talk",
@@ -350,17 +458,28 @@
       ]
     }
   },
-
   "conflictStyle": {
     "competing": {
       "label": "Stile Competitivo",
       "code": "CONF-COMP",
       "summary": "Nei conflitti sei assertivo/a e orientato/a alla vittoria. Difendi la tua posizione con energia. Il rischio è che l'altro si senta sopraffatto o non ascoltato.",
       "instructions": [
-        { "title": "Come mi comporto in un conflitto", "content": "Tendo a sostenere la mia posizione con forza e non cedo facilmente. Per me 'avere ragione' ha peso reale. Questo può essere utile in situazioni che richiedono decisioni rapide, ma nelle relazioni intime può far sentire l'altro in una posizione di inferiorità." },
-        { "title": "Il mio punto cieco", "content": "Posso 'vincere' la discussione e perdere la connessione. Quando 'vinco' una lite, il partner può restare ferito anche se ha ceduto. Il successo in un conflitto non è chi ha ragione — è se entrambi ci sentiamo capiti alla fine." },
-        { "title": "Come gestirmi durante una lite", "content": "Non prendere la mia intensità come attacco personale — è il mio stile naturale. Se vuoi che io ascolti davvero, dichiara esplicitamente: 'Ho bisogno che tu ascolti prima di rispondere.' Questo mi sblocca." },
-        { "title": "Cosa mi aiuta a cambiare registro", "content": "Mostrarmi che l'altro ha capito il mio punto abbassa la mia difensività. Non ho bisogno di cedere — ho bisogno di sentirmi sentito/a. Da lì posso collaborare." }
+        {
+          "title": "Come mi comporto in un conflitto",
+          "content": "Tendo a sostenere la mia posizione con forza e non cedo facilmente. Per me 'avere ragione' ha peso reale. Questo può essere utile in situazioni che richiedono decisioni rapide, ma nelle relazioni intime può far sentire l'altro in una posizione di inferiorità."
+        },
+        {
+          "title": "Il mio punto cieco",
+          "content": "Posso 'vincere' la discussione e perdere la connessione. Quando 'vinco' una lite, il partner può restare ferito anche se ha ceduto. Il successo in un conflitto non è chi ha ragione — è se entrambi ci sentiamo capiti alla fine."
+        },
+        {
+          "title": "Come gestirmi durante una lite",
+          "content": "Non prendere la mia intensità come attacco personale — è il mio stile naturale. Se vuoi che io ascolti davvero, dichiara esplicitamente: 'Ho bisogno che tu ascolti prima di rispondere.' Questo mi sblocca."
+        },
+        {
+          "title": "Cosa mi aiuta a cambiare registro",
+          "content": "Mostrarmi che l'altro ha capito il mio punto abbassa la mia difensività. Non ho bisogno di cedere — ho bisogno di sentirmi sentito/a. Da lì posso collaborare."
+        }
       ]
     },
     "collaborating": {
@@ -368,10 +487,22 @@
       "code": "CONF-COLL",
       "summary": "Nei conflitti cerchi soluzioni che soddisfino davvero entrambi. Investi tempo e attenzione per capire le ragioni dell'altro. Il rischio è che questo approccio richieda molta energia e non sempre sia reciprocato.",
       "instructions": [
-        { "title": "Come mi comporto in un conflitto", "content": "Non mi fermo finché non troviamo qualcosa che funzioni per entrambi. Non mi interessa 'vincere' — mi interessa che la soluzione sia giusta. Questo richiede tempo e apertura reciproca." },
-        { "title": "Cosa mi frustra", "content": "Quando l'altro non investe lo stesso livello di attenzione nel trovare una soluzione condivisa. Se l'altro vuole solo 'chiuderla' o cede senza convinzione, mi sento incompreso/a e il conflitto rimane irrisolto per me." },
-        { "title": "Come gestirmi durante una lite", "content": "Dammi il tempo di esplorare il problema con te. Non interpretare le mie domande come attacchi — sto cercando di capire. Se sei stanco/a, dimmelo: possiamo fare una pausa e riprendere quando sei disponibile." },
-        { "title": "Il mio limite", "content": "A volte cerco la soluzione perfetta quando quella 'abbastanza buona' basterebbe. Se il partner è in modalità evitante o compromissoria, posso sembrare pesante. Imparare quando è ok fermarsi prima della soluzione ottimale è il mio lavoro." }
+        {
+          "title": "Come mi comporto in un conflitto",
+          "content": "Non mi fermo finché non troviamo qualcosa che funzioni per entrambi. Non mi interessa 'vincere' — mi interessa che la soluzione sia giusta. Questo richiede tempo e apertura reciproca."
+        },
+        {
+          "title": "Cosa mi frustra",
+          "content": "Quando l'altro non investe lo stesso livello di attenzione nel trovare una soluzione condivisa. Se l'altro vuole solo 'chiuderla' o cede senza convinzione, mi sento incompreso/a e il conflitto rimane irrisolto per me."
+        },
+        {
+          "title": "Come gestirmi durante una lite",
+          "content": "Dammi il tempo di esplorare il problema con te. Non interpretare le mie domande come attacchi — sto cercando di capire. Se sei stanco/a, dimmelo: possiamo fare una pausa e riprendere quando sei disponibile."
+        },
+        {
+          "title": "Il mio limite",
+          "content": "A volte cerco la soluzione perfetta quando quella 'abbastanza buona' basterebbe. Se il partner è in modalità evitante o compromissoria, posso sembrare pesante. Imparare quando è ok fermarsi prima della soluzione ottimale è il mio lavoro."
+        }
       ]
     },
     "compromising": {
@@ -379,9 +510,18 @@
       "code": "CONF-COMP2",
       "summary": "Nei conflitti cerchi velocemente un punto di incontro. Sei pragmatico/a: meglio un accordo parziale che un conflitto lungo. Il rischio è accumulare insoddisfazioni non dette.",
       "instructions": [
-        { "title": "Come mi comporto in un conflitto", "content": "Cerco il prima possibile un accordo che soddisfi entrambi almeno in parte. Non ho bisogno di avere tutto quello che voglio — ho bisogno che il conflitto finisca e che si vada avanti." },
-        { "title": "Il mio punto cieco", "content": "Cedo spesso su cose che in realtà mi stanno a cuore, pur di chiudere. Nel tempo questo può creare un accumulo di piccoli rimpianti. Se noti che cedo sempre su tutto, non è che non mi importi — è che do priorità alla pace a breve termine." },
-        { "title": "Come gestirmi", "content": "Ogni tanto chiedimi: 'Sei davvero ok con questo accordo?' Questo mi dà il permesso di dire se sto cedendo su qualcosa di importante. Non dare per scontato il mio 'sì' — a volte è 'sì per ora'." }
+        {
+          "title": "Come mi comporto in un conflitto",
+          "content": "Cerco il prima possibile un accordo che soddisfi entrambi almeno in parte. Non ho bisogno di avere tutto quello che voglio — ho bisogno che il conflitto finisca e che si vada avanti."
+        },
+        {
+          "title": "Il mio punto cieco",
+          "content": "Cedo spesso su cose che in realtà mi stanno a cuore, pur di chiudere. Nel tempo questo può creare un accumulo di piccoli rimpianti. Se noti che cedo sempre su tutto, non è che non mi importi — è che do priorità alla pace a breve termine."
+        },
+        {
+          "title": "Come gestirmi",
+          "content": "Ogni tanto chiedimi: 'Sei davvero ok con questo accordo?' Questo mi dà il permesso di dire se sto cedendo su qualcosa di importante. Non dare per scontato il mio 'sì' — a volte è 'sì per ora'."
+        }
       ]
     },
     "avoiding": {
@@ -389,10 +529,22 @@
       "code": "CONF-AVO",
       "summary": "Nei conflitti tendi a ritirarsi, rimandare o cambiare argomento. Non è indifferenza — è che il conflitto aperto ti attiva in modo sproporzionato. Il rischio è l'accumulo silenzioso.",
       "instructions": [
-        { "title": "Come mi comporto in un conflitto", "content": "Il conflitto diretto mi crea forte disagio. La mia prima reazione è uscire dalla situazione — fisicamente o emotivamente. Non è che non mi interessi: è che il mio sistema nervoso percepisce il conflitto come minaccia e si mette in modalità difensiva." },
-        { "title": "Cosa succede se mi premi", "content": "Se mi forzi a confrontarti quando non sono pronto/a, mi chiudo completamente o dico cose che non penso davvero. Il risultato è peggiore di una pausa. L'approccio migliore: dammi un tempo preciso ('parliamone questa sera alle 8') e rispetta la pausa." },
-        { "title": "Come raggiungermi", "content": "Abbassa il tono. Non iniziare con accuse o intensità emotiva alta — mi farà scappare ancora prima di iniziare. Una domanda aperta e calma ('voglio capire cosa è successo per te') è l'unico ingresso che funziona." },
-        { "title": "Il costo del mio evitamento", "content": "So che evitare i conflitti non li risolve. Accumulo dentro di me cose non dette che alla lunga pesano. Il mio lavoro è imparare che il conflitto gestito bene non distrugge — costruisce. Ma ho bisogno di sicurezza per farlo." }
+        {
+          "title": "Come mi comporto in un conflitto",
+          "content": "Il conflitto diretto mi crea forte disagio. La mia prima reazione è uscire dalla situazione — fisicamente o emotivamente. Non è che non mi interessi: è che il mio sistema nervoso percepisce il conflitto come minaccia e si mette in modalità difensiva."
+        },
+        {
+          "title": "Cosa succede se mi premi",
+          "content": "Se mi forzi a confrontarti quando non sono pronto/a, mi chiudo completamente o dico cose che non penso davvero. Il risultato è peggiore di una pausa. L'approccio migliore: dammi un tempo preciso ('parliamone questa sera alle 8') e rispetta la pausa."
+        },
+        {
+          "title": "Come raggiungermi",
+          "content": "Abbassa il tono. Non iniziare con accuse o intensità emotiva alta — mi farà scappare ancora prima di iniziare. Una domanda aperta e calma ('voglio capire cosa è successo per te') è l'unico ingresso che funziona."
+        },
+        {
+          "title": "Il costo del mio evitamento",
+          "content": "So che evitare i conflitti non li risolve. Accumulo dentro di me cose non dette che alla lunga pesano. Il mio lavoro è imparare che il conflitto gestito bene non distrugge — costruisce. Ma ho bisogno di sicurezza per farlo."
+        }
       ]
     },
     "accommodating": {
@@ -400,23 +552,43 @@
       "code": "CONF-ACCO",
       "summary": "Nei conflitti dai priorità alle esigenze dell'altro. Cedi facilmente per mantenere l'armonia. Il rischio è la perdita progressiva della tua voce nella relazione.",
       "instructions": [
-        { "title": "Come mi comporto in un conflitto", "content": "Cedo volentieri per preservare la pace e il rapporto. Mettere da parte i miei bisogni viene naturale quando sento che l'altro è turbato. Per me la relazione viene prima della 'vittoria'." },
-        { "title": "Il prezzo nascosto", "content": "La mia accomodanza non è illimitata. Sotto la superficie accumulo. Se mi vedi improvvisamente esplodere su qualcosa di apparentemente piccolo, di solito è l'ultimo goccia di un secchio che riempivo da tempo." },
-        { "title": "Come supportarmi", "content": "Chiedi esplicitamente la mia opinione — non darla per scontata. Quando cedo, a volte ho bisogno che tu dica: 'No, voglio sapere davvero cosa pensi tu.' Questo mi dà il permesso di essere onesto/a senza sentirti deludere." },
-        { "title": "Il mio confine", "content": "Devo imparare a dire 'no' su cose che mi stanno davvero a cuore. Quando lo faccio, non è capriccio — è che ho raggiunto un limite reale. Rispettare quel 'no' è rispettare me." }
+        {
+          "title": "Come mi comporto in un conflitto",
+          "content": "Cedo volentieri per preservare la pace e il rapporto. Mettere da parte i miei bisogni viene naturale quando sento che l'altro è turbato. Per me la relazione viene prima della 'vittoria'."
+        },
+        {
+          "title": "Il prezzo nascosto",
+          "content": "La mia accomodanza non è illimitata. Sotto la superficie accumulo. Se mi vedi improvvisamente esplodere su qualcosa di apparentemente piccolo, di solito è l'ultimo goccia di un secchio che riempivo da tempo."
+        },
+        {
+          "title": "Come supportarmi",
+          "content": "Chiedi esplicitamente la mia opinione — non darla per scontata. Quando cedo, a volte ho bisogno che tu dica: 'No, voglio sapere davvero cosa pensi tu.' Questo mi dà il permesso di essere onesto/a senza sentirti deludere."
+        },
+        {
+          "title": "Il mio confine",
+          "content": "Devo imparare a dire 'no' su cose che mi stanno davvero a cuore. Quando lo faccio, non è capriccio — è che ho raggiunto un limite reale. Rispettare quel 'no' è rispettare me."
+        }
       ]
     }
   },
-
   "apologyLanguages": {
     "regret": {
       "label": "Esprimere Rimpianto",
       "code": "APO-REG",
       "summary": "Per te una scusa è vera quando senti che l'altro prova genuinamente dispiacere per il dolore che ti ha causato. Le parole contano solo se trasportano emozione autentica.",
       "instructions": [
-        { "title": "Cosa rende una scusa credibile per me", "content": "Ho bisogno di vedere e sentire che l'altro è davvero dispiaciuto — non solo formalmente, ma emotivamente. Un 'mi dispiace' detto di fretta o in modo distaccato non arriva. La scusa deve contenere il riconoscimento del mio dolore specifico." },
-        { "title": "Come scusarti con me in modo efficace", "content": "Non iniziare con spiegazioni o giustificazioni — inizia con il mio dolore. 'Ho visto che ti ho fatto del male quando ho fatto X, e mi dispiace davvero.' Solo dopo possiamo parlare del contesto. Se inizi a spiegarti prima che io mi senta capito/a, la scusa non passa." },
-        { "title": "Cosa non funziona con me", "content": "Scuse formali, automatiche o dette per chiudere in fretta. 'Scusa, ok?' non è una scusa per me — è una richiesta di togliermi dal tuo cammino. Se non senti davvero dispiacere, è meglio aspettare il momento giusto piuttosto che fingere." }
+        {
+          "title": "Cosa rende una scusa credibile per me",
+          "content": "Ho bisogno di vedere e sentire che l'altro è davvero dispiaciuto — non solo formalmente, ma emotivamente. Un 'mi dispiace' detto di fretta o in modo distaccato non arriva. La scusa deve contenere il riconoscimento del mio dolore specifico."
+        },
+        {
+          "title": "Come scusarti con me in modo efficace",
+          "content": "Non iniziare con spiegazioni o giustificazioni — inizia con il mio dolore. 'Ho visto che ti ho fatto del male quando ho fatto X, e mi dispiace davvero.' Solo dopo possiamo parlare del contesto. Se inizi a spiegarti prima che io mi senta capito/a, la scusa non passa."
+        },
+        {
+          "title": "Cosa non funziona con me",
+          "content": "Scuse formali, automatiche o dette per chiudere in fretta. 'Scusa, ok?' non è una scusa per me — è una richiesta di togliermi dal tuo cammino. Se non senti davvero dispiacere, è meglio aspettare il momento giusto piuttosto che fingere."
+        }
       ]
     },
     "responsibility": {
@@ -424,9 +596,18 @@
       "code": "APO-RES",
       "summary": "Per te una scusa è vera quando l'altro riconosce esplicitamente cosa ha sbagliato. Senza responsabilità chiara, la scusa rimane vuota.",
       "instructions": [
-        { "title": "Cosa rende una scusa credibile per me", "content": "Ho bisogno di sentire che l'altro sa esattamente cosa ha fatto di sbagliato e lo ammette senza ambiguità. 'Ho sbagliato a fare X' — specifico, diretto, senza 'ma'. I 'ma' dopo una scusa la annullano." },
-        { "title": "Come scusarti con me in modo efficace", "content": "Nomina l'azione specifica che ha causato il problema. Non 'mi dispiace se ti sei offeso/a' (passivo, non responsabile) — ma 'ho sbagliato quando ho fatto X'. La differenza è enorme per me." },
-        { "title": "Il mio punto sensibile", "content": "Le scuse vaghe o i 'mi dispiace per come hai vissuto la cosa' mi fanno incazzare più di nessuna scusa. Spostano la responsabilità su di me — su come ho 'percepito' qualcosa invece di su cosa è stato fatto. Riconosci il fatto, non la mia reazione." }
+        {
+          "title": "Cosa rende una scusa credibile per me",
+          "content": "Ho bisogno di sentire che l'altro sa esattamente cosa ha fatto di sbagliato e lo ammette senza ambiguità. 'Ho sbagliato a fare X' — specifico, diretto, senza 'ma'. I 'ma' dopo una scusa la annullano."
+        },
+        {
+          "title": "Come scusarti con me in modo efficace",
+          "content": "Nomina l'azione specifica che ha causato il problema. Non 'mi dispiace se ti sei offeso/a' (passivo, non responsabile) — ma 'ho sbagliato quando ho fatto X'. La differenza è enorme per me."
+        },
+        {
+          "title": "Il mio punto sensibile",
+          "content": "Le scuse vaghe o i 'mi dispiace per come hai vissuto la cosa' mi fanno incazzare più di nessuna scusa. Spostano la responsabilità su di me — su come ho 'percepito' qualcosa invece di su cosa è stato fatto. Riconosci il fatto, non la mia reazione."
+        }
       ]
     },
     "restitution": {
@@ -434,9 +615,18 @@
       "code": "APO-REST",
       "summary": "Per te una scusa è completa solo quando è accompagnata da un gesto concreto di riparazione. Le parole da sole non bastano — servono azioni.",
       "instructions": [
-        { "title": "Cosa rende una scusa credibile per me", "content": "Le parole da sole non bastano. Ho bisogno di vedere qualcosa di concreto che dimostri che la scusa è reale. Non deve essere grande — ma deve esistere. 'Cosa posso fare per rimediare?' è la domanda che mi apre completamente." },
-        { "title": "Come scusarti con me in modo efficace", "content": "Proponi un gesto specifico. Non 'farò meglio' (vago) — ma 'questa settimana farò X per rimediare'. Il gesto deve essere proporzionato al danno e deve essere stato pensato davvero, non buttato lì." },
-        { "title": "Cosa non funziona con me", "content": "Scuse senza follow-through. Se mi dici 'rimedio' e poi non fai niente, la scusa diventa peggio del torto originale. Meglio non prometterlo se non sei sicuro/a di poterlo fare." }
+        {
+          "title": "Cosa rende una scusa credibile per me",
+          "content": "Le parole da sole non bastano. Ho bisogno di vedere qualcosa di concreto che dimostri che la scusa è reale. Non deve essere grande — ma deve esistere. 'Cosa posso fare per rimediare?' è la domanda che mi apre completamente."
+        },
+        {
+          "title": "Come scusarti con me in modo efficace",
+          "content": "Proponi un gesto specifico. Non 'farò meglio' (vago) — ma 'questa settimana farò X per rimediare'. Il gesto deve essere proporzionato al danno e deve essere stato pensato davvero, non buttato lì."
+        },
+        {
+          "title": "Cosa non funziona con me",
+          "content": "Scuse senza follow-through. Se mi dici 'rimedio' e poi non fai niente, la scusa diventa peggio del torto originale. Meglio non prometterlo se non sei sicuro/a di poterlo fare."
+        }
       ]
     },
     "repentance": {
@@ -444,9 +634,18 @@
       "code": "APO-REP",
       "summary": "Per te una scusa è credibile solo se segnala un cambiamento reale nel comportamento futuro. Senza intenzione concreta di cambiare, la scusa è solo gestione del momento.",
       "instructions": [
-        { "title": "Cosa rende una scusa credibile per me", "content": "Ho bisogno di credere che la stessa cosa non accadrà di nuovo — non perché me lo prometti, ma perché vedo un piano concreto di cambiamento. 'Non lo farò più' da solo non basta. Ho bisogno di capire cosa cambierà." },
-        { "title": "Come scusarti con me in modo efficace", "content": "Dimmi cosa farai diversamente la prossima volta. Specifico: 'Quando capiterà X, invece di fare Y farò Z.' Questo mi dice che hai capito il problema, non solo che vuoi pace." },
-        { "title": "Il mio limite", "content": "Se lo stesso comportamento si ripete dopo una scusa, la mia fiducia si erode in modo proporzionale. Non mi basta il dispiacere — mi serve il cambiamento. E noto quando non c'è." }
+        {
+          "title": "Cosa rende una scusa credibile per me",
+          "content": "Ho bisogno di credere che la stessa cosa non accadrà di nuovo — non perché me lo prometti, ma perché vedo un piano concreto di cambiamento. 'Non lo farò più' da solo non basta. Ho bisogno di capire cosa cambierà."
+        },
+        {
+          "title": "Come scusarti con me in modo efficace",
+          "content": "Dimmi cosa farai diversamente la prossima volta. Specifico: 'Quando capiterà X, invece di fare Y farò Z.' Questo mi dice che hai capito il problema, non solo che vuoi pace."
+        },
+        {
+          "title": "Il mio limite",
+          "content": "Se lo stesso comportamento si ripete dopo una scusa, la mia fiducia si erode in modo proporzionale. Non mi basta il dispiacere — mi serve il cambiamento. E noto quando non c'è."
+        }
       ]
     },
     "forgiveness": {
@@ -454,30 +653,59 @@
       "code": "APO-FOR",
       "summary": "Per te il rituale della scusa si chiude solo quando l'altro chiede esplicitamente il perdono. Questo atto formale ha un peso emotivo reale e necessario.",
       "instructions": [
-        { "title": "Cosa rende una scusa credibile per me", "content": "Il perdono deve essere richiesto esplicitamente — non dato per scontato. 'Mi perdoni?' è la chiave che chiude il conflitto per me. Senza quella domanda, resto in uno stato di tensione non risolta anche se tutto il resto è stato detto." },
-        { "title": "Come scusarti con me in modo efficace", "content": "Termina la scusa con una richiesta esplicita: 'Mi perdoni?' o 'Possiamo andare avanti?'. Non dare per scontato che il perdono sia automatico — chiedilo. Questo mi dà il potere di scegliere di lasciare andare." },
-        { "title": "Perché questo conta per me", "content": "Non è formalismo. Quando qualcuno chiede il mio perdono, riconosce che ho subito un torto e che spetta a me — non a lui/lei — decidere quando e se chiudere. Mi restituisce agency in un momento in cui mi sono sentito/a in torto altrui." }
+        {
+          "title": "Cosa rende una scusa credibile per me",
+          "content": "Il perdono deve essere richiesto esplicitamente — non dato per scontato. 'Mi perdoni?' è la chiave che chiude il conflitto per me. Senza quella domanda, resto in uno stato di tensione non risolta anche se tutto il resto è stato detto."
+        },
+        {
+          "title": "Come scusarti con me in modo efficace",
+          "content": "Termina la scusa con una richiesta esplicita: 'Mi perdoni?' o 'Possiamo andare avanti?'. Non dare per scontato che il perdono sia automatico — chiedilo. Questo mi dà il potere di scegliere di lasciare andare."
+        },
+        {
+          "title": "Perché questo conta per me",
+          "content": "Non è formalismo. Quando qualcuno chiede il mio perdono, riconosce che ho subito un torto e che spetta a me — non a lui/lei — decidere quando e se chiudere. Mi restituisce agency in un momento in cui mi sono sentito/a in torto altrui."
+        }
       ]
     }
   },
-
   "careStyle": {
     "emotional": {
       "label": "Cura Emotiva",
       "code": "CARE-EM",
       "summary": "Il tuo stile di cura primario è l'ascolto empatico. Quando qualcuno soffre, il tuo istinto è connetterti con il suo stato interno prima di qualsiasi azione.",
       "instructions": [
-        { "title": "Come supporto chi amo", "content": "Quando qualcuno che mi è vicino sta soffrendo, mi siedo accanto, ascolto senza interrompere e cerco di capire come si sente dall'interno. Non mi precipito sulle soluzioni. Il mio obiettivo primario è che l'altro si senta capito, non risolto." },
-        { "title": "Cosa mi fa sentire utile", "content": "Mi sento davvero utile quando vedo che l'altro si sente meno solo dopo aver parlato con me. Non ho bisogno di aver risolto nulla. La connessione emotiva è la mia misura del successo." },
-        { "title": "Il mio limite", "content": "Posso rimanere nell'ascolto così a lungo da non aiutare mai concretamente. A volte le persone hanno bisogno di soluzioni, non solo di essere capite. Imparo a chiedere: 'Vuoi che ti ascolti o vuoi un consiglio pratico?'" }
+        {
+          "title": "Come supporto chi amo",
+          "content": "Quando qualcuno che mi è vicino sta soffrendo, mi siedo accanto, ascolto senza interrompere e cerco di capire come si sente dall'interno. Non mi precipito sulle soluzioni. Il mio obiettivo primario è che l'altro si senta capito, non risolto."
+        },
+        {
+          "title": "Cosa mi fa sentire utile",
+          "content": "Mi sento davvero utile quando vedo che l'altro si sente meno solo dopo aver parlato con me. Non ho bisogno di aver risolto nulla. La connessione emotiva è la mia misura del successo."
+        },
+        {
+          "title": "Il mio limite",
+          "content": "Posso rimanere nell'ascolto così a lungo da non aiutare mai concretamente. A volte le persone hanno bisogno di soluzioni, non solo di essere capite. Imparo a chiedere: 'Vuoi che ti ascolti o vuoi un consiglio pratico?'"
+        }
       ],
       "antiPatterns": [
-        { "title": "L'Ascolto Invasivo", "content": "Puoi fare troppe domande emotive quando l'altro vuole solo sfogarsi velocemente e andare avanti. Non ogni momento di difficoltà richiede un'analisi approfondita dei sentimenti." },
-        { "title": "La Proiezione Emotiva", "content": "Assumi che l'altro si senta come ti sentiresti tu nella stessa situazione. Ma non tutti elaborano le emozioni allo stesso modo — alcuni preferiscono risolvere e basta." }
+        {
+          "title": "L'Ascolto Invasivo",
+          "content": "Puoi fare troppe domande emotive quando l'altro vuole solo sfogarsi velocemente e andare avanti. Non ogni momento di difficoltà richiede un'analisi approfondita dei sentimenti."
+        },
+        {
+          "title": "La Proiezione Emotiva",
+          "content": "Assumi che l'altro si senta come ti sentiresti tu nella stessa situazione. Ma non tutti elaborano le emozioni allo stesso modo — alcuni preferiscono risolvere e basta."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come ricevere supporto da lui/lei", "content": "Quando ha bisogno di supporto, non iniziare con soluzioni — inizia con presenza emotiva. Chiedi 'come stai davvero?' e ascolta prima di proporre qualsiasi cosa. La connessione viene prima dell'azione." },
-        { "title": "Come dargli/le supporto", "content": "Questo partner ha bisogno di sentire che le sue emozioni sono valide, non che deve 'stare meglio'. Evita frasi come 'non è un problema' o 'dai, su'. Valida prima, poi — se vuole — aiuta a trovare soluzioni." }
+        {
+          "title": "Come ricevere supporto da lui/lei",
+          "content": "Quando ha bisogno di supporto, non iniziare con soluzioni — inizia con presenza emotiva. Chiedi 'come stai davvero?' e ascolta prima di proporre qualsiasi cosa. La connessione viene prima dell'azione."
+        },
+        {
+          "title": "Come dargli/le supporto",
+          "content": "Questo partner ha bisogno di sentire che le sue emozioni sono valide, non che deve 'stare meglio'. Evita frasi come 'non è un problema' o 'dai, su'. Valida prima, poi — se vuole — aiuta a trovare soluzioni."
+        }
       ]
     },
     "practical": {
@@ -485,17 +713,38 @@
       "code": "CARE-PR",
       "summary": "Il tuo stile di cura è orientato all'azione. Quando qualcuno soffre, il tuo istinto è trovare una soluzione e agire concretamente per migliorare la situazione.",
       "instructions": [
-        { "title": "Come supporto chi amo", "content": "Quando qualcuno che amo ha un problema, la mia prima reazione è chiedermi: 'Cosa posso fare per risolvere questo?' Faccio ricerche, organizzo, sistemo. Il mio modo di amare è essere utile concretamente." },
-        { "title": "Cosa mi fa sentire utile", "content": "Mi sento davvero utile quando il problema è risolto o alleviato. La sola presenza emotiva senza azione mi lascia con la sensazione di non aver fatto abbastanza." },
-        { "title": "Il mio limite", "content": "Spesso propongo soluzioni quando l'altro vuole solo essere ascoltato. Questo può farlo sentire incompreso o svalutato. Imparo a chiedere prima: 'Hai bisogno che ti ascolti o di un aiuto concreto?'" }
+        {
+          "title": "Come supporto chi amo",
+          "content": "Quando qualcuno che amo ha un problema, la mia prima reazione è chiedermi: 'Cosa posso fare per risolvere questo?' Faccio ricerche, organizzo, sistemo. Il mio modo di amare è essere utile concretamente."
+        },
+        {
+          "title": "Cosa mi fa sentire utile",
+          "content": "Mi sento davvero utile quando il problema è risolto o alleviato. La sola presenza emotiva senza azione mi lascia con la sensazione di non aver fatto abbastanza."
+        },
+        {
+          "title": "Il mio limite",
+          "content": "Spesso propongo soluzioni quando l'altro vuole solo essere ascoltato. Questo può farlo sentire incompreso o svalutato. Imparo a chiedere prima: 'Hai bisogno che ti ascolti o di un aiuto concreto?'"
+        }
       ],
       "antiPatterns": [
-        { "title": "La Soluzione Non Richiesta", "content": "Proponi soluzioni ancora prima che l'altro abbia finito di raccontare. Questo segnala che stai già pensando a come uscire dalla conversazione emotiva, non a capire davvero." },
-        { "title": "Il Fix come Fuga", "content": "A volte 'risolvere' è un modo per evitare di stare nella vulnerabilità emotiva. Occuparsi del problema è più facile che stare con il dolore dell'altro senza poterlo eliminare subito." }
+        {
+          "title": "La Soluzione Non Richiesta",
+          "content": "Proponi soluzioni ancora prima che l'altro abbia finito di raccontare. Questo segnala che stai già pensando a come uscire dalla conversazione emotiva, non a capire davvero."
+        },
+        {
+          "title": "Il Fix come Fuga",
+          "content": "A volte 'risolvere' è un modo per evitare di stare nella vulnerabilità emotiva. Occuparsi del problema è più facile che stare con il dolore dell'altro senza poterlo eliminare subito."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come ricevere supporto da lui/lei", "content": "Digli/le esplicitamente cosa hai bisogno: 'Ho bisogno di sfogami senza consigli' oppure 'Ho un problema pratico, puoi aiutarmi a trovare una soluzione?' Senza istruzioni esplicite, il suo default è risolvere." },
-        { "title": "Come dargli/le supporto", "content": "Quando questo partner è in difficoltà, offri aiuto concreto: 'Cosa posso fare?' o 'Vuoi che mi occupi di X?' Le parole di conforto valgono meno per lui/lei delle azioni tangibili." }
+        {
+          "title": "Come ricevere supporto da lui/lei",
+          "content": "Digli/le esplicitamente cosa hai bisogno: 'Ho bisogno di sfogami senza consigli' oppure 'Ho un problema pratico, puoi aiutarmi a trovare una soluzione?' Senza istruzioni esplicite, il suo default è risolvere."
+        },
+        {
+          "title": "Come dargli/le supporto",
+          "content": "Quando questo partner è in difficoltà, offri aiuto concreto: 'Cosa posso fare?' o 'Vuoi che mi occupi di X?' Le parole di conforto valgono meno per lui/lei delle azioni tangibili."
+        }
       ]
     },
     "presence": {
@@ -503,17 +752,38 @@
       "code": "CARE-PS",
       "summary": "Il tuo stile di cura è la presenza costante. Esserci — fisicamente o emotivamente, anche in silenzio — è la forma d'amore che ritieni più potente.",
       "instructions": [
-        { "title": "Come supporto chi amo", "content": "Non sento il bisogno di parlare o di fare. Stare vicino — sedere accanto, non andarmene, essere raggiungibile — è la mia forma principale di supporto. Il silenzio condiviso ha per me un valore profondo." },
-        { "title": "Cosa mi fa sentire utile", "content": "Mi sento utile quando so che l'altro non è solo. Non importa se non ho detto nulla di memorabile o risolto nulla — se ero lì, ho fatto la mia parte." },
-        { "title": "Il mio limite", "content": "La mia presenza costante può diventare soffocante se il partner ha bisogno di spazio per elaborare da solo/a. Non tutti trovano rassicurante la presenza continua — alcuni la percepiscono come pressione." }
+        {
+          "title": "Come supporto chi amo",
+          "content": "Non sento il bisogno di parlare o di fare. Stare vicino — sedere accanto, non andarmene, essere raggiungibile — è la mia forma principale di supporto. Il silenzio condiviso ha per me un valore profondo."
+        },
+        {
+          "title": "Cosa mi fa sentire utile",
+          "content": "Mi sento utile quando so che l'altro non è solo. Non importa se non ho detto nulla di memorabile o risolto nulla — se ero lì, ho fatto la mia parte."
+        },
+        {
+          "title": "Il mio limite",
+          "content": "La mia presenza costante può diventare soffocante se il partner ha bisogno di spazio per elaborare da solo/a. Non tutti trovano rassicurante la presenza continua — alcuni la percepiscono come pressione."
+        }
       ],
       "antiPatterns": [
-        { "title": "La Presenza Soffocante", "content": "Resti vicino anche quando l'altro ha bisogno di spazio per elaborare da solo/a. Non riesci a staccarti perché interpreti la loro solitudine come rifiuto del tuo supporto." },
-        { "title": "Il Martire della Disponibilità", "content": "Sei sempre disponibile, a qualsiasi ora, per chiunque — al costo del tuo benessere. Questo non è solo cura per gli altri: è anche un modo per sentirti necessario/a." }
+        {
+          "title": "La Presenza Soffocante",
+          "content": "Resti vicino anche quando l'altro ha bisogno di spazio per elaborare da solo/a. Non riesci a staccarti perché interpreti la loro solitudine come rifiuto del tuo supporto."
+        },
+        {
+          "title": "Il Martire della Disponibilità",
+          "content": "Sei sempre disponibile, a qualsiasi ora, per chiunque — al costo del tuo benessere. Questo non è solo cura per gli altri: è anche un modo per sentirti necessario/a."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come ricevere supporto da lui/lei", "content": "Non si aspetta che tu parli o che tu risolva. Si sente utile essendo con te. Permettigli/le di starci, anche in silenzio. Se hai bisogno di spazio, diglelo esplicitamente — non scomparire senza spiegare." },
-        { "title": "Come dargli/le supporto", "content": "Questo partner si sente amato quando non è lasciato/a solo/a nei momenti difficili. La tua presenza fisica o un semplice 'sono qui' vale più di mille consigli o soluzioni." }
+        {
+          "title": "Come ricevere supporto da lui/lei",
+          "content": "Non si aspetta che tu parli o che tu risolva. Si sente utile essendo con te. Permettigli/le di starci, anche in silenzio. Se hai bisogno di spazio, diglelo esplicitamente — non scomparire senza spiegare."
+        },
+        {
+          "title": "Come dargli/le supporto",
+          "content": "Questo partner si sente amato quando non è lasciato/a solo/a nei momenti difficili. La tua presenza fisica o un semplice 'sono qui' vale più di mille consigli o soluzioni."
+        }
       ]
     },
     "autonomy": {
@@ -521,36 +791,71 @@
       "code": "CARE-AU",
       "summary": "Il tuo stile di cura è il rispetto dell'autonomia. Credi che il supporto migliore sia dare spazio alle persone per trovare le proprie risposte.",
       "instructions": [
-        { "title": "Come supporto chi amo", "content": "Credo che le persone abbiano le risorse per affrontare i propri problemi. Il mio supporto è dar loro spazio, non invadere. Intervengo quando mi viene chiesto, non prima." },
-        { "title": "Cosa mi fa sentire utile", "content": "Mi sento utile quando l'altro riesce da solo/a a trovare la propria soluzione — anche grazie allo spazio che gli/le ho dato. La mia cura è rispetto, non intromissione." },
-        { "title": "Il mio limite", "content": "A volte il mio 'rispetto dell'autonomia' viene percepito come disinteresse o freddezza. Quando qualcuno ha davvero bisogno di supporto attivo, il mio passo indietro può sembrare abbandono." }
+        {
+          "title": "Come supporto chi amo",
+          "content": "Credo che le persone abbiano le risorse per affrontare i propri problemi. Il mio supporto è dar loro spazio, non invadere. Intervengo quando mi viene chiesto, non prima."
+        },
+        {
+          "title": "Cosa mi fa sentire utile",
+          "content": "Mi sento utile quando l'altro riesce da solo/a a trovare la propria soluzione — anche grazie allo spazio che gli/le ho dato. La mia cura è rispetto, non intromissione."
+        },
+        {
+          "title": "Il mio limite",
+          "content": "A volte il mio 'rispetto dell'autonomia' viene percepito come disinteresse o freddezza. Quando qualcuno ha davvero bisogno di supporto attivo, il mio passo indietro può sembrare abbandono."
+        }
       ],
       "antiPatterns": [
-        { "title": "Il Distacco come Cura", "content": "Ritieni che dare spazio sia sempre la risposta giusta. Ma in momenti di crisi acuta, le persone hanno bisogno di supporto attivo — non di spazio. Il tuo ritiro può essere vissuto come indifferenza." },
-        { "title": "L'Aspettativa Implicita di Forza", "content": "Trattando gli altri come autonomi e capaci, puoi comunicare implicitamente che non è 'ok' aver bisogno di aiuto. Questo può renderli riluttanti a chiederti supporto quando ne hanno davvero necessità." }
+        {
+          "title": "Il Distacco come Cura",
+          "content": "Ritieni che dare spazio sia sempre la risposta giusta. Ma in momenti di crisi acuta, le persone hanno bisogno di supporto attivo — non di spazio. Il tuo ritiro può essere vissuto come indifferenza."
+        },
+        {
+          "title": "L'Aspettativa Implicita di Forza",
+          "content": "Trattando gli altri come autonomi e capaci, puoi comunicare implicitamente che non è 'ok' aver bisogno di aiuto. Questo può renderli riluttanti a chiederti supporto quando ne hanno davvero necessità."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come ricevere supporto da lui/lei", "content": "Non aspettarti che si faccia avanti spontaneamente — rispetta troppo la tua autonomia per 'intromettersi'. Se hai bisogno di supporto attivo, chiediglielo esplicitamente: 'Ho bisogno che tu sia qui con me.' Risponderà." },
-        { "title": "Come dargli/le supporto", "content": "Questo partner apprezza che tu non lo/la invada con domande o presenza costante quando sta elaborando qualcosa. Digli/le 'sono qui se hai bisogno' e lascia che sia lui/lei a decidere quando e come avvicinarsi." }
+        {
+          "title": "Come ricevere supporto da lui/lei",
+          "content": "Non aspettarti che si faccia avanti spontaneamente — rispetta troppo la tua autonomia per 'intromettersi'. Se hai bisogno di supporto attivo, chiediglielo esplicitamente: 'Ho bisogno che tu sia qui con me.' Risponderà."
+        },
+        {
+          "title": "Come dargli/le supporto",
+          "content": "Questo partner apprezza che tu non lo/la invada con domande o presenza costante quando sta elaborando qualcosa. Digli/le 'sono qui se hai bisogno' e lascia che sia lui/lei a decidere quando e come avvicinarsi."
+        }
       ]
     }
   },
-
   "coreValues": {
     "security": {
       "label": "Orientamento alla Sicurezza",
       "code": "VAL-SEC",
       "summary": "La stabilità, la prevedibilità e la continuità sono i tuoi valori fondamentali. Costruisci la tua vita su basi solide e hai bisogno di sapere dove stai andando.",
       "instructions": [
-        { "title": "Come questo valore si manifesta", "content": "Do grande importanza alla routine, ai rituali condivisi e alla prevedibilità. Non è paura del cambiamento — è il riconoscimento che la stabilità crea lo spazio per fidarsi e investire profondamente in qualcosa." },
-        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di sapere dove sono con il partner: impegni chiari, piani condivisi, comunicazione costante. L'incertezza prolungata nella relazione mi è difficile da gestire." },
-        { "title": "Potenziale attrito con partner diversi", "content": "Con un partner orientato alla libertà o alla crescita, posso sembrare rigido/a o timoroso/a del cambiamento. La sfida è distinguere tra cambiamenti che arricchiscono e quelli che destabilizzano." }
+        {
+          "title": "Come questo valore si manifesta",
+          "content": "Do grande importanza alla routine, ai rituali condivisi e alla prevedibilità. Non è paura del cambiamento — è il riconoscimento che la stabilità crea lo spazio per fidarsi e investire profondamente in qualcosa."
+        },
+        {
+          "title": "Cosa ho bisogno nella relazione",
+          "content": "Ho bisogno di sapere dove sono con il partner: impegni chiari, piani condivisi, comunicazione costante. L'incertezza prolungata nella relazione mi è difficile da gestire."
+        },
+        {
+          "title": "Potenziale attrito con partner diversi",
+          "content": "Con un partner orientato alla libertà o alla crescita, posso sembrare rigido/a o timoroso/a del cambiamento. La sfida è distinguere tra cambiamenti che arricchiscono e quelli che destabilizzano."
+        }
       ],
       "antiPatterns": [
-        { "title": "La Resistenza al Cambiamento", "content": "La tua preferenza per la stabilità può diventare resistenza a qualsiasi novità, anche quando il cambiamento sarebbe positivo. Non ogni incertezza è una minaccia." }
+        {
+          "title": "La Resistenza al Cambiamento",
+          "content": "La tua preferenza per la stabilità può diventare resistenza a qualsiasi novità, anche quando il cambiamento sarebbe positivo. Non ogni incertezza è una minaccia."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come supportare questo partner", "content": "Communica i cambiamenti importanti con anticipo. Non ama le sorprese — non perché sia rigido/a, ma perché l'anticipazione gli/le permette di adattarsi. Un 'voglio parlarti di qualcosa' detto prima vale oro." }
+        {
+          "title": "Come supportare questo partner",
+          "content": "Communica i cambiamenti importanti con anticipo. Non ama le sorprese — non perché sia rigido/a, ma perché l'anticipazione gli/le permette di adattarsi. Un 'voglio parlarti di qualcosa' detto prima vale oro."
+        }
       ]
     },
     "freedom": {
@@ -558,15 +863,30 @@
       "code": "VAL-FREE",
       "summary": "L'autonomia, l'avventura e l'indipendenza sono i tuoi valori fondamentali. Hai bisogno di sentire che la vita è aperta, non predefinita.",
       "instructions": [
-        { "title": "Come questo valore si manifesta", "content": "Sento un disagio fisico quando mi sento intrappolato/a — da routine rigide, aspettative non scelte, relazioni che limitano chi sono. La libertà non è capriccio: è una condizione necessaria per il mio benessere." },
-        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di spazio per essere me stesso/a all'interno della relazione. Un partner che cerca di controllarmi o limitarmi — anche con le migliori intenzioni — attiva in me una risposta di fuga immediata." },
-        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla sicurezza posso sembrare inaffidabile o poco impegnato/a. La sfida è imparare che impegnarsi non significa perdere se stessi — è possibile essere liberi dentro a una relazione stabile." }
+        {
+          "title": "Come questo valore si manifesta",
+          "content": "Sento un disagio fisico quando mi sento intrappolato/a — da routine rigide, aspettative non scelte, relazioni che limitano chi sono. La libertà non è capriccio: è una condizione necessaria per il mio benessere."
+        },
+        {
+          "title": "Cosa ho bisogno nella relazione",
+          "content": "Ho bisogno di spazio per essere me stesso/a all'interno della relazione. Un partner che cerca di controllarmi o limitarmi — anche con le migliori intenzioni — attiva in me una risposta di fuga immediata."
+        },
+        {
+          "title": "Potenziale attrito con partner diversi",
+          "content": "Con partner orientati alla sicurezza posso sembrare inaffidabile o poco impegnato/a. La sfida è imparare che impegnarsi non significa perdere se stessi — è possibile essere liberi dentro a una relazione stabile."
+        }
       ],
       "antiPatterns": [
-        { "title": "La Libertà come Fuga", "content": "A volte la tua ricerca di libertà è in realtà evitamento dell'impegno e della vulnerabilità. L'intimità profonda richiede accettare alcuni vincoli — non come prigione, ma come radici." }
+        {
+          "title": "La Libertà come Fuga",
+          "content": "A volte la tua ricerca di libertà è in realtà evitamento dell'impegno e della vulnerabilità. L'intimità profonda richiede accettare alcuni vincoli — non come prigione, ma come radici."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come supportare questo partner", "content": "Non stringere le redini quando si sente limitato/a — otterrai l'effetto opposto. Dagli/le spazio e fiducia, e sceglierà di tornare. Controllarlo/a lo/la allontana; rispettare la sua autonomia lo/la avvicina." }
+        {
+          "title": "Come supportare questo partner",
+          "content": "Non stringere le redini quando si sente limitato/a — otterrai l'effetto opposto. Dagli/le spazio e fiducia, e sceglierà di tornare. Controllarlo/a lo/la allontana; rispettare la sua autonomia lo/la avvicina."
+        }
       ]
     },
     "achievement": {
@@ -574,15 +894,30 @@
       "code": "VAL-ACH",
       "summary": "Il successo, gli obiettivi ambiziosi e il riconoscimento sono i tuoi valori fondamentali. Sei motivato/a dalla sfida e dalla crescita professionale.",
       "instructions": [
-        { "title": "Come questo valore si manifesta", "content": "Investo molto nella mia carriera e nei miei obiettivi personali. Non è egoismo — è come mi sento vivo/a. Il successo non è solo materiale: è la prova che sto usando al meglio il mio potenziale." },
-        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di un partner che supporti le mie ambizioni, non le ridimensioni. La critica agli obiettivi è vissuta come critica alla mia identità. Apprezzo chi mi sfida a crescere, non chi mi chiede di rallentare." },
-        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla connessione posso sembrare distante o poco presente. La sfida è non trattare la relazione come un'altra cosa da 'ottimizzare' — le relazioni richiedono presenza, non performance." }
+        {
+          "title": "Come questo valore si manifesta",
+          "content": "Investo molto nella mia carriera e nei miei obiettivi personali. Non è egoismo — è come mi sento vivo/a. Il successo non è solo materiale: è la prova che sto usando al meglio il mio potenziale."
+        },
+        {
+          "title": "Cosa ho bisogno nella relazione",
+          "content": "Ho bisogno di un partner che supporti le mie ambizioni, non le ridimensioni. La critica agli obiettivi è vissuta come critica alla mia identità. Apprezzo chi mi sfida a crescere, non chi mi chiede di rallentare."
+        },
+        {
+          "title": "Potenziale attrito con partner diversi",
+          "content": "Con partner orientati alla connessione posso sembrare distante o poco presente. La sfida è non trattare la relazione come un'altra cosa da 'ottimizzare' — le relazioni richiedono presenza, non performance."
+        }
       ],
       "antiPatterns": [
-        { "title": "La Relazione come Progetto", "content": "Tratti la relazione come un obiettivo da raggiungere piuttosto che un'esperienza da vivere. L'efficienza e l'ottimizzazione non si applicano all'intimità." }
+        {
+          "title": "La Relazione come Progetto",
+          "content": "Tratti la relazione come un obiettivo da raggiungere piuttosto che un'esperienza da vivere. L'efficienza e l'ottimizzazione non si applicano all'intimità."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come supportare questo partner", "content": "Celebra i suoi successi — anche quelli che ti sembrano 'solo lavoro'. Per lui/lei sono espressione dell'identità. E quando ha bisogno di dedicarsi intensamente a un obiettivo, supportalo/la senza farglielo pesare." }
+        {
+          "title": "Come supportare questo partner",
+          "content": "Celebra i suoi successi — anche quelli che ti sembrano 'solo lavoro'. Per lui/lei sono espressione dell'identità. E quando ha bisogno di dedicarsi intensamente a un obiettivo, supportalo/la senza farglielo pesare."
+        }
       ]
     },
     "connection": {
@@ -590,15 +925,30 @@
       "code": "VAL-CON",
       "summary": "Le relazioni, la famiglia e il contributo agli altri sono i tuoi valori fondamentali. Il tuo benessere è intrinsecamente legato alla qualità dei tuoi legami.",
       "instructions": [
-        { "title": "Come questo valore si manifesta", "content": "Le persone sono al centro della mia vita. Investo molto nelle relazioni — famiglia, amici, partner — perché è lì che trovo significato e soddisfazione profonda. Non è dipendenza: è riconoscere che siamo esseri relazionali." },
-        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di sentire che la relazione è una priorità reale, non residuale. Un partner che mette sistematicamente tutto davanti alla nostra connessione mi fa sentire invisibile." },
-        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla realizzazione o alla libertà posso sentirmi secondo/a in classifica. La sfida è distinguere tra chi non mi valorizza e chi semplicemente esprime l'amore in modo diverso." }
+        {
+          "title": "Come questo valore si manifesta",
+          "content": "Le persone sono al centro della mia vita. Investo molto nelle relazioni — famiglia, amici, partner — perché è lì che trovo significato e soddisfazione profonda. Non è dipendenza: è riconoscere che siamo esseri relazionali."
+        },
+        {
+          "title": "Cosa ho bisogno nella relazione",
+          "content": "Ho bisogno di sentire che la relazione è una priorità reale, non residuale. Un partner che mette sistematicamente tutto davanti alla nostra connessione mi fa sentire invisibile."
+        },
+        {
+          "title": "Potenziale attrito con partner diversi",
+          "content": "Con partner orientati alla realizzazione o alla libertà posso sentirmi secondo/a in classifica. La sfida è distinguere tra chi non mi valorizza e chi semplicemente esprime l'amore in modo diverso."
+        }
       ],
       "antiPatterns": [
-        { "title": "La Fusione come Connessione", "content": "Puoi confondere l'intimità profonda con la fusione totale. Le relazioni sane mantengono due identità distinte — non ti perdi nell'altro, cresci insieme all'altro." }
+        {
+          "title": "La Fusione come Connessione",
+          "content": "Puoi confondere l'intimità profonda con la fusione totale. Le relazioni sane mantengono due identità distinte — non ti perdi nell'altro, cresci insieme all'altro."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come supportare questo partner", "content": "Mostragli/le che la relazione è una priorità — non solo quando c'è una crisi, ma nella quotidianità. Gesti piccoli e regolari ('ho pensato a te oggi') valgono più di grandi gesti rari." }
+        {
+          "title": "Come supportare questo partner",
+          "content": "Mostragli/le che la relazione è una priorità — non solo quando c'è una crisi, ma nella quotidianità. Gesti piccoli e regolari ('ho pensato a te oggi') valgono più di grandi gesti rari."
+        }
       ]
     },
     "growth": {
@@ -606,64 +956,124 @@
       "code": "VAL-GR",
       "summary": "Evoluzione personale, apprendimento e significato profondo sono i tuoi valori fondamentali. Sei in costante movimento verso una versione migliore di te.",
       "instructions": [
-        { "title": "Come questo valore si manifesta", "content": "Non mi accontento di chi sono oggi. Leggo, rifletto, metto in discussione le mie convinzioni, cerco esperienze che mi cambino. Questo non è instabilità — è il modo in cui rispetto me stesso/a." },
-        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di un partner che cresca con me o che almeno supporti il mio percorso. Una relazione che si oppone alla mia evoluzione è una relazione che mi soffoca lentamente." },
-        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla sicurezza posso sembrare insoddisfatto/a o instabile. La sfida è comunicare che la crescita non minaccia la stabilità — può arricchirla." }
+        {
+          "title": "Come questo valore si manifesta",
+          "content": "Non mi accontento di chi sono oggi. Leggo, rifletto, metto in discussione le mie convinzioni, cerco esperienze che mi cambino. Questo non è instabilità — è il modo in cui rispetto me stesso/a."
+        },
+        {
+          "title": "Cosa ho bisogno nella relazione",
+          "content": "Ho bisogno di un partner che cresca con me o che almeno supporti il mio percorso. Una relazione che si oppone alla mia evoluzione è una relazione che mi soffoca lentamente."
+        },
+        {
+          "title": "Potenziale attrito con partner diversi",
+          "content": "Con partner orientati alla sicurezza posso sembrare insoddisfatto/a o instabile. La sfida è comunicare che la crescita non minaccia la stabilità — può arricchirla."
+        }
       ],
       "antiPatterns": [
-        { "title": "La Crescita come Fuga da Sé", "content": "A volte il miglioramento continuo è un modo per evitare di accettare chi sei ora. La crescita vera include anche l'accettazione, non solo la trasformazione." }
+        {
+          "title": "La Crescita come Fuga da Sé",
+          "content": "A volte il miglioramento continuo è un modo per evitare di accettare chi sei ora. La crescita vera include anche l'accettazione, non solo la trasformazione."
+        }
       ],
       "partnerInstructions": [
-        { "title": "Come supportare questo partner", "content": "Mostra interesse genuino per il suo percorso di crescita — libri che legge, idee che lo/la appassionano, cambiamenti che sta esplorando. Sentirsi capito/a nella propria evoluzione è per lui/lei un atto d'amore profondo." }
+        {
+          "title": "Come supportare questo partner",
+          "content": "Mostra interesse genuino per il suo percorso di crescita — libri che legge, idee che lo/la appassionano, cambiamenti che sta esplorando. Sentirsi capito/a nella propria evoluzione è per lui/lei un atto d'amore profondo."
+        }
       ]
     }
   },
-
   "crossModuleInsights": {
     "avoidant_avoiding": {
       "title": "Doppio Evitamento",
-      "modules": ["attachment", "conflictStyle"],
+      "modules": [
+        "attachment",
+        "conflictStyle"
+      ],
       "condition": "Attaccamento Evitante + Stile di Conflitto Evitante",
       "content": "Sotto stress tendi a sparire su due fronti contemporaneamente: emotivo e conflittuale. Il tuo partner potrebbe percepire una 'persona invisibile' nelle situazioni difficili. Non è indifferenza — è un sistema di protezione doppio. Il tuo lavoro: segnala quando stai evitando, anche solo con 'ho bisogno di tempo, torno'.",
       "partnerNote": "Se il tuo partner ha questo profilo: non inseguirlo/a. Crea spazio sicuro e un accordo esplicito sul 'rientro'. La pressione peggiora tutto."
     },
     "anxious_competing": {
       "title": "Inseguimento Esplosivo",
-      "modules": ["attachment", "conflictStyle"],
+      "modules": [
+        "attachment",
+        "conflictStyle"
+      ],
       "condition": "Attaccamento Ansioso + Stile di Conflitto Competitivo",
       "content": "La paura dell'abbandono si combina con uno stile assertivo: quando ti senti minacciato/a emotivamente, l'intensità dei tuoi conflitti aumenta drasticamente. Puoi sembrare aggressivo/a quando in realtà sei spaventato/a. Il segnale che stai entrando in questo pattern: il volume della discussione cresce ma l'argomento reale è 'mi ami ancora?'",
       "partnerNote": "Quando il conflitto escalation rapidamente, prova a bypassare l'argomento superficiale: 'Sento che c'è qualcosa di più profondo qui. Stai bene?' Questo disinnesca il pattern."
     },
     "accommodating_anxious": {
       "title": "Piacere per Paura",
-      "modules": ["attachment", "conflictStyle"],
+      "modules": [
+        "attachment",
+        "conflictStyle"
+      ],
       "condition": "Attaccamento Ansioso + Stile Accomodante",
       "content": "Cedi nei conflitti non perché non ti importi, ma perché temi che il disaccordo metta a rischio la relazione. La tua accomodanza è guidata dall'ansia, non dalla generosità. Il rischio: non dici mai cosa vuoi davvero, poi esplodi su qualcosa di apparentemente insignificante quando il secchio è pieno.",
       "partnerNote": "Chiedi spesso: 'Sei davvero ok con questo?' e aspetta la risposta vera, non quella automatica. Crea sicurezza esplicita: 'Puoi dirmi di no senza che cambi niente tra noi.'"
     },
     "competing_report": {
       "title": "Travolgi e Spiega",
-      "modules": ["conflictStyle", "communication"],
+      "modules": [
+        "conflictStyle",
+        "communication"
+      ],
       "condition": "Stile Competitivo + Report Talk",
       "content": "In una discussione hai la doppia tendenza a voler vincere il punto E ad essere efficiente/diretto. Il risultato: le conversazioni difficili diventano dibattiti dove 'chi ha ragione' supera 'come stiamo entrambi'. Attenzione alla differenza tra avere ragione e essere capito.",
       "partnerNote": "Con questo profilo, rallentare intenzionalmente è il lavoro. Prima di rispondere, una pausa di 3 secondi e la domanda mentale: 'Sto cercando di vincere o di capire?'"
     },
     "different_apology_languages": {
       "title": "Scuse in Lingue Diverse",
-      "modules": ["apologyLanguages"],
+      "modules": [
+        "apologyLanguages"
+      ],
       "condition": "Linguaggi delle scuse diversi tra partner",
       "content": "Ti sei scusato/a e l'altro non sembra perdonarti — o viceversa. Il problema non è la sincerità: state parlando linguaggi delle scuse diversi. Una scusa nel tuo linguaggio non arriva nel linguaggio dell'altro.",
       "partnerNote": "Chiedi esplicitamente: 'Come posso scusarmi in modo che arrivi davvero?' Non dare per scontato che la tua scusa abbia il formato giusto."
     },
     "avoiding_repentance": {
       "title": "Scusa Silente",
-      "modules": ["conflictStyle", "apologyLanguages"],
+      "modules": [
+        "conflictStyle",
+        "apologyLanguages"
+      ],
       "condition": "Stile Evitante + Linguaggio Scuse: Cambiamento",
       "content": "Eviti i conflitti E hai bisogno di vedere cambiamenti concreti prima di perdonare. Questo crea un paradosso: eviti la conversazione difficile necessaria per fare chiarezza sul cambiamento atteso. Risultato: non perdoni mai davvero perché non hai mai detto cosa ti aspettavi.",
       "partnerNote": "Aiuta il tuo partner a esplicitare il cambiamento che si aspetta, in un momento di calma — non durante il conflitto."
+    },
+    "care_autonomy_anxious_attachment": {
+      "title": "Cura che Spaventa",
+      "modules": [
+        "careStyle",
+        "attachment"
+      ],
+      "condition": "Stile di Cura Autonomia + Attaccamento Ansioso (partner)",
+      "content": "Il tuo modo di voler bene è lasciare spazio — ma per un partner con attaccamento ansioso, lo spazio è il segnale di abbandono. La tua cura più autentica viene letta come distanza. Impara ad annunciare il tuo ritiro e a re-entrare in contatto attivamente, non solo quando ti va.",
+      "partnerNote": "Se il tuo partner ha questo profilo: non interpreta male la sua autonomia — è il suo modo di amarti. Aiutalo/a a capire come ti senti con frasi come 'ho bisogno di un segnale che ci sei', non 'non ti interessa mai di me'."
+    },
+    "care_emotional_avoidant_attachment": {
+      "title": "Cura che Satura",
+      "modules": [
+        "careStyle",
+        "attachment"
+      ],
+      "condition": "Stile di Cura Emotivo + Attaccamento Evitante (partner)",
+      "content": "La tua cura è piena di presenza, ascolto e vicinanza — ma per un partner con attaccamento evitante, questa intensità può sembrare soffocante. Impara a offrire supporto in dosi calibrate: 'Ci sono se ne hai bisogno' vale più di 10 minuti di check-in continui.",
+      "partnerNote": "Se il tuo partner ha questo profilo: la sua cura emotiva è genuina, non soffocante. Comunicagli quando hai raggiunto il tuo limite di vicinanza — aiutalo/a a capire i tuoi segnali prima che tu sparisca."
+    },
+    "security_value_avoidant_attachment": {
+      "title": "Controllo come Rifugio",
+      "modules": [
+        "coreValues",
+        "attachment"
+      ],
+      "condition": "Valore Primario Sicurezza + Attaccamento Evitante",
+      "content": "Cerchi stabilità nel mondo esterno (routine, piani, certezze) ma eviti la vulnerabilità emotiva. Rischio: costruisci una vita sicura ma emotivamente distante. La sicurezza vera nelle relazioni richiede tollerare l'incertezza dell'altro — non solo controllare le variabili esterne.",
+      "partnerNote": "Se il tuo partner ha questo profilo: capisce la sicurezza come controllo del contesto, non come intimità. Aiutalo/a a sentire che la connessione emotiva è sicura, non pericolosa."
     }
   },
-
   "coupleReport": {
     "frictionPatterns": {
       "avoidant_anxious": {
@@ -721,9 +1131,72 @@
         "whatHappens": "Partner strutturato pianifica il weekend il giovedì. Partner flessibile cambia idea il sabato mattina. Partner strutturato si sente destabilizzato e mancato di rispetto. Partner flessibile si sente intrappolato da troppe regole.",
         "protocol": "Accordo ibrido: definite le cose NON negoziabili (quelle che richiedono pianificazione anticipata) e lo spazio libero per l'improvvisazione. Es: 'Il venerdì sera è libero, il sabato pranzo è pianificato'.",
         "weeklyAction": "Il partner strutturato lascia intenzionalmente UN momento della settimana non pianificato. Il partner flessibile mantiene UN impegno programmato senza modificarlo."
+      },
+      "competing_avoiding": {
+        "name": "Attacco e Fuga",
+        "severity": "alta",
+        "description": "Uno spinge, l'altro sparisce. Più si alza la pressione, più l'altro chiude. È un ciclo che si autoalimenta e si aggrava a ogni round.",
+        "whatHappens": "Il partner competitivo alza la voce per ottenere una risposta → il partner evitante si spegne o esce dalla stanza → il competitivo aumenta l'intensità → il silenzio totale. Nessuno vince, entrambi perdono.",
+        "protocol": "Il partner evitante deve parlare prima di scomparire: 'Devo fermarmi 20 minuti, poi torno'. Il partner competitivo deve accettare la pausa come segnale di rientro, non di abbandono, e abbassare l'intensità.",
+        "weeklyAction": "Una volta a settimana parlate di un disaccordo NON urgente, con un timer da 10 minuti ciascuno. Nessuna interruzione. Allena entrambi prima che arrivi la crisi vera."
+      },
+      "avoiding_avoiding": {
+        "name": "Pace Forzata",
+        "severity": "media",
+        "description": "Nessuno litica mai — ma i problemi non si risolvono, si accumulano. La superficie è tranquilla, il sottosuolo è un vulcano.",
+        "whatHappens": "Entrambi evitano il conflitto → i temi scottanti vengono glissati → si costruisce un contratto implicito di silenzio → col tempo emerge distanza emotiva, freddezza, o un'esplosione improvvisa su qualcosa di apparentemente banale.",
+        "protocol": "Istituite un 'check-in mensile' di 30 minuti dove è obbligatorio dire almeno una cosa che non funziona. Regola: l'obiettivo non è risolvere, è nominare.",
+        "weeklyAction": "Ogni partner scrive un'unica frase: 'Una cosa che mi è rimasta addosso questa settimana è ___'. Si leggono ad alta voce. Nessuna risposta immediata — solo ascolto."
+      },
+      "competing_competing": {
+        "name": "Scontro Frontale",
+        "severity": "alta",
+        "description": "Entrambi vogliono avere ragione. Ogni disaccordo rischia di diventare una gara. Nessuno dei due cede facilmente — il conflitto può durare ore o giorni.",
+        "whatHappens": "Entrambi argomentativi e fermi nelle proprie posizioni → escalation rapida → nessuno capisce come uscire senza 'perdere' → i conflitti si trascinano o finiscono con uno che cede per stanchezza (non per convinzione).",
+        "protocol": "Stabilite una regola esplicita: 'vincere il conflitto' = perdere la relazione. L'obiettivo è trovare la soluzione migliore, non avere ragione. Chi cede su un punto guadagna credito — non perde.",
+        "weeklyAction": "Quando nasce un disaccordo, ognuno scrive la propria posizione in 3 righe. Poi la scambiate. Leggere la posizione dell'altro prima di rispondere abbassa il 40% dell'intensità."
+      },
+      "different_apology_languages": {
+        "name": "Riconciliazione Incompresa",
+        "severity": "media",
+        "description": "Entrambi provate a riconciliarvi — ma ognuno lo fa nel proprio linguaggio, che l'altro non riconosce. Il risultato: ti senti come se non ti fossi mai scusato/a.",
+        "whatHappens": "Un partner si scusa esprimendo rimpianto verbale ('Mi dispiace tanto') → l'altro aspettava un'azione concreta → la scusa non viene percepita → tensione residua → 'ma ti ho già chiesto scusa!'. Ciclo frustrante.",
+        "protocol": "Imparate il linguaggio delle scuse dell'altro. Chiedete esplicitamente: 'Come ti sentiresti compreso/a dopo questo?' Una scusa nel linguaggio sbagliato vale meno di nessuna.",
+        "weeklyAction": "Questa settimana: ognuno dice all'altro 'Quando sbaglio, mi sentiresti davvero scusato/a se ___'. La risposta è il vostro codice di riconciliazione."
+      },
+      "care_practical_emotional": {
+        "name": "Soluzioni vs Ascolto",
+        "severity": "media",
+        "description": "Uno vuole risolvere il problema, l'altro vuole essere ascoltato. Due forme di cura genuine che si scontrano perché parlano lingue diverse.",
+        "whatHappens": "Il partner in difficoltà racconta un problema → il partner pratico propone soluzioni immediate → il primo si sente non capito ('non voglio essere riparato/a, voglio che tu mi ascolti') → il pratico si sente inutile ('ma stavo cercando di aiutarti').",
+        "protocol": "Il partner pratico deve imparare la domanda: 'Hai bisogno che io ti ascolti o vuoi idee?' — e aspettare la risposta prima di agire. Il partner emotivo deve sapere che le soluzioni sono un atto d'amore, non un rifiuto di ascolto.",
+        "weeklyAction": "Questa settimana il partner pratico pratica 5 minuti di ascolto puro senza suggerire nulla. Il partner emotivo, dopo, chiede esplicitamente se vuole sentire delle idee."
+      },
+      "care_emotional_autonomy": {
+        "name": "Vicinanza vs Spazio",
+        "severity": "media",
+        "description": "Uno cura attraverso la presenza e l'ascolto, l'altro attraverso il rispetto dell'autonomia. Il primo si sente abbandonato, il secondo si sente soffocato.",
+        "whatHappens": "Il partner emotivo si avvicina, offre supporto, vuole stare vicino → il partner autonomia percepisce invasione del suo spazio → si allontana → il partner emotivo interpreta la distanza come rifiuto → aumenta la vicinanza → ciclo.",
+        "protocol": "Il partner emotivo impara a chiedere: 'Vuoi che ti stia vicino o preferisci spazio?' Il partner autonomia impara a dire: 'Ho bisogno di un'ora per me — poi torno'. La distanza va annunciata, non sparita.",
+        "weeklyAction": "Il partner autonomia pianifica un momento di connessione intenzionale ogni settimana (non spontaneo — programmato). Il partner emotivo pratica 30 minuti di autonomia separata senza senso di colpa."
+      },
+      "security_freedom": {
+        "name": "Stabilità vs Avventura",
+        "severity": "alta",
+        "description": "Uno vuole radici, l'altro vuole ali. Una delle tensioni valoriali più profonde: non è un capriccio, è la direzione di vita di ognuno.",
+        "whatHappens": "Il partner sicurezza vuole routine, piani stabili, bassa incertezza → il partner libertà si sente intrappolato → cerca cambiamenti, imprevisti, esperienze nuove → il partner sicurezza si sente destabilizzato → tensione cronica su decisioni importanti (casa, lavoro, viaggi, futuro).",
+        "protocol": "Non cercate di convincere l'altro a cambiare i propri valori — non funziona. Trovate aree dove ognuno ha dominio: il partner sicurezza gestisce la stabilità finanziaria/logistica; il partner libertà gestisce esperienze/avventure condivise.",
+        "weeklyAction": "Ogni mese: il partner libertà propone un'esperienza nuova. Il partner sicurezza organizza un rituale fisso di coppia. Entrambi i bisogni vengono soddisfatti, non uno soffocato dall'altro."
+      },
+      "different_core_values": {
+        "name": "Bussole Diverse",
+        "severity": "media",
+        "description": "I vostri valori primari puntano in direzioni diverse. Non è un problema insormontabile — ma le grandi decisioni di vita richiederanno sempre più negoziazione degli altri.",
+        "whatHappens": "Quando si tratta di priorità (carriera vs famiglia, soldi vs esperienze, sicurezza vs crescita), ognuno 'ovviamente' tira verso il proprio valore dominante. Ciò che sembra irrazionale all'uno è fondamentale per l'altro.",
+        "protocol": "Esplicitate i vostri valori su decisioni concrete prima che diventino conflitti. 'Per me questa scelta vale perché __'. Negoziare valori richiede prima comprenderli — non combatterli.",
+        "weeklyAction": "Questa settimana: ognuno risponde alla domanda 'La cosa che per me è non negoziabile in questa fase della vita è ___'. Scrivetelo. Non è una discussione — è un'informazione."
       }
     },
-
     "scenarios": {
       "conflict": {
         "title": "Scenario: Litigata",
@@ -741,12 +1214,23 @@
         "description": "Come reagisce ognuno sotto pressione e cosa ha bisogno dall'altro."
       }
     },
-
     "compatibilityLabels": {
-      "excellent": { "label": "Alta Compatibilità", "desc": "I vostri profili si completano naturalmente. Le aree di attrito sono gestibili con consapevolezza." },
-      "good":      { "label": "Buona Compatibilità", "desc": "Avete solide basi. Alcune differenze richiedono calibrazione attiva ma non sono ostacoli strutturali." },
-      "moderate":  { "label": "Compatibilità Moderata", "desc": "Differenze significative che, se non affrontate consapevolmente, possono diventare fonti di conflitto cronico. Il potenziale c'è." },
-      "low":       { "label": "Compatibilità Sfidante", "desc": "Profili molto diversi. Non impossibile — ma richiede un alto grado di consapevolezza e comunicazione attiva da entrambi." }
+      "excellent": {
+        "label": "Alta Compatibilità",
+        "desc": "I vostri profili si completano naturalmente. Le aree di attrito sono gestibili con consapevolezza."
+      },
+      "good": {
+        "label": "Buona Compatibilità",
+        "desc": "Avete solide basi. Alcune differenze richiedono calibrazione attiva ma non sono ostacoli strutturali."
+      },
+      "moderate": {
+        "label": "Compatibilità Moderata",
+        "desc": "Differenze significative che, se non affrontate consapevolmente, possono diventare fonti di conflitto cronico. Il potenziale c'è."
+      },
+      "low": {
+        "label": "Compatibilità Sfidante",
+        "desc": "Profili molto diversi. Non impossibile — ma richiede un alto grado di consapevolezza e comunicazione attiva da entrambi."
+      }
     }
   }
 }

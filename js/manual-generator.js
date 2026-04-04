@@ -359,6 +359,10 @@ export function generateCoupleReport(myResults, partnerResults, lang = 'it') {
   const ptConflict = partnerResults.conflictStyle?.primary;
   const myApology  = myResults.apologyLanguages?.primary;
   const ptApology  = partnerResults.apologyLanguages?.primary;
+  const myCare     = myResults.careStyle?.primary;
+  const ptCare     = partnerResults.careStyle?.primary;
+  const myValues   = myResults.coreValues?.primary;
+  const ptValues   = partnerResults.coreValues?.primary;
 
   const frictions = [];
   const synergies = [];
@@ -406,6 +410,28 @@ export function generateCoupleReport(myResults, partnerResults, lang = 'it') {
     if (fp.different_apology_languages) frictions.push({ ...fp.different_apology_languages, key: 'different_apology_languages' });
   }
 
+  // Care style frictions
+  if (myCare && ptCare && myCare !== ptCare) {
+    if ((myCare === 'practical' && ptCare === 'emotional') ||
+        (myCare === 'emotional' && ptCare === 'practical')) {
+      if (fp.care_practical_emotional) frictions.push({ ...fp.care_practical_emotional, key: 'care_practical_emotional' });
+    }
+    if ((myCare === 'emotional' && ptCare === 'autonomy') ||
+        (myCare === 'autonomy'  && ptCare === 'emotional')) {
+      if (fp.care_emotional_autonomy) frictions.push({ ...fp.care_emotional_autonomy, key: 'care_emotional_autonomy' });
+    }
+  }
+
+  // Core values frictions
+  if (myValues && ptValues && myValues !== ptValues) {
+    if ((myValues === 'security' && ptValues === 'freedom') ||
+        (myValues === 'freedom'  && ptValues === 'security')) {
+      if (fp.security_freedom) frictions.push({ ...fp.security_freedom, key: 'security_freedom' });
+    } else {
+      if (fp.different_core_values) frictions.push({ ...fp.different_core_values, key: 'different_core_values' });
+    }
+  }
+
   // ── Synergy detection ──
   if (myAttach === 'secure' && ptAttach === 'secure') {
     synergies.push({
@@ -444,6 +470,22 @@ export function generateCoupleReport(myResults, partnerResults, lang = 'it') {
       description: lang === 'it'
         ? 'Avete un livello simile di intensità emotiva. Nessuno dei due tende a sentirsi sopraffatto o ignorato dall\'altro sul piano affettivo.'
         : 'You have a similar level of emotional intensity — neither tends to feel overwhelmed or ignored by the other.'
+    });
+  }
+  if (myCare && ptCare && myCare === ptCare) {
+    synergies.push({
+      name: lang === 'it' ? 'Stile di Cura Condiviso' : 'Shared Care Style',
+      description: lang === 'it'
+        ? `Entrambi curate attraverso ${getCareLabel(myCare, lang)}. Il vostro modo di dare supporto è naturalmente riconoscibile dall'altro.`
+        : `You both care through ${getCareLabel(myCare, lang)}. Your way of giving support is naturally recognizable to each other.`
+    });
+  }
+  if (myValues && ptValues && myValues === ptValues) {
+    synergies.push({
+      name: lang === 'it' ? 'Valori Fondamentali Allineati' : 'Aligned Core Values',
+      description: lang === 'it'
+        ? `Entrambi mettete al centro ${getValueLabel(myValues, lang)}. Le grandi decisioni di vita partono dalla stessa bussola — meno attrito nelle scelte che contano davvero.`
+        : `You both prioritize ${getValueLabel(myValues, lang)}. Major life decisions start from the same compass — less friction on the choices that truly matter.`
     });
   }
 
@@ -498,6 +540,30 @@ export function generateCoupleReport(myResults, partnerResults, lang = 'it') {
   }
   if (ptConflict === 'avoiding' && ptApology === 'repentance' && cmi.avoiding_repentance) {
     pushInsight(cmi.avoiding_repentance, 'partner');
+  }
+
+  // Autonomy care style + anxious attachment = space misread as abandonment
+  if (myCare === 'autonomy' && myAttach === 'anxious' && cmi.care_autonomy_anxious_attachment) {
+    pushInsight(cmi.care_autonomy_anxious_attachment, 'me');
+  }
+  if (ptCare === 'autonomy' && ptAttach === 'anxious' && cmi.care_autonomy_anxious_attachment) {
+    pushInsight(cmi.care_autonomy_anxious_attachment, 'partner');
+  }
+
+  // Emotional care style + avoidant attachment = presence triggers overwhelm
+  if (myCare === 'emotional' && myAttach === 'avoidant' && cmi.care_emotional_avoidant_attachment) {
+    pushInsight(cmi.care_emotional_avoidant_attachment, 'me');
+  }
+  if (ptCare === 'emotional' && ptAttach === 'avoidant' && cmi.care_emotional_avoidant_attachment) {
+    pushInsight(cmi.care_emotional_avoidant_attachment, 'partner');
+  }
+
+  // Security value + avoidant attachment = control as substitute for intimacy
+  if (myValues === 'security' && myAttach === 'avoidant' && cmi.security_value_avoidant_attachment) {
+    pushInsight(cmi.security_value_avoidant_attachment, 'me');
+  }
+  if (ptValues === 'security' && ptAttach === 'avoidant' && cmi.security_value_avoidant_attachment) {
+    pushInsight(cmi.security_value_avoidant_attachment, 'partner');
   }
 
   // ── Compatibility score ──
@@ -565,6 +631,29 @@ function calculateCompatibility(myR, ptR) {
     const gap = Math.abs(myN - ptN);
     const s = gap < 15 ? 100 : gap < 30 ? 75 : gap < 45 ? 50 : 25;
     scores.push({ label: 'Intensità Emotiva', score: s, weight: 0.15 });
+  }
+
+  // Care style (weight: 10%)
+  const myCs = myR.careStyle?.primary;
+  const ptCs = ptR.careStyle?.primary;
+  if (myCs && ptCs) {
+    const compatible = { emotional: ['emotional','presence'], practical: ['practical','presence'],
+                         presence: ['emotional','practical','presence'], autonomy: ['autonomy'] };
+    const s = myCs === ptCs ? 100 : compatible[myCs]?.includes(ptCs) ? 68 : 38;
+    scores.push({ label: 'Stile di Cura', score: s, weight: 0.10 });
+  }
+
+  // Core values (weight: 15%)
+  const myCv = myR.coreValues?.primary;
+  const ptCv = ptR.coreValues?.primary;
+  if (myCv && ptCv) {
+    const compatible = {
+      security: ['security','connection'], freedom: ['freedom','growth'],
+      achievement: ['achievement','growth'], connection: ['connection','security','growth'],
+      growth: ['growth','freedom','connection','achievement']
+    };
+    const s = myCv === ptCv ? 100 : compatible[myCv]?.includes(ptCv) ? 65 : 35;
+    scores.push({ label: 'Valori Fondamentali', score: s, weight: 0.15 });
   }
 
   if (scores.length === 0) return null;
@@ -707,14 +796,18 @@ function buildComparisonRows(myR, ptR, lang) {
       loveLanguage: 'Linguaggio Amore',
       communication: 'Comunicazione',
       conflictStyle: 'Stile Conflitto',
-      apologyLanguage: 'Linguaggio Scuse'
+      apologyLanguage: 'Linguaggio Scuse',
+      careStyle: 'Stile di Cura',
+      coreValues: 'Valori Fondamentali'
     },
     en: {
       attachment: 'Attachment',
       loveLanguage: 'Love Language',
       communication: 'Communication',
       conflictStyle: 'Conflict Style',
-      apologyLanguage: 'Apology Language'
+      apologyLanguage: 'Apology Language',
+      careStyle: 'Care Style',
+      coreValues: 'Core Values'
     }
   };
   const l = labels[lang] || labels.it;
@@ -725,13 +818,19 @@ function buildComparisonRows(myR, ptR, lang) {
           competing:'Competitivo', collaborating:'Collaborativo', compromising:'Compromesso',
           avoiding:'Evitante', accommodating:'Accomodante',
           regret:'Rimpianto', responsibility:'Responsabilità', restitution:'Restituzione',
-          repentance:'Ravvedimento', forgiveness:'Perdono' },
+          repentance:'Ravvedimento', forgiveness:'Perdono',
+          emotional:'Empatico', practical:'Pratico', presence:'Presenza', autonomy:'Autonomia',
+          security:'Sicurezza', freedom:'Libertà', achievement:'Realizzazione',
+          connection:'Connessione', growth:'Crescita' },
     en: { secure:'Secure', anxious:'Anxious', avoidant:'Avoidant', fearful:'Fearful',
           rapport:'Rapport', report:'Report', balanced:'Balanced',
           competing:'Competing', collaborating:'Collaborating', compromising:'Compromising',
           avoiding:'Avoiding', accommodating:'Accommodating',
           regret:'Regret', responsibility:'Responsibility', restitution:'Restitution',
-          repentance:'Repentance', forgiveness:'Forgiveness' }
+          repentance:'Repentance', forgiveness:'Forgiveness',
+          emotional:'Empathic', practical:'Practical', presence:'Presence', autonomy:'Autonomy',
+          security:'Security', freedom:'Freedom', achievement:'Achievement',
+          connection:'Connection', growth:'Growth' }
   };
   const sl = styleLabels[lang] || styleLabels.it;
 
@@ -781,6 +880,22 @@ function buildComparisonRows(myR, ptR, lang) {
       match: myR.apologyLanguages.primary === ptR.apologyLanguages.primary
     });
   }
+  if (myR.careStyle && ptR.careStyle) {
+    rows.push({
+      trait: l.careStyle,
+      me: sl[myR.careStyle.primary],
+      partner: sl[ptR.careStyle.primary],
+      match: myR.careStyle.primary === ptR.careStyle.primary
+    });
+  }
+  if (myR.coreValues && ptR.coreValues) {
+    rows.push({
+      trait: l.coreValues,
+      me: sl[myR.coreValues.primary],
+      partner: sl[ptR.coreValues.primary],
+      match: myR.coreValues.primary === ptR.coreValues.primary
+    });
+  }
 
   return rows;
 }
@@ -789,6 +904,22 @@ function getLangLabel(dim, lang) {
   const map = {
     it: { words:'Parole di Affermazione', time:'Tempo di Qualità', gifts:'Doni', acts:'Atti di Servizio', touch:'Contatto Fisico' },
     en: { words:'Words of Affirmation', time:'Quality Time', gifts:'Gifts', acts:'Acts of Service', touch:'Physical Touch' }
+  };
+  return (map[lang] || map.it)[dim] || dim;
+}
+
+function getCareLabel(dim, lang) {
+  const map = {
+    it: { emotional:'presenza emotiva e ascolto', practical:'supporto pratico e soluzioni', presence:'esserci fisicamente', autonomy:'rispetto dell\'autonomia e fiducia' },
+    en: { emotional:'emotional presence and listening', practical:'practical support and solutions', presence:'being there physically', autonomy:'respecting autonomy and trust' }
+  };
+  return (map[lang] || map.it)[dim] || dim;
+}
+
+function getValueLabel(dim, lang) {
+  const map = {
+    it: { security:'la Sicurezza', freedom:'la Libertà', achievement:'la Realizzazione', connection:'la Connessione', growth:'la Crescita' },
+    en: { security:'Security', freedom:'Freedom', achievement:'Achievement', connection:'Connection', growth:'Growth' }
   };
   return (map[lang] || map.it)[dim] || dim;
 }

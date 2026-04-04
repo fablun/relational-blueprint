@@ -85,7 +85,6 @@
       ]
     }
   },
-
   "loveLanguages": {
     "words": {
       "label": "Words of Affirmation",
@@ -183,23 +182,34 @@
       ]
     }
   },
-
   "bigFive": {
     "openness": {
       "high": {
         "label": "High Openness",
         "code": "OCEAN-O+",
         "instructions": [
-          { "title": "How to Stimulate Me", "content": "Bring me deep conversations, unusual ideas, new experiences. Stimulating me intellectually is one of the most powerful ways to connect with me emotionally. Philosophical or creative discussions aren't a luxury for me — they're nourishment." },
-          { "title": "How Not to Bore Me", "content": "Rigid routines, superficial conversations, and resistance to change slowly extinguish me. I'm not asking you to become a different person — I'm asking you to stay curious with me." }
+          {
+            "title": "How to Stimulate Me",
+            "content": "Bring me deep conversations, unusual ideas, new experiences. Stimulating me intellectually is one of the most powerful ways to connect with me emotionally. Philosophical or creative discussions aren't a luxury for me — they're nourishment."
+          },
+          {
+            "title": "How Not to Bore Me",
+            "content": "Rigid routines, superficial conversations, and resistance to change slowly extinguish me. I'm not asking you to become a different person — I'm asking you to stay curious with me."
+          }
         ]
       },
       "low": {
         "label": "Low Openness",
         "code": "OCEAN-O-",
         "instructions": [
-          { "title": "My Approach", "content": "I prefer what is concrete, practical, and familiar. I'm not closed to change, but I need to understand its practical value before embracing it. Respect my pace." },
-          { "title": "How to Propose Changes", "content": "Don't impose sudden novelties. Propose changes in advance, with a logical explanation, and give me time to process. My initial 'no' often becomes 'yes' after reflection." }
+          {
+            "title": "My Approach",
+            "content": "I prefer what is concrete, practical, and familiar. I'm not closed to change, but I need to understand its practical value before embracing it. Respect my pace."
+          },
+          {
+            "title": "How to Propose Changes",
+            "content": "Don't impose sudden novelties. Propose changes in advance, with a logical explanation, and give me time to process. My initial 'no' often becomes 'yes' after reflection."
+          }
         ]
       }
     },
@@ -208,16 +218,28 @@
         "label": "High Conscientiousness",
         "code": "OCEAN-C+",
         "instructions": [
-          { "title": "Respect My Plans", "content": "I need structure and predictability. Last-minute plan changes, chronic lateness, or vague promises create real anxiety for me. It's not inflexibility — it's how my system works." },
-          { "title": "Promises = Contracts", "content": "For me a promise is a contract. If you say you'll do something, I really expect it. If you know you can't keep it, don't promise. Follow-through is a primary signal of respect for me." }
+          {
+            "title": "Respect My Plans",
+            "content": "I need structure and predictability. Last-minute plan changes, chronic lateness, or vague promises create real anxiety for me. It's not inflexibility — it's how my system works."
+          },
+          {
+            "title": "Promises = Contracts",
+            "content": "For me a promise is a contract. If you say you'll do something, I really expect it. If you know you can't keep it, don't promise. Follow-through is a primary signal of respect for me."
+          }
         ]
       },
       "low": {
         "label": "Low Conscientiousness",
         "code": "OCEAN-C-",
         "instructions": [
-          { "title": "My Relationship with Structure", "content": "I'm not disorganized — I'm flexible. I work better with freedom than rigid rules. Don't interpret my lack of planning as lack of interest." },
-          { "title": "Practical Support", "content": "I appreciate when you help me structure things without making me feel judged. Offer simple systems, not lectures on organization." }
+          {
+            "title": "My Relationship with Structure",
+            "content": "I'm not disorganized — I'm flexible. I work better with freedom than rigid rules. Don't interpret my lack of planning as lack of interest."
+          },
+          {
+            "title": "Practical Support",
+            "content": "I appreciate when you help me structure things without making me feel judged. Offer simple systems, not lectures on organization."
+          }
         ]
       }
     },
@@ -226,16 +248,28 @@
         "label": "High Extraversion",
         "code": "OCEAN-E+",
         "instructions": [
-          { "title": "My Social Fuel", "content": "I recharge energy by being with others. Prolonged isolation literally depresses me — not a metaphor. I need outings, socialization, stimulation. Don't interpret this as fleeing from you." },
-          { "title": "Social Balance", "content": "If you're more introverted than me, you don't have to participate in everything. But support my social life without holding it against me. My need to go out isn't a criticism of our life together." }
+          {
+            "title": "My Social Fuel",
+            "content": "I recharge energy by being with others. Prolonged isolation literally depresses me — not a metaphor. I need outings, socialization, stimulation. Don't interpret this as fleeing from you."
+          },
+          {
+            "title": "Social Balance",
+            "content": "If you're more introverted than me, you don't have to participate in everything. But support my social life without holding it against me. My need to go out isn't a criticism of our life together."
+          }
         ]
       },
       "low": {
         "label": "High Introversion",
         "code": "OCEAN-E-",
         "instructions": [
-          { "title": "My Energy System", "content": "I recharge energy in solitude. After social events, even enjoyable ones, I need time alone to process. It's not moodiness — it's biology. Respect my withdrawal moments." },
-          { "title": "How to Interact with Me", "content": "Approach me with a low-key tone during recharge moments. Don't interpret my silence as a mood. My best conversations happen in intimate, not crowded, contexts." }
+          {
+            "title": "My Energy System",
+            "content": "I recharge energy in solitude. After social events, even enjoyable ones, I need time alone to process. It's not moodiness — it's biology. Respect my withdrawal moments."
+          },
+          {
+            "title": "How to Interact with Me",
+            "content": "Approach me with a low-key tone during recharge moments. Don't interpret my silence as a mood. My best conversations happen in intimate, not crowded, contexts."
+          }
         ]
       }
     },
@@ -244,16 +278,28 @@
         "label": "High Agreeableness",
         "code": "OCEAN-A+",
         "instructions": [
-          { "title": "My Hidden No", "content": "I rarely say no directly. If I seem fine with everything, it's not true — I'm avoiding conflict or protecting your mood. Encourage me to express disagreement without fearing negative reactions." },
-          { "title": "I Avoid Conflict", "content": "I prefer to give in rather than confront, even when I'm right. This can lead to silent resentment accumulation. The signal that something is wrong usually comes late, once it's already built up." }
+          {
+            "title": "My Hidden No",
+            "content": "I rarely say no directly. If I seem fine with everything, it's not true — I'm avoiding conflict or protecting your mood. Encourage me to express disagreement without fearing negative reactions."
+          },
+          {
+            "title": "I Avoid Conflict",
+            "content": "I prefer to give in rather than confront, even when I'm right. This can lead to silent resentment accumulation. The signal that something is wrong usually comes late, once it's already built up."
+          }
         ]
       },
       "low": {
         "label": "Low Agreeableness",
         "code": "OCEAN-A-",
         "instructions": [
-          { "title": "My Directness", "content": "I say what I think, even if it's uncomfortable. It's not rudeness — it's respect. I prefer a difficult conversation to a false agreement." },
-          { "title": "How to Handle My Disagreement", "content": "When I disagree, I say so. Don't interpret it as a personal attack — it's my way of respecting you enough to be honest." }
+          {
+            "title": "My Directness",
+            "content": "I say what I think, even if it's uncomfortable. It's not rudeness — it's respect. I prefer a difficult conversation to a false agreement."
+          },
+          {
+            "title": "How to Handle My Disagreement",
+            "content": "When I disagree, I say so. Don't interpret it as a personal attack — it's my way of respecting you enough to be honest."
+          }
         ]
       }
     },
@@ -262,21 +308,32 @@
         "label": "High Neuroticism",
         "code": "OCEAN-N+",
         "instructions": [
-          { "title": "My Emotional Intensity", "content": "I process emotions more intensely than average. This isn't drama or manipulation — it's how my nervous system is configured. What's an inconvenience for you may feel like a crisis for me." },
-          { "title": "How to Support Me", "content": "When I'm anxious, the least useful thing is 'it's not a big deal' or 'you're overreacting'. The most useful: listen, validate ('I understand this is hard for you'), then help me contextualize." },
-          { "title": "After the Storm", "content": "I recover. My emotional reactivity is intense but not permanent. If you give me space and don't amplify the reaction, I return to baseline relatively quickly." }
+          {
+            "title": "My Emotional Intensity",
+            "content": "I process emotions more intensely than average. This isn't drama or manipulation — it's how my nervous system is configured. What's an inconvenience for you may feel like a crisis for me."
+          },
+          {
+            "title": "How to Support Me",
+            "content": "When I'm anxious, the least useful thing is 'it's not a big deal' or 'you're overreacting'. The most useful: listen, validate ('I understand this is hard for you'), then help me contextualize."
+          },
+          {
+            "title": "After the Storm",
+            "content": "I recover. My emotional reactivity is intense but not permanent. If you give me space and don't amplify the reaction, I return to baseline relatively quickly."
+          }
         ]
       },
       "low": {
         "label": "Low Neuroticism",
         "code": "OCEAN-N-",
         "instructions": [
-          { "title": "My Stability", "content": "I'm emotionally stable and rarely disturbed by pressure. This can make me seem detached in high-emotion moments. It's not insensitivity — my baseline is simply calmer." }
+          {
+            "title": "My Stability",
+            "content": "I'm emotionally stable and rarely disturbed by pressure. This can make me seem detached in high-emotion moments. It's not insensitivity — my baseline is simply calmer."
+          }
         ]
       }
     }
   },
-
   "communication": {
     "rapport": {
       "label": "Rapport Talk",
@@ -317,17 +374,28 @@
       ]
     }
   },
-
   "conflictStyle": {
     "competing": {
       "label": "Competing Style",
       "code": "CONF-COMP",
       "summary": "In conflicts you're assertive and victory-oriented. You defend your position with energy. The risk: the other person may feel overwhelmed or unheard.",
       "instructions": [
-        { "title": "How I behave in conflict", "content": "I tend to defend my position strongly and don't give in easily. 'Being right' carries real weight for me. This can be useful in situations requiring quick decisions, but in intimate relationships it can make the other feel inferior." },
-        { "title": "My blind spot", "content": "I can 'win' the argument and lose the connection. When I 'win' a fight, my partner may remain hurt even after conceding. Success in a conflict isn't who's right — it's whether we both feel understood at the end." },
-        { "title": "How to manage me during a fight", "content": "Don't take my intensity as a personal attack — it's my natural style. If you want me to truly listen, state it explicitly: 'I need you to listen before responding.' This unlocks me." },
-        { "title": "What helps me shift gears", "content": "Showing me that the other has understood my point lowers my defensiveness. I don't need to concede — I need to feel heard. From there I can collaborate." }
+        {
+          "title": "How I behave in conflict",
+          "content": "I tend to defend my position strongly and don't give in easily. 'Being right' carries real weight for me. This can be useful in situations requiring quick decisions, but in intimate relationships it can make the other feel inferior."
+        },
+        {
+          "title": "My blind spot",
+          "content": "I can 'win' the argument and lose the connection. When I 'win' a fight, my partner may remain hurt even after conceding. Success in a conflict isn't who's right — it's whether we both feel understood at the end."
+        },
+        {
+          "title": "How to manage me during a fight",
+          "content": "Don't take my intensity as a personal attack — it's my natural style. If you want me to truly listen, state it explicitly: 'I need you to listen before responding.' This unlocks me."
+        },
+        {
+          "title": "What helps me shift gears",
+          "content": "Showing me that the other has understood my point lowers my defensiveness. I don't need to concede — I need to feel heard. From there I can collaborate."
+        }
       ]
     },
     "collaborating": {
@@ -335,10 +403,22 @@
       "code": "CONF-COLL",
       "summary": "In conflicts you seek solutions that truly satisfy both of you. You invest time and attention to understand the other's reasons. The risk: this approach requires much energy and isn't always reciprocated.",
       "instructions": [
-        { "title": "How I behave in conflict", "content": "I don't stop until we find something that works for both of us. I'm not interested in 'winning' — I want the solution to be right. This requires time and mutual openness." },
-        { "title": "What frustrates me", "content": "When the other doesn't invest the same level of attention in finding a shared solution. If the other just wants to 'close it' or concedes without conviction, I feel misunderstood and the conflict remains unresolved for me." },
-        { "title": "How to manage me during a fight", "content": "Give me time to explore the problem with you. Don't interpret my questions as attacks — I'm trying to understand. If you're tired, tell me: we can pause and resume when you're available." },
-        { "title": "My limitation", "content": "Sometimes I seek the perfect solution when 'good enough' would suffice. If the partner is in avoidant or compromising mode, I can seem heavy. Learning when it's ok to stop before the optimal solution is my work." }
+        {
+          "title": "How I behave in conflict",
+          "content": "I don't stop until we find something that works for both of us. I'm not interested in 'winning' — I want the solution to be right. This requires time and mutual openness."
+        },
+        {
+          "title": "What frustrates me",
+          "content": "When the other doesn't invest the same level of attention in finding a shared solution. If the other just wants to 'close it' or concedes without conviction, I feel misunderstood and the conflict remains unresolved for me."
+        },
+        {
+          "title": "How to manage me during a fight",
+          "content": "Give me time to explore the problem with you. Don't interpret my questions as attacks — I'm trying to understand. If you're tired, tell me: we can pause and resume when you're available."
+        },
+        {
+          "title": "My limitation",
+          "content": "Sometimes I seek the perfect solution when 'good enough' would suffice. If the partner is in avoidant or compromising mode, I can seem heavy. Learning when it's ok to stop before the optimal solution is my work."
+        }
       ]
     },
     "compromising": {
@@ -346,9 +426,18 @@
       "code": "CONF-COMP2",
       "summary": "In conflicts you quickly seek a middle ground. You're pragmatic: a partial agreement beats a long conflict. The risk: accumulating unspoken dissatisfactions.",
       "instructions": [
-        { "title": "How I behave in conflict", "content": "I seek as quickly as possible an agreement that satisfies both at least partially. I don't need to get everything I want — I need the conflict to end and for us to move forward." },
-        { "title": "My blind spot", "content": "I often concede on things I actually care about, just to close the issue. Over time this can create an accumulation of small regrets. If you notice I always concede on everything, it's not that I don't care — I'm prioritizing short-term peace." },
-        { "title": "How to manage me", "content": "Every now and then ask me: 'Are you really ok with this agreement?' This gives me permission to say if I'm conceding on something important. Don't assume my 'yes' — sometimes it's 'yes for now'." }
+        {
+          "title": "How I behave in conflict",
+          "content": "I seek as quickly as possible an agreement that satisfies both at least partially. I don't need to get everything I want — I need the conflict to end and for us to move forward."
+        },
+        {
+          "title": "My blind spot",
+          "content": "I often concede on things I actually care about, just to close the issue. Over time this can create an accumulation of small regrets. If you notice I always concede on everything, it's not that I don't care — I'm prioritizing short-term peace."
+        },
+        {
+          "title": "How to manage me",
+          "content": "Every now and then ask me: 'Are you really ok with this agreement?' This gives me permission to say if I'm conceding on something important. Don't assume my 'yes' — sometimes it's 'yes for now'."
+        }
       ]
     },
     "avoiding": {
@@ -356,10 +445,22 @@
       "code": "CONF-AVO",
       "summary": "In conflicts you tend to withdraw, postpone, or change the subject. It's not indifference — open conflict activates you disproportionately. The risk: silent accumulation.",
       "instructions": [
-        { "title": "How I behave in conflict", "content": "Direct conflict creates strong discomfort for me. My first reaction is to exit the situation — physically or emotionally. It's not that I don't care: my nervous system perceives conflict as a threat and goes into defensive mode." },
-        { "title": "What happens if you press me", "content": "If you force me to confront you when I'm not ready, I shut down completely or say things I don't really mean. The result is worse than a pause. Best approach: give me a precise time ('let's talk about it tonight at 8') and respect the pause." },
-        { "title": "How to reach me", "content": "Lower the tone. Don't start with accusations or high emotional intensity — it'll make me flee before we even begin. A calm, open question ('I want to understand what happened for you') is the only entry that works." },
-        { "title": "The cost of my avoidance", "content": "I know that avoiding conflicts doesn't resolve them. I accumulate unexpressed things inside that weigh over time. My work is to learn that conflict managed well doesn't destroy — it builds. But I need safety to do that." }
+        {
+          "title": "How I behave in conflict",
+          "content": "Direct conflict creates strong discomfort for me. My first reaction is to exit the situation — physically or emotionally. It's not that I don't care: my nervous system perceives conflict as a threat and goes into defensive mode."
+        },
+        {
+          "title": "What happens if you press me",
+          "content": "If you force me to confront you when I'm not ready, I shut down completely or say things I don't really mean. The result is worse than a pause. Best approach: give me a precise time ('let's talk about it tonight at 8') and respect the pause."
+        },
+        {
+          "title": "How to reach me",
+          "content": "Lower the tone. Don't start with accusations or high emotional intensity — it'll make me flee before we even begin. A calm, open question ('I want to understand what happened for you') is the only entry that works."
+        },
+        {
+          "title": "The cost of my avoidance",
+          "content": "I know that avoiding conflicts doesn't resolve them. I accumulate unexpressed things inside that weigh over time. My work is to learn that conflict managed well doesn't destroy — it builds. But I need safety to do that."
+        }
       ]
     },
     "accommodating": {
@@ -367,23 +468,43 @@
       "code": "CONF-ACCO",
       "summary": "In conflicts you prioritize the other's needs. You concede easily to maintain harmony. The risk: progressive loss of your voice in the relationship.",
       "instructions": [
-        { "title": "How I behave in conflict", "content": "I give in willingly to preserve peace and the relationship. Setting aside my needs comes naturally when I feel the other is upset. For me the relationship comes before 'winning'." },
-        { "title": "The hidden price", "content": "My accommodating nature isn't unlimited. Under the surface I accumulate. If you see me suddenly explode over something apparently small, it's usually the last drop in a bucket I'd been filling for a long time." },
-        { "title": "How to support me", "content": "Ask explicitly for my opinion — don't take it for granted. When I concede, sometimes I need you to say: 'No, I really want to know what you think.' This gives me permission to be honest without feeling like I'm disappointing you." },
-        { "title": "My boundary", "content": "I need to learn to say 'no' on things I truly care about. When I do, it's not a whim — I've reached a real limit. Respecting that 'no' is respecting me." }
+        {
+          "title": "How I behave in conflict",
+          "content": "I give in willingly to preserve peace and the relationship. Setting aside my needs comes naturally when I feel the other is upset. For me the relationship comes before 'winning'."
+        },
+        {
+          "title": "The hidden price",
+          "content": "My accommodating nature isn't unlimited. Under the surface I accumulate. If you see me suddenly explode over something apparently small, it's usually the last drop in a bucket I'd been filling for a long time."
+        },
+        {
+          "title": "How to support me",
+          "content": "Ask explicitly for my opinion — don't take it for granted. When I concede, sometimes I need you to say: 'No, I really want to know what you think.' This gives me permission to be honest without feeling like I'm disappointing you."
+        },
+        {
+          "title": "My boundary",
+          "content": "I need to learn to say 'no' on things I truly care about. When I do, it's not a whim — I've reached a real limit. Respecting that 'no' is respecting me."
+        }
       ]
     }
   },
-
   "apologyLanguages": {
     "regret": {
       "label": "Expressing Regret",
       "code": "APO-REG",
       "summary": "An apology is real for you when you sense the other genuinely feels sorry for the pain they caused. Words only count if they carry authentic emotion.",
       "instructions": [
-        { "title": "What makes an apology credible for me", "content": "I need to see and feel that the other is truly sorry — not just formally, but emotionally. A 'sorry' said quickly or in a detached way doesn't land. The apology must contain recognition of my specific pain." },
-        { "title": "How to apologize to me effectively", "content": "Don't start with explanations or justifications — start with my pain. 'I can see I hurt you when I did X, and I'm truly sorry.' Only then can we discuss the context. If you start explaining before I feel understood, the apology doesn't reach me." },
-        { "title": "What doesn't work for me", "content": "Formal, automatic, or rushed apologies. 'Sorry, ok?' isn't an apology for me — it's a request to get out of your way. If you don't genuinely feel sorry, it's better to wait for the right moment than to fake it." }
+        {
+          "title": "What makes an apology credible for me",
+          "content": "I need to see and feel that the other is truly sorry — not just formally, but emotionally. A 'sorry' said quickly or in a detached way doesn't land. The apology must contain recognition of my specific pain."
+        },
+        {
+          "title": "How to apologize to me effectively",
+          "content": "Don't start with explanations or justifications — start with my pain. 'I can see I hurt you when I did X, and I'm truly sorry.' Only then can we discuss the context. If you start explaining before I feel understood, the apology doesn't reach me."
+        },
+        {
+          "title": "What doesn't work for me",
+          "content": "Formal, automatic, or rushed apologies. 'Sorry, ok?' isn't an apology for me — it's a request to get out of your way. If you don't genuinely feel sorry, it's better to wait for the right moment than to fake it."
+        }
       ]
     },
     "responsibility": {
@@ -391,9 +512,18 @@
       "code": "APO-RES",
       "summary": "An apology is real for you when the other explicitly acknowledges what they did wrong. Without clear responsibility, the apology remains empty.",
       "instructions": [
-        { "title": "What makes an apology credible for me", "content": "I need to hear that the other knows exactly what they did wrong and admits it without ambiguity. 'I was wrong to do X' — specific, direct, without 'but'. 'But's after an apology cancel it." },
-        { "title": "How to apologize to me effectively", "content": "Name the specific action that caused the problem. Not 'I'm sorry if you were offended' (passive, not responsible) — but 'I was wrong when I did X'. The difference is enormous for me." },
-        { "title": "My sensitive point", "content": "Vague apologies or 'I'm sorry you felt that way' make me angrier than no apology at all. They shift responsibility onto me — onto how I 'perceived' something instead of what was done. Acknowledge the fact, not my reaction." }
+        {
+          "title": "What makes an apology credible for me",
+          "content": "I need to hear that the other knows exactly what they did wrong and admits it without ambiguity. 'I was wrong to do X' — specific, direct, without 'but'. 'But's after an apology cancel it."
+        },
+        {
+          "title": "How to apologize to me effectively",
+          "content": "Name the specific action that caused the problem. Not 'I'm sorry if you were offended' (passive, not responsible) — but 'I was wrong when I did X'. The difference is enormous for me."
+        },
+        {
+          "title": "My sensitive point",
+          "content": "Vague apologies or 'I'm sorry you felt that way' make me angrier than no apology at all. They shift responsibility onto me — onto how I 'perceived' something instead of what was done. Acknowledge the fact, not my reaction."
+        }
       ]
     },
     "restitution": {
@@ -401,9 +531,18 @@
       "code": "APO-REST",
       "summary": "An apology is complete for you only when accompanied by a concrete act of repair. Words alone aren't enough — actions are required.",
       "instructions": [
-        { "title": "What makes an apology credible for me", "content": "Words alone aren't enough. I need to see something concrete that demonstrates the apology is real. It doesn't have to be big — but it has to exist. 'What can I do to make it right?' is the question that fully opens me up." },
-        { "title": "How to apologize to me effectively", "content": "Propose a specific gesture. Not 'I'll do better' (vague) — but 'this week I'll do X to make it right'. The gesture must be proportional to the harm and must have been truly thought through, not thrown out there." },
-        { "title": "What doesn't work for me", "content": "Apologies without follow-through. If you tell me 'I'll make it right' and then do nothing, the apology becomes worse than the original wrong. Better not to promise if you're not sure you can do it." }
+        {
+          "title": "What makes an apology credible for me",
+          "content": "Words alone aren't enough. I need to see something concrete that demonstrates the apology is real. It doesn't have to be big — but it has to exist. 'What can I do to make it right?' is the question that fully opens me up."
+        },
+        {
+          "title": "How to apologize to me effectively",
+          "content": "Propose a specific gesture. Not 'I'll do better' (vague) — but 'this week I'll do X to make it right'. The gesture must be proportional to the harm and must have been truly thought through, not thrown out there."
+        },
+        {
+          "title": "What doesn't work for me",
+          "content": "Apologies without follow-through. If you tell me 'I'll make it right' and then do nothing, the apology becomes worse than the original wrong. Better not to promise if you're not sure you can do it."
+        }
       ]
     },
     "repentance": {
@@ -411,9 +550,18 @@
       "code": "APO-REP",
       "summary": "An apology is credible for you only if it signals real change in future behavior. Without concrete intention to change, the apology is just moment management.",
       "instructions": [
-        { "title": "What makes an apology credible for me", "content": "I need to believe the same thing won't happen again — not because you promise it, but because I see a concrete plan for change. 'I won't do it again' alone isn't enough. I need to understand what will change." },
-        { "title": "How to apologize to me effectively", "content": "Tell me what you'll do differently next time. Specific: 'When X happens, instead of doing Y I'll do Z.' This tells me you've understood the problem, not just that you want peace." },
-        { "title": "My limit", "content": "If the same behavior repeats after an apology, my trust erodes proportionally. Remorse isn't enough for me — I need the change. And I notice when it's not there." }
+        {
+          "title": "What makes an apology credible for me",
+          "content": "I need to believe the same thing won't happen again — not because you promise it, but because I see a concrete plan for change. 'I won't do it again' alone isn't enough. I need to understand what will change."
+        },
+        {
+          "title": "How to apologize to me effectively",
+          "content": "Tell me what you'll do differently next time. Specific: 'When X happens, instead of doing Y I'll do Z.' This tells me you've understood the problem, not just that you want peace."
+        },
+        {
+          "title": "My limit",
+          "content": "If the same behavior repeats after an apology, my trust erodes proportionally. Remorse isn't enough for me — I need the change. And I notice when it's not there."
+        }
       ]
     },
     "forgiveness": {
@@ -421,30 +569,59 @@
       "code": "APO-FOR",
       "summary": "The apology ritual closes for you only when the other explicitly asks for forgiveness. This formal act carries real and necessary emotional weight.",
       "instructions": [
-        { "title": "What makes an apology credible for me", "content": "Forgiveness must be explicitly requested — not assumed. 'Do you forgive me?' is the key that closes the conflict for me. Without that question, I remain in a state of unresolved tension even if everything else has been said." },
-        { "title": "How to apologize to me effectively", "content": "End the apology with an explicit request: 'Do you forgive me?' or 'Can we move forward?' Don't assume forgiveness is automatic — ask for it. This gives me the power to choose to let go." },
-        { "title": "Why this matters to me", "content": "It's not formalism. When someone asks my forgiveness, they acknowledge that I suffered a wrong and that it's up to me — not them — to decide when and whether to close it. It restores my agency in a moment when I was wronged." }
+        {
+          "title": "What makes an apology credible for me",
+          "content": "Forgiveness must be explicitly requested — not assumed. 'Do you forgive me?' is the key that closes the conflict for me. Without that question, I remain in a state of unresolved tension even if everything else has been said."
+        },
+        {
+          "title": "How to apologize to me effectively",
+          "content": "End the apology with an explicit request: 'Do you forgive me?' or 'Can we move forward?' Don't assume forgiveness is automatic — ask for it. This gives me the power to choose to let go."
+        },
+        {
+          "title": "Why this matters to me",
+          "content": "It's not formalism. When someone asks my forgiveness, they acknowledge that I suffered a wrong and that it's up to me — not them — to decide when and whether to close it. It restores my agency in a moment when I was wronged."
+        }
       ]
     }
   },
-
   "careStyle": {
     "emotional": {
       "label": "Emotional Care",
       "code": "CARE-EM",
       "summary": "Your primary care style is empathic listening. When someone suffers, your instinct is to connect with their inner state before any action.",
       "instructions": [
-        { "title": "How I support those I love", "content": "When someone close to me is struggling, I sit with them, listen without interrupting, and try to understand how they feel from the inside. I don't rush to solutions. My primary goal is that the other person feels understood, not fixed." },
-        { "title": "What makes me feel helpful", "content": "I feel truly helpful when I see the other feels less alone after talking with me. I don't need to have solved anything. Emotional connection is my measure of success." },
-        { "title": "My limitation", "content": "I can stay in listening mode so long that I never help concretely. Sometimes people need solutions, not just to be heard. I'm learning to ask: 'Do you want me to listen or do you need practical advice?'" }
+        {
+          "title": "How I support those I love",
+          "content": "When someone close to me is struggling, I sit with them, listen without interrupting, and try to understand how they feel from the inside. I don't rush to solutions. My primary goal is that the other person feels understood, not fixed."
+        },
+        {
+          "title": "What makes me feel helpful",
+          "content": "I feel truly helpful when I see the other feels less alone after talking with me. I don't need to have solved anything. Emotional connection is my measure of success."
+        },
+        {
+          "title": "My limitation",
+          "content": "I can stay in listening mode so long that I never help concretely. Sometimes people need solutions, not just to be heard. I'm learning to ask: 'Do you want me to listen or do you need practical advice?'"
+        }
       ],
       "antiPatterns": [
-        { "title": "Invasive Listening", "content": "You can ask too many emotional questions when the other just wants to vent quickly and move on. Not every difficult moment requires deep emotional analysis." },
-        { "title": "Emotional Projection", "content": "You assume the other feels the way you would feel in the same situation. But not everyone processes emotions the same way — some prefer to just solve and move on." }
+        {
+          "title": "Invasive Listening",
+          "content": "You can ask too many emotional questions when the other just wants to vent quickly and move on. Not every difficult moment requires deep emotional analysis."
+        },
+        {
+          "title": "Emotional Projection",
+          "content": "You assume the other feels the way you would feel in the same situation. But not everyone processes emotions the same way — some prefer to just solve and move on."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to receive support from them", "content": "When they need support, don't start with solutions — start with emotional presence. Ask 'how are you really?' and listen before proposing anything. Connection comes before action." },
-        { "title": "How to give them support", "content": "This partner needs to feel their emotions are valid, not that they should 'feel better'. Avoid phrases like 'it's not a big deal'. Validate first, then — if they want — help find solutions." }
+        {
+          "title": "How to receive support from them",
+          "content": "When they need support, don't start with solutions — start with emotional presence. Ask 'how are you really?' and listen before proposing anything. Connection comes before action."
+        },
+        {
+          "title": "How to give them support",
+          "content": "This partner needs to feel their emotions are valid, not that they should 'feel better'. Avoid phrases like 'it's not a big deal'. Validate first, then — if they want — help find solutions."
+        }
       ]
     },
     "practical": {
@@ -452,17 +629,38 @@
       "code": "CARE-PR",
       "summary": "Your care style is action-oriented. When someone suffers, your instinct is to find a solution and act concretely to improve the situation.",
       "instructions": [
-        { "title": "How I support those I love", "content": "When someone I love has a problem, my first reaction is to ask: 'What can I do to solve this?' I research, organize, fix. My way of loving is being concretely useful." },
-        { "title": "What makes me feel helpful", "content": "I feel truly helpful when the problem is solved or alleviated. Pure emotional presence without action leaves me with the feeling of not having done enough." },
-        { "title": "My limitation", "content": "I often propose solutions when the other just wants to be heard. This can make them feel misunderstood. I'm learning to ask first: 'Do you need me to listen or do you want practical help?'" }
+        {
+          "title": "How I support those I love",
+          "content": "When someone I love has a problem, my first reaction is to ask: 'What can I do to solve this?' I research, organize, fix. My way of loving is being concretely useful."
+        },
+        {
+          "title": "What makes me feel helpful",
+          "content": "I feel truly helpful when the problem is solved or alleviated. Pure emotional presence without action leaves me with the feeling of not having done enough."
+        },
+        {
+          "title": "My limitation",
+          "content": "I often propose solutions when the other just wants to be heard. This can make them feel misunderstood. I'm learning to ask first: 'Do you need me to listen or do you want practical help?'"
+        }
       ],
       "antiPatterns": [
-        { "title": "The Unsolicited Fix", "content": "You propose solutions before the other has even finished talking. This signals you're already thinking about how to exit the emotional conversation, not truly understanding." },
-        { "title": "Fixing as Avoidance", "content": "Sometimes 'solving' is a way to avoid staying with emotional vulnerability. Being busy with the problem is easier than sitting with the other's pain without being able to eliminate it immediately." }
+        {
+          "title": "The Unsolicited Fix",
+          "content": "You propose solutions before the other has even finished talking. This signals you're already thinking about how to exit the emotional conversation, not truly understanding."
+        },
+        {
+          "title": "Fixing as Avoidance",
+          "content": "Sometimes 'solving' is a way to avoid staying with emotional vulnerability. Being busy with the problem is easier than sitting with the other's pain without being able to eliminate it immediately."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to receive support from them", "content": "Tell them explicitly what you need: 'I need to vent without advice' or 'I have a practical problem, can you help me find a solution?' Without explicit instructions, their default is to fix." },
-        { "title": "How to give them support", "content": "When this partner is struggling, offer concrete help: 'What can I do?' or 'Do you want me to handle X?' Words of comfort are worth less to them than tangible actions." }
+        {
+          "title": "How to receive support from them",
+          "content": "Tell them explicitly what you need: 'I need to vent without advice' or 'I have a practical problem, can you help me find a solution?' Without explicit instructions, their default is to fix."
+        },
+        {
+          "title": "How to give them support",
+          "content": "When this partner is struggling, offer concrete help: 'What can I do?' or 'Do you want me to handle X?' Words of comfort are worth less to them than tangible actions."
+        }
       ]
     },
     "presence": {
@@ -470,17 +668,38 @@
       "code": "CARE-PS",
       "summary": "Your care style is constant presence. Being there — physically or emotionally, even in silence — is the form of love you believe most powerful.",
       "instructions": [
-        { "title": "How I support those I love", "content": "I don't feel the need to speak or act. Being close — sitting beside, not leaving, being reachable — is my primary form of support. Shared silence has deep value for me." },
-        { "title": "What makes me feel helpful", "content": "I feel useful when I know the other is not alone. It doesn't matter if I said nothing memorable or solved nothing — if I was there, I did my part." },
-        { "title": "My limitation", "content": "My constant presence can become suffocating if the partner needs space to process alone. Not everyone finds continuous presence reassuring — some perceive it as pressure." }
+        {
+          "title": "How I support those I love",
+          "content": "I don't feel the need to speak or act. Being close — sitting beside, not leaving, being reachable — is my primary form of support. Shared silence has deep value for me."
+        },
+        {
+          "title": "What makes me feel helpful",
+          "content": "I feel useful when I know the other is not alone. It doesn't matter if I said nothing memorable or solved nothing — if I was there, I did my part."
+        },
+        {
+          "title": "My limitation",
+          "content": "My constant presence can become suffocating if the partner needs space to process alone. Not everyone finds continuous presence reassuring — some perceive it as pressure."
+        }
       ],
       "antiPatterns": [
-        { "title": "Suffocating Presence", "content": "You stay close even when the other needs space to process alone. You can't detach because you interpret their solitude as rejection of your support." },
-        { "title": "Availability Martyrdom", "content": "You're always available, at any hour, for anyone — at the cost of your own well-being. This isn't just care for others: it's also a way to feel needed." }
+        {
+          "title": "Suffocating Presence",
+          "content": "You stay close even when the other needs space to process alone. You can't detach because you interpret their solitude as rejection of your support."
+        },
+        {
+          "title": "Availability Martyrdom",
+          "content": "You're always available, at any hour, for anyone — at the cost of your own well-being. This isn't just care for others: it's also a way to feel needed."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to receive support from them", "content": "They don't expect you to speak or fix. They feel useful by being with you. Allow them to be there, even in silence. If you need space, say so explicitly — don't disappear without explanation." },
-        { "title": "How to give them support", "content": "This partner feels loved when not left alone in difficult moments. Your physical presence or a simple 'I'm here' is worth more than a thousand pieces of advice or solutions." }
+        {
+          "title": "How to receive support from them",
+          "content": "They don't expect you to speak or fix. They feel useful by being with you. Allow them to be there, even in silence. If you need space, say so explicitly — don't disappear without explanation."
+        },
+        {
+          "title": "How to give them support",
+          "content": "This partner feels loved when not left alone in difficult moments. Your physical presence or a simple 'I'm here' is worth more than a thousand pieces of advice or solutions."
+        }
       ]
     },
     "autonomy": {
@@ -488,36 +707,71 @@
       "code": "CARE-AU",
       "summary": "Your care style is respecting autonomy. You believe the best support is giving people space to find their own answers.",
       "instructions": [
-        { "title": "How I support those I love", "content": "I believe people have the resources to face their own problems. My support is giving them space, not invading. I intervene when asked, not before." },
-        { "title": "What makes me feel helpful", "content": "I feel helpful when the other manages to find their own solution — partly thanks to the space I gave them. My care is respect, not intrusion." },
-        { "title": "My limitation", "content": "Sometimes my 'respect for autonomy' is perceived as disinterest or coldness. When someone truly needs active support, my stepping back can feel like abandonment." }
+        {
+          "title": "How I support those I love",
+          "content": "I believe people have the resources to face their own problems. My support is giving them space, not invading. I intervene when asked, not before."
+        },
+        {
+          "title": "What makes me feel helpful",
+          "content": "I feel helpful when the other manages to find their own solution — partly thanks to the space I gave them. My care is respect, not intrusion."
+        },
+        {
+          "title": "My limitation",
+          "content": "Sometimes my 'respect for autonomy' is perceived as disinterest or coldness. When someone truly needs active support, my stepping back can feel like abandonment."
+        }
       ],
       "antiPatterns": [
-        { "title": "Distance as Care", "content": "You think giving space is always the right answer. But in moments of acute crisis, people need active support — not space. Your withdrawal can be experienced as indifference." },
-        { "title": "Implicit Expectation of Strength", "content": "By treating others as autonomous and capable, you may implicitly communicate that it's not 'ok' to need help. This can make them reluctant to ask for support when they genuinely need it." }
+        {
+          "title": "Distance as Care",
+          "content": "You think giving space is always the right answer. But in moments of acute crisis, people need active support — not space. Your withdrawal can be experienced as indifference."
+        },
+        {
+          "title": "Implicit Expectation of Strength",
+          "content": "By treating others as autonomous and capable, you may implicitly communicate that it's not 'ok' to need help. This can make them reluctant to ask for support when they genuinely need it."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to receive support from them", "content": "Don't expect them to step forward spontaneously — they respect your autonomy too much to 'intrude'. If you need active support, ask explicitly: 'I need you here with me.' They will respond." },
-        { "title": "How to give them support", "content": "This partner appreciates you not invading with questions or constant presence while they process something. Tell them 'I'm here if you need me' and let them decide when and how to approach." }
+        {
+          "title": "How to receive support from them",
+          "content": "Don't expect them to step forward spontaneously — they respect your autonomy too much to 'intrude'. If you need active support, ask explicitly: 'I need you here with me.' They will respond."
+        },
+        {
+          "title": "How to give them support",
+          "content": "This partner appreciates you not invading with questions or constant presence while they process something. Tell them 'I'm here if you need me' and let them decide when and how to approach."
+        }
       ]
     }
   },
-
   "coreValues": {
     "security": {
       "label": "Security Orientation",
       "code": "VAL-SEC",
       "summary": "Stability, predictability, and continuity are your core values. You build your life on solid foundations and need to know where you're going.",
       "instructions": [
-        { "title": "How this value shows up", "content": "I give great importance to routine, shared rituals, and predictability. It's not fear of change — it's recognition that stability creates the space to trust and invest deeply in something." },
-        { "title": "What I need in a relationship", "content": "I need to know where I stand with my partner: clear commitments, shared plans, consistent communication. Prolonged uncertainty in the relationship is hard for me to manage." },
-        { "title": "Potential friction with different partners", "content": "With freedom- or growth-oriented partners, I can seem rigid or fearful of change. The challenge is distinguishing changes that enrich from those that destabilize." }
+        {
+          "title": "How this value shows up",
+          "content": "I give great importance to routine, shared rituals, and predictability. It's not fear of change — it's recognition that stability creates the space to trust and invest deeply in something."
+        },
+        {
+          "title": "What I need in a relationship",
+          "content": "I need to know where I stand with my partner: clear commitments, shared plans, consistent communication. Prolonged uncertainty in the relationship is hard for me to manage."
+        },
+        {
+          "title": "Potential friction with different partners",
+          "content": "With freedom- or growth-oriented partners, I can seem rigid or fearful of change. The challenge is distinguishing changes that enrich from those that destabilize."
+        }
       ],
       "antiPatterns": [
-        { "title": "Resistance to Change", "content": "Your preference for stability can become resistance to any novelty, even when change would be positive. Not every uncertainty is a threat." }
+        {
+          "title": "Resistance to Change",
+          "content": "Your preference for stability can become resistance to any novelty, even when change would be positive. Not every uncertainty is a threat."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to support this partner", "content": "Communicate important changes in advance. They don't love surprises — not because they're rigid, but because anticipation lets them adapt. A 'I want to talk to you about something' said ahead of time is gold." }
+        {
+          "title": "How to support this partner",
+          "content": "Communicate important changes in advance. They don't love surprises — not because they're rigid, but because anticipation lets them adapt. A 'I want to talk to you about something' said ahead of time is gold."
+        }
       ]
     },
     "freedom": {
@@ -525,15 +779,30 @@
       "code": "VAL-FREE",
       "summary": "Autonomy, adventure, and independence are your core values. You need to feel that life is open, not predetermined.",
       "instructions": [
-        { "title": "How this value shows up", "content": "I feel physical discomfort when I feel trapped — by rigid routines, unchosen expectations, relationships that limit who I am. Freedom is not a whim: it's a necessary condition for my well-being." },
-        { "title": "What I need in a relationship", "content": "I need space to be myself within the relationship. A partner who tries to control or limit me — even with the best intentions — triggers an immediate flight response." },
-        { "title": "Potential friction with different partners", "content": "With security-oriented partners I can seem unreliable or uncommitted. The challenge is learning that committing doesn't mean losing yourself — it's possible to be free within a stable relationship." }
+        {
+          "title": "How this value shows up",
+          "content": "I feel physical discomfort when I feel trapped — by rigid routines, unchosen expectations, relationships that limit who I am. Freedom is not a whim: it's a necessary condition for my well-being."
+        },
+        {
+          "title": "What I need in a relationship",
+          "content": "I need space to be myself within the relationship. A partner who tries to control or limit me — even with the best intentions — triggers an immediate flight response."
+        },
+        {
+          "title": "Potential friction with different partners",
+          "content": "With security-oriented partners I can seem unreliable or uncommitted. The challenge is learning that committing doesn't mean losing yourself — it's possible to be free within a stable relationship."
+        }
       ],
       "antiPatterns": [
-        { "title": "Freedom as Escape", "content": "Sometimes your search for freedom is actually avoidance of commitment and vulnerability. Deep intimacy requires accepting some constraints — not as a prison, but as roots." }
+        {
+          "title": "Freedom as Escape",
+          "content": "Sometimes your search for freedom is actually avoidance of commitment and vulnerability. Deep intimacy requires accepting some constraints — not as a prison, but as roots."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to support this partner", "content": "Don't tighten the reins when they feel limited — you'll get the opposite effect. Give them space and trust, and they'll choose to return. Controlling them pushes them away; respecting their autonomy draws them closer." }
+        {
+          "title": "How to support this partner",
+          "content": "Don't tighten the reins when they feel limited — you'll get the opposite effect. Give them space and trust, and they'll choose to return. Controlling them pushes them away; respecting their autonomy draws them closer."
+        }
       ]
     },
     "achievement": {
@@ -541,15 +810,30 @@
       "code": "VAL-ACH",
       "summary": "Success, ambitious goals, and recognition are your core values. You're motivated by challenge and professional growth.",
       "instructions": [
-        { "title": "How this value shows up", "content": "I invest heavily in my career and personal goals. It's not selfishness — it's how I feel alive. Success isn't just material: it's proof that I'm making the most of my potential." },
-        { "title": "What I need in a relationship", "content": "I need a partner who supports my ambitions, not scales them back. Criticism of my goals feels like criticism of my identity. I value someone who challenges me to grow, not who asks me to slow down." },
-        { "title": "Potential friction with different partners", "content": "With connection-oriented partners I can seem distant or not present enough. The challenge is not treating the relationship like another thing to 'optimize' — relationships require presence, not performance." }
+        {
+          "title": "How this value shows up",
+          "content": "I invest heavily in my career and personal goals. It's not selfishness — it's how I feel alive. Success isn't just material: it's proof that I'm making the most of my potential."
+        },
+        {
+          "title": "What I need in a relationship",
+          "content": "I need a partner who supports my ambitions, not scales them back. Criticism of my goals feels like criticism of my identity. I value someone who challenges me to grow, not who asks me to slow down."
+        },
+        {
+          "title": "Potential friction with different partners",
+          "content": "With connection-oriented partners I can seem distant or not present enough. The challenge is not treating the relationship like another thing to 'optimize' — relationships require presence, not performance."
+        }
       ],
       "antiPatterns": [
-        { "title": "The Relationship as Project", "content": "You treat the relationship as a goal to achieve rather than an experience to live. Efficiency and optimization don't apply to intimacy." }
+        {
+          "title": "The Relationship as Project",
+          "content": "You treat the relationship as a goal to achieve rather than an experience to live. Efficiency and optimization don't apply to intimacy."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to support this partner", "content": "Celebrate their successes — even those that seem 'just work' to you. For them, it's an expression of identity. And when they need to focus intensely on a goal, support them without making them feel guilty." }
+        {
+          "title": "How to support this partner",
+          "content": "Celebrate their successes — even those that seem 'just work' to you. For them, it's an expression of identity. And when they need to focus intensely on a goal, support them without making them feel guilty."
+        }
       ]
     },
     "connection": {
@@ -557,15 +841,30 @@
       "code": "VAL-CON",
       "summary": "Relationships, family, and contribution to others are your core values. Your well-being is intrinsically linked to the quality of your bonds.",
       "instructions": [
-        { "title": "How this value shows up", "content": "People are at the center of my life. I invest heavily in relationships — family, friends, partner — because that's where I find deep meaning and satisfaction. It's not dependence: it's recognizing that we're relational beings." },
-        { "title": "What I need in a relationship", "content": "I need to feel that the relationship is a real priority, not residual. A partner who systematically puts everything before our connection makes me feel invisible." },
-        { "title": "Potential friction with different partners", "content": "With achievement- or freedom-oriented partners I can feel like I'm ranked second. The challenge is distinguishing between someone who doesn't value me and someone who simply expresses love differently." }
+        {
+          "title": "How this value shows up",
+          "content": "People are at the center of my life. I invest heavily in relationships — family, friends, partner — because that's where I find deep meaning and satisfaction. It's not dependence: it's recognizing that we're relational beings."
+        },
+        {
+          "title": "What I need in a relationship",
+          "content": "I need to feel that the relationship is a real priority, not residual. A partner who systematically puts everything before our connection makes me feel invisible."
+        },
+        {
+          "title": "Potential friction with different partners",
+          "content": "With achievement- or freedom-oriented partners I can feel like I'm ranked second. The challenge is distinguishing between someone who doesn't value me and someone who simply expresses love differently."
+        }
       ],
       "antiPatterns": [
-        { "title": "Merger as Connection", "content": "You can confuse deep intimacy with total fusion. Healthy relationships maintain two distinct identities — you don't lose yourself in the other, you grow alongside the other." }
+        {
+          "title": "Merger as Connection",
+          "content": "You can confuse deep intimacy with total fusion. Healthy relationships maintain two distinct identities — you don't lose yourself in the other, you grow alongside the other."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to support this partner", "content": "Show them the relationship is a priority — not just in crises, but in everyday life. Small, regular gestures ('I was thinking about you today') are worth more than grand rare gestures." }
+        {
+          "title": "How to support this partner",
+          "content": "Show them the relationship is a priority — not just in crises, but in everyday life. Small, regular gestures ('I was thinking about you today') are worth more than grand rare gestures."
+        }
       ]
     },
     "growth": {
@@ -573,64 +872,124 @@
       "code": "VAL-GR",
       "summary": "Personal evolution, learning, and deep meaning are your core values. You're in constant movement toward a better version of yourself.",
       "instructions": [
-        { "title": "How this value shows up", "content": "I don't settle for who I am today. I read, reflect, question my beliefs, seek experiences that change me. This isn't instability — it's how I respect myself." },
-        { "title": "What I need in a relationship", "content": "I need a partner who grows with me or at least supports my journey. A relationship that opposes my evolution slowly suffocates me." },
-        { "title": "Potential friction with different partners", "content": "With security-oriented partners I can seem unsatisfied or unstable. The challenge is communicating that growth doesn't threaten stability — it can enrich it." }
+        {
+          "title": "How this value shows up",
+          "content": "I don't settle for who I am today. I read, reflect, question my beliefs, seek experiences that change me. This isn't instability — it's how I respect myself."
+        },
+        {
+          "title": "What I need in a relationship",
+          "content": "I need a partner who grows with me or at least supports my journey. A relationship that opposes my evolution slowly suffocates me."
+        },
+        {
+          "title": "Potential friction with different partners",
+          "content": "With security-oriented partners I can seem unsatisfied or unstable. The challenge is communicating that growth doesn't threaten stability — it can enrich it."
+        }
       ],
       "antiPatterns": [
-        { "title": "Growth as Escape from Self", "content": "Sometimes constant improvement is a way to avoid accepting who you are now. True growth includes acceptance, not just transformation." }
+        {
+          "title": "Growth as Escape from Self",
+          "content": "Sometimes constant improvement is a way to avoid accepting who you are now. True growth includes acceptance, not just transformation."
+        }
       ],
       "partnerInstructions": [
-        { "title": "How to support this partner", "content": "Show genuine interest in their growth journey — books they're reading, ideas that excite them, changes they're exploring. Feeling understood in their evolution is for them a profound act of love." }
+        {
+          "title": "How to support this partner",
+          "content": "Show genuine interest in their growth journey — books they're reading, ideas that excite them, changes they're exploring. Feeling understood in their evolution is for them a profound act of love."
+        }
       ]
     }
   },
-
   "crossModuleInsights": {
     "avoidant_avoiding": {
       "title": "Double Avoidance",
-      "modules": ["attachment", "conflictStyle"],
+      "modules": [
+        "attachment",
+        "conflictStyle"
+      ],
       "condition": "Avoidant Attachment + Avoiding Conflict Style",
       "content": "Under stress you tend to disappear on two fronts simultaneously: emotional and conflictual. Your partner may perceive an 'invisible person' in difficult situations. It's not indifference — it's a double protection system. Your work: signal when you're avoiding, even just with 'I need time, I'll be back'.",
       "partnerNote": "If your partner has this profile: don't chase them. Create safe space and an explicit agreement on 'return timing'. Pressure makes everything worse."
     },
     "anxious_competing": {
       "title": "Explosive Pursuit",
-      "modules": ["attachment", "conflictStyle"],
+      "modules": [
+        "attachment",
+        "conflictStyle"
+      ],
       "condition": "Anxious Attachment + Competing Conflict Style",
       "content": "Fear of abandonment combines with an assertive style: when you feel emotionally threatened, the intensity of your conflicts increases dramatically. You can seem aggressive when you're actually scared. The signal that you're entering this pattern: the volume of the discussion grows but the real topic is 'do you still love me?'",
       "partnerNote": "When conflict escalates quickly, try bypassing the surface argument: 'I sense there's something deeper here. Are you ok?' This defuses the pattern."
     },
     "accommodating_anxious": {
       "title": "Pleasing Out of Fear",
-      "modules": ["attachment", "conflictStyle"],
+      "modules": [
+        "attachment",
+        "conflictStyle"
+      ],
       "condition": "Anxious Attachment + Accommodating Style",
       "content": "You concede in conflicts not because you don't care, but because you fear disagreement will put the relationship at risk. Your accommodating nature is driven by anxiety, not generosity. The risk: you never say what you really want, then explode on something apparently insignificant when the bucket is full.",
       "partnerNote": "Ask often: 'Are you really ok with this?' and wait for the real answer, not the automatic one. Create explicit safety: 'You can say no to me without anything changing between us.'"
     },
     "competing_report": {
       "title": "Overpower and Explain",
-      "modules": ["conflictStyle", "communication"],
+      "modules": [
+        "conflictStyle",
+        "communication"
+      ],
       "condition": "Competing Style + Report Talk",
       "content": "In a discussion you have the double tendency to want to win the point AND to be efficient/direct. The result: difficult conversations become debates where 'who's right' exceeds 'how are we both'. Watch the difference between being right and being understood.",
       "partnerNote": "With this profile, intentionally slowing down is the work. Before responding, a 3-second pause and the mental question: 'Am I trying to win or to understand?'"
     },
     "different_apology_languages": {
       "title": "Apologies in Different Languages",
-      "modules": ["apologyLanguages"],
+      "modules": [
+        "apologyLanguages"
+      ],
       "condition": "Different apology languages between partners",
       "content": "You apologized and the other doesn't seem to forgive you — or vice versa. The problem isn't sincerity: you're speaking different apology languages. An apology in your language doesn't arrive in the other's language.",
       "partnerNote": "Ask explicitly: 'How can I apologize in a way that truly lands?' Don't assume your apology has the right format."
     },
     "avoiding_repentance": {
       "title": "Silent Apology",
-      "modules": ["conflictStyle", "apologyLanguages"],
+      "modules": [
+        "conflictStyle",
+        "apologyLanguages"
+      ],
       "condition": "Avoiding Style + Apology Language: Repentance",
       "content": "You avoid conflicts AND need to see concrete changes before forgiving. This creates a paradox: you avoid the difficult conversation needed to clarify the expected change. Result: you never truly forgive because you never said what you expected.",
       "partnerNote": "Help your partner articulate the change they expect, in a calm moment — not during the conflict."
+    },
+    "care_autonomy_anxious_attachment": {
+      "title": "Care That Scares",
+      "modules": [
+        "careStyle",
+        "attachment"
+      ],
+      "condition": "Autonomy Care Style + Anxious Attachment (partner)",
+      "content": "Your way of showing love is giving space — but for a partner with anxious attachment, space is the signal of abandonment. Your most authentic care gets read as distance. Learn to announce your withdrawal and actively re-enter contact, not just when you feel like it.",
+      "partnerNote": "If your partner has this profile: they're not misreading your autonomy — it's their way of loving you. Help them understand how you feel with phrases like 'I need a signal that you're there', not 'you never care about me'."
+    },
+    "care_emotional_avoidant_attachment": {
+      "title": "Care That Saturates",
+      "modules": [
+        "careStyle",
+        "attachment"
+      ],
+      "condition": "Emotional Care Style + Avoidant Attachment (partner)",
+      "content": "Your care is full of presence, listening, and closeness — but for a partner with avoidant attachment, this intensity can feel smothering. Learn to offer support in calibrated doses: 'I'm here if you need me' is worth more than 10 minutes of continuous check-ins.",
+      "partnerNote": "If your partner has this profile: their emotional care is genuine, not smothering. Tell them when you've reached your closeness limit — help them read your signals before you disappear."
+    },
+    "security_value_avoidant_attachment": {
+      "title": "Control as Shelter",
+      "modules": [
+        "coreValues",
+        "attachment"
+      ],
+      "condition": "Security Primary Value + Avoidant Attachment",
+      "content": "You seek stability in the external world (routine, plans, certainties) but avoid emotional vulnerability. Risk: you build a safe life but emotionally distant. True security in relationships requires tolerating the other's uncertainty — not just controlling external variables.",
+      "partnerNote": "If your partner has this profile: they understand security as context control, not intimacy. Help them feel that emotional connection is safe, not dangerous."
     }
   },
-
   "coupleReport": {
     "frictionPatterns": {
       "avoidant_anxious": {
@@ -688,9 +1047,72 @@
         "whatHappens": "Structured partner plans the weekend on Thursday. Flexible partner changes their mind Saturday morning. Structured partner feels destabilized and disrespected. Flexible partner feels trapped by too many rules.",
         "protocol": "Hybrid agreement: define what's NON-negotiable (things requiring advance planning) and the free space for improvisation. E.g.: 'Friday evening is free, Saturday lunch is planned'.",
         "weeklyAction": "The structured partner intentionally leaves ONE moment of the week unplanned. The flexible partner keeps ONE scheduled commitment without changing it."
+      },
+      "competing_avoiding": {
+        "name": "Attack and Flee",
+        "severity": "high",
+        "description": "One pushes, the other disappears. The more pressure rises, the more the other shuts down. It's a self-feeding cycle that worsens with each round.",
+        "whatHappens": "The competing partner raises their voice to get a response → the avoiding partner shuts down or leaves the room → the competing partner increases intensity → total silence. Nobody wins, both lose.",
+        "protocol": "The avoiding partner must speak before disappearing: 'I need 20 minutes, then I'll come back'. The competing partner must accept the break as a signal of return, not abandonment, and lower intensity.",
+        "weeklyAction": "Once a week discuss a NON-urgent disagreement with a 10-minute timer each. No interruptions. Train both before the real crisis arrives."
+      },
+      "avoiding_avoiding": {
+        "name": "Forced Peace",
+        "severity": "medium",
+        "description": "Nobody ever fights — but problems don't get resolved, they accumulate. The surface is calm, the underground is a volcano.",
+        "whatHappens": "Both avoid conflict → hot topics get glossed over → an implicit silence contract builds → over time emotional distance, coldness, or a sudden explosion over something apparently trivial emerges.",
+        "protocol": "Establish a 30-minute 'monthly check-in' where you must each say at least one thing that isn't working. Rule: the goal isn't to solve, it's to name.",
+        "weeklyAction": "Each partner writes one sentence: 'One thing that stayed with me this week is ___'. Read aloud to each other. No immediate response — just listen."
+      },
+      "competing_competing": {
+        "name": "Head-On Clash",
+        "severity": "high",
+        "description": "Both want to be right. Every disagreement risks becoming a contest. Neither yields easily — conflict can last hours or days.",
+        "whatHappens": "Both argumentative and firm in their positions → rapid escalation → nobody knows how to exit without 'losing' → conflicts drag on or end with one yielding from exhaustion (not conviction).",
+        "protocol": "Establish an explicit rule: 'winning the conflict' = losing the relationship. The goal is finding the best solution, not being right. Whoever yields on a point gains credit — not loses.",
+        "weeklyAction": "When a disagreement arises, each writes their position in 3 lines. Then swap. Reading the other's position before responding lowers intensity by 40%."
+      },
+      "different_apology_languages": {
+        "name": "Misunderstood Reconciliation",
+        "severity": "medium",
+        "description": "Both try to reconcile — but each does so in their own language, which the other doesn't recognize. The result: you feel like you never really apologized.",
+        "whatHappens": "One partner apologizes by expressing verbal regret ('I'm so sorry') → the other was waiting for a concrete action → the apology isn't perceived → residual tension → 'but I already apologized!'. Frustrating cycle.",
+        "protocol": "Learn each other's apology language. Ask explicitly: 'How would you feel understood after this?' An apology in the wrong language is worth less than none.",
+        "weeklyAction": "This week: each person tells the other 'When I mess up, you'd really feel forgiven if ___'. That answer is your reconciliation code."
+      },
+      "care_practical_emotional": {
+        "name": "Solutions vs Listening",
+        "severity": "medium",
+        "description": "One wants to solve the problem, the other wants to be heard. Two genuine forms of care that clash because they speak different languages.",
+        "whatHappens": "The struggling partner shares a problem → the practical partner immediately proposes solutions → the first feels misunderstood ('I don't want to be fixed, I want you to listen') → the practical partner feels useless ('but I was trying to help').",
+        "protocol": "The practical partner must learn the question: 'Do you need me to listen or do you want ideas?' — and wait for the answer before acting. The emotional partner must know that solutions are an act of love, not a refusal to listen.",
+        "weeklyAction": "This week the practical partner practices 5 minutes of pure listening without suggesting anything. The emotional partner, afterward, explicitly asks if they want to hear ideas."
+      },
+      "care_emotional_autonomy": {
+        "name": "Closeness vs Space",
+        "severity": "medium",
+        "description": "One cares through presence and listening, the other through respecting autonomy. The first feels abandoned, the second feels smothered.",
+        "whatHappens": "The emotional partner approaches, offers support, wants to be close → the autonomy partner perceives invasion of their space → withdraws → the emotional partner interprets distance as rejection → increases closeness → cycle.",
+        "protocol": "The emotional partner learns to ask: 'Do you want me close or do you prefer space?' The autonomy partner learns to say: 'I need an hour for myself — then I'll come back'. Distance must be announced, not disappeared into.",
+        "weeklyAction": "The autonomy partner plans one intentional connection moment each week (not spontaneous — scheduled). The emotional partner practices 30 minutes of separate autonomy without guilt."
+      },
+      "security_freedom": {
+        "name": "Stability vs Adventure",
+        "severity": "high",
+        "description": "One wants roots, the other wants wings. One of the deepest value tensions: it's not a whim, it's each person's life direction.",
+        "whatHappens": "The security partner wants routine, stable plans, low uncertainty → the freedom partner feels trapped → seeks change, surprises, new experiences → the security partner feels destabilized → chronic tension over important decisions (home, work, travel, future).",
+        "protocol": "Don't try to convince the other to change their values — it doesn't work. Find areas where each has domain: the security partner manages financial/logistical stability; the freedom partner manages shared experiences/adventures.",
+        "weeklyAction": "Each month: the freedom partner proposes a new experience. The security partner organizes a fixed couple ritual. Both needs are met, not one smothered by the other."
+      },
+      "different_core_values": {
+        "name": "Different Compasses",
+        "severity": "medium",
+        "description": "Your primary values point in different directions. Not an insurmountable problem — but major life decisions will always require more negotiation than for others.",
+        "whatHappens": "When it comes to priorities (career vs family, money vs experiences, security vs growth), each 'obviously' pulls toward their dominant value. What seems irrational to one is fundamental to the other.",
+        "protocol": "Articulate your values on concrete decisions before they become conflicts. 'For me this choice matters because __'. Negotiating values requires understanding them first — not fighting them.",
+        "weeklyAction": "This week: each answers 'The thing that is non-negotiable for me at this stage of life is ___'. Write it down. It's not a discussion — it's information."
       }
     },
-
     "scenarios": {
       "conflict": {
         "title": "Scenario: Fight",
@@ -708,12 +1130,23 @@
         "description": "How each of you reacts under pressure and what you need from the other."
       }
     },
-
     "compatibilityLabels": {
-      "excellent": { "label": "High Compatibility", "desc": "Your profiles naturally complement each other. Friction areas are manageable with awareness." },
-      "good":      { "label": "Good Compatibility", "desc": "You have solid foundations. Some differences require active calibration but aren't structural obstacles." },
-      "moderate":  { "label": "Moderate Compatibility", "desc": "Significant differences that, if not consciously addressed, can become sources of chronic conflict. The potential is there." },
-      "low":       { "label": "Challenging Compatibility", "desc": "Very different profiles. Not impossible — but requires a high degree of awareness and active communication from both." }
+      "excellent": {
+        "label": "High Compatibility",
+        "desc": "Your profiles naturally complement each other. Friction areas are manageable with awareness."
+      },
+      "good": {
+        "label": "Good Compatibility",
+        "desc": "You have solid foundations. Some differences require active calibration but aren't structural obstacles."
+      },
+      "moderate": {
+        "label": "Moderate Compatibility",
+        "desc": "Significant differences that, if not consciously addressed, can become sources of chronic conflict. The potential is there."
+      },
+      "low": {
+        "label": "Challenging Compatibility",
+        "desc": "Very different profiles. Not impossible — but requires a high degree of awareness and active communication from both."
+      }
     }
   }
 }
