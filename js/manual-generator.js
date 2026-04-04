@@ -49,7 +49,17 @@ export function generateManual(testResults, lang = 'it') {
     chapters.push(generateApologyLanguagesChapter(testResults.apologyLanguages));
   }
 
-  const totalModules = 6;
+  // CHAPTER 7: Care Style
+  if (testResults.careStyle) {
+    chapters.push(generateCareStyleChapter(testResults.careStyle));
+  }
+
+  // CHAPTER 8: Core Values
+  if (testResults.coreValues) {
+    chapters.push(generateCoreValuesChapter(testResults.coreValues));
+  }
+
+  const totalModules = 8;
   return {
     version: `1.${Object.keys(testResults).length}.0`,
     generatedAt: new Date().toISOString(),
@@ -280,6 +290,50 @@ function generateApologyLanguagesChapter(result) {
         title: `[${currentLang === 'it' ? 'Secondario' : 'Secondary'}] ${i.title}`
       })) : [])
     ],
+    rawResult: result
+  };
+}
+
+function generateCareStyleChapter(result) {
+  const tpl = manualTemplates.careStyle?.[result.primary];
+  if (!tpl) return null;
+  const dimLabels = {
+    it: { emotional:'Emotivo', practical:'Pratico', presence:'Presenza', autonomy:'Autonomia' },
+    en: { emotional:'Emotional', practical:'Practical', presence:'Presence', autonomy:'Autonomy' }
+  };
+  const labels = dimLabels[currentLang] || dimLabels.it;
+  const secondaryTpl = manualTemplates.careStyle?.[result.secondary];
+  return {
+    id: 'careStyle', number: '§ 7', code: tpl.code,
+    title: currentLang === 'it' ? 'Protocollo di Cura' : 'Care Protocol',
+    subtitle: `${tpl.label}${secondaryTpl ? ` / ${secondaryTpl.label}` : ''}`,
+    summary: tpl.summary,
+    scores: result.ranking.map(dim => ({ label: labels[dim], value: result.pcts[dim], color: dim === result.primary ? 'blue' : 'green' })),
+    instructions: tpl.instructions,
+    antiPatterns: tpl.antiPatterns || [],
+    partnerInstructions: tpl.partnerInstructions || [],
+    rawResult: result
+  };
+}
+
+function generateCoreValuesChapter(result) {
+  const tpl = manualTemplates.coreValues?.[result.primary];
+  if (!tpl) return null;
+  const dimLabels = {
+    it: { security:'Sicurezza', freedom:'Libertà', achievement:'Realizzazione', connection:'Connessione', growth:'Crescita' },
+    en: { security:'Security', freedom:'Freedom', achievement:'Achievement', connection:'Connection', growth:'Growth' }
+  };
+  const labels = dimLabels[currentLang] || dimLabels.it;
+  const secondaryTpl = manualTemplates.coreValues?.[result.secondary];
+  return {
+    id: 'coreValues', number: '§ 8', code: tpl.code,
+    title: currentLang === 'it' ? 'Mappa dei Valori' : 'Values Map',
+    subtitle: `${tpl.label}${secondaryTpl ? ` / ${secondaryTpl.label}` : ''}`,
+    summary: tpl.summary,
+    scores: result.ranking.map(dim => ({ label: labels[dim], value: result.pcts[dim], color: dim === result.primary ? 'blue' : 'green' })),
+    instructions: tpl.instructions,
+    antiPatterns: tpl.antiPatterns || [],
+    partnerInstructions: tpl.partnerInstructions || [],
     rawResult: result
   };
 }

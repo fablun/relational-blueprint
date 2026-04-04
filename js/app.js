@@ -145,7 +145,7 @@ async function renderDashboard() {
   const tests = getTestList();
 
   // Header
-  const totalModules = 6;
+  const totalModules = 8;
   const completedCount = Object.keys(state.testResults).length;
   const pct = Math.round((completedCount / totalModules) * 100);
 
@@ -155,7 +155,7 @@ async function renderDashboard() {
     profile?.partnerCode || '------';
   document.getElementById('dash-progress-fill').style.width = pct + '%';
   document.getElementById('dash-progress-label').textContent =
-    `${completedCount}/6 ${state.lang === 'it' ? 'moduli completati' : 'modules completed'}`;
+    `${completedCount}/8 ${state.lang === 'it' ? 'moduli completati' : 'modules completed'}`;
 
   // CTA
   const ctaEl = document.getElementById('dash-cta');
@@ -188,11 +188,11 @@ async function renderDashboard() {
 
   // Test cards
   const grid = document.getElementById('tests-grid');
-  const testOrder = ['attachment','loveLanguages','bigFive','communication','conflictStyle','apologyLanguages'];
-  const moduleNums = ['01','02','03','04','05','06'];
+  const testOrder = ['attachment','loveLanguages','bigFive','communication','conflictStyle','apologyLanguages','careStyle','coreValues'];
+  const moduleNums = ['01','02','03','04','05','06','07','08'];
   const moduleNames = {
-    it: { attachment:'Attaccamento', loveLanguages:"Linguaggi dell'Amore", bigFive:'Big Five OCEAN', communication:'Stile Comunicativo', conflictStyle:'Stile nel Conflitto', apologyLanguages:'Linguaggi delle Scuse' },
-    en: { attachment:'Attachment', loveLanguages:'Love Languages', bigFive:'Big Five OCEAN', communication:'Communication Style', conflictStyle:'Conflict Style', apologyLanguages:'Apology Languages' }
+    it: { attachment:'Attaccamento', loveLanguages:"Linguaggi dell'Amore", bigFive:'Big Five OCEAN', communication:'Stile Comunicativo', conflictStyle:'Stile nel Conflitto', apologyLanguages:'Linguaggi delle Scuse', careStyle:'Stile di Cura', coreValues:'Valori Fondamentali' },
+    en: { attachment:'Attachment', loveLanguages:'Love Languages', bigFive:'Big Five OCEAN', communication:'Communication Style', conflictStyle:'Conflict Style', apologyLanguages:'Apology Languages', careStyle:'Care Style', coreValues:'Core Values' }
   };
 
   const resultLabels = {
@@ -201,14 +201,18 @@ async function renderDashboard() {
       loveLanguages:   { words:'Parole', time:'Tempo', gifts:'Doni', acts:'Atti', touch:'Contatto' },
       communication:   { rapport:'Rapport Talk', report:'Report Talk', balanced:'Bilanciato' },
       conflictStyle:   { competing:'Competitivo', collaborating:'Collaborativo', compromising:'Compromesso', avoiding:'Evitante', accommodating:'Accomodante' },
-      apologyLanguages:{ regret:'Rimpianto', responsibility:'Responsabilità', restitution:'Restituzione', repentance:'Ravvedimento', forgiveness:'Perdono' }
+      apologyLanguages:{ regret:'Rimpianto', responsibility:'Responsabilità', restitution:'Restituzione', repentance:'Ravvedimento', forgiveness:'Perdono' },
+      careStyle:       { emotional:'Empatico', practical:'Pratico', presence:'Presenza', autonomy:'Autonomia' },
+      coreValues:      { security:'Sicurezza', freedom:'Libertà', achievement:'Realizzazione', connection:'Connessione', growth:'Crescita' }
     },
     en: {
       attachment:      { secure:'Secure', anxious:'Anxious', avoidant:'Avoidant', fearful:'Fearful' },
       loveLanguages:   { words:'Words', time:'Time', gifts:'Gifts', acts:'Acts', touch:'Touch' },
       communication:   { rapport:'Rapport Talk', report:'Report Talk', balanced:'Balanced' },
       conflictStyle:   { competing:'Competing', collaborating:'Collaborating', compromising:'Compromising', avoiding:'Avoiding', accommodating:'Accommodating' },
-      apologyLanguages:{ regret:'Regret', responsibility:'Responsibility', restitution:'Restitution', repentance:'Repentance', forgiveness:'Forgiveness' }
+      apologyLanguages:{ regret:'Regret', responsibility:'Responsibility', restitution:'Restitution', repentance:'Repentance', forgiveness:'Forgiveness' },
+      careStyle:       { emotional:'Empathic', practical:'Practical', presence:'Presence', autonomy:'Autonomy' },
+      coreValues:      { security:'Security', freedom:'Freedom', achievement:'Achievement', connection:'Connection', growth:'Growth' }
     }
   };
 
@@ -226,6 +230,8 @@ async function renderDashboard() {
       if (id === 'communication')    resultStr = rl.communication[result.style] || '';
       if (id === 'conflictStyle')    resultStr = rl.conflictStyle[result.primary] || '';
       if (id === 'apologyLanguages') resultStr = rl.apologyLanguages[result.primary] || '';
+      if (id === 'careStyle')        resultStr = rl.careStyle[result.primary] || '';
+      if (id === 'coreValues')       resultStr = rl.coreValues[result.primary] || '';
     }
 
     return `

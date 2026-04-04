@@ -168,5 +168,63 @@
       { "id": "ap_for2", "text": "Forgiveness must be explicitly requested — I don't give it automatically.", "dimension": "forgiveness" },
       { "id": "ap_for3", "text": "A clear 'please forgive me' helps me let go of resentment and move forward.", "dimension": "forgiveness" }
     ]
+  },
+
+  "careStyle": {
+    "id": "careStyle",
+    "name": "Care Style",
+    "subtitle": "How you support the people you love when they struggle",
+    "description": "Identifies your natural approach to caring for others. Four main styles: Emotional (empathy and listening), Practical (concrete solutions), Presence (being there), Autonomy (space and trust).",
+    "duration": "4 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Doesn't describe me", "", "Sometimes", "", "Describes me perfectly"] },
+    "questions": [
+      { "id": "cs_em1",  "text": "When someone I love is struggling, my first instinct is to understand how they feel.", "dimension": "emotional" },
+      { "id": "cs_em2",  "text": "I prefer to listen and empathize rather than propose solutions when someone is suffering.", "dimension": "emotional" },
+      { "id": "cs_em3",  "text": "I focus first on validating the other's emotions, before moving to facts or solutions.", "dimension": "emotional" },
+      { "id": "cs_em4",  "text": "I only truly feel helpful when the other person feels emotionally understood.", "dimension": "emotional" },
+      { "id": "cs_pr1",  "text": "When someone has a problem, my natural impulse is to find a concrete solution.", "dimension": "practical" },
+      { "id": "cs_pr2",  "text": "Helping means doing something useful — solving, organizing, fixing.", "dimension": "practical" },
+      { "id": "cs_pr3",  "text": "I feel most useful when I can do something practical for someone going through a hard time.", "dimension": "practical" },
+      { "id": "cs_pr4",  "text": "I prefer to act rather than talk when someone needs support.", "dimension": "practical" },
+      { "id": "cs_ps1",  "text": "Being close to someone — even in silence — is my primary form of support.", "dimension": "presence" },
+      { "id": "cs_ps2",  "text": "When a friend is struggling, the most important thing for me is just to be there, even without saying anything.", "dimension": "presence" },
+      { "id": "cs_ps3",  "text": "In times of crisis, I worry about never leaving my loved ones alone.", "dimension": "presence" },
+      { "id": "cs_ps4",  "text": "My constant physical or emotional presence is worth more than any words or actions.", "dimension": "presence" },
+      { "id": "cs_au1",  "text": "I respect others' need to face problems in their own way, without interference.", "dimension": "autonomy" },
+      { "id": "cs_au2",  "text": "The best support I can give is often to step back and not intrude.", "dimension": "autonomy" },
+      { "id": "cs_au3",  "text": "I firmly believe in giving people space to find their own answers.", "dimension": "autonomy" },
+      { "id": "cs_au4",  "text": "Intervening too much when someone has a problem can be counterproductive — I prefer to wait.", "dimension": "autonomy" }
+    ]
+  },
+
+  "coreValues": {
+    "id": "coreValues",
+    "name": "Core Values",
+    "subtitle": "What truly drives your life choices",
+    "description": "Adapted from Schwartz's model. Identifies your dominant values among 5 orientations: Security, Freedom, Achievement, Connection, Growth.",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Not important to me", "", "Neutral", "", "Essential to me"] },
+    "questions": [
+      { "id": "cv_sec1", "text": "Stability and predictability in my life are fundamental to my well-being.", "dimension": "security" },
+      { "id": "cv_sec2", "text": "I would prefer a safe and orderly life over one full of surprises.", "dimension": "security" },
+      { "id": "cv_sec3", "text": "Tradition and family rituals have deep value for me.", "dimension": "security" },
+      { "id": "cv_sec4", "text": "I need to know what to expect — uncertainty weighs on me significantly.", "dimension": "security" },
+      { "id": "cv_fre1", "text": "Autonomy and independence are non-negotiable values in my life.", "dimension": "freedom" },
+      { "id": "cv_fre2", "text": "I feel a strong pull toward new experiences, travel, and adventure.", "dimension": "freedom" },
+      { "id": "cv_fre3", "text": "I must be able to make free choices without feeling constrained by others' expectations.", "dimension": "freedom" },
+      { "id": "cv_fre4", "text": "Living by my own rules — not society's — is essential to me.", "dimension": "freedom" },
+      { "id": "cv_ach1", "text": "Professional success is one of the most important priorities in my life.", "dimension": "achievement" },
+      { "id": "cv_ach2", "text": "I'm motivated by ambitious goals and the challenge of achieving them.", "dimension": "achievement" },
+      { "id": "cv_ach3", "text": "Recognition for what I accomplish carries significant weight for me.", "dimension": "achievement" },
+      { "id": "cv_ach4", "text": "Investing in my professional development is something I would never put on the back burner.", "dimension": "achievement" },
+      { "id": "cv_con1", "text": "Relationships with people I care about are at the heart of what makes me happy.", "dimension": "connection" },
+      { "id": "cv_con2", "text": "Taking care of others and contributing to their lives has deep meaning for me.", "dimension": "connection" },
+      { "id": "cv_con3", "text": "Family — biological or chosen — is my primary anchor.", "dimension": "connection" },
+      { "id": "cv_con4", "text": "Being part of a community that shares my values is important to me.", "dimension": "connection" },
+      { "id": "cv_gr1",  "text": "Growing as a person — learning, evolving, improving — is one of my core drives.", "dimension": "growth" },
+      { "id": "cv_gr2",  "text": "I constantly seek new perspectives that challenge my existing beliefs.", "dimension": "growth" },
+      { "id": "cv_gr3",  "text": "I feel fulfilled when I sense I'm becoming a better version of myself.", "dimension": "growth" },
+      { "id": "cv_gr4",  "text": "The sense that my life has meaning and direction is essential to my well-being.", "dimension": "growth" }
+    ]
   }
 }

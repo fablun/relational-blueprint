@@ -17,6 +17,14 @@
           "title": "In Caso di Stress",
           "content": "Sotto pressione rimango relativamente stabile. Se mi vedete chiudervi fuori, chiedetemi direttamente cosa sta succedendo — rispondo bene alla comunicazione diretta."
         }
+      ],
+      "antiPatterns": [
+        { "title": "Minimizzazione inconsapevole", "content": "La tua stabilità ti porta a sottovalutare il disagio degli altri. Puoi sembrare distante quando dici 'non è poi così grave', anche se vuoi essere rassicurante. Con partner ansiosi o evitanti, questo approccio diretto può essere vissuto come pressione o svalutazione." },
+        { "title": "Eccessiva fiducia nel dialogo razionale", "content": "Dai per scontato che entrambi possano affrontare i problemi 'razionalmente' e 'con calma'. Quando il partner è emotivamente attivato, aspettarsi razionalità lo/la fa sentire incompreso/a. Prima si regola l'emozione, poi si ragiona." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come comunicare con lui/lei", "content": "Il tuo partner risponde bene alla comunicazione diretta. Non indovinare — chiedi. Non aspettare — parla. La sua calma durante i conflitti non è indifferenza: è il suo punto di forza. Usalo chiedendogli/le di fare da ancora quando sei sopraffatto/a." },
+        { "title": "Cosa ricordare", "content": "Non interpretare la sua stabilità come mancanza di profondità emotiva. Sente — elabora in modo diverso. Quando condividi un problema, digli/le esplicitamente se vuoi essere ascoltato/a o se cerchi soluzioni: risponde bene a entrambe le modalità, ma preferisce saperlo." }
       ]
     },
     "anxious": {
@@ -40,6 +48,15 @@
           "title": "In Caso di Silenzio del Partner",
           "content": "Il silenzio prolungato mi fa automaticamente assumere il peggio. Se avete bisogno di spazio, ditemi esplicitamente quando tornerete disponibili: 'Ho bisogno di 2 ore per me, poi parliamo'. Questo disattiva l'ansia."
         }
+      ],
+      "antiPatterns": [
+        { "title": "Il Double-Text Spiral", "content": "Quando non ricevi risposta, mandi messaggi multipli in sequenza. Ogni messaggio aumenta la tua ansia e riduce la probabilità di una risposta rapida — e genera nel partner la sensazione di essere braccato/a." },
+        { "title": "L'Interpretazione Catastrofica", "content": "Trasformi ogni segnale ambiguo (ritardo nella risposta, tono di voce, silenzio) in prova di rifiuto imminente, anche in assenza di prove reali. Questo porta a reazioni sproporzionate che allontanano il partner." },
+        { "title": "Il Test Nascosto", "content": "A volte metti inconsciamente alla prova il partner (diventando freddo/a, distante) per vedere se 'resterà comunque'. Questo crea esattamente il distacco che temi e può diventare una profezia che si autoavvera." }
+      ],
+      "partnerInstructions": [
+        { "title": "Regola principale", "content": "Non scomparire senza avvisare — anche solo 'sono impegnato/a, ci sentiamo dopo' è sufficiente. Il silenzio non comunicato attiva il suo sistema d'allarme in modo automatico e proporzionale alla durata. Pochi secondi di testo prevengono ore di spirale." },
+        { "title": "Strategia preventiva", "content": "La rassicurazione data PRIMA del problema vale 10 volte quella data durante la crisi. Un messaggio spontaneo nel corso della giornata ('sto pensando a te') previene intere spirali d'ansia. Non aspettare che chieda — anticipalo." }
       ]
     },
     "avoidant": {
@@ -63,6 +80,14 @@
           "title": "Bisogni Profondi",
           "content": "Nonostante l'apparenza, mi importa della relazione. Ho semplicemente imparato che dipendere dagli altri porta dolore. Mostrami nel tempo — con azioni consistenti — che è sicuro affidarsi."
         }
+      ],
+      "antiPatterns": [
+        { "title": "Il Silenzio come Comunicazione", "content": "Quando sei sopraffatto/a, sparisci senza avvisare. Per il partner, questo silenzio è incomprensibile e spesso vissuto come rifiuto o punizione. Il ritiro non comunicato è uno dei trigger più potenti nei partner ansiosi." },
+        { "title": "Il Muro Emotivo", "content": "Razionalizzi le emozioni invece di sentirle. Dici 'sto bene' quando non lo sei, poi esplodi su qualcosa di secondario quando la tensione accumulata diventa insostenibile. Il partner non capisce mai cosa ha fatto." }
+      ],
+      "partnerInstructions": [
+        { "title": "Quando si ritira", "content": "Non inseguirlo/a quando si ritira — ottieni l'effetto opposto. Dagli/le spazio con una deadline: 'Prenditi il tempo che ti serve, sono qui quando sei pronto/a.' Poi aspetta davvero. Il rientro avviene — ma i tentativi di forzarlo lo rallentano." },
+        { "title": "Come costruire fiducia", "content": "Per raggiungere il suo cuore, usa le azioni più delle parole. La coerenza nel tempo — non l'intensità nel momento — costruisce la sua fiducia. Ogni promessa mantenuta conta più di mille dichiarazioni d'amore." }
       ]
     },
     "fearful": {
@@ -82,6 +107,14 @@
           "title": "Quando Evito Contatto",
           "content": "Se mi ritiro dopo un momento di intimità, non significa che mi sia pentito/a. Significa che la vicinanza ha attivato il mio sistema di allerta. Lasciatemi il tempo di ricalibrarmi senza interpretarlo come rifiuto."
         }
+      ],
+      "antiPatterns": [
+        { "title": "L'Oscillazione Destabilizzante", "content": "Ti avvicini e poi ti ritiri in modo imprevedibile. Anche se non è intenzionale, il partner inizia a camminare sulle uova, non sapendo mai cosa aspettarsi. Questo crea un clima di incertezza cronica." },
+        { "title": "Il Sabotaggio dell'Intimità", "content": "Quando la relazione va bene e ti senti vicino/a, inconsciamente fai qualcosa per creare distanza. La felicità ti spaventa quanto il dolore — entrambi segnalano che sei vulnerabile." }
+      ],
+      "partnerInstructions": [
+        { "title": "La tua arma più potente", "content": "La coerenza è tutto con questo partner. Fai quello che dici, sii prevedibile, mantieni le promesse piccole. Ogni azione coerente abbassa di un millimetro la sua guardia — e quei millimetri si accumulano nel tempo." },
+        { "title": "Quando si ritira dopo intimità", "content": "Non interpretarlo come rifiuto. Aspetta senza pressione. Un messaggio leggero dopo qualche ora ('sto pensando a te') funziona meglio di una chiamata urgente. La costanza senza intensità è il linguaggio che capisce." }
       ]
     }
   },
@@ -424,6 +457,164 @@
         { "title": "Cosa rende una scusa credibile per me", "content": "Il perdono deve essere richiesto esplicitamente — non dato per scontato. 'Mi perdoni?' è la chiave che chiude il conflitto per me. Senza quella domanda, resto in uno stato di tensione non risolta anche se tutto il resto è stato detto." },
         { "title": "Come scusarti con me in modo efficace", "content": "Termina la scusa con una richiesta esplicita: 'Mi perdoni?' o 'Possiamo andare avanti?'. Non dare per scontato che il perdono sia automatico — chiedilo. Questo mi dà il potere di scegliere di lasciare andare." },
         { "title": "Perché questo conta per me", "content": "Non è formalismo. Quando qualcuno chiede il mio perdono, riconosce che ho subito un torto e che spetta a me — non a lui/lei — decidere quando e se chiudere. Mi restituisce agency in un momento in cui mi sono sentito/a in torto altrui." }
+      ]
+    }
+  },
+
+  "careStyle": {
+    "emotional": {
+      "label": "Cura Emotiva",
+      "code": "CARE-EM",
+      "summary": "Il tuo stile di cura primario è l'ascolto empatico. Quando qualcuno soffre, il tuo istinto è connetterti con il suo stato interno prima di qualsiasi azione.",
+      "instructions": [
+        { "title": "Come supporto chi amo", "content": "Quando qualcuno che mi è vicino sta soffrendo, mi siedo accanto, ascolto senza interrompere e cerco di capire come si sente dall'interno. Non mi precipito sulle soluzioni. Il mio obiettivo primario è che l'altro si senta capito, non risolto." },
+        { "title": "Cosa mi fa sentire utile", "content": "Mi sento davvero utile quando vedo che l'altro si sente meno solo dopo aver parlato con me. Non ho bisogno di aver risolto nulla. La connessione emotiva è la mia misura del successo." },
+        { "title": "Il mio limite", "content": "Posso rimanere nell'ascolto così a lungo da non aiutare mai concretamente. A volte le persone hanno bisogno di soluzioni, non solo di essere capite. Imparo a chiedere: 'Vuoi che ti ascolti o vuoi un consiglio pratico?'" }
+      ],
+      "antiPatterns": [
+        { "title": "L'Ascolto Invasivo", "content": "Puoi fare troppe domande emotive quando l'altro vuole solo sfogarsi velocemente e andare avanti. Non ogni momento di difficoltà richiede un'analisi approfondita dei sentimenti." },
+        { "title": "La Proiezione Emotiva", "content": "Assumi che l'altro si senta come ti sentiresti tu nella stessa situazione. Ma non tutti elaborano le emozioni allo stesso modo — alcuni preferiscono risolvere e basta." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come ricevere supporto da lui/lei", "content": "Quando ha bisogno di supporto, non iniziare con soluzioni — inizia con presenza emotiva. Chiedi 'come stai davvero?' e ascolta prima di proporre qualsiasi cosa. La connessione viene prima dell'azione." },
+        { "title": "Come dargli/le supporto", "content": "Questo partner ha bisogno di sentire che le sue emozioni sono valide, non che deve 'stare meglio'. Evita frasi come 'non è un problema' o 'dai, su'. Valida prima, poi — se vuole — aiuta a trovare soluzioni." }
+      ]
+    },
+    "practical": {
+      "label": "Cura Pratica",
+      "code": "CARE-PR",
+      "summary": "Il tuo stile di cura è orientato all'azione. Quando qualcuno soffre, il tuo istinto è trovare una soluzione e agire concretamente per migliorare la situazione.",
+      "instructions": [
+        { "title": "Come supporto chi amo", "content": "Quando qualcuno che amo ha un problema, la mia prima reazione è chiedermi: 'Cosa posso fare per risolvere questo?' Faccio ricerche, organizzo, sistemo. Il mio modo di amare è essere utile concretamente." },
+        { "title": "Cosa mi fa sentire utile", "content": "Mi sento davvero utile quando il problema è risolto o alleviato. La sola presenza emotiva senza azione mi lascia con la sensazione di non aver fatto abbastanza." },
+        { "title": "Il mio limite", "content": "Spesso propongo soluzioni quando l'altro vuole solo essere ascoltato. Questo può farlo sentire incompreso o svalutato. Imparo a chiedere prima: 'Hai bisogno che ti ascolti o di un aiuto concreto?'" }
+      ],
+      "antiPatterns": [
+        { "title": "La Soluzione Non Richiesta", "content": "Proponi soluzioni ancora prima che l'altro abbia finito di raccontare. Questo segnala che stai già pensando a come uscire dalla conversazione emotiva, non a capire davvero." },
+        { "title": "Il Fix come Fuga", "content": "A volte 'risolvere' è un modo per evitare di stare nella vulnerabilità emotiva. Occuparsi del problema è più facile che stare con il dolore dell'altro senza poterlo eliminare subito." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come ricevere supporto da lui/lei", "content": "Digli/le esplicitamente cosa hai bisogno: 'Ho bisogno di sfogami senza consigli' oppure 'Ho un problema pratico, puoi aiutarmi a trovare una soluzione?' Senza istruzioni esplicite, il suo default è risolvere." },
+        { "title": "Come dargli/le supporto", "content": "Quando questo partner è in difficoltà, offri aiuto concreto: 'Cosa posso fare?' o 'Vuoi che mi occupi di X?' Le parole di conforto valgono meno per lui/lei delle azioni tangibili." }
+      ]
+    },
+    "presence": {
+      "label": "Cura per Presenza",
+      "code": "CARE-PS",
+      "summary": "Il tuo stile di cura è la presenza costante. Esserci — fisicamente o emotivamente, anche in silenzio — è la forma d'amore che ritieni più potente.",
+      "instructions": [
+        { "title": "Come supporto chi amo", "content": "Non sento il bisogno di parlare o di fare. Stare vicino — sedere accanto, non andarmene, essere raggiungibile — è la mia forma principale di supporto. Il silenzio condiviso ha per me un valore profondo." },
+        { "title": "Cosa mi fa sentire utile", "content": "Mi sento utile quando so che l'altro non è solo. Non importa se non ho detto nulla di memorabile o risolto nulla — se ero lì, ho fatto la mia parte." },
+        { "title": "Il mio limite", "content": "La mia presenza costante può diventare soffocante se il partner ha bisogno di spazio per elaborare da solo/a. Non tutti trovano rassicurante la presenza continua — alcuni la percepiscono come pressione." }
+      ],
+      "antiPatterns": [
+        { "title": "La Presenza Soffocante", "content": "Resti vicino anche quando l'altro ha bisogno di spazio per elaborare da solo/a. Non riesci a staccarti perché interpreti la loro solitudine come rifiuto del tuo supporto." },
+        { "title": "Il Martire della Disponibilità", "content": "Sei sempre disponibile, a qualsiasi ora, per chiunque — al costo del tuo benessere. Questo non è solo cura per gli altri: è anche un modo per sentirti necessario/a." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come ricevere supporto da lui/lei", "content": "Non si aspetta che tu parli o che tu risolva. Si sente utile essendo con te. Permettigli/le di starci, anche in silenzio. Se hai bisogno di spazio, diglelo esplicitamente — non scomparire senza spiegare." },
+        { "title": "Come dargli/le supporto", "content": "Questo partner si sente amato quando non è lasciato/a solo/a nei momenti difficili. La tua presenza fisica o un semplice 'sono qui' vale più di mille consigli o soluzioni." }
+      ]
+    },
+    "autonomy": {
+      "label": "Cura per Autonomia",
+      "code": "CARE-AU",
+      "summary": "Il tuo stile di cura è il rispetto dell'autonomia. Credi che il supporto migliore sia dare spazio alle persone per trovare le proprie risposte.",
+      "instructions": [
+        { "title": "Come supporto chi amo", "content": "Credo che le persone abbiano le risorse per affrontare i propri problemi. Il mio supporto è dar loro spazio, non invadere. Intervengo quando mi viene chiesto, non prima." },
+        { "title": "Cosa mi fa sentire utile", "content": "Mi sento utile quando l'altro riesce da solo/a a trovare la propria soluzione — anche grazie allo spazio che gli/le ho dato. La mia cura è rispetto, non intromissione." },
+        { "title": "Il mio limite", "content": "A volte il mio 'rispetto dell'autonomia' viene percepito come disinteresse o freddezza. Quando qualcuno ha davvero bisogno di supporto attivo, il mio passo indietro può sembrare abbandono." }
+      ],
+      "antiPatterns": [
+        { "title": "Il Distacco come Cura", "content": "Ritieni che dare spazio sia sempre la risposta giusta. Ma in momenti di crisi acuta, le persone hanno bisogno di supporto attivo — non di spazio. Il tuo ritiro può essere vissuto come indifferenza." },
+        { "title": "L'Aspettativa Implicita di Forza", "content": "Trattando gli altri come autonomi e capaci, puoi comunicare implicitamente che non è 'ok' aver bisogno di aiuto. Questo può renderli riluttanti a chiederti supporto quando ne hanno davvero necessità." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come ricevere supporto da lui/lei", "content": "Non aspettarti che si faccia avanti spontaneamente — rispetta troppo la tua autonomia per 'intromettersi'. Se hai bisogno di supporto attivo, chiediglielo esplicitamente: 'Ho bisogno che tu sia qui con me.' Risponderà." },
+        { "title": "Come dargli/le supporto", "content": "Questo partner apprezza che tu non lo/la invada con domande o presenza costante quando sta elaborando qualcosa. Digli/le 'sono qui se hai bisogno' e lascia che sia lui/lei a decidere quando e come avvicinarsi." }
+      ]
+    }
+  },
+
+  "coreValues": {
+    "security": {
+      "label": "Orientamento alla Sicurezza",
+      "code": "VAL-SEC",
+      "summary": "La stabilità, la prevedibilità e la continuità sono i tuoi valori fondamentali. Costruisci la tua vita su basi solide e hai bisogno di sapere dove stai andando.",
+      "instructions": [
+        { "title": "Come questo valore si manifesta", "content": "Do grande importanza alla routine, ai rituali condivisi e alla prevedibilità. Non è paura del cambiamento — è il riconoscimento che la stabilità crea lo spazio per fidarsi e investire profondamente in qualcosa." },
+        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di sapere dove sono con il partner: impegni chiari, piani condivisi, comunicazione costante. L'incertezza prolungata nella relazione mi è difficile da gestire." },
+        { "title": "Potenziale attrito con partner diversi", "content": "Con un partner orientato alla libertà o alla crescita, posso sembrare rigido/a o timoroso/a del cambiamento. La sfida è distinguere tra cambiamenti che arricchiscono e quelli che destabilizzano." }
+      ],
+      "antiPatterns": [
+        { "title": "La Resistenza al Cambiamento", "content": "La tua preferenza per la stabilità può diventare resistenza a qualsiasi novità, anche quando il cambiamento sarebbe positivo. Non ogni incertezza è una minaccia." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come supportare questo partner", "content": "Communica i cambiamenti importanti con anticipo. Non ama le sorprese — non perché sia rigido/a, ma perché l'anticipazione gli/le permette di adattarsi. Un 'voglio parlarti di qualcosa' detto prima vale oro." }
+      ]
+    },
+    "freedom": {
+      "label": "Orientamento alla Libertà",
+      "code": "VAL-FREE",
+      "summary": "L'autonomia, l'avventura e l'indipendenza sono i tuoi valori fondamentali. Hai bisogno di sentire che la vita è aperta, non predefinita.",
+      "instructions": [
+        { "title": "Come questo valore si manifesta", "content": "Sento un disagio fisico quando mi sento intrappolato/a — da routine rigide, aspettative non scelte, relazioni che limitano chi sono. La libertà non è capriccio: è una condizione necessaria per il mio benessere." },
+        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di spazio per essere me stesso/a all'interno della relazione. Un partner che cerca di controllarmi o limitarmi — anche con le migliori intenzioni — attiva in me una risposta di fuga immediata." },
+        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla sicurezza posso sembrare inaffidabile o poco impegnato/a. La sfida è imparare che impegnarsi non significa perdere se stessi — è possibile essere liberi dentro a una relazione stabile." }
+      ],
+      "antiPatterns": [
+        { "title": "La Libertà come Fuga", "content": "A volte la tua ricerca di libertà è in realtà evitamento dell'impegno e della vulnerabilità. L'intimità profonda richiede accettare alcuni vincoli — non come prigione, ma come radici." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come supportare questo partner", "content": "Non stringere le redini quando si sente limitato/a — otterrai l'effetto opposto. Dagli/le spazio e fiducia, e sceglierà di tornare. Controllarlo/a lo/la allontana; rispettare la sua autonomia lo/la avvicina." }
+      ]
+    },
+    "achievement": {
+      "label": "Orientamento alla Realizzazione",
+      "code": "VAL-ACH",
+      "summary": "Il successo, gli obiettivi ambiziosi e il riconoscimento sono i tuoi valori fondamentali. Sei motivato/a dalla sfida e dalla crescita professionale.",
+      "instructions": [
+        { "title": "Come questo valore si manifesta", "content": "Investo molto nella mia carriera e nei miei obiettivi personali. Non è egoismo — è come mi sento vivo/a. Il successo non è solo materiale: è la prova che sto usando al meglio il mio potenziale." },
+        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di un partner che supporti le mie ambizioni, non le ridimensioni. La critica agli obiettivi è vissuta come critica alla mia identità. Apprezzo chi mi sfida a crescere, non chi mi chiede di rallentare." },
+        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla connessione posso sembrare distante o poco presente. La sfida è non trattare la relazione come un'altra cosa da 'ottimizzare' — le relazioni richiedono presenza, non performance." }
+      ],
+      "antiPatterns": [
+        { "title": "La Relazione come Progetto", "content": "Tratti la relazione come un obiettivo da raggiungere piuttosto che un'esperienza da vivere. L'efficienza e l'ottimizzazione non si applicano all'intimità." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come supportare questo partner", "content": "Celebra i suoi successi — anche quelli che ti sembrano 'solo lavoro'. Per lui/lei sono espressione dell'identità. E quando ha bisogno di dedicarsi intensamente a un obiettivo, supportalo/la senza farglielo pesare." }
+      ]
+    },
+    "connection": {
+      "label": "Orientamento alla Connessione",
+      "code": "VAL-CON",
+      "summary": "Le relazioni, la famiglia e il contributo agli altri sono i tuoi valori fondamentali. Il tuo benessere è intrinsecamente legato alla qualità dei tuoi legami.",
+      "instructions": [
+        { "title": "Come questo valore si manifesta", "content": "Le persone sono al centro della mia vita. Investo molto nelle relazioni — famiglia, amici, partner — perché è lì che trovo significato e soddisfazione profonda. Non è dipendenza: è riconoscere che siamo esseri relazionali." },
+        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di sentire che la relazione è una priorità reale, non residuale. Un partner che mette sistematicamente tutto davanti alla nostra connessione mi fa sentire invisibile." },
+        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla realizzazione o alla libertà posso sentirmi secondo/a in classifica. La sfida è distinguere tra chi non mi valorizza e chi semplicemente esprime l'amore in modo diverso." }
+      ],
+      "antiPatterns": [
+        { "title": "La Fusione come Connessione", "content": "Puoi confondere l'intimità profonda con la fusione totale. Le relazioni sane mantengono due identità distinte — non ti perdi nell'altro, cresci insieme all'altro." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come supportare questo partner", "content": "Mostragli/le che la relazione è una priorità — non solo quando c'è una crisi, ma nella quotidianità. Gesti piccoli e regolari ('ho pensato a te oggi') valgono più di grandi gesti rari." }
+      ]
+    },
+    "growth": {
+      "label": "Orientamento alla Crescita",
+      "code": "VAL-GR",
+      "summary": "Evoluzione personale, apprendimento e significato profondo sono i tuoi valori fondamentali. Sei in costante movimento verso una versione migliore di te.",
+      "instructions": [
+        { "title": "Come questo valore si manifesta", "content": "Non mi accontento di chi sono oggi. Leggo, rifletto, metto in discussione le mie convinzioni, cerco esperienze che mi cambino. Questo non è instabilità — è il modo in cui rispetto me stesso/a." },
+        { "title": "Cosa ho bisogno nella relazione", "content": "Ho bisogno di un partner che cresca con me o che almeno supporti il mio percorso. Una relazione che si oppone alla mia evoluzione è una relazione che mi soffoca lentamente." },
+        { "title": "Potenziale attrito con partner diversi", "content": "Con partner orientati alla sicurezza posso sembrare insoddisfatto/a o instabile. La sfida è comunicare che la crescita non minaccia la stabilità — può arricchirla." }
+      ],
+      "antiPatterns": [
+        { "title": "La Crescita come Fuga da Sé", "content": "A volte il miglioramento continuo è un modo per evitare di accettare chi sei ora. La crescita vera include anche l'accettazione, non solo la trasformazione." }
+      ],
+      "partnerInstructions": [
+        { "title": "Come supportare questo partner", "content": "Mostra interesse genuino per il suo percorso di crescita — libri che legge, idee che lo/la appassionano, cambiamenti che sta esplorando. Sentirsi capito/a nella propria evoluzione è per lui/lei un atto d'amore profondo." }
       ]
     }
   },

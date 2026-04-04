@@ -168,7 +168,7 @@ function getModuleNum(testId) {
 
 export function getTestList() {
   if (!questionsData) return [];
-  return ['attachment','loveLanguages','bigFive','communication','conflictStyle','apologyLanguages'].map(id => ({
+  return ['attachment','loveLanguages','bigFive','communication','conflictStyle','apologyLanguages','careStyle','coreValues'].map(id => ({
     id,
     name: questionsData[id].name,
     subtitle: questionsData[id].subtitle,

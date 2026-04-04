@@ -168,5 +168,63 @@
       { "id": "ap_for2", "text": "Il perdono deve essere esplicitamente richiesto — non lo concedo in automatico.", "dimension": "forgiveness" },
       { "id": "ap_for3", "text": "Un 'perdonami' detto chiaramente mi aiuta a lasciare andare il rancore e andare avanti.", "dimension": "forgiveness" }
     ]
+  },
+
+  "careStyle": {
+    "id": "careStyle",
+    "name": "Stile di Cura",
+    "subtitle": "Come dai supporto a chi ami in difficoltà",
+    "description": "Identifica il tuo approccio naturale nel prendersi cura degli altri. Quattro stili principali: Emotivo (empatia e ascolto), Pratico (soluzioni concrete), Presenza (esserci), Autonomia (spazio e fiducia).",
+    "duration": "4 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Non mi descrive", "", "A volte", "", "Mi descrive perfettamente"] },
+    "questions": [
+      { "id": "cs_em1",  "text": "Quando chi amo è in difficoltà, il mio primo istinto è capire come si sente.", "dimension": "emotional" },
+      { "id": "cs_em2",  "text": "Preferisco ascoltare ed empatizzare piuttosto che proporre soluzioni quando qualcuno soffre.", "dimension": "emotional" },
+      { "id": "cs_em3",  "text": "Mi concentro prima sul validare le emozioni dell'altro, poi semmai sui fatti o le soluzioni.", "dimension": "emotional" },
+      { "id": "cs_em4",  "text": "Mi sento davvero utile solo quando l'altro si sente capito a livello emotivo.", "dimension": "emotional" },
+      { "id": "cs_pr1",  "text": "Quando qualcuno ha un problema, il mio impulso naturale è trovare una soluzione concreta.", "dimension": "practical" },
+      { "id": "cs_pr2",  "text": "Aiutare significa per me fare qualcosa di utile — risolvere, organizzare, sistemare.", "dimension": "practical" },
+      { "id": "cs_pr3",  "text": "Mi sento più utile quando riesco a fare qualcosa di pratico per chi sta attraversando un momento difficile.", "dimension": "practical" },
+      { "id": "cs_pr4",  "text": "Preferisco agire piuttosto che parlare quando qualcuno ha bisogno di supporto.", "dimension": "practical" },
+      { "id": "cs_ps1",  "text": "Stare vicino a qualcuno — anche in silenzio — è la mia forma principale di supporto.", "dimension": "presence" },
+      { "id": "cs_ps2",  "text": "Quando un amico sta male, la cosa più importante per me è esserci, anche senza dire nulla.", "dimension": "presence" },
+      { "id": "cs_ps3",  "text": "In momenti di crisi, mi preoccupo di non lasciare mai soli i miei cari.", "dimension": "presence" },
+      { "id": "cs_ps4",  "text": "La mia presenza fisica o emotiva costante vale più di qualsiasi parola o azione.", "dimension": "presence" },
+      { "id": "cs_au1",  "text": "Rispetto il bisogno degli altri di affrontare i problemi a modo loro, senza interferire.", "dimension": "autonomy" },
+      { "id": "cs_au2",  "text": "Il supporto migliore che posso dare spesso è fare un passo indietro e non invadere.", "dimension": "autonomy" },
+      { "id": "cs_au3",  "text": "Credo fermamente nel dare alle persone spazio per trovare da sole le proprie risposte.", "dimension": "autonomy" },
+      { "id": "cs_au4",  "text": "Intervenire troppo quando qualcuno ha un problema può essere controproducente — preferisco aspettare.", "dimension": "autonomy" }
+    ]
+  },
+
+  "coreValues": {
+    "id": "coreValues",
+    "name": "Valori Fondamentali",
+    "subtitle": "Cosa guida davvero le tue scelte di vita",
+    "description": "Adattamento dal modello di Schwartz. Identifica i tuoi valori dominanti tra 5 orientamenti: Sicurezza, Libertà, Realizzazione, Connessione, Crescita.",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Non importante per me", "", "Neutro", "", "Fondamentale per me"] },
+    "questions": [
+      { "id": "cv_sec1", "text": "La stabilità e la prevedibilità nella mia vita sono fondamentali per il mio benessere.", "dimension": "security" },
+      { "id": "cv_sec2", "text": "Preferirei una vita sicura e ordinata a una ricca di imprevisti.", "dimension": "security" },
+      { "id": "cv_sec3", "text": "La tradizione e i rituali familiari hanno per me un valore profondo.", "dimension": "security" },
+      { "id": "cv_sec4", "text": "Sento il bisogno di sapere cosa mi aspetta — l'incertezza mi pesa significativamente.", "dimension": "security" },
+      { "id": "cv_fre1", "text": "L'autonomia e l'indipendenza sono valori non negoziabili nella mia vita.", "dimension": "freedom" },
+      { "id": "cv_fre2", "text": "Sento un forte richiamo verso nuove esperienze, viaggi e avventure.", "dimension": "freedom" },
+      { "id": "cv_fre3", "text": "Devo poter fare scelte libere senza sentirmi vincolato/a da aspettative altrui.", "dimension": "freedom" },
+      { "id": "cv_fre4", "text": "Vivere secondo le mie regole — non quelle della società — è essenziale per me.", "dimension": "freedom" },
+      { "id": "cv_ach1", "text": "Il successo professionale è una delle priorità più importanti della mia vita.", "dimension": "achievement" },
+      { "id": "cv_ach2", "text": "Sono motivato/a da obiettivi ambiziosi e dalla sfida di raggiungerli.", "dimension": "achievement" },
+      { "id": "cv_ach3", "text": "Il riconoscimento per ciò che realizzo ha un peso significativo per me.", "dimension": "achievement" },
+      { "id": "cv_ach4", "text": "Investire nel mio sviluppo professionale è qualcosa che non metterei mai in secondo piano.", "dimension": "achievement" },
+      { "id": "cv_con1", "text": "Le relazioni con le persone care sono al centro di ciò che mi rende felice.", "dimension": "connection" },
+      { "id": "cv_con2", "text": "Prendermi cura degli altri e contribuire alla loro vita ha un significato profondo per me.", "dimension": "connection" },
+      { "id": "cv_con3", "text": "La famiglia — biologica o scelta — è il mio ancoraggio principale.", "dimension": "connection" },
+      { "id": "cv_con4", "text": "Fare parte di una comunità che condivide i miei valori è importante per me.", "dimension": "connection" },
+      { "id": "cv_gr1",  "text": "Crescere come persona — imparare, evolvere, migliorarmi — è una delle mie spinte fondamentali.", "dimension": "growth" },
+      { "id": "cv_gr2",  "text": "Cerco sempre nuove prospettive che mettano in discussione le mie convinzioni.", "dimension": "growth" },
+      { "id": "cv_gr3",  "text": "Mi sento realizzato/a quando ho la sensazione di stare diventando una versione migliore di me.", "dimension": "growth" },
+      { "id": "cv_gr4",  "text": "Il senso che la mia vita abbia un significato e una direzione è essenziale per il mio benessere.", "dimension": "growth" }
+    ]
   }
 }

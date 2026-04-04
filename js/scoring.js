@@ -127,6 +127,49 @@ function round(value, decimals) {
   return Math.round(value * Math.pow(10, decimals)) / Math.pow(10, decimals);
 }
 
+// ── Care Style ───────────────────────────────────────────
+// Returns: { primary, secondary, scores: {}, pcts: {}, ranking: [] }
+
+export function scoreCareStyle(answers) {
+  const dimensions = ['emotional','practical','presence','autonomy'];
+  const prefixes = {
+    emotional: ['cs_em1','cs_em2','cs_em3','cs_em4'],
+    practical:  ['cs_pr1','cs_pr2','cs_pr3','cs_pr4'],
+    presence:   ['cs_ps1','cs_ps2','cs_ps3','cs_ps4'],
+    autonomy:   ['cs_au1','cs_au2','cs_au3','cs_au4']
+  };
+  const scores = {};
+  for (const dim of dimensions) {
+    scores[dim] = mean(prefixes[dim].map(k => answers[k] || 3));
+  }
+  const ranking = [...dimensions].sort((a, b) => scores[b] - scores[a]);
+  const pcts = {};
+  for (const dim of dimensions) pcts[dim] = normalize(scores[dim], 1, 5);
+  return { primary: ranking[0], secondary: ranking[1], scores, pcts, ranking };
+}
+
+// ── Core Values ───────────────────────────────────────────
+// Returns: { primary, secondary, scores: {}, pcts: {}, ranking: [] }
+
+export function scoreCoreValues(answers) {
+  const dimensions = ['security','freedom','achievement','connection','growth'];
+  const prefixes = {
+    security:    ['cv_sec1','cv_sec2','cv_sec3','cv_sec4'],
+    freedom:     ['cv_fre1','cv_fre2','cv_fre3','cv_fre4'],
+    achievement: ['cv_ach1','cv_ach2','cv_ach3','cv_ach4'],
+    connection:  ['cv_con1','cv_con2','cv_con3','cv_con4'],
+    growth:      ['cv_gr1','cv_gr2','cv_gr3','cv_gr4']
+  };
+  const scores = {};
+  for (const dim of dimensions) {
+    scores[dim] = mean(prefixes[dim].map(k => answers[k] || 3));
+  }
+  const ranking = [...dimensions].sort((a, b) => scores[b] - scores[a]);
+  const pcts = {};
+  for (const dim of dimensions) pcts[dim] = normalize(scores[dim], 1, 5);
+  return { primary: ranking[0], secondary: ranking[1], scores, pcts, ranking };
+}
+
 // ── Conflict Style ───────────────────────────────────────
 // Returns: { primary, secondary, scores: {}, pcts: {}, ranking: [] }
 
@@ -205,6 +248,8 @@ export function scoreTest(testId, answers) {
     case 'communication':   return scoreCommunication(answers);
     case 'conflictStyle':   return scoreConflictStyle(answers);
     case 'apologyLanguages':return scoreApologyLanguages(answers);
+    case 'careStyle':       return scoreCareStyle(answers);
+    case 'coreValues':      return scoreCoreValues(answers);
     default: throw new Error(`Unknown test: ${testId}`);
   }
 }

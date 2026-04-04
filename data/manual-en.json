@@ -428,6 +428,164 @@
     }
   },
 
+  "careStyle": {
+    "emotional": {
+      "label": "Emotional Care",
+      "code": "CARE-EM",
+      "summary": "Your primary care style is empathic listening. When someone suffers, your instinct is to connect with their inner state before any action.",
+      "instructions": [
+        { "title": "How I support those I love", "content": "When someone close to me is struggling, I sit with them, listen without interrupting, and try to understand how they feel from the inside. I don't rush to solutions. My primary goal is that the other person feels understood, not fixed." },
+        { "title": "What makes me feel helpful", "content": "I feel truly helpful when I see the other feels less alone after talking with me. I don't need to have solved anything. Emotional connection is my measure of success." },
+        { "title": "My limitation", "content": "I can stay in listening mode so long that I never help concretely. Sometimes people need solutions, not just to be heard. I'm learning to ask: 'Do you want me to listen or do you need practical advice?'" }
+      ],
+      "antiPatterns": [
+        { "title": "Invasive Listening", "content": "You can ask too many emotional questions when the other just wants to vent quickly and move on. Not every difficult moment requires deep emotional analysis." },
+        { "title": "Emotional Projection", "content": "You assume the other feels the way you would feel in the same situation. But not everyone processes emotions the same way — some prefer to just solve and move on." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to receive support from them", "content": "When they need support, don't start with solutions — start with emotional presence. Ask 'how are you really?' and listen before proposing anything. Connection comes before action." },
+        { "title": "How to give them support", "content": "This partner needs to feel their emotions are valid, not that they should 'feel better'. Avoid phrases like 'it's not a big deal'. Validate first, then — if they want — help find solutions." }
+      ]
+    },
+    "practical": {
+      "label": "Practical Care",
+      "code": "CARE-PR",
+      "summary": "Your care style is action-oriented. When someone suffers, your instinct is to find a solution and act concretely to improve the situation.",
+      "instructions": [
+        { "title": "How I support those I love", "content": "When someone I love has a problem, my first reaction is to ask: 'What can I do to solve this?' I research, organize, fix. My way of loving is being concretely useful." },
+        { "title": "What makes me feel helpful", "content": "I feel truly helpful when the problem is solved or alleviated. Pure emotional presence without action leaves me with the feeling of not having done enough." },
+        { "title": "My limitation", "content": "I often propose solutions when the other just wants to be heard. This can make them feel misunderstood. I'm learning to ask first: 'Do you need me to listen or do you want practical help?'" }
+      ],
+      "antiPatterns": [
+        { "title": "The Unsolicited Fix", "content": "You propose solutions before the other has even finished talking. This signals you're already thinking about how to exit the emotional conversation, not truly understanding." },
+        { "title": "Fixing as Avoidance", "content": "Sometimes 'solving' is a way to avoid staying with emotional vulnerability. Being busy with the problem is easier than sitting with the other's pain without being able to eliminate it immediately." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to receive support from them", "content": "Tell them explicitly what you need: 'I need to vent without advice' or 'I have a practical problem, can you help me find a solution?' Without explicit instructions, their default is to fix." },
+        { "title": "How to give them support", "content": "When this partner is struggling, offer concrete help: 'What can I do?' or 'Do you want me to handle X?' Words of comfort are worth less to them than tangible actions." }
+      ]
+    },
+    "presence": {
+      "label": "Presence Care",
+      "code": "CARE-PS",
+      "summary": "Your care style is constant presence. Being there — physically or emotionally, even in silence — is the form of love you believe most powerful.",
+      "instructions": [
+        { "title": "How I support those I love", "content": "I don't feel the need to speak or act. Being close — sitting beside, not leaving, being reachable — is my primary form of support. Shared silence has deep value for me." },
+        { "title": "What makes me feel helpful", "content": "I feel useful when I know the other is not alone. It doesn't matter if I said nothing memorable or solved nothing — if I was there, I did my part." },
+        { "title": "My limitation", "content": "My constant presence can become suffocating if the partner needs space to process alone. Not everyone finds continuous presence reassuring — some perceive it as pressure." }
+      ],
+      "antiPatterns": [
+        { "title": "Suffocating Presence", "content": "You stay close even when the other needs space to process alone. You can't detach because you interpret their solitude as rejection of your support." },
+        { "title": "Availability Martyrdom", "content": "You're always available, at any hour, for anyone — at the cost of your own well-being. This isn't just care for others: it's also a way to feel needed." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to receive support from them", "content": "They don't expect you to speak or fix. They feel useful by being with you. Allow them to be there, even in silence. If you need space, say so explicitly — don't disappear without explanation." },
+        { "title": "How to give them support", "content": "This partner feels loved when not left alone in difficult moments. Your physical presence or a simple 'I'm here' is worth more than a thousand pieces of advice or solutions." }
+      ]
+    },
+    "autonomy": {
+      "label": "Autonomy Care",
+      "code": "CARE-AU",
+      "summary": "Your care style is respecting autonomy. You believe the best support is giving people space to find their own answers.",
+      "instructions": [
+        { "title": "How I support those I love", "content": "I believe people have the resources to face their own problems. My support is giving them space, not invading. I intervene when asked, not before." },
+        { "title": "What makes me feel helpful", "content": "I feel helpful when the other manages to find their own solution — partly thanks to the space I gave them. My care is respect, not intrusion." },
+        { "title": "My limitation", "content": "Sometimes my 'respect for autonomy' is perceived as disinterest or coldness. When someone truly needs active support, my stepping back can feel like abandonment." }
+      ],
+      "antiPatterns": [
+        { "title": "Distance as Care", "content": "You think giving space is always the right answer. But in moments of acute crisis, people need active support — not space. Your withdrawal can be experienced as indifference." },
+        { "title": "Implicit Expectation of Strength", "content": "By treating others as autonomous and capable, you may implicitly communicate that it's not 'ok' to need help. This can make them reluctant to ask for support when they genuinely need it." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to receive support from them", "content": "Don't expect them to step forward spontaneously — they respect your autonomy too much to 'intrude'. If you need active support, ask explicitly: 'I need you here with me.' They will respond." },
+        { "title": "How to give them support", "content": "This partner appreciates you not invading with questions or constant presence while they process something. Tell them 'I'm here if you need me' and let them decide when and how to approach." }
+      ]
+    }
+  },
+
+  "coreValues": {
+    "security": {
+      "label": "Security Orientation",
+      "code": "VAL-SEC",
+      "summary": "Stability, predictability, and continuity are your core values. You build your life on solid foundations and need to know where you're going.",
+      "instructions": [
+        { "title": "How this value shows up", "content": "I give great importance to routine, shared rituals, and predictability. It's not fear of change — it's recognition that stability creates the space to trust and invest deeply in something." },
+        { "title": "What I need in a relationship", "content": "I need to know where I stand with my partner: clear commitments, shared plans, consistent communication. Prolonged uncertainty in the relationship is hard for me to manage." },
+        { "title": "Potential friction with different partners", "content": "With freedom- or growth-oriented partners, I can seem rigid or fearful of change. The challenge is distinguishing changes that enrich from those that destabilize." }
+      ],
+      "antiPatterns": [
+        { "title": "Resistance to Change", "content": "Your preference for stability can become resistance to any novelty, even when change would be positive. Not every uncertainty is a threat." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to support this partner", "content": "Communicate important changes in advance. They don't love surprises — not because they're rigid, but because anticipation lets them adapt. A 'I want to talk to you about something' said ahead of time is gold." }
+      ]
+    },
+    "freedom": {
+      "label": "Freedom Orientation",
+      "code": "VAL-FREE",
+      "summary": "Autonomy, adventure, and independence are your core values. You need to feel that life is open, not predetermined.",
+      "instructions": [
+        { "title": "How this value shows up", "content": "I feel physical discomfort when I feel trapped — by rigid routines, unchosen expectations, relationships that limit who I am. Freedom is not a whim: it's a necessary condition for my well-being." },
+        { "title": "What I need in a relationship", "content": "I need space to be myself within the relationship. A partner who tries to control or limit me — even with the best intentions — triggers an immediate flight response." },
+        { "title": "Potential friction with different partners", "content": "With security-oriented partners I can seem unreliable or uncommitted. The challenge is learning that committing doesn't mean losing yourself — it's possible to be free within a stable relationship." }
+      ],
+      "antiPatterns": [
+        { "title": "Freedom as Escape", "content": "Sometimes your search for freedom is actually avoidance of commitment and vulnerability. Deep intimacy requires accepting some constraints — not as a prison, but as roots." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to support this partner", "content": "Don't tighten the reins when they feel limited — you'll get the opposite effect. Give them space and trust, and they'll choose to return. Controlling them pushes them away; respecting their autonomy draws them closer." }
+      ]
+    },
+    "achievement": {
+      "label": "Achievement Orientation",
+      "code": "VAL-ACH",
+      "summary": "Success, ambitious goals, and recognition are your core values. You're motivated by challenge and professional growth.",
+      "instructions": [
+        { "title": "How this value shows up", "content": "I invest heavily in my career and personal goals. It's not selfishness — it's how I feel alive. Success isn't just material: it's proof that I'm making the most of my potential." },
+        { "title": "What I need in a relationship", "content": "I need a partner who supports my ambitions, not scales them back. Criticism of my goals feels like criticism of my identity. I value someone who challenges me to grow, not who asks me to slow down." },
+        { "title": "Potential friction with different partners", "content": "With connection-oriented partners I can seem distant or not present enough. The challenge is not treating the relationship like another thing to 'optimize' — relationships require presence, not performance." }
+      ],
+      "antiPatterns": [
+        { "title": "The Relationship as Project", "content": "You treat the relationship as a goal to achieve rather than an experience to live. Efficiency and optimization don't apply to intimacy." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to support this partner", "content": "Celebrate their successes — even those that seem 'just work' to you. For them, it's an expression of identity. And when they need to focus intensely on a goal, support them without making them feel guilty." }
+      ]
+    },
+    "connection": {
+      "label": "Connection Orientation",
+      "code": "VAL-CON",
+      "summary": "Relationships, family, and contribution to others are your core values. Your well-being is intrinsically linked to the quality of your bonds.",
+      "instructions": [
+        { "title": "How this value shows up", "content": "People are at the center of my life. I invest heavily in relationships — family, friends, partner — because that's where I find deep meaning and satisfaction. It's not dependence: it's recognizing that we're relational beings." },
+        { "title": "What I need in a relationship", "content": "I need to feel that the relationship is a real priority, not residual. A partner who systematically puts everything before our connection makes me feel invisible." },
+        { "title": "Potential friction with different partners", "content": "With achievement- or freedom-oriented partners I can feel like I'm ranked second. The challenge is distinguishing between someone who doesn't value me and someone who simply expresses love differently." }
+      ],
+      "antiPatterns": [
+        { "title": "Merger as Connection", "content": "You can confuse deep intimacy with total fusion. Healthy relationships maintain two distinct identities — you don't lose yourself in the other, you grow alongside the other." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to support this partner", "content": "Show them the relationship is a priority — not just in crises, but in everyday life. Small, regular gestures ('I was thinking about you today') are worth more than grand rare gestures." }
+      ]
+    },
+    "growth": {
+      "label": "Growth Orientation",
+      "code": "VAL-GR",
+      "summary": "Personal evolution, learning, and deep meaning are your core values. You're in constant movement toward a better version of yourself.",
+      "instructions": [
+        { "title": "How this value shows up", "content": "I don't settle for who I am today. I read, reflect, question my beliefs, seek experiences that change me. This isn't instability — it's how I respect myself." },
+        { "title": "What I need in a relationship", "content": "I need a partner who grows with me or at least supports my journey. A relationship that opposes my evolution slowly suffocates me." },
+        { "title": "Potential friction with different partners", "content": "With security-oriented partners I can seem unsatisfied or unstable. The challenge is communicating that growth doesn't threaten stability — it can enrich it." }
+      ],
+      "antiPatterns": [
+        { "title": "Growth as Escape from Self", "content": "Sometimes constant improvement is a way to avoid accepting who you are now. True growth includes acceptance, not just transformation." }
+      ],
+      "partnerInstructions": [
+        { "title": "How to support this partner", "content": "Show genuine interest in their growth journey — books they're reading, ideas that excite them, changes they're exploring. Feeling understood in their evolution is for them a profound act of love." }
+      ]
+    }
+  },
+
   "crossModuleInsights": {
     "avoidant_avoiding": {
       "title": "Double Avoidance",
