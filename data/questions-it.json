@@ -106,5 +106,67 @@
       { "id": "rt4", "text": "Nelle discussioni, il contenuto e i fatti mi sembrano più importanti del tono emotivo.", "dimension": "report" },
       { "id": "rt5", "text": "Quando qualcuno mi parla, mi concentro su cosa dovrebbe fare, non su come si sente.", "dimension": "report" }
     ]
+  },
+
+  "conflictStyle": {
+    "id": "conflictStyle",
+    "name": "Stile di Conflitto",
+    "subtitle": "Come ti comporti quando sorge un conflitto",
+    "description": "Basato sul modello Thomas-Kilmann. Identifica il tuo stile dominante tra 5 approcci al conflitto: Competitivo, Collaborativo, Compromissorio, Evitante, Accomodante.",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Non mi descrive", "", "A volte", "", "Mi descrive perfettamente"] },
+    "questions": [
+      { "id": "cs_comp1", "text": "Durante un conflitto, continuo a sostenere la mia posizione finché l'altro non riconosce che ho ragione.", "dimension": "competing" },
+      { "id": "cs_comp2", "text": "In una discussione accesa, non cedo finché non ottengo quello che voglio.", "dimension": "competing" },
+      { "id": "cs_comp3", "text": "Ritengo importante non perdere terreno nelle discussioni con il partner.", "dimension": "competing" },
+      { "id": "cs_comp4", "text": "Difendo il mio punto di vista con determinazione anche sotto forte pressione.", "dimension": "competing" },
+      { "id": "cs_comp5", "text": "Preferisco imporre la mia soluzione piuttosto che accettarne una che non mi convince.", "dimension": "competing" },
+      { "id": "cs_coll1", "text": "In un conflitto, non mi fermo finché non troviamo una soluzione che soddisfi davvero entrambi.", "dimension": "collaborating" },
+      { "id": "cs_coll2", "text": "Dedico tempo ed energia a capire i bisogni dell'altro per trovare un accordo creativo.", "dimension": "collaborating" },
+      { "id": "cs_coll3", "text": "Affrontare un conflitto insieme mi sembra un'opportunità per capirci meglio, non un problema.", "dimension": "collaborating" },
+      { "id": "cs_coll4", "text": "Esploro attivamente le ragioni dell'altro prima di difendere le mie.", "dimension": "collaborating" },
+      { "id": "cs_coll5", "text": "In una discussione, cerco una soluzione win-win anche quando richiede più tempo.", "dimension": "collaborating" },
+      { "id": "cs_comp6", "text": "In un conflitto, cerco un punto di incontro a metà strada anche se non è ideale.", "dimension": "compromising" },
+      { "id": "cs_comp7", "text": "Sono disposto/a a cedere qualcosa se l'altro fa lo stesso.", "dimension": "compromising" },
+      { "id": "cs_comp8", "text": "Preferisco un accordo parziale a un conflitto prolungato.", "dimension": "compromising" },
+      { "id": "cs_comp9", "text": "In una discussione, cerco la soluzione più rapida che soddisfi entrambi almeno in parte.", "dimension": "compromising" },
+      { "id": "cs_comp10","text": "Trovo accettabile che nessuno ottenga esattamente tutto, purché si trovi un equilibrio.", "dimension": "compromising" },
+      { "id": "cs_avoi1", "text": "Quando sorge un conflitto, preferisco evitare l'argomento finché non si calma tutto.", "dimension": "avoiding" },
+      { "id": "cs_avoi2", "text": "Se posso, rimando le discussioni difficili a un momento più opportuno.", "dimension": "avoiding" },
+      { "id": "cs_avoi3", "text": "In una lite, tendo ad allontanarmi fisicamente o a cambiare argomento.", "dimension": "avoiding" },
+      { "id": "cs_avoi4", "text": "Preferisco sopportare in silenzio piuttosto che affrontare un conflitto aperto.", "dimension": "avoiding" },
+      { "id": "cs_avoi5", "text": "Quando c'è tensione, mi faccio da parte e aspetto che passi da sola.", "dimension": "avoiding" },
+      { "id": "cs_acco1", "text": "In un conflitto, cedo spesso alle richieste dell'altro per mantenere la pace.", "dimension": "accommodating" },
+      { "id": "cs_acco2", "text": "Metto da parte i miei bisogni per far stare bene il partner anche a mio discapito.", "dimension": "accommodating" },
+      { "id": "cs_acco3", "text": "Mi adatto facilmente alla posizione dell'altro anche se non la condivido del tutto.", "dimension": "accommodating" },
+      { "id": "cs_acco4", "text": "Per me è più importante preservare la relazione che difendere la mia posizione.", "dimension": "accommodating" },
+      { "id": "cs_acco5", "text": "Rinuncio volentieri a qualcosa per evitare tensioni, anche quando avrei ragione.", "dimension": "accommodating" }
+    ]
+  },
+
+  "apologyLanguages": {
+    "id": "apologyLanguages",
+    "name": "Linguaggi delle Scuse",
+    "subtitle": "Come dai e ricevi scuse genuine",
+    "description": "Basato sul modello di Gary Chapman. Identifica cosa rende una scusa credibile e accettabile per te tra 5 linguaggi: Rimpianto, Responsabilità, Riparazione, Cambiamento, Perdono.",
+    "duration": "4 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Non conta per me", "", "A volte", "", "Fondamentale per me"] },
+    "questions": [
+      { "id": "ap_reg1", "text": "Quando qualcuno si scusa, la cosa più importante è che mostri sinceramente di sentire il mio dolore.", "dimension": "regret" },
+      { "id": "ap_reg2", "text": "Un 'mi dispiace davvero, ti ho fatto del male' vale per me più di qualsiasi altra cosa.", "dimension": "regret" },
+      { "id": "ap_reg3", "text": "Non mi sento perdonato/a se non vedo che l'altro è genuinamente dispiaciuto emotivamente.", "dimension": "regret" },
+      { "id": "ap_res1", "text": "Quando mi scuso, ammettere esplicitamente il mio errore è la parte più importante.", "dimension": "responsibility" },
+      { "id": "ap_res2", "text": "Non accetto una scusa se l'altro non riconosce apertamente cosa ha sbagliato.", "dimension": "responsibility" },
+      { "id": "ap_res3", "text": "'Ho sbagliato, è colpa mia' è la base di ogni scusa che posso accettare.", "dimension": "responsibility" },
+      { "id": "ap_rest1","text": "Le scuse sono credibili per me solo se accompagnate da un gesto concreto di riparazione.", "dimension": "restitution" },
+      { "id": "ap_rest2","text": "Mi aspetto che chi sbaglia faccia qualcosa di concreto per rimediare, non solo parole.", "dimension": "restitution" },
+      { "id": "ap_rest3","text": "'Cosa posso fare per rimediare?' è la parte della scusa che conta di più per me.", "dimension": "restitution" },
+      { "id": "ap_rep1", "text": "Per accettare una scusa, ho bisogno di credere che l'altro farà qualcosa di diverso in futuro.", "dimension": "repentance" },
+      { "id": "ap_rep2", "text": "'Non lo farò più' è la parte della scusa che pesa di più per me.", "dimension": "repentance" },
+      { "id": "ap_rep3", "text": "Mi è difficile perdonare davvero se non vedo un cambiamento reale nel comportamento.", "dimension": "repentance" },
+      { "id": "ap_for1", "text": "Che qualcuno mi chieda esplicitamente 'mi perdoni?' è importante per chiudere il conflitto.", "dimension": "forgiveness" },
+      { "id": "ap_for2", "text": "Il perdono deve essere esplicitamente richiesto — non lo concedo in automatico.", "dimension": "forgiveness" },
+      { "id": "ap_for3", "text": "Un 'perdonami' detto chiaramente mi aiuta a lasciare andare il rancore e andare avanti.", "dimension": "forgiveness" }
+    ]
   }
 }

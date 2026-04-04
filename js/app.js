@@ -145,8 +145,9 @@ async function renderDashboard() {
   const tests = getTestList();
 
   // Header
+  const totalModules = 6;
   const completedCount = Object.keys(state.testResults).length;
-  const pct = Math.round((completedCount / 4) * 100);
+  const pct = Math.round((completedCount / totalModules) * 100);
 
   document.getElementById('dash-user-name').textContent =
     profile?.displayName?.split(' ')[0] || 'Utente';
@@ -154,11 +155,11 @@ async function renderDashboard() {
     profile?.partnerCode || '------';
   document.getElementById('dash-progress-fill').style.width = pct + '%';
   document.getElementById('dash-progress-label').textContent =
-    `${completedCount}/4 ${state.lang === 'it' ? 'moduli completati' : 'modules completed'}`;
+    `${completedCount}/6 ${state.lang === 'it' ? 'moduli completati' : 'modules completed'}`;
 
   // CTA
   const ctaEl = document.getElementById('dash-cta');
-  if (completedCount === 4) {
+  if (completedCount === totalModules) {
     ctaEl.innerHTML = `
       <div class="dashboard-cta-text">
         <h3>${state.lang === 'it' ? 'Il tuo Manuale è pronto' : 'Your Manual is ready'}</h3>
@@ -187,23 +188,27 @@ async function renderDashboard() {
 
   // Test cards
   const grid = document.getElementById('tests-grid');
-  const testOrder = ['attachment','loveLanguages','bigFive','communication'];
-  const moduleNums = ['01','02','03','04'];
+  const testOrder = ['attachment','loveLanguages','bigFive','communication','conflictStyle','apologyLanguages'];
+  const moduleNums = ['01','02','03','04','05','06'];
   const moduleNames = {
-    it: { attachment:'Attaccamento', loveLanguages:"Linguaggi dell'Amore", bigFive:'Big Five OCEAN', communication:'Stile Comunicativo' },
-    en: { attachment:'Attachment', loveLanguages:'Love Languages', bigFive:'Big Five OCEAN', communication:'Communication Style' }
+    it: { attachment:'Attaccamento', loveLanguages:"Linguaggi dell'Amore", bigFive:'Big Five OCEAN', communication:'Stile Comunicativo', conflictStyle:'Stile nel Conflitto', apologyLanguages:'Linguaggi delle Scuse' },
+    en: { attachment:'Attachment', loveLanguages:'Love Languages', bigFive:'Big Five OCEAN', communication:'Communication Style', conflictStyle:'Conflict Style', apologyLanguages:'Apology Languages' }
   };
 
   const resultLabels = {
     it: {
-      attachment: { secure:'Sicuro', anxious:'Ansioso', avoidant:'Evitante', fearful:'Disorganizzato' },
-      loveLanguages: { words:'Parole', time:'Tempo', gifts:'Doni', acts:'Atti', touch:'Contatto' },
-      communication: { rapport:'Rapport Talk', report:'Report Talk', balanced:'Bilanciato' }
+      attachment:      { secure:'Sicuro', anxious:'Ansioso', avoidant:'Evitante', fearful:'Disorganizzato' },
+      loveLanguages:   { words:'Parole', time:'Tempo', gifts:'Doni', acts:'Atti', touch:'Contatto' },
+      communication:   { rapport:'Rapport Talk', report:'Report Talk', balanced:'Bilanciato' },
+      conflictStyle:   { competing:'Competitivo', collaborating:'Collaborativo', compromising:'Compromesso', avoiding:'Evitante', accommodating:'Accomodante' },
+      apologyLanguages:{ regret:'Rimpianto', responsibility:'Responsabilità', restitution:'Restituzione', repentance:'Ravvedimento', forgiveness:'Perdono' }
     },
     en: {
-      attachment: { secure:'Secure', anxious:'Anxious', avoidant:'Avoidant', fearful:'Fearful' },
-      loveLanguages: { words:'Words', time:'Time', gifts:'Gifts', acts:'Acts', touch:'Touch' },
-      communication: { rapport:'Rapport Talk', report:'Report Talk', balanced:'Balanced' }
+      attachment:      { secure:'Secure', anxious:'Anxious', avoidant:'Avoidant', fearful:'Fearful' },
+      loveLanguages:   { words:'Words', time:'Time', gifts:'Gifts', acts:'Acts', touch:'Touch' },
+      communication:   { rapport:'Rapport Talk', report:'Report Talk', balanced:'Balanced' },
+      conflictStyle:   { competing:'Competing', collaborating:'Collaborating', compromising:'Compromising', avoiding:'Avoiding', accommodating:'Accommodating' },
+      apologyLanguages:{ regret:'Regret', responsibility:'Responsibility', restitution:'Restitution', repentance:'Repentance', forgiveness:'Forgiveness' }
     }
   };
 
@@ -215,10 +220,12 @@ async function renderDashboard() {
 
     let resultStr = '';
     if (done && result) {
-      if (id === 'attachment')    resultStr = rl.attachment[result.style] || '';
-      if (id === 'loveLanguages') resultStr = rl.loveLanguages[result.primary] || '';
-      if (id === 'bigFive')       resultStr = `${state.lang === 'it' ? 'Dominante' : 'Dominant'}: ${result.dominant}`;
-      if (id === 'communication') resultStr = rl.communication[result.style] || '';
+      if (id === 'attachment')       resultStr = rl.attachment[result.style] || '';
+      if (id === 'loveLanguages')    resultStr = rl.loveLanguages[result.primary] || '';
+      if (id === 'bigFive')          resultStr = `${state.lang === 'it' ? 'Dominante' : 'Dominant'}: ${result.dominant}`;
+      if (id === 'communication')    resultStr = rl.communication[result.style] || '';
+      if (id === 'conflictStyle')    resultStr = rl.conflictStyle[result.primary] || '';
+      if (id === 'apologyLanguages') resultStr = rl.apologyLanguages[result.primary] || '';
     }
 
     return `
@@ -302,59 +309,98 @@ function renderTest(testId) {
 
 // ── Manual View ───────────────────────────────────────────
 
-async function renderManual() {
+async function renderManual(activeTab = 'mine') {
   showView('manual');
   const profile = getCurrentProfile();
+  const partner = state.partnerProfile;
+  const hasPartner = !!(partner && Object.keys(partner.testResults || {}).length > 0);
+
+  // Cover info (always shows owner's data)
   const manual = generateManual(state.testResults, state.lang);
-
-  // Cover
-  document.getElementById('manual-owner-name').textContent =
-    profile?.displayName || 'Utente';
-  document.getElementById('manual-version').textContent =
-    `v${manual.version} — ${formatDate(manual.generatedAt)}`;
-  document.getElementById('manual-partner-code-val').textContent =
-    profile?.partnerCode || '------';
-
-  const completeness = manual.completeness;
+  document.getElementById('manual-owner-name').textContent = profile?.displayName || 'Utente';
+  document.getElementById('manual-version').textContent = `v${manual.version} — ${formatDate(manual.generatedAt)}`;
+  document.getElementById('manual-partner-code-val').textContent = profile?.partnerCode || '------';
   document.getElementById('manual-completeness').textContent =
-    `${completeness}% ${state.lang === 'it' ? 'completo' : 'complete'}`;
+    `${manual.completeness}% ${state.lang === 'it' ? 'completo' : 'complete'}`;
 
-  // Body
   const body = document.getElementById('manual-body');
-  const validChapters = manual.chapters.filter(Boolean);
+
+  // Tab bar
+  const tabBar = hasPartner ? `
+    <div class="manual-tabs">
+      <button class="manual-tab ${activeTab === 'mine' ? 'active' : ''}" id="tab-mine">
+        ${state.lang === 'it' ? '📖 Il mio Manuale' : '📖 My Manual'}
+      </button>
+      <button class="manual-tab manual-tab-partner ${activeTab === 'partner' ? 'active' : ''}" id="tab-partner">
+        📖 ${state.lang === 'it' ? 'Manuale di' : 'Manual of'} ${partner.displayName?.split(' ')[0] || 'Partner'}
+      </button>
+    </div>
+  ` : '';
+
+  // Choose which manual to render
+  const resultsToRender = activeTab === 'partner' && hasPartner
+    ? partner.testResults || {}
+    : state.testResults;
+
+  const manualToRender = activeTab === 'partner' && hasPartner
+    ? generateManual(resultsToRender, state.lang)
+    : manual;
+
+  const validChapters = manualToRender.chapters.filter(Boolean);
+
+  // Partner banner
+  const partnerBanner = activeTab === 'partner' && hasPartner ? `
+    <div class="partner-manual-banner">
+      <div class="partner-manual-banner-avatar">
+        ${partner.photoURL
+          ? `<img src="${partner.photoURL}" style="width:40px;height:40px;border-radius:50%">`
+          : (partner.displayName?.[0] || 'P')}
+      </div>
+      <div class="partner-manual-banner-text">
+        <div class="partner-manual-banner-label">
+          ${state.lang === 'it' ? 'STAI LEGGENDO IL MANUALE DI' : 'YOU ARE READING THE MANUAL OF'}
+        </div>
+        <div class="partner-manual-banner-name">${partner.displayName || 'Partner'}</div>
+      </div>
+    </div>
+  ` : '';
 
   if (validChapters.length === 0) {
-    body.innerHTML = `
+    body.innerHTML = tabBar + `
       <div class="empty-state">
         <div class="empty-state-icon">📋</div>
         <div class="empty-state-title">
-          ${state.lang === 'it' ? 'Nessun modulo completato' : 'No modules completed'}
+          ${activeTab === 'partner'
+            ? (state.lang === 'it' ? 'Il partner non ha completato test' : 'Partner has not completed tests')
+            : (state.lang === 'it' ? 'Nessun modulo completato' : 'No modules completed')}
         </div>
         <div class="empty-state-desc">
           ${state.lang === 'it'
-            ? 'Completa almeno un test per generare il tuo manuale.'
-            : 'Complete at least one test to generate your manual.'}
+            ? 'Completa almeno un test per generare il manuale.'
+            : 'Complete at least one test to generate the manual.'}
         </div>
-      </div>
-    `;
+      </div>`;
+    bindManualTabs(body, hasPartner, activeTab);
     return;
   }
 
   const tocHtml = renderTOC(validChapters, state.lang);
   const chaptersHtml = validChapters.map(ch => renderManualChapter(ch)).join('');
+  body.innerHTML = tabBar + partnerBanner + tocHtml + chaptersHtml;
 
-  body.innerHTML = tocHtml + chaptersHtml;
-
-  // TOC click handlers
   body.querySelectorAll('.toc-item[data-target]').forEach(item => {
     item.addEventListener('click', () => {
-      const el = document.getElementById(item.dataset.target);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById(item.dataset.target)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
-
-  // Animate bars after paint
   setTimeout(() => animateScoreBars(body), 100);
+  bindManualTabs(body, hasPartner, activeTab);
+}
+
+function bindManualTabs(body, hasPartner, activeTab) {
+  if (!hasPartner) return;
+  body.querySelector('#tab-mine')?.addEventListener('click', () => renderManual('mine'));
+  body.querySelector('#tab-partner')?.addEventListener('click', () => renderManual('partner'));
 }
 
 // ── Sync View ─────────────────────────────────────────────
@@ -619,6 +665,129 @@ async function renderReport() {
           </h3>
         </div>
         ${report.synergies.map(renderSynergyCard).join('')}
+      </div>
+    `;
+  }
+
+  // Section D: Compatibility score
+  if (report.compatibility) {
+    const c = report.compatibility;
+    bodyHtml += `
+      <div class="report-section">
+        <div class="report-section-header">
+          <span class="report-section-code">SEZ. D</span>
+          <h3 class="report-section-title">
+            ${state.lang === 'it' ? 'Indice di Compatibilità' : 'Compatibility Score'}
+          </h3>
+        </div>
+        <div class="compat-block">
+          <div class="compat-score-ring" style="--pct:${c.overall}">
+            <div class="compat-score-num">${c.overall}<span style="font-size:14px">%</span></div>
+          </div>
+          <div class="compat-text">
+            <div class="compat-level">${c.label}</div>
+            <div class="compat-desc">${c.desc}</div>
+          </div>
+        </div>
+        <div class="compat-breakdown">
+          ${c.breakdown.map(b => `
+            <div class="compat-item">
+              <div class="compat-item-dot ${b.score>=70?'green':b.score>=45?'yellow':'red'}"></div>
+              ${b.label}: ${b.score}%
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // Section E: Scenarios
+  if (report.scenarios?.length > 0) {
+    bodyHtml += `
+      <div class="report-section">
+        <div class="report-section-header">
+          <span class="report-section-code">SEZ. E</span>
+          <h3 class="report-section-title">
+            ${state.lang === 'it' ? 'Simulazioni Operative' : 'Operational Scenarios'}
+          </h3>
+        </div>
+        ${report.scenarios.map(s => `
+          <div class="scenario-card">
+            <div class="scenario-header">
+              <span class="scenario-icon">${s.icon}</span>
+              <span class="scenario-title">${s.title}</span>
+            </div>
+            <div class="scenario-body">
+              <div class="scenario-col">
+                <div class="scenario-col-label">${s.meLabel}</div>
+                <div class="scenario-col-text">${s.meText}</div>
+              </div>
+              <div class="scenario-col">
+                <div class="scenario-col-label">${s.ptLabel}</div>
+                <div class="scenario-col-text">${s.ptText}</div>
+              </div>
+            </div>
+            <div class="scenario-protocol">
+              <strong>${state.lang === 'it' ? 'PROTOCOLLO CONSIGLIATO' : 'RECOMMENDED PROTOCOL'}</strong>
+              ${s.protocol}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // Section F: Cross-module insights
+  if (report.crossInsights?.length > 0) {
+    bodyHtml += `
+      <div class="report-section">
+        <div class="report-section-header">
+          <span class="report-section-code">SEZ. F</span>
+          <h3 class="report-section-title">
+            ${state.lang === 'it' ? 'Pattern Cross-Modulo' : 'Cross-Module Patterns'}
+          </h3>
+        </div>
+        ${report.crossInsights.map(ins => `
+          <div class="friction-card" style="border-left-color:var(--warn)">
+            <div class="friction-tag" style="color:var(--warn)">
+              ⚡ PATTERN — ${ins.who === 'me' ? myName.toUpperCase() : ptName.toUpperCase()}
+            </div>
+            <div class="friction-name">${ins.name}</div>
+            <div class="friction-desc">${ins.description}</div>
+            <div class="friction-protocol">
+              <strong>${state.lang === 'it' ? 'INDICAZIONE' : 'GUIDANCE'}</strong>
+              ${ins.protocol}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // Section G: Weekly actions
+  if (report.weeklyActions?.length > 0) {
+    bodyHtml += `
+      <div class="report-section">
+        <div class="report-section-header">
+          <span class="report-section-code">SEZ. G</span>
+          <h3 class="report-section-title">
+            ${state.lang === 'it' ? 'Piano Azioni Settimanali' : 'Weekly Action Plan'}
+          </h3>
+        </div>
+        <div class="weekly-plan">
+          <div class="weekly-plan-header">
+            📋 ${state.lang === 'it' ? 'AZIONI RACCOMANDATE' : 'RECOMMENDED ACTIONS'}
+          </div>
+          ${report.weeklyActions.map((a, i) => `
+            <div class="weekly-action-item">
+              <div class="weekly-action-num">W${i+1}</div>
+              <div class="weekly-action-content">
+                <div class="weekly-action-from">${a.friction}</div>
+                <div class="weekly-action-text">${a.action}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
       </div>
     `;
   }

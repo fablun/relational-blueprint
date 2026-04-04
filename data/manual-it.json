@@ -318,28 +318,244 @@
     }
   },
 
+  "conflictStyle": {
+    "competing": {
+      "label": "Stile Competitivo",
+      "code": "CONF-COMP",
+      "summary": "Nei conflitti sei assertivo/a e orientato/a alla vittoria. Difendi la tua posizione con energia. Il rischio è che l'altro si senta sopraffatto o non ascoltato.",
+      "instructions": [
+        { "title": "Come mi comporto in un conflitto", "content": "Tendo a sostenere la mia posizione con forza e non cedo facilmente. Per me 'avere ragione' ha peso reale. Questo può essere utile in situazioni che richiedono decisioni rapide, ma nelle relazioni intime può far sentire l'altro in una posizione di inferiorità." },
+        { "title": "Il mio punto cieco", "content": "Posso 'vincere' la discussione e perdere la connessione. Quando 'vinco' una lite, il partner può restare ferito anche se ha ceduto. Il successo in un conflitto non è chi ha ragione — è se entrambi ci sentiamo capiti alla fine." },
+        { "title": "Come gestirmi durante una lite", "content": "Non prendere la mia intensità come attacco personale — è il mio stile naturale. Se vuoi che io ascolti davvero, dichiara esplicitamente: 'Ho bisogno che tu ascolti prima di rispondere.' Questo mi sblocca." },
+        { "title": "Cosa mi aiuta a cambiare registro", "content": "Mostrarmi che l'altro ha capito il mio punto abbassa la mia difensività. Non ho bisogno di cedere — ho bisogno di sentirmi sentito/a. Da lì posso collaborare." }
+      ]
+    },
+    "collaborating": {
+      "label": "Stile Collaborativo",
+      "code": "CONF-COLL",
+      "summary": "Nei conflitti cerchi soluzioni che soddisfino davvero entrambi. Investi tempo e attenzione per capire le ragioni dell'altro. Il rischio è che questo approccio richieda molta energia e non sempre sia reciprocato.",
+      "instructions": [
+        { "title": "Come mi comporto in un conflitto", "content": "Non mi fermo finché non troviamo qualcosa che funzioni per entrambi. Non mi interessa 'vincere' — mi interessa che la soluzione sia giusta. Questo richiede tempo e apertura reciproca." },
+        { "title": "Cosa mi frustra", "content": "Quando l'altro non investe lo stesso livello di attenzione nel trovare una soluzione condivisa. Se l'altro vuole solo 'chiuderla' o cede senza convinzione, mi sento incompreso/a e il conflitto rimane irrisolto per me." },
+        { "title": "Come gestirmi durante una lite", "content": "Dammi il tempo di esplorare il problema con te. Non interpretare le mie domande come attacchi — sto cercando di capire. Se sei stanco/a, dimmelo: possiamo fare una pausa e riprendere quando sei disponibile." },
+        { "title": "Il mio limite", "content": "A volte cerco la soluzione perfetta quando quella 'abbastanza buona' basterebbe. Se il partner è in modalità evitante o compromissoria, posso sembrare pesante. Imparare quando è ok fermarsi prima della soluzione ottimale è il mio lavoro." }
+      ]
+    },
+    "compromising": {
+      "label": "Stile Compromissorio",
+      "code": "CONF-COMP2",
+      "summary": "Nei conflitti cerchi velocemente un punto di incontro. Sei pragmatico/a: meglio un accordo parziale che un conflitto lungo. Il rischio è accumulare insoddisfazioni non dette.",
+      "instructions": [
+        { "title": "Come mi comporto in un conflitto", "content": "Cerco il prima possibile un accordo che soddisfi entrambi almeno in parte. Non ho bisogno di avere tutto quello che voglio — ho bisogno che il conflitto finisca e che si vada avanti." },
+        { "title": "Il mio punto cieco", "content": "Cedo spesso su cose che in realtà mi stanno a cuore, pur di chiudere. Nel tempo questo può creare un accumulo di piccoli rimpianti. Se noti che cedo sempre su tutto, non è che non mi importi — è che do priorità alla pace a breve termine." },
+        { "title": "Come gestirmi", "content": "Ogni tanto chiedimi: 'Sei davvero ok con questo accordo?' Questo mi dà il permesso di dire se sto cedendo su qualcosa di importante. Non dare per scontato il mio 'sì' — a volte è 'sì per ora'." }
+      ]
+    },
+    "avoiding": {
+      "label": "Stile Evitante",
+      "code": "CONF-AVO",
+      "summary": "Nei conflitti tendi a ritirarsi, rimandare o cambiare argomento. Non è indifferenza — è che il conflitto aperto ti attiva in modo sproporzionato. Il rischio è l'accumulo silenzioso.",
+      "instructions": [
+        { "title": "Come mi comporto in un conflitto", "content": "Il conflitto diretto mi crea forte disagio. La mia prima reazione è uscire dalla situazione — fisicamente o emotivamente. Non è che non mi interessi: è che il mio sistema nervoso percepisce il conflitto come minaccia e si mette in modalità difensiva." },
+        { "title": "Cosa succede se mi premi", "content": "Se mi forzi a confrontarti quando non sono pronto/a, mi chiudo completamente o dico cose che non penso davvero. Il risultato è peggiore di una pausa. L'approccio migliore: dammi un tempo preciso ('parliamone questa sera alle 8') e rispetta la pausa." },
+        { "title": "Come raggiungermi", "content": "Abbassa il tono. Non iniziare con accuse o intensità emotiva alta — mi farà scappare ancora prima di iniziare. Una domanda aperta e calma ('voglio capire cosa è successo per te') è l'unico ingresso che funziona." },
+        { "title": "Il costo del mio evitamento", "content": "So che evitare i conflitti non li risolve. Accumulo dentro di me cose non dette che alla lunga pesano. Il mio lavoro è imparare che il conflitto gestito bene non distrugge — costruisce. Ma ho bisogno di sicurezza per farlo." }
+      ]
+    },
+    "accommodating": {
+      "label": "Stile Accomodante",
+      "code": "CONF-ACCO",
+      "summary": "Nei conflitti dai priorità alle esigenze dell'altro. Cedi facilmente per mantenere l'armonia. Il rischio è la perdita progressiva della tua voce nella relazione.",
+      "instructions": [
+        { "title": "Come mi comporto in un conflitto", "content": "Cedo volentieri per preservare la pace e il rapporto. Mettere da parte i miei bisogni viene naturale quando sento che l'altro è turbato. Per me la relazione viene prima della 'vittoria'." },
+        { "title": "Il prezzo nascosto", "content": "La mia accomodanza non è illimitata. Sotto la superficie accumulo. Se mi vedi improvvisamente esplodere su qualcosa di apparentemente piccolo, di solito è l'ultimo goccia di un secchio che riempivo da tempo." },
+        { "title": "Come supportarmi", "content": "Chiedi esplicitamente la mia opinione — non darla per scontata. Quando cedo, a volte ho bisogno che tu dica: 'No, voglio sapere davvero cosa pensi tu.' Questo mi dà il permesso di essere onesto/a senza sentirti deludere." },
+        { "title": "Il mio confine", "content": "Devo imparare a dire 'no' su cose che mi stanno davvero a cuore. Quando lo faccio, non è capriccio — è che ho raggiunto un limite reale. Rispettare quel 'no' è rispettare me." }
+      ]
+    }
+  },
+
+  "apologyLanguages": {
+    "regret": {
+      "label": "Esprimere Rimpianto",
+      "code": "APO-REG",
+      "summary": "Per te una scusa è vera quando senti che l'altro prova genuinamente dispiacere per il dolore che ti ha causato. Le parole contano solo se trasportano emozione autentica.",
+      "instructions": [
+        { "title": "Cosa rende una scusa credibile per me", "content": "Ho bisogno di vedere e sentire che l'altro è davvero dispiaciuto — non solo formalmente, ma emotivamente. Un 'mi dispiace' detto di fretta o in modo distaccato non arriva. La scusa deve contenere il riconoscimento del mio dolore specifico." },
+        { "title": "Come scusarti con me in modo efficace", "content": "Non iniziare con spiegazioni o giustificazioni — inizia con il mio dolore. 'Ho visto che ti ho fatto del male quando ho fatto X, e mi dispiace davvero.' Solo dopo possiamo parlare del contesto. Se inizi a spiegarti prima che io mi senta capito/a, la scusa non passa." },
+        { "title": "Cosa non funziona con me", "content": "Scuse formali, automatiche o dette per chiudere in fretta. 'Scusa, ok?' non è una scusa per me — è una richiesta di togliermi dal tuo cammino. Se non senti davvero dispiacere, è meglio aspettare il momento giusto piuttosto che fingere." }
+      ]
+    },
+    "responsibility": {
+      "label": "Accettare Responsabilità",
+      "code": "APO-RES",
+      "summary": "Per te una scusa è vera quando l'altro riconosce esplicitamente cosa ha sbagliato. Senza responsabilità chiara, la scusa rimane vuota.",
+      "instructions": [
+        { "title": "Cosa rende una scusa credibile per me", "content": "Ho bisogno di sentire che l'altro sa esattamente cosa ha fatto di sbagliato e lo ammette senza ambiguità. 'Ho sbagliato a fare X' — specifico, diretto, senza 'ma'. I 'ma' dopo una scusa la annullano." },
+        { "title": "Come scusarti con me in modo efficace", "content": "Nomina l'azione specifica che ha causato il problema. Non 'mi dispiace se ti sei offeso/a' (passivo, non responsabile) — ma 'ho sbagliato quando ho fatto X'. La differenza è enorme per me." },
+        { "title": "Il mio punto sensibile", "content": "Le scuse vaghe o i 'mi dispiace per come hai vissuto la cosa' mi fanno incazzare più di nessuna scusa. Spostano la responsabilità su di me — su come ho 'percepito' qualcosa invece di su cosa è stato fatto. Riconosci il fatto, non la mia reazione." }
+      ]
+    },
+    "restitution": {
+      "label": "Fare Ammende",
+      "code": "APO-REST",
+      "summary": "Per te una scusa è completa solo quando è accompagnata da un gesto concreto di riparazione. Le parole da sole non bastano — servono azioni.",
+      "instructions": [
+        { "title": "Cosa rende una scusa credibile per me", "content": "Le parole da sole non bastano. Ho bisogno di vedere qualcosa di concreto che dimostri che la scusa è reale. Non deve essere grande — ma deve esistere. 'Cosa posso fare per rimediare?' è la domanda che mi apre completamente." },
+        { "title": "Come scusarti con me in modo efficace", "content": "Proponi un gesto specifico. Non 'farò meglio' (vago) — ma 'questa settimana farò X per rimediare'. Il gesto deve essere proporzionato al danno e deve essere stato pensato davvero, non buttato lì." },
+        { "title": "Cosa non funziona con me", "content": "Scuse senza follow-through. Se mi dici 'rimedio' e poi non fai niente, la scusa diventa peggio del torto originale. Meglio non prometterlo se non sei sicuro/a di poterlo fare." }
+      ]
+    },
+    "repentance": {
+      "label": "Cambiamento Genuino",
+      "code": "APO-REP",
+      "summary": "Per te una scusa è credibile solo se segnala un cambiamento reale nel comportamento futuro. Senza intenzione concreta di cambiare, la scusa è solo gestione del momento.",
+      "instructions": [
+        { "title": "Cosa rende una scusa credibile per me", "content": "Ho bisogno di credere che la stessa cosa non accadrà di nuovo — non perché me lo prometti, ma perché vedo un piano concreto di cambiamento. 'Non lo farò più' da solo non basta. Ho bisogno di capire cosa cambierà." },
+        { "title": "Come scusarti con me in modo efficace", "content": "Dimmi cosa farai diversamente la prossima volta. Specifico: 'Quando capiterà X, invece di fare Y farò Z.' Questo mi dice che hai capito il problema, non solo che vuoi pace." },
+        { "title": "Il mio limite", "content": "Se lo stesso comportamento si ripete dopo una scusa, la mia fiducia si erode in modo proporzionale. Non mi basta il dispiacere — mi serve il cambiamento. E noto quando non c'è." }
+      ]
+    },
+    "forgiveness": {
+      "label": "Chiedere Perdono",
+      "code": "APO-FOR",
+      "summary": "Per te il rituale della scusa si chiude solo quando l'altro chiede esplicitamente il perdono. Questo atto formale ha un peso emotivo reale e necessario.",
+      "instructions": [
+        { "title": "Cosa rende una scusa credibile per me", "content": "Il perdono deve essere richiesto esplicitamente — non dato per scontato. 'Mi perdoni?' è la chiave che chiude il conflitto per me. Senza quella domanda, resto in uno stato di tensione non risolta anche se tutto il resto è stato detto." },
+        { "title": "Come scusarti con me in modo efficace", "content": "Termina la scusa con una richiesta esplicita: 'Mi perdoni?' o 'Possiamo andare avanti?'. Non dare per scontato che il perdono sia automatico — chiedilo. Questo mi dà il potere di scegliere di lasciare andare." },
+        { "title": "Perché questo conta per me", "content": "Non è formalismo. Quando qualcuno chiede il mio perdono, riconosce che ho subito un torto e che spetta a me — non a lui/lei — decidere quando e se chiudere. Mi restituisce agency in un momento in cui mi sono sentito/a in torto altrui." }
+      ]
+    }
+  },
+
+  "crossModuleInsights": {
+    "avoidant_avoiding": {
+      "title": "Doppio Evitamento",
+      "modules": ["attachment", "conflictStyle"],
+      "condition": "Attaccamento Evitante + Stile di Conflitto Evitante",
+      "content": "Sotto stress tendi a sparire su due fronti contemporaneamente: emotivo e conflittuale. Il tuo partner potrebbe percepire una 'persona invisibile' nelle situazioni difficili. Non è indifferenza — è un sistema di protezione doppio. Il tuo lavoro: segnala quando stai evitando, anche solo con 'ho bisogno di tempo, torno'.",
+      "partnerNote": "Se il tuo partner ha questo profilo: non inseguirlo/a. Crea spazio sicuro e un accordo esplicito sul 'rientro'. La pressione peggiora tutto."
+    },
+    "anxious_competing": {
+      "title": "Inseguimento Esplosivo",
+      "modules": ["attachment", "conflictStyle"],
+      "condition": "Attaccamento Ansioso + Stile di Conflitto Competitivo",
+      "content": "La paura dell'abbandono si combina con uno stile assertivo: quando ti senti minacciato/a emotivamente, l'intensità dei tuoi conflitti aumenta drasticamente. Puoi sembrare aggressivo/a quando in realtà sei spaventato/a. Il segnale che stai entrando in questo pattern: il volume della discussione cresce ma l'argomento reale è 'mi ami ancora?'",
+      "partnerNote": "Quando il conflitto escalation rapidamente, prova a bypassare l'argomento superficiale: 'Sento che c'è qualcosa di più profondo qui. Stai bene?' Questo disinnesca il pattern."
+    },
+    "accommodating_anxious": {
+      "title": "Piacere per Paura",
+      "modules": ["attachment", "conflictStyle"],
+      "condition": "Attaccamento Ansioso + Stile Accomodante",
+      "content": "Cedi nei conflitti non perché non ti importi, ma perché temi che il disaccordo metta a rischio la relazione. La tua accomodanza è guidata dall'ansia, non dalla generosità. Il rischio: non dici mai cosa vuoi davvero, poi esplodi su qualcosa di apparentemente insignificante quando il secchio è pieno.",
+      "partnerNote": "Chiedi spesso: 'Sei davvero ok con questo?' e aspetta la risposta vera, non quella automatica. Crea sicurezza esplicita: 'Puoi dirmi di no senza che cambi niente tra noi.'"
+    },
+    "competing_report": {
+      "title": "Travolgi e Spiega",
+      "modules": ["conflictStyle", "communication"],
+      "condition": "Stile Competitivo + Report Talk",
+      "content": "In una discussione hai la doppia tendenza a voler vincere il punto E ad essere efficiente/diretto. Il risultato: le conversazioni difficili diventano dibattiti dove 'chi ha ragione' supera 'come stiamo entrambi'. Attenzione alla differenza tra avere ragione e essere capito.",
+      "partnerNote": "Con questo profilo, rallentare intenzionalmente è il lavoro. Prima di rispondere, una pausa di 3 secondi e la domanda mentale: 'Sto cercando di vincere o di capire?'"
+    },
+    "different_apology_languages": {
+      "title": "Scuse in Lingue Diverse",
+      "modules": ["apologyLanguages"],
+      "condition": "Linguaggi delle scuse diversi tra partner",
+      "content": "Ti sei scusato/a e l'altro non sembra perdonarti — o viceversa. Il problema non è la sincerità: state parlando linguaggi delle scuse diversi. Una scusa nel tuo linguaggio non arriva nel linguaggio dell'altro.",
+      "partnerNote": "Chiedi esplicitamente: 'Come posso scusarmi in modo che arrivi davvero?' Non dare per scontato che la tua scusa abbia il formato giusto."
+    },
+    "avoiding_repentance": {
+      "title": "Scusa Silente",
+      "modules": ["conflictStyle", "apologyLanguages"],
+      "condition": "Stile Evitante + Linguaggio Scuse: Cambiamento",
+      "content": "Eviti i conflitti E hai bisogno di vedere cambiamenti concreti prima di perdonare. Questo crea un paradosso: eviti la conversazione difficile necessaria per fare chiarezza sul cambiamento atteso. Risultato: non perdoni mai davvero perché non hai mai detto cosa ti aspettavi.",
+      "partnerNote": "Aiuta il tuo partner a esplicitare il cambiamento che si aspetta, in un momento di calma — non durante il conflitto."
+    }
+  },
+
   "coupleReport": {
     "frictionPatterns": {
       "avoidant_anxious": {
         "name": "Dinamica Persecutore-Distanziatore",
-        "description": "Una delle dinamiche più comuni e dolorose: più uno si avvicina, più l'altro si allontana — creando un ciclo di escalation.",
-        "protocol": "Quando si attiva il ciclo: il partner ansioso deve fare un passo indietro PRIMA di raggiungere la soglia (non aspettare il panico). Il partner evitante deve dare un check-in verbale breve prima di ritirarsi ('Ho bisogno di 30 min, poi torno'). Il ritiro senza spiegazione è il trigger primario."
+        "severity": "alta",
+        "description": "Una delle dinamiche più comuni e dolorose: più uno si avvicina, più l'altro si allontana — creando un ciclo di escalation che peggiora con ogni giro.",
+        "whatHappens": "Il partner ansioso percepisce distanza → aumenta la richiesta di contatto → il partner evitante si sente sopraffatto → si ritira ulteriormente → il partner ansioso si dispera → ciclo infinito.",
+        "protocol": "Quando si attiva il ciclo: il partner ansioso deve fare un passo indietro PRIMA di raggiungere la soglia critica — non aspettare il panico. Il partner evitante deve annunciare il ritiro con un'ETA: 'Ho bisogno di 30 min da solo, poi torno da te'. Il silenzio senza spiegazione è il trigger primario.",
+        "weeklyAction": "Una volta a settimana, il partner evitante avvia spontaneamente un contatto emotivo (anche breve: 'Come stai davvero?'). Il partner ansioso pratica 10 minuti di attesa silenziosa prima di cercare rassicurazione."
+      },
+      "anxious_anxious": {
+        "name": "Fusione Reattiva",
+        "severity": "media",
+        "description": "Due partner ansiosi si amplificano a vicenda: l'ansia dell'uno attiva quella dell'altro in un loop di iper-vigilanza reciproca.",
+        "whatHappens": "Una piccola disattenzione diventa prova di disinteresse. Le conversazioni emotivamente cariche escalano rapidamente perché entrambi sono già in allerta.",
+        "protocol": "Create un segnale condiviso (parola, gesto) che significa 'sono attivato/a, non è colpa tua'. Quando uno lo usa, l'altro non reagisce difensivamente ma dice 'capisco, sono qui'. Fate 10 minuti di pausa fisica prima di continuare discussioni importanti.",
+        "weeklyAction": "Ogni domenica sera: 5 minuti ciascuno per dirsi una cosa che ha funzionato bene nella settimana. Costruite intenzionalmente prove di sicurezza."
+      },
+      "avoidant_avoidant": {
+        "name": "Deriva Emotiva Silenziosa",
+        "severity": "media",
+        "description": "Due partner evitanti tendono a creare una relazione funzionale ma emotivamente distante. Il rischio non è il conflitto esplosivo ma l'allontanamento silenzioso.",
+        "whatHappens": "Entrambi evitano la vulnerabilità → la relazione diventa logistica → si sentono soli pur stando insieme → nessuno dei due lo dice.",
+        "protocol": "Programmate attivamente momenti di connessione emotiva — non aspettate che succedano spontaneamente. Una cena senza telefono a settimana con una domanda aperta ('Cosa ti ha pesato di più questa settimana?') rompe il pattern.",
+        "weeklyAction": "Una volta a settimana, uno dei due condivide qualcosa di vulnerabile — non una soluzione, non un fatto: un sentimento. L'altro ascolta senza risolvere."
       },
       "report_rapport": {
         "name": "Incomprensione da Traduzione",
-        "description": "Chi usa Report Talk propone soluzioni quando l'altro cerca ascolto. Chi usa Rapport Talk continua a parlare quando l'altro vorrebbe concludere.",
-        "protocol": "Prima di ogni conversazione su un problema, il partner Rapport chiede: 'Ho bisogno di essere ascoltato/a per 10 min — poi possiamo parlare di soluzioni.' Il partner Report usa il timer: 10 minuti di ascolto attivo puro, poi propone. Entrambi rispettano il contratto."
+        "severity": "media",
+        "description": "Chi usa Report Talk propone soluzioni quando l'altro cerca ascolto. Chi usa Rapport Talk elabora ad alta voce quando l'altro vorrebbe concludere. Nessuno dei due si sente capito.",
+        "whatHappens": "Partner Rapport condivide un problema → Partner Report propone una soluzione immediata → Partner Rapport si sente non ascoltato → risponde con più dettagli emotivi → Partner Report è frustrato → escalation.",
+        "protocol": "Contratto comunicativo: prima di ogni conversazione su un problema, il partner Rapport dice: 'Ho bisogno di essere ascoltato/a per 10 min, poi parliamo di soluzioni.' Il partner Report usa il timer mentale: 10 min di ascolto puro, poi chiede 'Vuoi che ti aiuti a trovare una soluzione?'",
+        "weeklyAction": "Il partner Report pratica una volta a settimana la risposta 'questo sembra difficile, dimmi di più' INVECE di proporre una soluzione. Il partner Rapport pratica a concludere una conversazione con 'ecco cosa mi serve da te'."
       },
       "different_love_languages": {
         "name": "Investimento Non Riconosciuto",
-        "description": "Stai dando amore nel tuo linguaggio, ma il partner lo riceve in un altro. Entrambi vi state sforzando e entrambi vi sentite non amati.",
-        "protocol": "Una volta al mese, identificate un'azione specifica nel linguaggio dell'altro: se il tuo partner usa 'Atti di Servizio' e tu 'Parole', fai qualcosa di concreto per lui/lei. Se tu usi 'Tempo di Qualità' e il partner 'Contatto Fisico', cercalo/la fisicamente durante il tempo insieme."
+        "severity": "media",
+        "description": "State entrambi amando l'altro — nel vostro linguaggio. Il problema non è la mancanza di amore, è la traduzione sbagliata.",
+        "whatHappens": "Partner A dà amore con Atti di Servizio (prepara, organizza, risolve). Partner B vuole Parole di Affermazione e si sente non apprezzato verbalmente. Partner A si sente non riconosciuto per quello che fa. Entrambi amano, nessuno si sente amato.",
+        "protocol": "Ogni settimana, identificate una azione nel linguaggio DELL'ALTRO, non nel vostro. Non è spontaneo — va pianificato. Se non sai cosa fa sentire amato il tuo partner, chiedilo esplicitamente: 'Cosa posso fare questa settimana che ti farebbe sentire davvero amato/a?'",
+        "weeklyAction": "Lunedì: ognuno scrive su carta (o messaggio) una cosa concreta nel linguaggio dell'altro che vorrebbe ricevere quella settimana. Non è lamentarsi — è un manuale d'istruzione attivo."
       },
       "high_neuroticism_low": {
         "name": "Gap di Intensità Emotiva",
-        "description": "Chi ha alto nevroticismo amplifica; chi ha basso nevroticismo minimizza. Entrambi sentono di non essere capiti.",
-        "protocol": "Il partner stabile non dice 'stai esagerando' — dice 'capisco che per te è intenso'. Il partner reattivo avvisa quando si sente in escalation: 'Sto iniziando ad attivarmi — ho bisogno di 5 minuti.' Non aspettare di esplodere."
+        "severity": "media",
+        "description": "Chi ha alto nevroticismo vive le emozioni con un volume più alto. Chi ha basso nevroticismo tende a minimizzare. Entrambi sentono di non essere capiti dall'altro.",
+        "whatHappens": "Partner ad alto N: 'Questo mi angoscia profondamente.' Partner a basso N: 'Non è poi così grave.' Partner ad alto N si sente invalidato. Partner a basso N si sente sopraffatto dall'intensità. Nessuno dei due ha torto — hanno baseline diverse.",
+        "protocol": "Il partner stabile sostituisce 'stai esagerando' con 'capisco che per te è intenso, sono qui'. Il partner reattivo avvisa quando sente l'escalation PRIMA di esplodere: 'Sto iniziando ad attivarmi, ho bisogno di 5 minuti e poi parliamo'. Non aspettare il punto di rottura.",
+        "weeklyAction": "Il partner a basso N pratica la validazione emotiva: ripetere con parole proprie ciò che l'altro ha detto, prima di rispondere. Il partner ad alto N pratica il check del livello di allerta su scala 1-10 prima di condividere."
+      },
+      "high_conscientiousness_low": {
+        "name": "Conflitto Struttura vs Flusso",
+        "severity": "bassa",
+        "description": "Chi ha alta coscienziosità vive con piani, scadenze, promesse mantenute. Chi ha bassa coscienziosità vive con flessibilità e improvvisazione. Entrambi trovano l'altro incomprensibile.",
+        "whatHappens": "Partner strutturato pianifica il weekend il giovedì. Partner flessibile cambia idea il sabato mattina. Partner strutturato si sente destabilizzato e mancato di rispetto. Partner flessibile si sente intrappolato da troppe regole.",
+        "protocol": "Accordo ibrido: definite le cose NON negoziabili (quelle che richiedono pianificazione anticipata) e lo spazio libero per l'improvvisazione. Es: 'Il venerdì sera è libero, il sabato pranzo è pianificato'.",
+        "weeklyAction": "Il partner strutturato lascia intenzionalmente UN momento della settimana non pianificato. Il partner flessibile mantiene UN impegno programmato senza modificarlo."
       }
+    },
+
+    "scenarios": {
+      "conflict": {
+        "title": "Scenario: Litigata",
+        "icon": "⚡",
+        "description": "Cosa succede concretamente quando sorge un conflitto tra voi, e cosa fare invece."
+      },
+      "affection": {
+        "title": "Scenario: Bisogno di Affetto",
+        "icon": "💙",
+        "description": "Come ognuno cerca e dà vicinanza — e perché spesso non si incontrano."
+      },
+      "stress": {
+        "title": "Scenario: Stress Esterno",
+        "icon": "🔥",
+        "description": "Come reagisce ognuno sotto pressione e cosa ha bisogno dall'altro."
+      }
+    },
+
+    "compatibilityLabels": {
+      "excellent": { "label": "Alta Compatibilità", "desc": "I vostri profili si completano naturalmente. Le aree di attrito sono gestibili con consapevolezza." },
+      "good":      { "label": "Buona Compatibilità", "desc": "Avete solide basi. Alcune differenze richiedono calibrazione attiva ma non sono ostacoli strutturali." },
+      "moderate":  { "label": "Compatibilità Moderata", "desc": "Differenze significative che, se non affrontate consapevolmente, possono diventare fonti di conflitto cronico. Il potenziale c'è." },
+      "low":       { "label": "Compatibilità Sfidante", "desc": "Profili molto diversi. Non impossibile — ma richiede un alto grado di consapevolezza e comunicazione attiva da entrambi." }
     }
   }
 }

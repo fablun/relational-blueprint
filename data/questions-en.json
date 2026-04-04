@@ -106,5 +106,67 @@
       { "id": "rt4", "text": "In discussions, content and facts seem more important to me than emotional tone.", "dimension": "report" },
       { "id": "rt5", "text": "When someone talks to me, I focus on what they should do, not on how they feel.", "dimension": "report" }
     ]
+  },
+
+  "conflictStyle": {
+    "id": "conflictStyle",
+    "name": "Conflict Style",
+    "subtitle": "How you behave when conflict arises",
+    "description": "Based on the Thomas-Kilmann model. Identifies your dominant style among 5 conflict approaches: Competing, Collaborating, Compromising, Avoiding, Accommodating.",
+    "duration": "5 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Doesn't describe me", "", "Sometimes", "", "Describes me perfectly"] },
+    "questions": [
+      { "id": "cs_comp1", "text": "During a conflict, I keep defending my position until the other person acknowledges I'm right.", "dimension": "competing" },
+      { "id": "cs_comp2", "text": "In a heated discussion, I don't back down until I get what I want.", "dimension": "competing" },
+      { "id": "cs_comp3", "text": "I think it's important not to lose ground in arguments with my partner.", "dimension": "competing" },
+      { "id": "cs_comp4", "text": "I defend my point of view firmly even under strong pressure.", "dimension": "competing" },
+      { "id": "cs_comp5", "text": "I prefer to impose my solution rather than accept one that doesn't fully convince me.", "dimension": "competing" },
+      { "id": "cs_coll1", "text": "In a conflict, I don't stop until we find a solution that truly satisfies both of us.", "dimension": "collaborating" },
+      { "id": "cs_coll2", "text": "I invest time and energy in understanding the other's needs to find a creative agreement.", "dimension": "collaborating" },
+      { "id": "cs_coll3", "text": "Facing a conflict together feels like an opportunity to understand each other better.", "dimension": "collaborating" },
+      { "id": "cs_coll4", "text": "I actively explore the other's reasons before defending my own.", "dimension": "collaborating" },
+      { "id": "cs_coll5", "text": "In a discussion, I seek a win-win solution even if it takes more time.", "dimension": "collaborating" },
+      { "id": "cs_comp6", "text": "In a conflict, I look for a middle ground even if it's not ideal.", "dimension": "compromising" },
+      { "id": "cs_comp7", "text": "I'm willing to give something up if the other does the same.", "dimension": "compromising" },
+      { "id": "cs_comp8", "text": "I prefer a partial agreement to a prolonged conflict.", "dimension": "compromising" },
+      { "id": "cs_comp9", "text": "In a discussion, I seek the fastest solution that satisfies both of us at least partially.", "dimension": "compromising" },
+      { "id": "cs_comp10","text": "I find it acceptable that neither gets everything, as long as we reach a balance.", "dimension": "compromising" },
+      { "id": "cs_avoi1", "text": "When conflict arises, I prefer to avoid the topic until things calm down.", "dimension": "avoiding" },
+      { "id": "cs_avoi2", "text": "If I can, I postpone difficult discussions to a better moment.", "dimension": "avoiding" },
+      { "id": "cs_avoi3", "text": "In an argument, I tend to physically withdraw or change the subject.", "dimension": "avoiding" },
+      { "id": "cs_avoi4", "text": "I prefer to endure in silence rather than face an open conflict.", "dimension": "avoiding" },
+      { "id": "cs_avoi5", "text": "When there's tension, I step back and wait for it to pass on its own.", "dimension": "avoiding" },
+      { "id": "cs_acco1", "text": "In a conflict, I often give in to the other's requests to keep the peace.", "dimension": "accommodating" },
+      { "id": "cs_acco2", "text": "I set aside my needs to make my partner feel good, even at my own expense.", "dimension": "accommodating" },
+      { "id": "cs_acco3", "text": "I easily adapt to the other's position even if I don't fully agree.", "dimension": "accommodating" },
+      { "id": "cs_acco4", "text": "For me, preserving the relationship matters more than defending my position.", "dimension": "accommodating" },
+      { "id": "cs_acco5", "text": "I willingly give something up to avoid tension, even when I'm right.", "dimension": "accommodating" }
+    ]
+  },
+
+  "apologyLanguages": {
+    "id": "apologyLanguages",
+    "name": "Apology Languages",
+    "subtitle": "How you give and receive genuine apologies",
+    "description": "Based on Gary Chapman's model. Identifies what makes an apology credible and acceptable to you among 5 languages: Regret, Responsibility, Restitution, Repentance, Forgiveness.",
+    "duration": "4 min",
+    "scale": { "min": 1, "max": 5, "labels": ["Doesn't matter to me", "", "Sometimes", "", "Essential to me"] },
+    "questions": [
+      { "id": "ap_reg1", "text": "When someone apologizes, the most important thing is that they genuinely show they feel my pain.", "dimension": "regret" },
+      { "id": "ap_reg2", "text": "An 'I'm truly sorry, I hurt you' means more to me than anything else.", "dimension": "regret" },
+      { "id": "ap_reg3", "text": "I don't feel forgiven unless I see the other person is genuinely emotionally sorry.", "dimension": "regret" },
+      { "id": "ap_res1", "text": "When I apologize, explicitly acknowledging my mistake is the most important part.", "dimension": "responsibility" },
+      { "id": "ap_res2", "text": "I can't accept an apology if the other person doesn't openly recognize what they did wrong.", "dimension": "responsibility" },
+      { "id": "ap_res3", "text": "'I was wrong, it's my fault' is the foundation of any apology I can accept.", "dimension": "responsibility" },
+      { "id": "ap_rest1","text": "Apologies are only credible to me when accompanied by a concrete act of repair.", "dimension": "restitution" },
+      { "id": "ap_rest2","text": "I expect whoever wronged me to do something concrete to make it right, not just words.", "dimension": "restitution" },
+      { "id": "ap_rest3","text": "'What can I do to make it up to you?' is the part of an apology that matters most to me.", "dimension": "restitution" },
+      { "id": "ap_rep1", "text": "To accept an apology, I need to believe the other will actually do something differently going forward.", "dimension": "repentance" },
+      { "id": "ap_rep2", "text": "'I won't do it again' is the part of an apology that carries the most weight for me.", "dimension": "repentance" },
+      { "id": "ap_rep3", "text": "It's hard for me to truly forgive unless I see real behavioral change.", "dimension": "repentance" },
+      { "id": "ap_for1", "text": "Having someone explicitly ask 'do you forgive me?' is important for me to close the conflict.", "dimension": "forgiveness" },
+      { "id": "ap_for2", "text": "Forgiveness must be explicitly requested — I don't give it automatically.", "dimension": "forgiveness" },
+      { "id": "ap_for3", "text": "A clear 'please forgive me' helps me let go of resentment and move forward.", "dimension": "forgiveness" }
+    ]
   }
 }

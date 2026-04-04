@@ -1,0 +1,561 @@
+{
+  "attachment": {
+    "secure": {
+      "label": "Secure Attachment",
+      "code": "ATT-SEC",
+      "summary": "You are emotionally stable in relationships. You can manage both closeness and distance without anxiety or avoidance.",
+      "instructions": [
+        {
+          "title": "Conflict Protocol",
+          "content": "I can handle conflict directly and rationally. I don't need time out or excessive reassurance. I prefer addressing the problem when we're both calm."
+        },
+        {
+          "title": "Intimacy Needs",
+          "content": "I'm comfortable with both emotional closeness and personal space. I don't need constant reassurance, but I value honest communication."
+        },
+        {
+          "title": "Under Stress",
+          "content": "Under pressure I remain relatively stable. If you see me shutting you out, ask me directly what's going on — I respond well to direct communication."
+        }
+      ]
+    },
+    "anxious": {
+      "label": "Anxious Attachment",
+      "code": "ATT-ANX",
+      "summary": "You are hypersensitive to relationship signals. Fear of abandonment amplifies ambiguous cues from your partner.",
+      "instructions": [
+        {
+          "title": "Conflict Protocol",
+          "content": "During conflict, my nervous system reads silence or distance as imminent abandonment. Before discussing the problem, I need to feel the relationship is safe. A phrase like 'I'm angry with you but I'm not leaving' helps me stay regulated."
+        },
+        {
+          "title": "Reassurance Needs",
+          "content": "I need explicit verbal affirmations more often than average. It's not pathological dependence — it's my attachment system seeking safety data. An unexpected 'I'm thinking of you' can prevent a whole spiral of anxiety."
+        },
+        {
+          "title": "Warning Signs",
+          "content": "When I become insistent or clingy, it signals my attachment system is activated. The worst response is to increase distance at that moment. The right response: brief reassurance, then conversation."
+        },
+        {
+          "title": "When My Partner Goes Silent",
+          "content": "Prolonged silence makes me automatically assume the worst. If you need space, tell me explicitly when you'll be available again: 'I need 2 hours for myself, then we talk.' This deactivates the anxiety."
+        }
+      ]
+    },
+    "avoidant": {
+      "label": "Avoidant Attachment",
+      "code": "ATT-EVI",
+      "summary": "You protect your autonomy by emotionally distancing when overwhelmed. Intense intimacy triggers you defensively.",
+      "instructions": [
+        {
+          "title": "Conflict Protocol",
+          "content": "In high-intensity emotional conflict, I need 20-30 minutes of isolation to calm down before I can have a productive conversation. Don't chase me in this phase — it makes me close down further. Withdrawal isn't rejection, it's self-regulation."
+        },
+        {
+          "title": "How to Reach Me",
+          "content": "Approach me with a calm, non-accusatory tone. Phrases starting with 'I feel' work better than ones starting with 'You always'. I need to feel safe before I can open up."
+        },
+        {
+          "title": "Signs of Overwhelm",
+          "content": "When I become detached, monosyllabic, or physically withdraw — it's not indifference. It's my nervous system exceeding its tolerance threshold. Forcing the issue will make everything worse."
+        },
+        {
+          "title": "My Deep Needs",
+          "content": "Despite appearances, I care about the relationship. I simply learned that depending on others leads to pain. Show me over time — with consistent actions — that it's safe to rely on you."
+        }
+      ]
+    },
+    "fearful": {
+      "label": "Fearful Attachment",
+      "code": "ATT-DIS",
+      "summary": "You desire intimacy but fear it at the same time. Your partner is both a source of comfort and a potential threat.",
+      "instructions": [
+        {
+          "title": "Conflict Protocol",
+          "content": "During conflict, I can seem both detached and hyperreactive simultaneously. Internally I'm overwhelmed. I need both space and reassurance — in this order: very brief space (10 min), then simple verbal reassurance ('I'm here, I'm not going anywhere')."
+        },
+        {
+          "title": "Navigating Closeness",
+          "content": "I may get close and then suddenly withdraw — this isn't manipulation. It's the result of having learned that intimate relationships can be both a source of care and pain. Be patient with my oscillating movements."
+        },
+        {
+          "title": "When I Avoid Contact",
+          "content": "If I withdraw after a moment of intimacy, it doesn't mean I regret it. It means closeness activated my alert system. Give me time to recalibrate without interpreting it as rejection."
+        }
+      ]
+    }
+  },
+
+  "loveLanguages": {
+    "words": {
+      "label": "Words of Affirmation",
+      "code": "LANG-W",
+      "summary": "Words are your primary emotional currency. What is said — and unsaid — carries real weight in how you feel in the relationship.",
+      "instructions": [
+        {
+          "title": "How to Make Me Feel Loved",
+          "content": "Tell me explicitly that you appreciate me, that I'm important to you, that you made the right choice with me. Don't take it for granted. Spoken words have disproportionate value for me compared to gestures."
+        },
+        {
+          "title": "The 5:1 Rule",
+          "content": "For every piece of criticism, even constructive, my system needs about 5 appreciations to return to balance. It's not fragility — it's how I'm emotionally built. Criticize when needed, but balance it out."
+        },
+        {
+          "title": "What to Avoid",
+          "content": "Dismissive criticism, persistent sarcasm, or words said harshly hurt me longer than it might seem. I can forget the action, but I remember the words."
+        }
+      ]
+    },
+    "time": {
+      "label": "Quality Time",
+      "code": "LANG-T",
+      "summary": "Your emotional currency is undivided presence. You don't just want the other to be physically present — you want their full attention.",
+      "instructions": [
+        {
+          "title": "What Quality Time Means",
+          "content": "It's not quantity of time, but quality. One hour of true presence (phone down, eyes on me, active conversation) is worth more than an entire weekend physically close but mentally elsewhere."
+        },
+        {
+          "title": "Things That Hurt Me",
+          "content": "Checking your phone while we talk, answering messages during dinner, looking away while I tell you something — for me these are clear signals that I'm not a priority."
+        },
+        {
+          "title": "What I Ask For",
+          "content": "Let's create presence rituals: a weekly dinner without screens, a walk together without earbuds. It doesn't matter what we do — what matters is that we're fully there."
+        }
+      ]
+    },
+    "gifts": {
+      "label": "Receiving Gifts",
+      "code": "LANG-G",
+      "summary": "Physical symbols of affection carry deep emotional value for you. It's not materialism — it's how you decode love.",
+      "instructions": [
+        {
+          "title": "Why Gifts Matter",
+          "content": "A physical gift — even small, even free — is tangible proof that you thought of me. I'm not buying the object, I'm buying the thought behind it. A flower picked from the roadside counts as much as a jewel."
+        },
+        {
+          "title": "What Moves Me Most",
+          "content": "The most powerful gifts are 'for no reason' — not for a birthday or anniversary, but on a random day when you remembered something I like. It means you think of me even when we're apart."
+        },
+        {
+          "title": "Forgetting Occasions",
+          "content": "If you forget an anniversary or birthday, for me it's not just an organizational oversight. It's data about my priority in your life. Not because I'm unreasonable — but because that's how my emotional system works."
+        }
+      ]
+    },
+    "acts": {
+      "label": "Acts of Service",
+      "code": "LANG-A",
+      "summary": "Concrete acts of care speak louder than a thousand words. When you do something for me without being asked, I feel deeply loved.",
+      "instructions": [
+        {
+          "title": "How to Show Me Love",
+          "content": "The most direct way to make me feel loved is to do something for me — not tell me. Making coffee without being asked, helping me with a hard task, solving a problem before I ask. These gestures fill me emotionally."
+        },
+        {
+          "title": "Unkept Promises",
+          "content": "If you say you'll do something and don't, it's not just inefficiency. It's a signal that my comfort isn't a priority. Better not to promise than to promise and not deliver."
+        },
+        {
+          "title": "How I Ask for Help",
+          "content": "I have trouble asking for help directly — I expect you to see what I need. This can create misunderstandings. The solution: we both learn — me to ask, you to notice."
+        }
+      ]
+    },
+    "touch": {
+      "label": "Physical Touch",
+      "code": "LANG-P",
+      "summary": "Non-sexual physical touch is your primary emotional regulator. It connects you, calms you, makes you feel safe.",
+      "instructions": [
+        {
+          "title": "The Power of Touch",
+          "content": "A hug, a held hand, a caress — these regulate me emotionally in ways words can't. It's not sexuality — it's neurological connection. Physical touch literally lowers my cortisol level."
+        },
+        {
+          "title": "What I Ask For",
+          "content": "Hug me when I'm stressed before asking what happened. Hold my hand in public. Put a hand on my shoulder while we talk. These small gestures have a big impact on my sense of safety in the relationship."
+        },
+        {
+          "title": "Lack of Touch",
+          "content": "If we go days without meaningful physical contact, I start feeling distant and disconnected from the relationship — regardless of how many nice things we do or say. Touch is non-negotiable for me."
+        }
+      ]
+    }
+  },
+
+  "bigFive": {
+    "openness": {
+      "high": {
+        "label": "High Openness",
+        "code": "OCEAN-O+",
+        "instructions": [
+          { "title": "How to Stimulate Me", "content": "Bring me deep conversations, unusual ideas, new experiences. Stimulating me intellectually is one of the most powerful ways to connect with me emotionally. Philosophical or creative discussions aren't a luxury for me — they're nourishment." },
+          { "title": "How Not to Bore Me", "content": "Rigid routines, superficial conversations, and resistance to change slowly extinguish me. I'm not asking you to become a different person — I'm asking you to stay curious with me." }
+        ]
+      },
+      "low": {
+        "label": "Low Openness",
+        "code": "OCEAN-O-",
+        "instructions": [
+          { "title": "My Approach", "content": "I prefer what is concrete, practical, and familiar. I'm not closed to change, but I need to understand its practical value before embracing it. Respect my pace." },
+          { "title": "How to Propose Changes", "content": "Don't impose sudden novelties. Propose changes in advance, with a logical explanation, and give me time to process. My initial 'no' often becomes 'yes' after reflection." }
+        ]
+      }
+    },
+    "conscientiousness": {
+      "high": {
+        "label": "High Conscientiousness",
+        "code": "OCEAN-C+",
+        "instructions": [
+          { "title": "Respect My Plans", "content": "I need structure and predictability. Last-minute plan changes, chronic lateness, or vague promises create real anxiety for me. It's not inflexibility — it's how my system works." },
+          { "title": "Promises = Contracts", "content": "For me a promise is a contract. If you say you'll do something, I really expect it. If you know you can't keep it, don't promise. Follow-through is a primary signal of respect for me." }
+        ]
+      },
+      "low": {
+        "label": "Low Conscientiousness",
+        "code": "OCEAN-C-",
+        "instructions": [
+          { "title": "My Relationship with Structure", "content": "I'm not disorganized — I'm flexible. I work better with freedom than rigid rules. Don't interpret my lack of planning as lack of interest." },
+          { "title": "Practical Support", "content": "I appreciate when you help me structure things without making me feel judged. Offer simple systems, not lectures on organization." }
+        ]
+      }
+    },
+    "extraversion": {
+      "high": {
+        "label": "High Extraversion",
+        "code": "OCEAN-E+",
+        "instructions": [
+          { "title": "My Social Fuel", "content": "I recharge energy by being with others. Prolonged isolation literally depresses me — not a metaphor. I need outings, socialization, stimulation. Don't interpret this as fleeing from you." },
+          { "title": "Social Balance", "content": "If you're more introverted than me, you don't have to participate in everything. But support my social life without holding it against me. My need to go out isn't a criticism of our life together." }
+        ]
+      },
+      "low": {
+        "label": "High Introversion",
+        "code": "OCEAN-E-",
+        "instructions": [
+          { "title": "My Energy System", "content": "I recharge energy in solitude. After social events, even enjoyable ones, I need time alone to process. It's not moodiness — it's biology. Respect my withdrawal moments." },
+          { "title": "How to Interact with Me", "content": "Approach me with a low-key tone during recharge moments. Don't interpret my silence as a mood. My best conversations happen in intimate, not crowded, contexts." }
+        ]
+      }
+    },
+    "agreeableness": {
+      "high": {
+        "label": "High Agreeableness",
+        "code": "OCEAN-A+",
+        "instructions": [
+          { "title": "My Hidden No", "content": "I rarely say no directly. If I seem fine with everything, it's not true — I'm avoiding conflict or protecting your mood. Encourage me to express disagreement without fearing negative reactions." },
+          { "title": "I Avoid Conflict", "content": "I prefer to give in rather than confront, even when I'm right. This can lead to silent resentment accumulation. The signal that something is wrong usually comes late, once it's already built up." }
+        ]
+      },
+      "low": {
+        "label": "Low Agreeableness",
+        "code": "OCEAN-A-",
+        "instructions": [
+          { "title": "My Directness", "content": "I say what I think, even if it's uncomfortable. It's not rudeness — it's respect. I prefer a difficult conversation to a false agreement." },
+          { "title": "How to Handle My Disagreement", "content": "When I disagree, I say so. Don't interpret it as a personal attack — it's my way of respecting you enough to be honest." }
+        ]
+      }
+    },
+    "neuroticism": {
+      "high": {
+        "label": "High Neuroticism",
+        "code": "OCEAN-N+",
+        "instructions": [
+          { "title": "My Emotional Intensity", "content": "I process emotions more intensely than average. This isn't drama or manipulation — it's how my nervous system is configured. What's an inconvenience for you may feel like a crisis for me." },
+          { "title": "How to Support Me", "content": "When I'm anxious, the least useful thing is 'it's not a big deal' or 'you're overreacting'. The most useful: listen, validate ('I understand this is hard for you'), then help me contextualize." },
+          { "title": "After the Storm", "content": "I recover. My emotional reactivity is intense but not permanent. If you give me space and don't amplify the reaction, I return to baseline relatively quickly." }
+        ]
+      },
+      "low": {
+        "label": "Low Neuroticism",
+        "code": "OCEAN-N-",
+        "instructions": [
+          { "title": "My Stability", "content": "I'm emotionally stable and rarely disturbed by pressure. This can make me seem detached in high-emotion moments. It's not insensitivity — my baseline is simply calmer." }
+        ]
+      }
+    }
+  },
+
+  "communication": {
+    "rapport": {
+      "label": "Rapport Talk",
+      "code": "COMM-RP",
+      "summary": "You communicate to create connection, intimacy, and mutual understanding. A conversation succeeds when you both feel heard.",
+      "instructions": [
+        {
+          "title": "When I Share a Problem",
+          "content": "When I share something difficult, I'm first seeking emotional connection, not a quick solution. Listen for at least 5-10 minutes without proposing fixes. 'I understand how you feel' is worth more than any technical advice."
+        },
+        {
+          "title": "How I Talk About Problems",
+          "content": "When I tell you something, I'm not necessarily asking for a solution. I'm often processing out loud. If you want to offer advice, ask me first: 'Do you want help finding a solution or do you need to be heard?'"
+        },
+        {
+          "title": "Silence Disturbs Me",
+          "content": "Silence during an emotional conversation signals disinterest or disapproval to me. Give me verbal feedback while I speak — even just 'I see', 'yes', 'mm' — to let me know you're present."
+        }
+      ]
+    },
+    "report": {
+      "label": "Report Talk",
+      "code": "COMM-RT",
+      "summary": "You communicate to exchange information, solve problems, and reach concrete goals. A conversation succeeds when something useful is achieved.",
+      "instructions": [
+        {
+          "title": "When I Share a Problem",
+          "content": "When I share something difficult, I'm looking for efficiency and solutions. I don't necessarily need lengthy emotional processing. Tell me what you think, propose concrete options — that's support to me."
+        },
+        {
+          "title": "How I Talk About Problems",
+          "content": "I get straight to the point. Don't expect long emotional preambles. If I want to talk about something, I'll say so. If I don't say it, there's nothing to guess."
+        },
+        {
+          "title": "My Limitation",
+          "content": "I can seem cold or abrupt in emotionally intense conversations. It's not indifference — my way of caring for others is to find solutions. If I need to slow down, tell me explicitly."
+        }
+      ]
+    }
+  },
+
+  "conflictStyle": {
+    "competing": {
+      "label": "Competing Style",
+      "code": "CONF-COMP",
+      "summary": "In conflicts you're assertive and victory-oriented. You defend your position with energy. The risk: the other person may feel overwhelmed or unheard.",
+      "instructions": [
+        { "title": "How I behave in conflict", "content": "I tend to defend my position strongly and don't give in easily. 'Being right' carries real weight for me. This can be useful in situations requiring quick decisions, but in intimate relationships it can make the other feel inferior." },
+        { "title": "My blind spot", "content": "I can 'win' the argument and lose the connection. When I 'win' a fight, my partner may remain hurt even after conceding. Success in a conflict isn't who's right — it's whether we both feel understood at the end." },
+        { "title": "How to manage me during a fight", "content": "Don't take my intensity as a personal attack — it's my natural style. If you want me to truly listen, state it explicitly: 'I need you to listen before responding.' This unlocks me." },
+        { "title": "What helps me shift gears", "content": "Showing me that the other has understood my point lowers my defensiveness. I don't need to concede — I need to feel heard. From there I can collaborate." }
+      ]
+    },
+    "collaborating": {
+      "label": "Collaborating Style",
+      "code": "CONF-COLL",
+      "summary": "In conflicts you seek solutions that truly satisfy both of you. You invest time and attention to understand the other's reasons. The risk: this approach requires much energy and isn't always reciprocated.",
+      "instructions": [
+        { "title": "How I behave in conflict", "content": "I don't stop until we find something that works for both of us. I'm not interested in 'winning' — I want the solution to be right. This requires time and mutual openness." },
+        { "title": "What frustrates me", "content": "When the other doesn't invest the same level of attention in finding a shared solution. If the other just wants to 'close it' or concedes without conviction, I feel misunderstood and the conflict remains unresolved for me." },
+        { "title": "How to manage me during a fight", "content": "Give me time to explore the problem with you. Don't interpret my questions as attacks — I'm trying to understand. If you're tired, tell me: we can pause and resume when you're available." },
+        { "title": "My limitation", "content": "Sometimes I seek the perfect solution when 'good enough' would suffice. If the partner is in avoidant or compromising mode, I can seem heavy. Learning when it's ok to stop before the optimal solution is my work." }
+      ]
+    },
+    "compromising": {
+      "label": "Compromising Style",
+      "code": "CONF-COMP2",
+      "summary": "In conflicts you quickly seek a middle ground. You're pragmatic: a partial agreement beats a long conflict. The risk: accumulating unspoken dissatisfactions.",
+      "instructions": [
+        { "title": "How I behave in conflict", "content": "I seek as quickly as possible an agreement that satisfies both at least partially. I don't need to get everything I want — I need the conflict to end and for us to move forward." },
+        { "title": "My blind spot", "content": "I often concede on things I actually care about, just to close the issue. Over time this can create an accumulation of small regrets. If you notice I always concede on everything, it's not that I don't care — I'm prioritizing short-term peace." },
+        { "title": "How to manage me", "content": "Every now and then ask me: 'Are you really ok with this agreement?' This gives me permission to say if I'm conceding on something important. Don't assume my 'yes' — sometimes it's 'yes for now'." }
+      ]
+    },
+    "avoiding": {
+      "label": "Avoiding Style",
+      "code": "CONF-AVO",
+      "summary": "In conflicts you tend to withdraw, postpone, or change the subject. It's not indifference — open conflict activates you disproportionately. The risk: silent accumulation.",
+      "instructions": [
+        { "title": "How I behave in conflict", "content": "Direct conflict creates strong discomfort for me. My first reaction is to exit the situation — physically or emotionally. It's not that I don't care: my nervous system perceives conflict as a threat and goes into defensive mode." },
+        { "title": "What happens if you press me", "content": "If you force me to confront you when I'm not ready, I shut down completely or say things I don't really mean. The result is worse than a pause. Best approach: give me a precise time ('let's talk about it tonight at 8') and respect the pause." },
+        { "title": "How to reach me", "content": "Lower the tone. Don't start with accusations or high emotional intensity — it'll make me flee before we even begin. A calm, open question ('I want to understand what happened for you') is the only entry that works." },
+        { "title": "The cost of my avoidance", "content": "I know that avoiding conflicts doesn't resolve them. I accumulate unexpressed things inside that weigh over time. My work is to learn that conflict managed well doesn't destroy — it builds. But I need safety to do that." }
+      ]
+    },
+    "accommodating": {
+      "label": "Accommodating Style",
+      "code": "CONF-ACCO",
+      "summary": "In conflicts you prioritize the other's needs. You concede easily to maintain harmony. The risk: progressive loss of your voice in the relationship.",
+      "instructions": [
+        { "title": "How I behave in conflict", "content": "I give in willingly to preserve peace and the relationship. Setting aside my needs comes naturally when I feel the other is upset. For me the relationship comes before 'winning'." },
+        { "title": "The hidden price", "content": "My accommodating nature isn't unlimited. Under the surface I accumulate. If you see me suddenly explode over something apparently small, it's usually the last drop in a bucket I'd been filling for a long time." },
+        { "title": "How to support me", "content": "Ask explicitly for my opinion — don't take it for granted. When I concede, sometimes I need you to say: 'No, I really want to know what you think.' This gives me permission to be honest without feeling like I'm disappointing you." },
+        { "title": "My boundary", "content": "I need to learn to say 'no' on things I truly care about. When I do, it's not a whim — I've reached a real limit. Respecting that 'no' is respecting me." }
+      ]
+    }
+  },
+
+  "apologyLanguages": {
+    "regret": {
+      "label": "Expressing Regret",
+      "code": "APO-REG",
+      "summary": "An apology is real for you when you sense the other genuinely feels sorry for the pain they caused. Words only count if they carry authentic emotion.",
+      "instructions": [
+        { "title": "What makes an apology credible for me", "content": "I need to see and feel that the other is truly sorry — not just formally, but emotionally. A 'sorry' said quickly or in a detached way doesn't land. The apology must contain recognition of my specific pain." },
+        { "title": "How to apologize to me effectively", "content": "Don't start with explanations or justifications — start with my pain. 'I can see I hurt you when I did X, and I'm truly sorry.' Only then can we discuss the context. If you start explaining before I feel understood, the apology doesn't reach me." },
+        { "title": "What doesn't work for me", "content": "Formal, automatic, or rushed apologies. 'Sorry, ok?' isn't an apology for me — it's a request to get out of your way. If you don't genuinely feel sorry, it's better to wait for the right moment than to fake it." }
+      ]
+    },
+    "responsibility": {
+      "label": "Accepting Responsibility",
+      "code": "APO-RES",
+      "summary": "An apology is real for you when the other explicitly acknowledges what they did wrong. Without clear responsibility, the apology remains empty.",
+      "instructions": [
+        { "title": "What makes an apology credible for me", "content": "I need to hear that the other knows exactly what they did wrong and admits it without ambiguity. 'I was wrong to do X' — specific, direct, without 'but'. 'But's after an apology cancel it." },
+        { "title": "How to apologize to me effectively", "content": "Name the specific action that caused the problem. Not 'I'm sorry if you were offended' (passive, not responsible) — but 'I was wrong when I did X'. The difference is enormous for me." },
+        { "title": "My sensitive point", "content": "Vague apologies or 'I'm sorry you felt that way' make me angrier than no apology at all. They shift responsibility onto me — onto how I 'perceived' something instead of what was done. Acknowledge the fact, not my reaction." }
+      ]
+    },
+    "restitution": {
+      "label": "Making Restitution",
+      "code": "APO-REST",
+      "summary": "An apology is complete for you only when accompanied by a concrete act of repair. Words alone aren't enough — actions are required.",
+      "instructions": [
+        { "title": "What makes an apology credible for me", "content": "Words alone aren't enough. I need to see something concrete that demonstrates the apology is real. It doesn't have to be big — but it has to exist. 'What can I do to make it right?' is the question that fully opens me up." },
+        { "title": "How to apologize to me effectively", "content": "Propose a specific gesture. Not 'I'll do better' (vague) — but 'this week I'll do X to make it right'. The gesture must be proportional to the harm and must have been truly thought through, not thrown out there." },
+        { "title": "What doesn't work for me", "content": "Apologies without follow-through. If you tell me 'I'll make it right' and then do nothing, the apology becomes worse than the original wrong. Better not to promise if you're not sure you can do it." }
+      ]
+    },
+    "repentance": {
+      "label": "Genuine Repentance",
+      "code": "APO-REP",
+      "summary": "An apology is credible for you only if it signals real change in future behavior. Without concrete intention to change, the apology is just moment management.",
+      "instructions": [
+        { "title": "What makes an apology credible for me", "content": "I need to believe the same thing won't happen again — not because you promise it, but because I see a concrete plan for change. 'I won't do it again' alone isn't enough. I need to understand what will change." },
+        { "title": "How to apologize to me effectively", "content": "Tell me what you'll do differently next time. Specific: 'When X happens, instead of doing Y I'll do Z.' This tells me you've understood the problem, not just that you want peace." },
+        { "title": "My limit", "content": "If the same behavior repeats after an apology, my trust erodes proportionally. Remorse isn't enough for me — I need the change. And I notice when it's not there." }
+      ]
+    },
+    "forgiveness": {
+      "label": "Requesting Forgiveness",
+      "code": "APO-FOR",
+      "summary": "The apology ritual closes for you only when the other explicitly asks for forgiveness. This formal act carries real and necessary emotional weight.",
+      "instructions": [
+        { "title": "What makes an apology credible for me", "content": "Forgiveness must be explicitly requested — not assumed. 'Do you forgive me?' is the key that closes the conflict for me. Without that question, I remain in a state of unresolved tension even if everything else has been said." },
+        { "title": "How to apologize to me effectively", "content": "End the apology with an explicit request: 'Do you forgive me?' or 'Can we move forward?' Don't assume forgiveness is automatic — ask for it. This gives me the power to choose to let go." },
+        { "title": "Why this matters to me", "content": "It's not formalism. When someone asks my forgiveness, they acknowledge that I suffered a wrong and that it's up to me — not them — to decide when and whether to close it. It restores my agency in a moment when I was wronged." }
+      ]
+    }
+  },
+
+  "crossModuleInsights": {
+    "avoidant_avoiding": {
+      "title": "Double Avoidance",
+      "modules": ["attachment", "conflictStyle"],
+      "condition": "Avoidant Attachment + Avoiding Conflict Style",
+      "content": "Under stress you tend to disappear on two fronts simultaneously: emotional and conflictual. Your partner may perceive an 'invisible person' in difficult situations. It's not indifference — it's a double protection system. Your work: signal when you're avoiding, even just with 'I need time, I'll be back'.",
+      "partnerNote": "If your partner has this profile: don't chase them. Create safe space and an explicit agreement on 'return timing'. Pressure makes everything worse."
+    },
+    "anxious_competing": {
+      "title": "Explosive Pursuit",
+      "modules": ["attachment", "conflictStyle"],
+      "condition": "Anxious Attachment + Competing Conflict Style",
+      "content": "Fear of abandonment combines with an assertive style: when you feel emotionally threatened, the intensity of your conflicts increases dramatically. You can seem aggressive when you're actually scared. The signal that you're entering this pattern: the volume of the discussion grows but the real topic is 'do you still love me?'",
+      "partnerNote": "When conflict escalates quickly, try bypassing the surface argument: 'I sense there's something deeper here. Are you ok?' This defuses the pattern."
+    },
+    "accommodating_anxious": {
+      "title": "Pleasing Out of Fear",
+      "modules": ["attachment", "conflictStyle"],
+      "condition": "Anxious Attachment + Accommodating Style",
+      "content": "You concede in conflicts not because you don't care, but because you fear disagreement will put the relationship at risk. Your accommodating nature is driven by anxiety, not generosity. The risk: you never say what you really want, then explode on something apparently insignificant when the bucket is full.",
+      "partnerNote": "Ask often: 'Are you really ok with this?' and wait for the real answer, not the automatic one. Create explicit safety: 'You can say no to me without anything changing between us.'"
+    },
+    "competing_report": {
+      "title": "Overpower and Explain",
+      "modules": ["conflictStyle", "communication"],
+      "condition": "Competing Style + Report Talk",
+      "content": "In a discussion you have the double tendency to want to win the point AND to be efficient/direct. The result: difficult conversations become debates where 'who's right' exceeds 'how are we both'. Watch the difference between being right and being understood.",
+      "partnerNote": "With this profile, intentionally slowing down is the work. Before responding, a 3-second pause and the mental question: 'Am I trying to win or to understand?'"
+    },
+    "different_apology_languages": {
+      "title": "Apologies in Different Languages",
+      "modules": ["apologyLanguages"],
+      "condition": "Different apology languages between partners",
+      "content": "You apologized and the other doesn't seem to forgive you — or vice versa. The problem isn't sincerity: you're speaking different apology languages. An apology in your language doesn't arrive in the other's language.",
+      "partnerNote": "Ask explicitly: 'How can I apologize in a way that truly lands?' Don't assume your apology has the right format."
+    },
+    "avoiding_repentance": {
+      "title": "Silent Apology",
+      "modules": ["conflictStyle", "apologyLanguages"],
+      "condition": "Avoiding Style + Apology Language: Repentance",
+      "content": "You avoid conflicts AND need to see concrete changes before forgiving. This creates a paradox: you avoid the difficult conversation needed to clarify the expected change. Result: you never truly forgive because you never said what you expected.",
+      "partnerNote": "Help your partner articulate the change they expect, in a calm moment — not during the conflict."
+    }
+  },
+
+  "coupleReport": {
+    "frictionPatterns": {
+      "avoidant_anxious": {
+        "name": "Pursuer-Distancer Dynamic",
+        "severity": "high",
+        "description": "One of the most common and painful dynamics: the more one approaches, the more the other withdraws — creating an escalation cycle that worsens each round.",
+        "whatHappens": "The anxious partner senses distance → increases contact requests → avoidant partner feels overwhelmed → withdraws further → anxious partner despairs → infinite cycle.",
+        "protocol": "When the cycle activates: the anxious partner must step back BEFORE reaching the critical threshold — don't wait for panic. The avoidant partner must announce withdrawal with an ETA: 'I need 30 min alone, then I'll come back to you'. Silence without explanation is the primary trigger.",
+        "weeklyAction": "Once a week, the avoidant partner spontaneously initiates emotional contact (even brief: 'How are you really?'). The anxious partner practices 10 minutes of silent waiting before seeking reassurance."
+      },
+      "anxious_anxious": {
+        "name": "Reactive Fusion",
+        "severity": "medium",
+        "description": "Two anxious partners amplify each other: one's anxiety activates the other's in a loop of mutual hyper-vigilance.",
+        "whatHappens": "A small inattention becomes proof of disinterest. Emotionally charged conversations escalate rapidly because both are already on alert.",
+        "protocol": "Create a shared signal (word, gesture) meaning 'I'm activated, it's not your fault'. When one uses it, the other doesn't react defensively but says 'I understand, I'm here'. Take 10 minutes of physical break before continuing important discussions.",
+        "weeklyAction": "Every Sunday evening: 5 minutes each to tell the other one thing that worked well in the week. Intentionally build evidence of safety."
+      },
+      "avoidant_avoidant": {
+        "name": "Silent Emotional Drift",
+        "severity": "medium",
+        "description": "Two avoidant partners tend to create a functional but emotionally distant relationship. The risk isn't explosive conflict but silent drifting apart.",
+        "whatHappens": "Both avoid vulnerability → the relationship becomes logistics → they feel alone while together → neither says it.",
+        "protocol": "Actively schedule moments of emotional connection — don't wait for them to happen spontaneously. A weekly phone-free dinner with an open question ('What weighed on you most this week?') breaks the pattern.",
+        "weeklyAction": "Once a week, one of them shares something vulnerable — not a solution, not a fact: a feeling. The other listens without solving."
+      },
+      "report_rapport": {
+        "name": "Lost in Translation",
+        "severity": "medium",
+        "description": "The Report Talk partner proposes solutions when the other seeks listening. The Rapport Talk partner processes aloud when the other wants to conclude. Neither feels understood.",
+        "whatHappens": "Rapport partner shares a problem → Report partner proposes immediate solution → Rapport partner feels unheard → responds with more emotional detail → Report partner is frustrated → escalation.",
+        "protocol": "Communication contract: before each problem conversation, the Rapport partner says: 'I need to be heard for 10 min, then we talk solutions.' The Report partner uses the mental timer: 10 min of pure listening, then asks 'Do you want help finding a solution?'",
+        "weeklyAction": "The Report partner practices once a week responding 'that sounds hard, tell me more' INSTEAD of proposing a solution. The Rapport partner practices ending a conversation with 'here's what I need from you'."
+      },
+      "different_love_languages": {
+        "name": "Unrecognized Investment",
+        "severity": "medium",
+        "description": "You're both loving each other — in your own language. The problem isn't a lack of love, it's the wrong translation.",
+        "whatHappens": "Partner A gives love through Acts of Service (prepares, organizes, solves). Partner B wants Words of Affirmation and feels verbally unappreciated. Partner A feels unrecognized for what they do. Both love, neither feels loved.",
+        "protocol": "Each week, identify one action in THE OTHER'S language, not your own. It's not spontaneous — it needs to be planned. If you don't know what makes your partner feel loved, ask explicitly: 'What could I do this week that would make you feel truly loved?'",
+        "weeklyAction": "Monday: each person writes (or texts) one concrete thing in the other's language they'd like to receive that week. Not complaining — it's an active instruction manual."
+      },
+      "high_neuroticism_low": {
+        "name": "Emotional Intensity Gap",
+        "severity": "medium",
+        "description": "High neuroticism means experiencing emotions at higher volume. Low neuroticism tends to minimize. Both feel misunderstood by the other.",
+        "whatHappens": "High-N partner: 'This is deeply distressing to me.' Low-N partner: 'It's not that bad.' High-N partner feels invalidated. Low-N partner feels overwhelmed by the intensity. Neither is wrong — they have different baselines.",
+        "protocol": "The stable partner replaces 'you're overreacting' with 'I understand it feels intense for you, I'm here'. The reactive partner warns when they feel activation BEFORE exploding: 'I'm starting to escalate, I need 5 minutes then we talk'. Don't wait for the breaking point.",
+        "weeklyAction": "The low-N partner practices emotional validation: repeating in their own words what the other said, before responding. The high-N partner practices checking their alert level on a 1-10 scale before sharing."
+      },
+      "high_conscientiousness_low": {
+        "name": "Structure vs Flow Conflict",
+        "severity": "low",
+        "description": "High conscientiousness means living by plans, deadlines, kept promises. Low conscientiousness means living with flexibility and improvisation. Each finds the other incomprehensible.",
+        "whatHappens": "Structured partner plans the weekend on Thursday. Flexible partner changes their mind Saturday morning. Structured partner feels destabilized and disrespected. Flexible partner feels trapped by too many rules.",
+        "protocol": "Hybrid agreement: define what's NON-negotiable (things requiring advance planning) and the free space for improvisation. E.g.: 'Friday evening is free, Saturday lunch is planned'.",
+        "weeklyAction": "The structured partner intentionally leaves ONE moment of the week unplanned. The flexible partner keeps ONE scheduled commitment without changing it."
+      }
+    },
+
+    "scenarios": {
+      "conflict": {
+        "title": "Scenario: Fight",
+        "icon": "⚡",
+        "description": "What concretely happens when conflict arises between you, and what to do instead."
+      },
+      "affection": {
+        "title": "Scenario: Need for Affection",
+        "icon": "💙",
+        "description": "How each of you seeks and gives closeness — and why you often don't meet."
+      },
+      "stress": {
+        "title": "Scenario: External Stress",
+        "icon": "🔥",
+        "description": "How each of you reacts under pressure and what you need from the other."
+      }
+    },
+
+    "compatibilityLabels": {
+      "excellent": { "label": "High Compatibility", "desc": "Your profiles naturally complement each other. Friction areas are manageable with awareness." },
+      "good":      { "label": "Good Compatibility", "desc": "You have solid foundations. Some differences require active calibration but aren't structural obstacles." },
+      "moderate":  { "label": "Moderate Compatibility", "desc": "Significant differences that, if not consciously addressed, can become sources of chronic conflict. The potential is there." },
+      "low":       { "label": "Challenging Compatibility", "desc": "Very different profiles. Not impossible — but requires a high degree of awareness and active communication from both." }
+    }
+  }
+}

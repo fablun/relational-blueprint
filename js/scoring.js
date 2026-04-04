@@ -127,14 +127,84 @@ function round(value, decimals) {
   return Math.round(value * Math.pow(10, decimals)) / Math.pow(10, decimals);
 }
 
+// ── Conflict Style ───────────────────────────────────────
+// Returns: { primary, secondary, scores: {}, pcts: {}, ranking: [] }
+
+export function scoreConflictStyle(answers) {
+  const dimensions = ['competing','collaborating','compromising','avoiding','accommodating'];
+  const prefixes = {
+    competing:      ['cs_comp1','cs_comp2','cs_comp3','cs_comp4','cs_comp5'],
+    collaborating:  ['cs_coll1','cs_coll2','cs_coll3','cs_coll4','cs_coll5'],
+    compromising:   ['cs_comp6','cs_comp7','cs_comp8','cs_comp9','cs_comp10'],
+    avoiding:       ['cs_avoi1','cs_avoi2','cs_avoi3','cs_avoi4','cs_avoi5'],
+    accommodating:  ['cs_acco1','cs_acco2','cs_acco3','cs_acco4','cs_acco5']
+  };
+
+  const scores = {};
+  for (const dim of dimensions) {
+    const keys = prefixes[dim];
+    scores[dim] = mean(keys.map(k => answers[k] || 3));
+  }
+
+  const ranking = [...dimensions].sort((a, b) => scores[b] - scores[a]);
+  const pcts = {};
+  for (const dim of dimensions) {
+    pcts[dim] = normalize(scores[dim], 1, 5);
+  }
+
+  return {
+    primary: ranking[0],
+    secondary: ranking[1],
+    scores,
+    pcts,
+    ranking
+  };
+}
+
+// ── Apology Languages ────────────────────────────────────
+// Returns: { primary, secondary, scores: {}, pcts: {}, ranking: [] }
+
+export function scoreApologyLanguages(answers) {
+  const dimensions = ['regret','responsibility','restitution','repentance','forgiveness'];
+  const prefixes = {
+    regret:         ['ap_reg1','ap_reg2','ap_reg3'],
+    responsibility: ['ap_res1','ap_res2','ap_res3'],
+    restitution:    ['ap_rest1','ap_rest2','ap_rest3'],
+    repentance:     ['ap_rep1','ap_rep2','ap_rep3'],
+    forgiveness:    ['ap_for1','ap_for2','ap_for3']
+  };
+
+  const scores = {};
+  for (const dim of dimensions) {
+    const keys = prefixes[dim];
+    scores[dim] = mean(keys.map(k => answers[k] || 3));
+  }
+
+  const ranking = [...dimensions].sort((a, b) => scores[b] - scores[a]);
+  const pcts = {};
+  for (const dim of dimensions) {
+    pcts[dim] = normalize(scores[dim], 1, 5);
+  }
+
+  return {
+    primary: ranking[0],
+    secondary: ranking[1],
+    scores,
+    pcts,
+    ranking
+  };
+}
+
 // ── All Tests Dispatcher ──────────────────────────────────
 
 export function scoreTest(testId, answers) {
   switch (testId) {
-    case 'attachment':    return scoreAttachment(answers);
-    case 'loveLanguages': return scoreLoveLanguages(answers);
-    case 'bigFive':       return scoreBigFive(answers);
-    case 'communication': return scoreCommunication(answers);
+    case 'attachment':      return scoreAttachment(answers);
+    case 'loveLanguages':   return scoreLoveLanguages(answers);
+    case 'bigFive':         return scoreBigFive(answers);
+    case 'communication':   return scoreCommunication(answers);
+    case 'conflictStyle':   return scoreConflictStyle(answers);
+    case 'apologyLanguages':return scoreApologyLanguages(answers);
     default: throw new Error(`Unknown test: ${testId}`);
   }
 }

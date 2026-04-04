@@ -21,11 +21,10 @@ export async function loadQuestions(lang) {
 export function renderTestIntro(testId, container, onStart) {
   if (!questionsData) throw new Error('Questions not loaded');
   const test = questionsData[testId];
-  const nums = { attachment:20, loveLanguages:15, bigFive:20, communication:10 };
 
   container.innerHTML = `
     <div class="test-intro">
-      <div class="test-intro-code">MODULO ${getModuleNum(testId)} / 04</div>
+      <div class="test-intro-code">MODULO ${getModuleNum(testId)} / 06</div>
       <h2 class="test-intro-title">${test.name}</h2>
       <p class="test-intro-subtitle">${test.subtitle}</p>
       <div class="test-intro-desc">${test.description}</div>
@@ -160,13 +159,16 @@ async function completeTest(testId, answers, onComplete) {
 // ── Utilities ─────────────────────────────────────────────
 
 function getModuleNum(testId) {
-  const map = { attachment: '01', loveLanguages: '02', bigFive: '03', communication: '04' };
+  const map = {
+    attachment: '01', loveLanguages: '02', bigFive: '03',
+    communication: '04', conflictStyle: '05', apologyLanguages: '06'
+  };
   return map[testId] || '01';
 }
 
 export function getTestList() {
   if (!questionsData) return [];
-  return ['attachment','loveLanguages','bigFive','communication'].map(id => ({
+  return ['attachment','loveLanguages','bigFive','communication','conflictStyle','apologyLanguages'].map(id => ({
     id,
     name: questionsData[id].name,
     subtitle: questionsData[id].subtitle,
