@@ -154,9 +154,12 @@ export function renderCompareTable(rows, meLabel, partnerLabel, lang) {
 
   const rowsHtml = rows.map(row => `
     <div class="compare-row">
-      <div class="compare-cell" style="color:${row.match ? 'var(--success)' : 'inherit'}">${row.me}</div>
-      <div class="compare-cell center">${row.trait}</div>
-      <div class="compare-cell" style="color:${row.match ? 'var(--success)' : 'inherit'}">${row.partner}</div>
+      <div class="compare-cell ${row.match ? 'compare-match' : ''}">${row.me}</div>
+      <div class="compare-cell center">
+        <div class="compare-trait-name">${row.trait}</div>
+        <div class="compare-match-icon ${row.match ? 'match' : 'no-match'}">${row.match ? '=' : '≠'}</div>
+      </div>
+      <div class="compare-cell ${row.match ? 'compare-match' : ''}">${row.partner}</div>
     </div>
   `).join('');
 
@@ -165,16 +168,49 @@ export function renderCompareTable(rows, meLabel, partnerLabel, lang) {
 
 // ── Friction / Synergy cards ──────────────────────────────
 
-export function renderFrictionCard(friction) {
+export function renderFrictionCard(friction, lang = 'it') {
+  const sevMap = {
+    alta:  { cls: 'severity-alta',  label: lang === 'it' ? 'ALTA'  : 'HIGH'   },
+    media: { cls: 'severity-media', label: lang === 'it' ? 'MEDIA' : 'MEDIUM' },
+    bassa: { cls: 'severity-bassa', label: lang === 'it' ? 'BASSA' : 'LOW'    }
+  };
+  const sev = sevMap[friction.severity] || sevMap.media;
+
+  const borderColor = friction.severity === 'alta'
+    ? 'rgba(239,68,68,0.35)'
+    : friction.severity === 'bassa'
+      ? 'rgba(34,197,94,0.3)'
+      : 'rgba(245,158,11,0.3)';
+  const bgColor = friction.severity === 'alta'
+    ? 'rgba(239,68,68,0.04)'
+    : friction.severity === 'bassa'
+      ? 'rgba(34,197,94,0.03)'
+      : 'rgba(245,158,11,0.04)';
+
   return `
-    <div class="friction-card">
-      <div class="friction-tag">⚠ PUNTO DI ATTRITO</div>
+    <div class="friction-card" style="border-color:${borderColor};background:${bgColor}">
+      <div class="friction-tag" style="display:flex;align-items:center;gap:8px">
+        ⚠ ${lang === 'it' ? 'PUNTO DI ATTRITO' : 'FRICTION POINT'}
+        <span class="friction-severity ${sev.cls}">${sev.label}</span>
+      </div>
       <div class="friction-name">${friction.name}</div>
       <div class="friction-desc">${friction.description}</div>
+      ${friction.whatHappens ? `
+        <div class="friction-what">
+          <strong>${lang === 'it' ? 'COME SI MANIFESTA' : 'HOW IT MANIFESTS'}</strong>
+          ${friction.whatHappens}
+        </div>
+      ` : ''}
       <div class="friction-protocol">
-        <strong>PROTOCOLLO OPERATIVO</strong>
+        <strong>${lang === 'it' ? 'COME GESTIRLO' : 'HOW TO HANDLE IT'}</strong>
         ${friction.protocol}
       </div>
+      ${friction.weeklyAction ? `
+        <div class="friction-weekly">
+          <strong>💡 ${lang === 'it' ? 'AZIONE QUESTA SETTIMANA' : "THIS WEEK'S ACTION"}</strong>
+          ${friction.weeklyAction}
+        </div>
+      ` : ''}
     </div>
   `;
 }
@@ -182,7 +218,7 @@ export function renderFrictionCard(friction) {
 export function renderSynergyCard(synergy) {
   return `
     <div class="sync-card">
-      <div class="sync-tag">✓ AREA DI SINCRONIZZAZIONE</div>
+      <div class="sync-tag">✓ SINERGIA RILEVATA</div>
       <div class="sync-name">${synergy.name}</div>
       <div class="sync-desc">${synergy.description}</div>
     </div>

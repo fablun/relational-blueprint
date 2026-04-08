@@ -618,8 +618,33 @@ async function renderReport() {
 
   const myName = profile?.displayName?.split(' ')[0] || 'Tu';
   const ptName = partner.displayName?.split(' ')[0] || 'Partner';
+  const totalModules = 8;
+  const myModules  = Object.keys(myResults).length;
+  const ptModules  = Object.keys(partnerResults).length;
+  const it = state.lang === 'it';
 
-  let bodyHtml = '';
+  const introHtml = `
+    <div class="report-intro">
+      <div class="report-intro-pair">
+        <div class="report-intro-person">
+          <div class="report-intro-name">${myName}</div>
+          <div class="report-intro-modules">${myModules}/${totalModules} ${it ? 'moduli completati' : 'modules completed'}</div>
+        </div>
+        <div class="report-intro-arrow">⟷</div>
+        <div class="report-intro-person">
+          <div class="report-intro-name">${ptName}</div>
+          <div class="report-intro-modules">${ptModules}/${totalModules} ${it ? 'moduli completati' : 'modules completed'}</div>
+        </div>
+      </div>
+      <div class="report-intro-desc">
+        ${it
+          ? 'Questo report confronta i profili psicologici di entrambi i partner, identificando dove i vostri stili si incontrano o si scontrano — e come trasformare le differenze in protocolli operativi condivisi.'
+          : 'This report compares both partners\' psychological profiles, identifying where your styles align or clash — and how to turn differences into shared operational protocols.'}
+      </div>
+    </div>
+  `;
+
+  let bodyHtml = introHtml;
 
   // Section A: Comparison table
   if (report.comparisonRows.length > 0) {
@@ -628,9 +653,14 @@ async function renderReport() {
         <div class="report-section-header">
           <span class="report-section-code">SEZ. A</span>
           <h3 class="report-section-title">
-            ${state.lang === 'it' ? 'Tabella di Confronto' : 'Comparison Table'}
+            ${it ? 'Profili a Confronto' : 'Profile Comparison'}
           </h3>
         </div>
+        <p class="report-section-desc">
+          ${it
+            ? 'Panoramica dei vostri stili dominanti modulo per modulo. Il simbolo = indica allineamento, ≠ indica differenza — le differenze non sono necessariamente problematiche, dipende dal contesto.'
+            : 'Overview of your dominant styles module by module. = means alignment, ≠ means difference — differences are not necessarily problematic, context matters.'}
+        </p>
         ${renderCompareTable(report.comparisonRows, myName, ptName, state.lang)}
       </div>
     `;
@@ -642,16 +672,21 @@ async function renderReport() {
       <div class="report-section-header">
         <span class="report-section-code">SEZ. B</span>
         <h3 class="report-section-title">
-          ${state.lang === 'it' ? 'Punti di Attrito Identificati' : 'Identified Friction Points'}
+          ${it ? 'Punti di Attrito' : 'Friction Points'}
         </h3>
       </div>
+      <p class="report-section-desc">
+        ${it
+          ? 'Incompatibilità rilevate algoritmicamente tra i vostri profili. Per ognuna: cosa succede, perché succede, e come gestirla concretamente.'
+          : 'Algorithmically detected incompatibilities between your profiles. For each: what happens, why it happens, and how to handle it concretely.'}
+      </p>
       ${report.frictions.length > 0
-        ? report.frictions.map(renderFrictionCard).join('')
+        ? report.frictions.map(f => renderFrictionCard(f, state.lang)).join('')
         : `<div class="sync-card">
-             <div class="sync-tag">✓ NESSUN ATTRITO CRITICO</div>
-             <div class="sync-name">${state.lang === 'it' ? 'Profili compatibili' : 'Compatible profiles'}</div>
+             <div class="sync-tag">✓ ${it ? 'NESSUN ATTRITO CRITICO' : 'NO CRITICAL FRICTION'}</div>
+             <div class="sync-name">${it ? 'Profili compatibili' : 'Compatible profiles'}</div>
              <div class="sync-desc">
-               ${state.lang === 'it'
+               ${it
                  ? 'Non sono state rilevate incompatibilità critiche basate sui profili attuali.'
                  : 'No critical incompatibilities detected based on current profiles.'}
              </div>
@@ -667,9 +702,14 @@ async function renderReport() {
         <div class="report-section-header">
           <span class="report-section-code">SEZ. C</span>
           <h3 class="report-section-title">
-            ${state.lang === 'it' ? 'Aree di Sincronizzazione' : 'Sync Areas'}
+            ${it ? 'Aree di Sinergia' : 'Synergy Areas'}
           </h3>
         </div>
+        <p class="report-section-desc">
+          ${it
+            ? 'Dove i vostri profili si allineano naturalmente — punti di forza della coppia che potete usare come base nei momenti di tensione.'
+            : 'Where your profiles naturally align — couple strengths you can use as a foundation during tension.'}
+        </p>
         ${report.synergies.map(renderSynergyCard).join('')}
       </div>
     `;
@@ -683,9 +723,14 @@ async function renderReport() {
         <div class="report-section-header">
           <span class="report-section-code">SEZ. D</span>
           <h3 class="report-section-title">
-            ${state.lang === 'it' ? 'Indice di Compatibilità' : 'Compatibility Score'}
+            ${it ? 'Indice di Compatibilità' : 'Compatibility Score'}
           </h3>
         </div>
+        <p class="report-section-desc">
+          ${it
+            ? 'Punteggio aggregato calcolato su tutti i moduli completati. Non misura "quanto siete adatti" — misura quanto i vostri stili si sovrappongono nativamente, prima di qualsiasi adattamento.'
+            : 'Aggregate score calculated across all completed modules. It does not measure "how suited you are" — it measures how much your styles natively overlap, before any adaptation.'}
+        </p>
         <div class="compat-block">
           <div class="compat-score-ring" style="--pct:${c.overall}">
             <div class="compat-score-num">${c.overall}<span style="font-size:14px">%</span></div>
@@ -714,9 +759,14 @@ async function renderReport() {
         <div class="report-section-header">
           <span class="report-section-code">SEZ. E</span>
           <h3 class="report-section-title">
-            ${state.lang === 'it' ? 'Simulazioni Operative' : 'Operational Scenarios'}
+            ${it ? 'Simulazioni Operative' : 'Operational Scenarios'}
           </h3>
         </div>
+        <p class="report-section-desc">
+          ${it
+            ? 'Come reagisce ognuno di voi in situazioni specifiche, e il protocollo per gestirle insieme.'
+            : 'How each of you reacts in specific situations, and the protocol for handling them together.'}
+        </p>
         ${report.scenarios.map(s => `
           <div class="scenario-card">
             <div class="scenario-header">
@@ -734,7 +784,7 @@ async function renderReport() {
               </div>
             </div>
             <div class="scenario-protocol">
-              <strong>${state.lang === 'it' ? 'PROTOCOLLO CONSIGLIATO' : 'RECOMMENDED PROTOCOL'}</strong>
+              <strong>${it ? 'PROTOCOLLO CONSIGLIATO' : 'RECOMMENDED PROTOCOL'}</strong>
               ${s.protocol}
             </div>
           </div>
@@ -750,20 +800,28 @@ async function renderReport() {
         <div class="report-section-header">
           <span class="report-section-code">SEZ. F</span>
           <h3 class="report-section-title">
-            ${state.lang === 'it' ? 'Pattern Cross-Modulo' : 'Cross-Module Patterns'}
+            ${it ? 'Pattern Individuali' : 'Individual Patterns'}
           </h3>
         </div>
+        <p class="report-section-desc">
+          ${it
+            ? 'Pattern che emergono dall\'incrocio di più moduli nello stesso profilo. Riguardano uno specifico partner — indicano un comportamento sistemico che l\'altro deve conoscere.'
+            : 'Patterns emerging from the intersection of multiple modules in the same profile. They concern one specific partner — indicating a systemic behavior the other needs to understand.'}
+        </p>
         ${report.crossInsights.map(ins => `
-          <div class="friction-card" style="border-left-color:var(--warn)">
-            <div class="friction-tag" style="color:var(--warn)">
+          <div class="friction-card insight-card">
+            <div class="friction-tag insight-tag">
               ⚡ PATTERN — ${ins.who === 'me' ? myName.toUpperCase() : ptName.toUpperCase()}
             </div>
+            ${ins.condition ? `<div class="insight-condition">${ins.condition}</div>` : ''}
             <div class="friction-name">${ins.name}</div>
             <div class="friction-desc">${ins.description}</div>
-            <div class="friction-protocol">
-              <strong>${state.lang === 'it' ? 'INDICAZIONE' : 'GUIDANCE'}</strong>
-              ${ins.protocol}
-            </div>
+            ${ins.protocol ? `
+              <div class="friction-protocol">
+                <strong>${it ? 'NOTA PER IL PARTNER' : 'PARTNER NOTE'}</strong>
+                ${ins.protocol}
+              </div>
+            ` : ''}
           </div>
         `).join('')}
       </div>

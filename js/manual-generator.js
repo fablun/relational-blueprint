@@ -493,11 +493,11 @@ export function generateCoupleReport(myResults, partnerResults, lang = 'it') {
   const crossInsights = [];
 
   function pushInsight(raw, who) {
-    // Map JSON field names (title/content/partnerNote) to render field names (name/description/protocol)
     crossInsights.push({
       name: raw.title,
+      condition: raw.condition,
       description: raw.content,
-      protocol: who === 'partner' ? raw.partnerNote : raw.content,
+      protocol: raw.partnerNote,
       who
     });
   }
