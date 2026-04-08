@@ -62,7 +62,8 @@ export async function signInGoogle() {
   try {
     await signInWithPopup(auth, provider);
   } catch (err) {
-    if (err.code !== 'auth/popup-closed-by-user') throw err;
+    if (err.code !== 'auth/popup-closed-by-user' &&
+        err.code !== 'auth/cancelled-popup-request') throw err;
   }
 }
 
