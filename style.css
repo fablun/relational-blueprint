@@ -915,6 +915,72 @@ h1, h2, h3, .heading { font-family: var(--mono); }
 }
 
 /* ============================================================
+   COUPLE MANUAL
+   ============================================================ */
+
+.couple-chapter {
+  margin-bottom: 56px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+.couple-chapter:last-child { border-bottom: none; }
+
+/* Style tags under chapter title */
+.couple-styles-row {
+  display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap; margin-top: 6px;
+}
+.couple-style-tag {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em;
+  padding: 3px 8px; border-radius: 2px;
+}
+.couple-style-me {
+  background: var(--blueprint-light); color: var(--blueprint);
+  border: 1px solid rgba(10,79,142,0.2);
+}
+.couple-style-pt {
+  background: rgba(14,165,233,0.08); color: var(--accent);
+  border: 1px solid rgba(14,165,233,0.2);
+}
+.couple-style-sep { color: var(--ink-faint); font-size: 11px; }
+
+/* Chapter intro text */
+.chapter-intro {
+  background: var(--blueprint-light); border-left: 4px solid var(--blueprint);
+  padding: 14px 18px; border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 13px; line-height: 1.7; color: var(--ink-muted);
+  margin-bottom: 28px;
+}
+
+/* Section divider within a couple chapter */
+.couple-section { margin-bottom: 28px; }
+.couple-section-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em;
+  color: var(--ink-faint); text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.couple-section-label::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+
+/* The "what partner should know about you" section */
+.couple-section-mine .couple-section-label { color: var(--blueprint); }
+.couple-section-mine .instruction-card-alt {
+  background: var(--paper-2);
+  border-color: var(--border);
+}
+.couple-section-mine .instruction-card-alt::before { color: var(--border); }
+.couple-section-mine .instruction-card-alt .instruction-title { color: var(--ink-muted); }
+
+/* TOC styles for couple manual */
+.couple-toc-styles {
+  font-family: var(--mono); font-size: 9px; color: var(--ink-faint);
+  letter-spacing: 0.05em; margin-left: auto; text-align: right;
+  max-width: 200px; line-height: 1.4;
+}
+
+/* ============================================================
    UTILITIES
    ============================================================ */
 .mt-8  { margin-top: 8px; }

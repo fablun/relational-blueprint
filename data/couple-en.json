@@ -1,0 +1,957 @@
+{
+  "attachment": {
+    "moduleLabel": "Attachment",
+    "moduleNumber": "§ 1",
+    "moduleCode": "ATT",
+    "intro": "Attachment style defines how each of you manages closeness, distance, and emotional security. Two different styles create predictable dynamics — once understood, they can be navigated instead of endured.",
+    "secure": {
+      "label": "Secure",
+      "instructions": [
+        {
+          "title": "Trust their consistency without testing it",
+          "content": "The reliability of someone with secure attachment is genuine, not a mask. Don't use erratic behavior or emotional tests to check if they care: you'll get predictable responses because their system is stable."
+        },
+        {
+          "title": "Express your needs directly",
+          "content": "Secure people can hold others' emotions without feeling overwhelmed. Speak your needs clearly instead of waiting for them to be guessed: directness doesn't frighten them."
+        },
+        {
+          "title": "Don't interpret their space as distance",
+          "content": "The need for autonomy in secure people isn't a signal of withdrawal. It's healthy: when they take space, nothing is happening that's about you."
+        },
+        {
+          "title": "Address conflicts instead of avoiding them",
+          "content": "With a secure base, disagreements can be resolved without escalation. Don't avoid tensions: with a secure partner you can face them directly and both come out whole."
+        },
+        {
+          "title": "Observe how they regulate emotions",
+          "content": "The way secure people handle intensity, conflict, and rupture is a concrete operating model. Watching it and asking questions is one of the most useful investments you can make."
+        }
+      ]
+    },
+    "anxious": {
+      "label": "Anxious",
+      "instructions": [
+        {
+          "title": "Give proactive reassurance, not just reactive",
+          "content": "Don't wait to be asked for reassurance: anticipate it. A brief message, a concrete gesture — enough to interrupt the anxiety cycle before it activates. The cost to you is low; the benefit to them is high."
+        },
+        {
+          "title": "Don't disappear without communicating",
+          "content": "Silent absences are read as abandonment, not as needing space. Saying where you are and when you'll be back isn't control — it's the basic form of respect for their nervous system."
+        },
+        {
+          "title": "Respond to the need, not the form",
+          "content": "When they seem to ask excessively or intensely, there's a need for connection underneath. Don't react to the intensity with defensiveness or withdrawal: identify the underlying need and respond to that."
+        },
+        {
+          "title": "Daily predictability matters more than grand gestures",
+          "content": "Small, regular, consistent gestures do more than rare big demonstrations. The certainty of being present — not being perfect — is the main nourishment for someone with anxious attachment."
+        },
+        {
+          "title": "Define a shared rhythm for contact together",
+          "content": "An explicit agreement on message frequency and check-ins structurally reduces triggers. Talk about it in a calm moment, outside of crisis, as a couple's decision — not as problem management."
+        }
+      ]
+    },
+    "avoidant": {
+      "label": "Avoidant",
+      "instructions": [
+        {
+          "title": "Respect the withdrawal without chasing",
+          "content": "When they close off, following intensifies the closure. Respect the withdrawal, make yourself available without pressure, and wait. The pursuit-withdrawal cycle is fed by your pursuit as much as by their distancing."
+        },
+        {
+          "title": "Talk about needs concretely and directly",
+          "content": "Avoidant people respond better to specific requests than to open emotional conversations. 'I need X' works better than 'I feel bad because Y'. Concreteness lowers the access threshold."
+        },
+        {
+          "title": "Don't confuse autonomy with lack of love",
+          "content": "The need for space is a feature of their attachment system, not a signal about you or the relationship. Interpreting it as rejection triggers exactly the cycle you want to avoid."
+        },
+        {
+          "title": "Create short, predictable reconnection rituals",
+          "content": "Instead of long emotional sessions, propose structured moments: a regular dinner, a shared activity, a brief evening ritual. These lower the emotional access threshold without activating the feeling of being overwhelmed."
+        },
+        {
+          "title": "After a conflict, plan reconnection in advance",
+          "content": "Avoidant people need to process alone before returning to connection. Don't wait for an immediate peace: agree that you'll return to the topic after a set time, then respect the space."
+        }
+      ]
+    },
+    "fearful": {
+      "label": "Fearful",
+      "instructions": [
+        {
+          "title": "Be consistent over time, not just intense in the moment",
+          "content": "Someone with disorganized attachment has learned that close people can hurt. Slow consistency rewrites that code: sustained behavior over time is worth a hundred promises made once."
+        },
+        {
+          "title": "Don't respond to tests with the reaction they expect",
+          "content": "When they test the relationship with sudden distance or excessive intensity, don't respond with anger or withdrawal: that's exactly what they expect. The non-reactive response is the most powerful one you can give."
+        },
+        {
+          "title": "Define your boundaries clearly",
+          "content": "You can't be the sole source of emotional regulation for someone with disorganized attachment without wearing yourself out. Setting your limits isn't cruelty: it's the condition for the relationship to be sustainable."
+        },
+        {
+          "title": "Talk about concrete behaviors, not interpretations",
+          "content": "'When you did X, I felt Y' works better than 'you don't love me'. Concreteness reduces the ambiguity that feeds the fearful person's anxiety and makes the conversation navigable."
+        },
+        {
+          "title": "Support access to external help as a resource",
+          "content": "Many disorganized attachment dynamics benefit from therapeutic work. Propose it as a support tool for both of you, not as a diagnosis of an individual problem."
+        }
+      ]
+    }
+  },
+
+  "loveLanguages": {
+    "moduleLabel": "Love Languages",
+    "moduleNumber": "§ 2",
+    "moduleCode": "LOVE",
+    "intro": "Each of you expresses and receives love in a different format. Knowing your partner's language doesn't mean changing your own — it means learning to translate.",
+    "words": {
+      "label": "Words of Affirmation",
+      "instructions": [
+        {
+          "title": "Say out loud what you think about them",
+          "content": "Explicit words of appreciation, love, and recognition are the main nourishment for someone with this language. Don't assume they know how you feel: say it."
+        },
+        {
+          "title": "Be specific, not generic",
+          "content": "'You're great' is worth less than 'what you did this morning struck me because it shows X'. Specificity demonstrates real attention, not habitual words."
+        },
+        {
+          "title": "Use written formats too",
+          "content": "A message, a note, a voice memo: written words carry permanent weight for someone with this language. Don't underestimate the format — sometimes text means more than conversation."
+        },
+        {
+          "title": "Avoid criticism in public",
+          "content": "Someone who lives by words is hurt by negative words as much as they're nourished by positive ones. Criticism in front of others causes deep, lasting wounds."
+        },
+        {
+          "title": "Create the habit, not the occasion",
+          "content": "Saying nice things on special occasions isn't enough: they need to hear them continuously. Verbalizing affection daily isn't redundant — it's the most effective form of love you can give."
+        }
+      ]
+    },
+    "time": {
+      "label": "Quality Time",
+      "instructions": [
+        {
+          "title": "Be present, not just physically there",
+          "content": "Being in the same space with a screen in hand doesn't count as quality time. Presence means exclusive attention — even 20 minutes of real presence is worth more than hours of distracted proximity."
+        },
+        {
+          "title": "Schedule time together in the calendar",
+          "content": "Don't wait for time together to happen spontaneously: put it in the calendar. For someone with this language, planning isn't unromantic — it's the maximum demonstration that you're a priority."
+        },
+        {
+          "title": "Eliminate distractions during time together",
+          "content": "Phone face down, screen off. The implicit message of distractions is 'there's something more important than you right now' — and it's received exactly that way."
+        },
+        {
+          "title": "Do things together, don't just be together",
+          "content": "Sharing an activity — cooking, walking, playing — is more meaningful than sitting in silence nearby. Shared activity is the bonding ritual for someone with this language."
+        },
+        {
+          "title": "Acknowledge when you've been less present",
+          "content": "If a period of work or stress has made you less available, name it explicitly and plan how to recover. The recognition counts almost as much as the recovery itself."
+        }
+      ]
+    },
+    "gifts": {
+      "label": "Gifts",
+      "instructions": [
+        {
+          "title": "Gifts are symbols of memory, not money",
+          "content": "An object showing you remembered something they said weeks ago is worth more than any luxury. The value is in the attention demonstrated, not the price."
+        },
+        {
+          "title": "Remember dates and occasions",
+          "content": "Forgetting a birthday or anniversary is read as a signal that that person isn't important enough to remember. Set reminders: it's not unromantic — it's a form of care."
+        },
+        {
+          "title": "The unexpected gift is worth more",
+          "content": "The gift on an ordinary day, with no required occasion, weighs more than the expected one. It shows you're thinking of them even when you don't have to."
+        },
+        {
+          "title": "Bring something when you return",
+          "content": "From a trip, from the store, from a walk: returning with something — even minimal — is a powerful ritual connection gesture for someone with this language."
+        },
+        {
+          "title": "Don't devalue the importance of gifts for them",
+          "content": "If gifts seem superficial to you, remember that for your partner they're a language. Devaluing them is devaluing how they communicate and receive love — even if it's not your format."
+        }
+      ]
+    },
+    "acts": {
+      "label": "Acts of Service",
+      "instructions": [
+        {
+          "title": "Act before they ask",
+          "content": "An unrequested act of service is worth twice as much as one that was requested. Anticipate: what could help? What do you notice isn't done that weighs on them? Acting without being prompted is the highest form of this language."
+        },
+        {
+          "title": "Complete what you start",
+          "content": "A half-done job is worse than no job for someone with this language. An incomplete action signals real disinterest more than never starting it."
+        },
+        {
+          "title": "Don't help with obvious reluctance",
+          "content": "Sighing help or accompanying it with complaints loses all its value. If you don't want to or can't do it, it's better to say so clearly than to do it poorly."
+        },
+        {
+          "title": "Identify the tasks that weigh on them and take them on",
+          "content": "Regularly taking care of something you know they hate doing is one of the most powerful gestures. You don't need to do everything: just be consistent on those specific tasks."
+        },
+        {
+          "title": "Micro-actions add up daily",
+          "content": "No need for epic gestures: bringing a coffee, handling an errand without being asked, fixing something. The sum of small, regular actions is the language of love for someone who values acts."
+        }
+      ]
+    },
+    "touch": {
+      "label": "Physical Touch",
+      "instructions": [
+        {
+          "title": "Non-sexual touch is daily nourishment",
+          "content": "Don't confuse the need for physical touch with the need for sex. Held hand, shoulder touched in passing, unprompted hug: these are autonomous and fundamental forms of love."
+        },
+        {
+          "title": "Initiate contact yourself, don't just respond",
+          "content": "Waiting to be touched isn't enough: for someone with this language, being sought out physically has enormous weight. Approach physically first — don't wait for them to ask."
+        },
+        {
+          "title": "Don't avoid touch during moments of tension",
+          "content": "In a conflict or stressful moment, a touch on the arm can do more than a thousand words. Withdrawing physical contact during crises is one of the most painful gestures for someone with this language."
+        },
+        {
+          "title": "Create predictable physical rituals",
+          "content": "A physical greeting in the morning, a hug before sleep. Predictable contact rituals provide security and continuity — predictability has the same value as intensity."
+        },
+        {
+          "title": "Don't use physical withdrawal as punishment",
+          "content": "Removing contact during a conflict is one of the most painful forms of punishment for someone with this language. Differentiate emotional distance from physical presence."
+        }
+      ]
+    }
+  },
+
+  "bigFive": {
+    "moduleLabel": "OCEAN Personality",
+    "moduleNumber": "§ 3",
+    "moduleCode": "OCEAN",
+    "intro": "The five personality traits define deep and stable ways of functioning. Understanding your partner's dominant trait isn't judging — it's learning their default language.",
+    "openness": {
+      "label": "High Openness",
+      "instructions": [
+        {
+          "title": "Leave room for exploration and novelty",
+          "content": "Someone high in openness feeds on new experiences, ideas, and stimuli. Rigid routine weighs on them. Be open to trying new things together — you don't need to share the same curiosity, just don't block theirs."
+        },
+        {
+          "title": "Take unconventional ideas seriously",
+          "content": "Don't dismiss out-of-the-box ideas as impractical before exploring them. Discuss them genuinely: intellectual curiosity is their main way of connecting with people they love."
+        },
+        {
+          "title": "Tolerate ambiguity in decisions",
+          "content": "Someone high in openness is often more comfortable in exploration than in definition. Before forcing a decision, ask if they need more time to explore possibilities."
+        },
+        {
+          "title": "Show interest in their passions even without sharing them",
+          "content": "You don't need the same passions: just show genuine interest. Asking, listening, following their story is already a powerful form of connection for someone high in openness."
+        },
+        {
+          "title": "Stimulate them intellectually",
+          "content": "Deep conversations, new ideas, shared reading: these are their relational nourishment. An intellectually flat relationship is one that slowly fades for someone with this profile."
+        }
+      ]
+    },
+    "conscientiousness": {
+      "label": "High Conscientiousness",
+      "instructions": [
+        {
+          "title": "Respect their systems and routines",
+          "content": "Someone high in conscientiousness functions through structures. Disrupting them, even occasionally, creates real stress. It's not rigidity: it's the system through which they operate effectively."
+        },
+        {
+          "title": "Be reliable on commitments you make",
+          "content": "'See you at 8' is a commitment, not a rough guideline. Being late or canceling without notice is read as genuine disrespect, not just disorganization."
+        },
+        {
+          "title": "Give advance notice on plan changes",
+          "content": "Sudden changes are a significant source of stress for planners. Communicate variations as early as possible, with the reason — not after the fact."
+        },
+        {
+          "title": "Acknowledge their operational contributions",
+          "content": "Someone high in conscientiousness tends to take a lot on. Explicitly recognizing their effort and attention isn't obvious — it carries real weight for them."
+        },
+        {
+          "title": "Don't devalue their attention to detail",
+          "content": "What seems excessive to you is their functioning mode. You can have different preferences, but criticize specific results that don't work for you — not the fact that they care."
+        }
+      ]
+    },
+    "extraversion": {
+      "label": "High Extraversion",
+      "instructions": [
+        {
+          "title": "Social life gives them energy, not takes yours",
+          "content": "Extroverts recharge by being with others. They're not taking attention from you when they seek social stimulation: it's how they energize. It's not competing with you."
+        },
+        {
+          "title": "Don't interpret communicativeness as superficiality",
+          "content": "Talking a lot, sharing freely, connecting easily with others: these are characteristics, not lack of depth. Don't ask them to filter themselves to seem more 'serious'."
+        },
+        {
+          "title": "Leave room for verbal processing",
+          "content": "Extroverts process by thinking aloud — the flow of words is how they understand what they think. Don't interrupt or finish their sentences: it's how they think, not how they chat."
+        },
+        {
+          "title": "Participate in social life without feeling total obligation",
+          "content": "You don't need to do everything together: negotiate a balance. But being completely absent from their social life isolates them in a real way. Find the threshold that works for both."
+        },
+        {
+          "title": "Value the energy they bring",
+          "content": "In moments of stagnation or difficulty, an extroverted partner brings vitality. Recognize it instead of feeling drained: it's a couple's resource."
+        }
+      ]
+    },
+    "agreeableness": {
+      "label": "High Agreeableness",
+      "instructions": [
+        {
+          "title": "Create explicit space for their needs and disagreements",
+          "content": "Someone high in agreeableness struggles to spontaneously bring their own needs and disagreements. Ask actively: 'what would you want?' and treat it as an answer to take seriously."
+        },
+        {
+          "title": "Don't take their yielding as agreement",
+          "content": "The ease with which they agree doesn't mean they always genuinely agree. Check: 'do you really want this or are you giving in?' — and honestly accept the answer."
+        },
+        {
+          "title": "Acknowledge the cost of their flexibility",
+          "content": "Yielding continuously has an emotional price that accumulates. Thanking explicitly and sometimes refusing their yielding ('no, tell me what you really want') balances the relationship."
+        },
+        {
+          "title": "Don't systematically make decisions for them",
+          "content": "Even if they adapt easily, feeling that their preferences don't count generates silent resentment over time. Actively include their voice in shared decisions."
+        },
+        {
+          "title": "Validate their relational sensitivity as a resource",
+          "content": "Attention to others, care, sensitivity to interpersonal dynamics: these are rare and precious resources in the relationship. Name them explicitly as qualities."
+        }
+      ]
+    },
+    "neuroticism": {
+      "label": "High Emotional Reactivity",
+      "instructions": [
+        {
+          "title": "Don't minimize their concerns",
+          "content": "What seems excessive to you is real for them. 'It's nothing' doesn't help — it makes it worse. Validate the emotion before proposing solutions or reassurances: 'I understand it's heavy' comes before 'it'll be fine'."
+        },
+        {
+          "title": "Be a source of stability, not unpredictability",
+          "content": "Someone highly emotionally reactive is already on constant alert. Don't add avoidable variables: be predictable, consistent, clear about times and plans. Predictability is a concrete form of love."
+        },
+        {
+          "title": "Distinguish between venting and a request for solutions",
+          "content": "Often someone who is highly emotionally reactive wants to be heard, not solved. Before offering solutions, ask: 'do you want me to listen or are you looking for ideas?'. Getting the format wrong is frustrating for both."
+        },
+        {
+          "title": "Don't assume their mood is always caused by you",
+          "content": "Their emotional state is not automatically a response to something you did. Ask before assuming responsibility: avoid both ignoring and defaulting to guilt."
+        },
+        {
+          "title": "Propose decompression routines as part of the relationship",
+          "content": "A stress management structure — an evening walk, an end-of-day ritual — helps more than ad hoc solutions. Build it together as a couple's agreement."
+        }
+      ]
+    }
+  },
+
+  "communication": {
+    "moduleLabel": "Communication Style",
+    "moduleNumber": "§ 4",
+    "moduleCode": "COMM",
+    "intro": "The way each of you moves in dialogue is rooted in how you process and connect. Adapting the format doesn't mean changing who you are — it means speaking the same language.",
+    "rapport": {
+      "label": "Rapport Talk",
+      "instructions": [
+        {
+          "title": "Participate emotionally, not just informationally",
+          "content": "Someone with rapport style isn't just looking for data: they're looking for connection in dialogue. Share how you feel about topics discussed, not just what you think. The relational tone matters as much as the content."
+        },
+        {
+          "title": "Tolerate narrative digressions",
+          "content": "Rapport conversations expand, wander, return. Don't systematically redirect them to the point: digression is an integral part of how someone with this style connects and processes."
+        },
+        {
+          "title": "Don't turn every conversation into problem-solving",
+          "content": "Not every exchange needs a practical output. Sometimes talking together is the goal, not the means. Resist the impulse to conclude or summarize when the other is still processing."
+        },
+        {
+          "title": "Don't interrupt to finish their sentences",
+          "content": "Finishing the other's sentences or summarizing before they've finished cuts the relational process of their style. Wait, even when you think you know where they're going."
+        },
+        {
+          "title": "Bring personal elements even into practical conversations",
+          "content": "Even on logistical topics, a personal touch — how it affects you, how you feel about it — makes the conversation more nourishing for someone with rapport style. Don't separate the practical from the relational."
+        }
+      ]
+    },
+    "report": {
+      "label": "Report Talk",
+      "instructions": [
+        {
+          "title": "Structure important communications",
+          "content": "Someone with report style processes organized information better. For important discussions, prepare key points instead of talking in an exploratory, circular way. Clarity is respect for their style."
+        },
+        {
+          "title": "Don't interpret conciseness as distance",
+          "content": "Communicating efficiently doesn't mean not caring. The report style expresses care through clarity and precision, not through emotional intensity."
+        },
+        {
+          "title": "Accept solutions as a form of support",
+          "content": "When they bring solutions instead of empathy, that's their way of helping. It's not insensitivity: it's the care language of the report profile. You can ask for explicit listening if you need it."
+        },
+        {
+          "title": "Talk about facts and concrete needs in difficult situations",
+          "content": "In moments of tension, unstructured emotional conversations disorient someone with report style. Try: 'when X happens, I need Y'. Direct and specific works better."
+        },
+        {
+          "title": "Don't take logical consistency as an attack",
+          "content": "If they point out an inconsistency in what you're saying, it's not a critique of you: it's their way of understanding and building clarity. Respond to the content without feeling interrogated."
+        }
+      ]
+    },
+    "balanced": {
+      "label": "Balanced",
+      "instructions": [
+        {
+          "title": "Use their flexibility, but don't take it for granted",
+          "content": "Someone with balanced style adapts to both modes. You can guide the conversation format toward what you need most — but also occasionally ask about their preferences."
+        },
+        {
+          "title": "Explicitly declare what you're looking for in the dialogue",
+          "content": "Since they adapt easily, they risk not knowing what you're looking for. Say clearly: 'I need to be heard' or 'I need to find a solution together'. It orients them."
+        },
+        {
+          "title": "Recognize their mediation ability as a resource",
+          "content": "In moments of communicative tension with others or between you, someone with balanced style is a balance point. Recognizing it increases the value they bring to the couple."
+        },
+        {
+          "title": "Don't overload them with unilateral adaptation",
+          "content": "The fact that they can adapt doesn't mean it doesn't cost. Actively meet them halfway — don't always let them be the ones making the adjustment."
+        },
+        {
+          "title": "Ask how they want to handle important conversations",
+          "content": "Even balanced people have moments when they prefer a specific mode. 'How would you prefer we handle this conversation?' is a question that values them and improves the outcome."
+        }
+      ]
+    }
+  },
+
+  "conflictStyle": {
+    "moduleLabel": "Conflict Style",
+    "moduleNumber": "§ 5",
+    "moduleCode": "CONF",
+    "intro": "The style with which each of you handles tensions is not a conscious choice — it's a learned system. Knowing it allows you to navigate conflicts as a shared strategy instead of a default clash.",
+    "competing": {
+      "label": "Competing",
+      "instructions": [
+        {
+          "title": "Separate the mode from the intention",
+          "content": "Someone who competes in conflicts isn't trying to destroy you: they're trying to resolve. The intensity isn't hostility — it's their activated system. Separating form from content lets you respond instead of react."
+        },
+        {
+          "title": "Hold your ground on what truly matters",
+          "content": "Systematically yielding to someone competitive creates long-term imbalance and resentment. Identify your non-negotiables and maintain them — not as a fight, but as clarity about priorities."
+        },
+        {
+          "title": "Bring structure to important discussions",
+          "content": "One topic at a time, speaking turns, separating facts from interpretations: structure reduces escalation with someone competitive. Propose it as a prior agreement, not during the conflict."
+        },
+        {
+          "title": "Name the escalation early",
+          "content": "'I'm starting to feel overwhelmed' is much more effective said at the first signal than at the peak. Competitive people respond better to early signals than to walls raised at the end."
+        },
+        {
+          "title": "Use their positional clarity as an advantage",
+          "content": "Someone competitive knows exactly what they want and declares it. That's an advantage: you know who you're dealing with. Use this transparency to negotiate on concrete grounds instead of having to guess."
+        }
+      ]
+    },
+    "collaborating": {
+      "label": "Collaborating",
+      "instructions": [
+        {
+          "title": "Engage in the process, not just the outcome",
+          "content": "Someone collaborative wants both perspectives genuinely explored before arriving at a solution. Rushing to the answer skips what matters to them in the process."
+        },
+        {
+          "title": "Put your real needs on the table",
+          "content": "A collaborator can't find a win-win solution if they don't know what you actually want. Be honest about your needs, even when it's uncomfortable. Vagueness blocks their process."
+        },
+        {
+          "title": "Don't close the discussion before they feel ready",
+          "content": "A solution perceived as imposed or premature creates silent resentment. Someone collaborative needs to feel the process has been completed, not just the result achieved."
+        },
+        {
+          "title": "Respect the time the collaborative approach requires",
+          "content": "Finding win-win solutions costs more time than imposing or yielding. That time produces more lasting agreements. Respect the process even when it seems slow relative to the urgency you feel."
+        },
+        {
+          "title": "Calibrate the intensity of the tool to the problem",
+          "content": "Not every disagreement requires a full process. Learn together to distinguish conflicts that deserve deep collaboration from those that resolve with a quick decision."
+        }
+      ]
+    },
+    "compromising": {
+      "label": "Compromising",
+      "instructions": [
+        {
+          "title": "Be willing to give something first",
+          "content": "Someone who prefers compromise is looking for mutuality. If you only yield under pressure, the compromise loses meaning. Taking the first step positions you as a collaborative partner, not a loser."
+        },
+        {
+          "title": "Don't exploit their tendency to find middle ground",
+          "content": "The ease with which they reach halfway doesn't mean their original need was less important. Genuinely meet them in the middle; don't take advantage of their willingness."
+        },
+        {
+          "title": "Verify that the compromise is genuinely accepted",
+          "content": "'That's fine' said too quickly can hide dissatisfaction. Ask: 'are you really okay with this?' — and take the time to receive a real answer, not a courtesy one."
+        },
+        {
+          "title": "For central issues, seek complete solutions before settling",
+          "content": "Compromise isn't always the best solution. For the relationship's most important matters, it's worth investing in a full collaborative process instead of settling for a middle ground."
+        },
+        {
+          "title": "Value their agility in reaching agreements",
+          "content": "The ability to find practical solutions quickly without rigidifying is a couple's resource. Don't devalue it as superficiality: it's operational flexibility."
+        }
+      ]
+    },
+    "avoiding": {
+      "label": "Conflict Avoiding",
+      "instructions": [
+        {
+          "title": "Warn in advance when you want to address a difficult topic",
+          "content": "Someone who avoids conflict needs time to prepare for a difficult conversation. 'I'd like to talk about X — when do you feel ready?' is much more effective than addressing the topic on the spot."
+        },
+        {
+          "title": "Lower the stakes before starting",
+          "content": "'I don't want to fight, I want to understand each other' reduces the perceived threat before you even begin. Perceived safety is the condition for someone who avoids to stay present in the conversation."
+        },
+        {
+          "title": "Use questions instead of statements",
+          "content": "'How do you feel about X?' generates less closure than 'X made me feel Y and you didn't respond'. Questions open, accusatory statements close — even unintentionally."
+        },
+        {
+          "title": "Accept pauses as part of the process",
+          "content": "The need to step away during a conflict isn't abandoning the discussion: it's emotional regulation. Agree on a pause with an explicit resumption time — and respect it."
+        },
+        {
+          "title": "Name the pattern without accusing",
+          "content": "'I notice we tend not to address certain topics together — I'd like to find a way that works for both of us' is an opening. 'You always avoid everything' is an attack. The difference completely changes the response."
+        }
+      ]
+    },
+    "accommodating": {
+      "label": "Accommodating",
+      "instructions": [
+        {
+          "title": "Create explicit space for their needs",
+          "content": "Someone who accommodates doesn't spontaneously bring their own needs to a conflict. Ask actively: 'what would you want in this situation?' and treat the answer as fully valid."
+        },
+        {
+          "title": "Don't blindly accept their yielding",
+          "content": "'Whatever you want' doesn't always mean real agreement. Check: does the yielding come from genuine agreement or from exhaustion? You can only respect their needs if you truly know them."
+        },
+        {
+          "title": "Acknowledge the cost of their flexibility",
+          "content": "Yielding continuously has an emotional weight that accumulates over time. Thanking explicitly and refusing their yielding when unnecessary ('no, tell me what you really want') actively balances the relationship."
+        },
+        {
+          "title": "Don't systematically make the decisions",
+          "content": "Even if they adapt, feeling that their preferences never influence the outcome generates silent resentment over time. Insist on including their voice in shared decisions."
+        },
+        {
+          "title": "Build an agreement on how to handle important conflicts",
+          "content": "Say explicitly — outside moments of tension — that when it comes to central topics you want to know their real position even if it differs from yours. The agreement precedes the episode."
+        }
+      ]
+    }
+  },
+
+  "apologyLanguages": {
+    "moduleLabel": "Apology Languages",
+    "moduleNumber": "§ 6",
+    "moduleCode": "APOL",
+    "intro": "The way each of you feels truly repaired after a conflict is specific and not universal. Knowing what the other needs to close the circle is the difference between an apology that repairs and one that goes unnoticed.",
+    "regret": {
+      "label": "Expressing Regret",
+      "instructions": [
+        {
+          "title": "Name the pain caused before anything else",
+          "content": "Saying 'I'm sorry' isn't enough: someone who needs to feel regret needs you to show you understand how they felt. 'I'm sorry for how I made you feel' is different from 'I'm sorry for what happened'."
+        },
+        {
+          "title": "Stay in the discomfort before proposing solutions",
+          "content": "Moving to solutions before the other has processed the emotional damage signals escape from emotional responsibility. Stay present in shared discomfort — even just a few more minutes."
+        },
+        {
+          "title": "Use the right words, not just intentions",
+          "content": "Intentions alone don't repair: specific words demonstrating understanding of the damage are needed. Learn the emotional vocabulary that works for them — and use it."
+        },
+        {
+          "title": "Don't minimize their pain with yours",
+          "content": "'But I was hurting too' may be true, but it's not the moment. Their pain needs to be acknowledged alone before you can bring yours. The order matters."
+        },
+        {
+          "title": "Repeat if the apology didn't land",
+          "content": "If you feel the apology wasn't received, don't rigidify. Ask what's missing and try again. The willingness to repeat is part of the apology itself for someone with this language."
+        }
+      ]
+    },
+    "responsibility": {
+      "label": "Accepting Responsibility",
+      "instructions": [
+        {
+          "title": "Say 'I was wrong' without conditions",
+          "content": "No 'but', no 'you too', no explanation first. Clean responsibility, without reservations, is the start of repair for someone with this language. The rest can come after."
+        },
+        {
+          "title": "Don't explain before admitting",
+          "content": "Explanations, even valid and true, sound like justifications when they come before the admission. Responsibility first, then context — only if asked."
+        },
+        {
+          "title": "Avoid the passive 'I'm sorry you felt that way'",
+          "content": "This formulation shifts the problem onto them — it implies the reaction is the problem, not the action. Take responsibility for the concrete action: 'I was wrong when I did X'."
+        },
+        {
+          "title": "Be specific about what you did wrong",
+          "content": "A generic 'I was wrong' is worth less than 'I was wrong when I did X without considering Y'. Specificity demonstrates real understanding of what happened — not just closing words."
+        },
+        {
+          "title": "Responsibility is demonstrated in subsequent behavior too",
+          "content": "Returning to the topic as if nothing happened, without visible change, nullifies the apology. Responsibility must be taken and then confirmed in concrete behavior that follows."
+        }
+      ]
+    },
+    "restitution": {
+      "label": "Restitution",
+      "instructions": [
+        {
+          "title": "Propose a concrete repair gesture",
+          "content": "Someone with this language needs to see the apology translate into action. 'What can I do to make it up?' isn't weakness: it's the question that starts real repair."
+        },
+        {
+          "title": "Don't just say — do",
+          "content": "Words alone don't close the circle. Identify an action — proportionate and concrete — that demonstrates commitment to repairing the damage, not just announcing it."
+        },
+        {
+          "title": "Ask what would make them feel repaired",
+          "content": "Don't assume you know: everyone has their own idea of restitution. Asking is already an act of care and respect — and saves you from investing in the wrong gesture."
+        },
+        {
+          "title": "Include not repeating in the restitution gesture",
+          "content": "Restitution isn't just repairing past damage: it includes future behavior. A gesture without change over time is partial, not complete."
+        },
+        {
+          "title": "Don't use restitution to avoid the emotional conversation",
+          "content": "The repair gesture doesn't replace dialogue: it accompanies it. Do both: talk about the damage AND act to repair it."
+        }
+      ]
+    },
+    "repentance": {
+      "label": "Commitment to Change",
+      "instructions": [
+        {
+          "title": "Articulate what will concretely change",
+          "content": "'I won't do it again' is empty without a plan. Explain what you'll do differently in the next similar situation: this is the language of real commitment for someone with this apology language."
+        },
+        {
+          "title": "Don't promise what you can't keep",
+          "content": "An unkept promise of change is more damaging than never making it. Be realistic about the extent of change you can guarantee — and only commit to that."
+        },
+        {
+          "title": "Distinguish intention from commitment",
+          "content": "Wanting to change and changing are different things. If you don't yet know how to change something, say so honestly and actively seek a plan — not just the declaration of wanting to."
+        },
+        {
+          "title": "Change shows in behavior, not words",
+          "content": "Every time you handle a similar situation better than the one that caused the conflict, you're completing the apology. Behavior over time is the proof that the apology was real."
+        },
+        {
+          "title": "Acknowledge relapses openly and early",
+          "content": "If you relapse into the behavior, name it before the other notices: 'I did X again, I'm aware of it, I'm trying to change'. Self-awareness and transparency matter as much as the change itself."
+        }
+      ]
+    },
+    "forgiveness": {
+      "label": "Requesting Forgiveness",
+      "instructions": [
+        {
+          "title": "Ask for forgiveness explicitly",
+          "content": "Don't wait for it to pass on its own or for time to do the work. 'Will you forgive me?' isn't weakness: it's the gesture that closes the circle for someone with this language. It must be asked — not waited for."
+        },
+        {
+          "title": "Don't pressure immediate forgiveness",
+          "content": "Someone with this language needs time to give it genuinely. Respect the process: ask, then leave space. Forgiveness given under pressure isn't repair."
+        },
+        {
+          "title": "Don't behave as if you're already forgiven",
+          "content": "Moving forward as if nothing happened before explicit forgiveness is read as disrespect for the repair process. Wait for the signal — verbal or behavioral — that forgiveness has occurred."
+        },
+        {
+          "title": "Create conditions that make forgiveness possible",
+          "content": "Forgiveness is given when people feel safe enough to give it. Consistent behavior over time creates that safety — not pressure to forgive quickly."
+        },
+        {
+          "title": "Distinguish forgiveness from forgetting",
+          "content": "Getting forgiveness doesn't mean the event is erased. The relationship can move forward, but the episode remains part of the shared history. Don't expect it to be as if it never happened."
+        }
+      ]
+    }
+  },
+
+  "careStyle": {
+    "moduleLabel": "Care Style",
+    "moduleNumber": "§ 7",
+    "moduleCode": "CARE",
+    "intro": "The way each of you takes care of the other is deeply connected to how you learned to receive care. Knowing your partner's style lets you recognize love even when it arrives in a format different from yours.",
+    "emotional": {
+      "label": "Emotional Care",
+      "instructions": [
+        {
+          "title": "Recognize their emotional presence as an act of love",
+          "content": "Someone who cares emotionally wants to be with you in discomfort, not resolve it. When they draw close during a difficulty, it's not intrusion: it's their highest form of care."
+        },
+        {
+          "title": "Share your emotions — even briefly",
+          "content": "Someone with emotional care feeds on sharing. Even a brief 'I'm feeling overwhelmed this period' is an act of intimacy they receive as real connection."
+        },
+        {
+          "title": "Don't close off when they approach emotionally",
+          "content": "Their tendency to be emotionally intensely present can seem oppressive if you need space. Before closing off, explain what you need: don't disappear without giving context."
+        },
+        {
+          "title": "Verbally value their gestures of support",
+          "content": "A hug, a word of comfort, presence in a difficult moment: name these gestures explicitly. For someone with emotional care, verbal recognition is direct nourishment."
+        },
+        {
+          "title": "Warn when you need space instead of disappearing",
+          "content": "If their emotional intensity is too much at a given moment, say so clearly and gently. 'I need an hour for myself, then I'll come back' is much better than a silent withdrawal."
+        }
+      ]
+    },
+    "practical": {
+      "label": "Practical Care",
+      "instructions": [
+        {
+          "title": "Recognize actions as acts of love",
+          "content": "When they organize, solve, anticipate problems, manage logistics: these are acts of love in practical form. Don't devalue them because they don't have the emotional form you're used to."
+        },
+        {
+          "title": "Ask for concrete help when you need it",
+          "content": "Someone with practical care responds better to specific requests than to general complaints. 'Can you do X?' works better than 'you never help me with Y'. Concreteness is their language."
+        },
+        {
+          "title": "Don't expect emotional support in the middle of chaos",
+          "content": "In stressful situations, someone with practical care tends to act before processing. Emotional support can come later, when the crisis is managed. Recognize the value of both phases."
+        },
+        {
+          "title": "Actively contribute to shared logistics",
+          "content": "Leaving all practical management on their shoulders without recognition generates resentment. Participate, and explicitly thank their contribution — it's not a given."
+        },
+        {
+          "title": "Translate emotional needs into practical requests",
+          "content": "If you need support, help with the translation: 'I need you to stay with me tonight' or 'can you come with me to X' is more navigable for them than 'I need to feel you close'."
+        }
+      ]
+    },
+    "presence": {
+      "label": "Care through Presence",
+      "instructions": [
+        {
+          "title": "Appreciate being together without an agenda",
+          "content": "Someone who cares through presence doesn't need to do something special: they want to be there. Don't interpret quiet togetherness as lack of initiative or energy."
+        },
+        {
+          "title": "Invite them into your moments, even ordinary ones",
+          "content": "Their form of care is being present. Inviting them into a daily activity — cooking, walking, reading together — is receiving their love in the format they know how to give."
+        },
+        {
+          "title": "Don't automatically fill every space with stimulation",
+          "content": "Shared silence has value for someone with this style. Don't constantly push toward conversations or activities: quiet togetherness is already connection for them."
+        },
+        {
+          "title": "Recognize presence itself as action",
+          "content": "'You're here' is an active form of love, not a passive one. Don't depreciate it because it's less visible or dramatic than other forms: being there, consistently, is their deepest commitment."
+        },
+        {
+          "title": "Communicate when you need something more",
+          "content": "If in a difficult moment you need specific words or actions beyond presence, ask for them explicitly. Don't assume they should understand on their own — and don't devalue what they already give."
+        }
+      ]
+    },
+    "autonomy": {
+      "label": "Care through Autonomy",
+      "instructions": [
+        {
+          "title": "Interpret the space they give you as respect",
+          "content": "Someone who cares through autonomy deeply believes that respecting your space is the highest act of love. It's not indifference: it's the form of care they know best."
+        },
+        {
+          "title": "Communicate explicitly when you need more presence",
+          "content": "The autonomy carer doesn't automatically read the need for closeness. 'I need you to be more present in this period' is necessary — don't wait for them to understand on their own."
+        },
+        {
+          "title": "Don't confuse their independence with selfishness",
+          "content": "The need for personal space doesn't reduce the space they reserve for the relationship. The two things are independent: their need for autonomy is not competing with your need for connection."
+        },
+        {
+          "title": "Build fixed connection rituals together",
+          "content": "Since they don't tend to seek contact spontaneously, create structured, fixed connection moments together. Structure compensates for spontaneity in a way that works for both."
+        },
+        {
+          "title": "Value their non-invasiveness as a form of respect",
+          "content": "Not keeping you under pressure, not monitoring, not expecting constant reporting: this is a precise form of respect for your autonomy. Recognize it as such instead of reading it as disinterest."
+        }
+      ]
+    }
+  },
+
+  "coreValues": {
+    "moduleLabel": "Core Values",
+    "moduleNumber": "§ 8",
+    "moduleCode": "VAL",
+    "intro": "Core values guide the big life decisions — where to live, how to use money, what to sacrifice. When values diverge, conflict is systemic: it's not about that specific episode, it's about who you are.",
+    "security": {
+      "label": "Security",
+      "instructions": [
+        {
+          "title": "Be predictable and consistent in behavior",
+          "content": "Someone who values security feeds on stability. Sudden changes, impulsive decisions, inconsistency in behavior are real sources of stress — not whims. Predictability is a concrete form of love."
+        },
+        {
+          "title": "Include your partner in important decisions",
+          "content": "Significant decisions made unilaterally are read as a threat to shared security. Even when you're sure about the choice, the process of involvement matters as much as the outcome."
+        },
+        {
+          "title": "Build stable rituals and routines together",
+          "content": "Shared routines, traditions, predictable habits: these are the emotional equivalent of a secure base. Don't devalue them as rigidity — for someone who values security, they're load-bearing structure."
+        },
+        {
+          "title": "Reassure explicitly during times of change",
+          "content": "When life is uncertain — work, health, future plans — name what remains stable in the relationship. 'I don't know what will happen with X, but we are stable' is a powerful and necessary phrase."
+        },
+        {
+          "title": "Take their practical concerns seriously",
+          "content": "Attention to financial security, housing stability, planning ahead: these are expressions of their core value, not anxieties to manage. Treat them as real priorities in shared planning."
+        }
+      ]
+    },
+    "freedom": {
+      "label": "Freedom",
+      "instructions": [
+        {
+          "title": "Interpret the need for space as a condition, not rejection",
+          "content": "Someone who values freedom needs autonomy as a condition for being well in the relationship — not as an alternative to it. The freedom you give is why they stay, not why they'd leave."
+        },
+        {
+          "title": "Negotiate agreements, don't impose them",
+          "content": "Restrictions perceived as unilateral control are the main trigger for someone who values freedom. Every couple agreement must be reached together: the negotiation process matters as much as the content."
+        },
+        {
+          "title": "Support their adventures even when you don't share them",
+          "content": "Trips, passions, friends, autonomous activities: support for their autonomy is one of the most powerful acts of love you can give. It's not losing something — it's investing in their vitality."
+        },
+        {
+          "title": "Bring novelty into shared life",
+          "content": "Routine without variation stifles someone who values freedom. Propose new experiences, surprises, variations in daily life: shared novelty feeds the relationship without requiring separate autonomy."
+        },
+        {
+          "title": "Differentiate freedom from irresponsibility toward the relationship",
+          "content": "Freedom and relational commitment don't exclude each other for someone who truly values freedom. If a behavior is irresponsible toward the couple, address it as such — separating the value from the specific behavior."
+        }
+      ]
+    },
+    "achievement": {
+      "label": "Achievement",
+      "instructions": [
+        {
+          "title": "Genuinely celebrate their milestones",
+          "content": "Someone who values achievement needs their successes recognized by the people who matter. Don't minimize results: even the milestone that seems small to you may be enormous for them."
+        },
+        {
+          "title": "Support their ambitions even when they require sacrifices",
+          "content": "Periods of intense focus on goals can reduce availability toward the relationship. Support instead of competing for attention: their success is a couple's success."
+        },
+        {
+          "title": "Don't devalue the importance of success in their identity",
+          "content": "Professional success might be secondary for you: for them it's a central part of how they build meaning and identity. It's not superficiality or materialism."
+        },
+        {
+          "title": "Bring your goals into the relationship",
+          "content": "Someone who values achievement connects deeply with people who have their own ambitions. Talk about your projects and progress: create common ground for mutual growth."
+        },
+        {
+          "title": "Be the voice of balance when necessary",
+          "content": "Someone with this value tends to put goals before everything. When you see excess, say so — not as a brake, but as care for the person you love. The distinction in tone is everything."
+        }
+      ]
+    },
+    "connection": {
+      "label": "Connection",
+      "instructions": [
+        {
+          "title": "Show that the relationship is an active priority",
+          "content": "Someone who values connection needs to feel you're deliberately investing in the relationship, not just living it as background. Concrete, regular actions are more powerful than declarations."
+        },
+        {
+          "title": "Share the important relationships in your life",
+          "content": "Someone who values connection connects through sharing bonds. Talk about your family, friends, significant relationships — not as a report, but as a window into who you are."
+        },
+        {
+          "title": "Be present at ceremonies and relational moments",
+          "content": "Birthdays, anniversaries, events significant to them: your presence in these moments is an explicit declaration of love for someone who values connection. It's not formality — it's language."
+        },
+        {
+          "title": "Don't treat the relationship as guaranteed",
+          "content": "Connection must be actively nourished — don't always wait for the other to do it. Small gestures of care, attention, curiosity toward the other: these keep connection alive in daily life."
+        },
+        {
+          "title": "Respect their investments in other relationships",
+          "content": "Relationships with friends and family aren't competing with yours. Someone who values connection needs a rich relational fabric: it's how they nourish themselves, not how they distract themselves."
+        }
+      ]
+    },
+    "growth": {
+      "label": "Growth",
+      "instructions": [
+        {
+          "title": "Show interest in their personal development",
+          "content": "Someone who values growth is always moving on themselves. Asking about their paths, readings, insights, internal changes: it's an act of deep intimacy, not courtesy curiosity."
+        },
+        {
+          "title": "Welcome changes instead of resisting them",
+          "content": "Someone who grows changes — in how they think, in priorities, in interests. Not every change is a threat to the relationship: some evolutions need to be welcomed as part of who you're loving."
+        },
+        {
+          "title": "Bring your growth into the relationship",
+          "content": "Someone who values growth needs a partner who evolves with them over time. Share your paths, what you're learning, the changes you're going through: it's real connection."
+        },
+        {
+          "title": "Don't devalue their self-investments",
+          "content": "Therapy, courses, retreats, coaching: these aren't luxury expenditures but central investments for someone with this value. Respecting them is respecting who they are."
+        },
+        {
+          "title": "Challenge them intellectually and personally",
+          "content": "Someone who values growth is impoverished by people who don't stimulate them. Bring difficult questions, constructive disagreements, perspectives they haven't considered: respectful challenge is one of the highest forms of care."
+        }
+      ]
+    }
+  }
+}

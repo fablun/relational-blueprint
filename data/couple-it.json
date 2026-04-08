@@ -1,0 +1,957 @@
+{
+  "attachment": {
+    "moduleLabel": "Attaccamento",
+    "moduleNumber": "§ 1",
+    "moduleCode": "ATT",
+    "intro": "Lo stile di attaccamento definisce come ognuno di voi gestisce vicinanza, distanza e sicurezza emotiva. Due stili diversi creano dinamiche prevedibili — una volta capite, si possono gestire invece di subire.",
+    "secure": {
+      "label": "Sicuro",
+      "instructions": [
+        {
+          "title": "Fidati della loro stabilità senza testarla",
+          "content": "La coerenza di chi ha attaccamento sicuro è genuina, non una maschera. Non usare comportamenti discontinui o test emotivi per verificare se ci tengono: riceverai risposte prevedibili perché il loro sistema è stabile."
+        },
+        {
+          "title": "Esprimi i tuoi bisogni direttamente",
+          "content": "Chi è sicuro sa contenere le emozioni altrui senza sentirsi sopraffatto. Parla dei tuoi bisogni chiaramente invece di aspettarti che vengano indovinati: la direttezza non li spaventa."
+        },
+        {
+          "title": "Non interpretare il loro spazio come distanza",
+          "content": "Il bisogno di autonomia nei sicuri non è segnale di allontanamento. È una caratteristica sana: quando si prendono spazio, non sta succedendo nulla che riguardi te."
+        },
+        {
+          "title": "Affronta i conflitti invece di aggirarli",
+          "content": "Con una base sicura, i disaccordi si possono risolvere senza escalation. Non evitare le tensioni: con un partner sicuro si possono affrontare direttamente e uscirne entrambi interi."
+        },
+        {
+          "title": "Osserva come regolano le emozioni",
+          "content": "Il modo in cui chi è sicuro gestisce intensità, conflitti e rotture è un modello operativo concreto. Osservarlo e fare domande è uno degli investimenti più utili che puoi fare."
+        }
+      ]
+    },
+    "anxious": {
+      "label": "Ansioso",
+      "instructions": [
+        {
+          "title": "Dai conferme proattive, non solo reattive",
+          "content": "Non aspettare che ti chieda rassicurazione: anticipa. Un messaggio breve, un gesto concreto, basta a interrompere il ciclo di ansia prima che si attivi. Il costo per te è basso; il beneficio per loro è alto."
+        },
+        {
+          "title": "Non sparire senza comunicare",
+          "content": "Assenze silenziose vengono lette come abbandono, non come bisogno di spazio. Dire dove sei e quando torni non è controllabile da parte tua: è la forma base di rispetto per il loro sistema nervoso."
+        },
+        {
+          "title": "Rispondi al bisogno, non alla forma",
+          "content": "Quando sembra richiedere in modo eccessivo o intenso, c'è un bisogno di connessione dietro. Non reagire all'intensità con difesa o ritiro: identifica il bisogno sottostante e rispondi a quello."
+        },
+        {
+          "title": "La prevedibilità quotidiana vale più dei grandi gesti",
+          "content": "Piccoli gesti regolari e coerenti fanno più di grandi dimostrazioni rare. La certezza di essere presenti — non di essere perfetti — è il nutrimento principale per chi ha attaccamento ansioso."
+        },
+        {
+          "title": "Definite insieme un ritmo di contatto",
+          "content": "Un accordo esplicito su frequenza di messaggi e check-in riduce i trigger in modo strutturale. Parlatene in un momento calmo, fuori dalla crisi, come decisione di coppia — non come gestione di un problema."
+        }
+      ]
+    },
+    "avoidant": {
+      "label": "Evitante",
+      "instructions": [
+        {
+          "title": "Rispetta il ritiro senza inseguire",
+          "content": "Quando si chiude, seguirlo/a intensifica la chiusura. Rispetta il ritiro, renditi disponibile senza pressione, e aspetta. Il ciclo inseguimento-ritiro si alimenta dal tuo inseguimento quanto dal loro distanziamento."
+        },
+        {
+          "title": "Parla dei bisogni in modo concreto e diretto",
+          "content": "Chi è evitante risponde meglio a richieste specifiche che a conversazioni emotive aperte. 'Ho bisogno di X' funziona meglio di 'mi sento male perché Y'. La concretezza abbassa la soglia di accesso."
+        },
+        {
+          "title": "Non confondere autonomia con mancanza d'amore",
+          "content": "Il bisogno di spazio è una caratteristica del sistema di attaccamento, non un segnale su di te o sulla relazione. Interpretarlo come rifiuto innesca esattamente il ciclo che vuoi evitare."
+        },
+        {
+          "title": "Crea rituali brevi e prevedibili di riconnessione",
+          "content": "Invece di lunghe sessioni emotive, proponi momenti strutturati: una cena fissa, un'attività condivisa, un rituale serale breve. Abbassano la soglia di accesso emotivo senza attivare la sensazione di sopraffazione."
+        },
+        {
+          "title": "Dopo un conflitto, pianifica la riconnessione con anticipo",
+          "content": "Chi è evitante ha bisogno di rielaborare in solitudine prima di tornare alla connessione. Non aspettare una pace immediata: concordate che tornerete sull'argomento dopo X tempo, poi rispetta lo spazio."
+        }
+      ]
+    },
+    "fearful": {
+      "label": "Disorganizzato",
+      "instructions": [
+        {
+          "title": "Sii coerente nel tempo, non solo intenso nel momento",
+          "content": "Chi ha attaccamento disorganizzato ha imparato che le persone vicine fanno male. La coerenza lenta riscrive quel codice: un comportamento continuato nel tempo vale cento promesse fatte una volta sola."
+        },
+        {
+          "title": "Non rispondere alle prove con la reazione che si aspettano",
+          "content": "Quando testa la relazione con distanza improvvisa o intensità eccessiva, non rispondere con rabbia o ritiro: è esattamente ciò che si aspetta. La risposta non reattiva è la più potente che puoi dare."
+        },
+        {
+          "title": "Definisci i tuoi confini con chiarezza",
+          "content": "Non puoi essere l'unica fonte di regolazione emotiva per chi ha attaccamento disorganizzato senza logorarti. Stabilire i tuoi limiti non è crudeltà: è la condizione perché la relazione sia sostenibile."
+        },
+        {
+          "title": "Parla di comportamenti concreti, non di interpretazioni",
+          "content": "'Quando hai fatto X, io ho sentito Y' funziona meglio di 'non mi vuoi bene'. La concretezza riduce l'ambiguità che alimenta la paura del disorganizzato e rende la conversazione navigabile."
+        },
+        {
+          "title": "Sostieni l'accesso a supporto esterno come risorsa",
+          "content": "Molte dinamiche dell'attaccamento disorganizzato beneficiano di lavoro terapeutico. Proponi come strumento di supporto per entrambi, non come diagnosi di problema individuale."
+        }
+      ]
+    }
+  },
+
+  "loveLanguages": {
+    "moduleLabel": "Linguaggi d'Amore",
+    "moduleNumber": "§ 2",
+    "moduleCode": "LOVE",
+    "intro": "Ognuno di voi esprime e riceve amore in un formato diverso. Conoscere il linguaggio del partner non significa cambiare il proprio — significa imparare a tradurre.",
+    "words": {
+      "label": "Parole d'Affermazione",
+      "instructions": [
+        {
+          "title": "Di' ad alta voce quello che pensi di loro",
+          "content": "Le parole esplicite di apprezzamento, amore e riconoscimento sono il nutrimento principale per chi ha questo linguaggio. Non dare per scontato che sappiano cosa provi: dillo."
+        },
+        {
+          "title": "Sii specifico, non generico",
+          "content": "'Sei brava/o' vale meno di 'quello che hai fatto stamattina mi ha colpito perché mostra X'. La specificità dimostra attenzione reale, non parole abituali."
+        },
+        {
+          "title": "Usa anche il formato scritto",
+          "content": "Un messaggio, un biglietto, un vocale: le parole scritte hanno peso permanente per chi ha questo linguaggio. Non sottovalutare il formato — a volte il testo vale più della conversazione."
+        },
+        {
+          "title": "Evita le critiche in pubblico",
+          "content": "Chi vive di parole è ferito dalle parole negative tanto quanto è nutrito da quelle positive. Le critiche davanti ad altri sono ferite profonde e persistenti."
+        },
+        {
+          "title": "Crea l'abitudine, non l'occasione",
+          "content": "Non basta dire cose belle nelle grandi occasioni: ha bisogno di sentirle in modo continuativo. Verbalizzare affetto quotidianamente non è ridondante — è la forma d'amore più efficace che puoi dare."
+        }
+      ]
+    },
+    "time": {
+      "label": "Tempo di Qualità",
+      "instructions": [
+        {
+          "title": "Sii presente, non solo fisicamente lì",
+          "content": "Essere nello stesso spazio con lo schermo in mano non conta come tempo di qualità. Presenza significa attenzione esclusiva — anche solo 20 minuti di vera presenza valgono più di ore di prossimità distratta."
+        },
+        {
+          "title": "Pianifica il tempo insieme in agenda",
+          "content": "Non aspettare che il tempo insieme capiti spontaneamente: mettilo in calendario. Per chi ha questo linguaggio, la pianificazione non è poco romantica — è la dimostrazione massima che sei una priorità."
+        },
+        {
+          "title": "Elimina le distrazioni durante il tempo insieme",
+          "content": "Telefono capovolto, schermo spento. Il messaggio implicito delle distrazioni è 'c'è qualcosa di più importante di te in questo momento' — e viene ricevuto esattamente così."
+        },
+        {
+          "title": "Fai cose insieme, non solo state vicini",
+          "content": "Condividere un'attività — cucinare, camminare, giocare — è più significativo di stare vicini in silenzio. L'attività condivisa è il rituale del legame per chi ha questo linguaggio."
+        },
+        {
+          "title": "Riconosci quando sei stato/a meno presente",
+          "content": "Se un periodo di lavoro o stress ti ha reso meno disponibile, nominalo esplicitamente e pianifica come recuperare. Il riconoscimento conta quasi quanto il recupero stesso."
+        }
+      ]
+    },
+    "gifts": {
+      "label": "Doni",
+      "instructions": [
+        {
+          "title": "I regali sono simboli di memoria, non di denaro",
+          "content": "Un oggetto che dimostra che hai ascoltato qualcosa che hanno detto settimane fa vale più di qualsiasi lusso. Il valore è nell'attenzione dimostrata, non nel prezzo."
+        },
+        {
+          "title": "Ricorda le date e le occasioni",
+          "content": "Dimenticare un compleanno o anniversario viene letto come segnale che quella persona non è abbastanza importante da ricordare. Metti promemoria: non è poco romantico — è una forma di cura."
+        },
+        {
+          "title": "Il regalo inaspettato vale di più",
+          "content": "Il regalo nel giorno qualunque, senza occasione obbligata, pesa più di quello atteso. Dimostra che pensi a loro anche quando non devi."
+        },
+        {
+          "title": "Porta qualcosa quando torni",
+          "content": "Da un viaggio, dalla spesa, da una passeggiata: tornare con qualcosa — anche minimo — è un gesto di connessione rituale potente per chi ha questo linguaggio."
+        },
+        {
+          "title": "Non svalutare l'importanza dei regali per loro",
+          "content": "Se per te i regali sembrano superficiali, ricorda che per il tuo partner sono un linguaggio. Svalutarli è svalutare come comunica e riceve amore — anche se non è il tuo formato."
+        }
+      ]
+    },
+    "acts": {
+      "label": "Atti di Servizio",
+      "instructions": [
+        {
+          "title": "Agisci prima che chiedano",
+          "content": "L'atto di servizio non richiesto vale il doppio di quello chiesto. Anticipa: cosa potrebbe aiutare? Cosa noti che non è stato fatto e che pesa? Agire senza essere sollecitato è la forma più alta di questo linguaggio."
+        },
+        {
+          "title": "Completa quello che inizi",
+          "content": "Metà lavoro è peggio di nessun lavoro per chi ha questo linguaggio. Un'azione incompiuta segnala disinteresse reale più di non averla iniziata."
+        },
+        {
+          "title": "Non aiutare con riluttanza evidente",
+          "content": "L'aiuto sospiroso o accompagnato da lamentele perde tutto il valore. Se non vuoi o non puoi farlo, è meglio dirlo chiaramente che farlo male."
+        },
+        {
+          "title": "Identifica i compiti che pesano e prendili in carico",
+          "content": "Occuparsi regolarmente di qualcosa che sai che l'altro odia fare è uno dei gesti più potenti. Non serve fare tutto: basta essere costante su quei compiti specifici."
+        },
+        {
+          "title": "Le micro-azioni quotidiane si sommano",
+          "content": "Non servono gesti epici: portare un caffè, fare un'incombenza senza essere chiesto, sistemare qualcosa. La somma di azioni piccole e regolari è il linguaggio dell'amore per chi valuta gli atti."
+        }
+      ]
+    },
+    "touch": {
+      "label": "Contatto Fisico",
+      "instructions": [
+        {
+          "title": "Il contatto non sessuale è nutrimento quotidiano",
+          "content": "Non confondere il bisogno di contatto fisico con il bisogno di sesso. Mano tenuta, spalla toccata di passaggio, abbraccio senza richiesta: sono forme di amore autonome e fondamentali."
+        },
+        {
+          "title": "Inizia il contatto tu, non solo rispondere",
+          "content": "Aspettare di essere toccato non basta: per chi ha questo linguaggio, essere cercati fisicamente ha un peso enorme. Avvicinati fisicamente per primo/a — non aspettare che lo chiedano."
+        },
+        {
+          "title": "Non evitare il contatto nei momenti di tensione",
+          "content": "In un conflitto o momento di stress, un tocco sul braccio può fare più di mille parole. Ritirare il contatto fisico durante le crisi è uno dei gesti più dolorosi per chi ha questo linguaggio."
+        },
+        {
+          "title": "Crea rituali fisici prevedibili",
+          "content": "Un saluto fisico al mattino, un abbraccio prima di dormire. I rituali prevedibili di contatto danno sicurezza e continuità — la prevedibilità ha lo stesso valore dell'intensità."
+        },
+        {
+          "title": "Non usare il ritiro fisico come punizione",
+          "content": "Togliere il contatto durante un conflitto è una delle forme di punizione più dolorose per chi ha questo linguaggio. Differenzia la distanza emotiva dalla presenza fisica."
+        }
+      ]
+    }
+  },
+
+  "bigFive": {
+    "moduleLabel": "Personalità OCEAN",
+    "moduleNumber": "§ 3",
+    "moduleCode": "OCEAN",
+    "intro": "I cinque tratti di personalità definiscono modalità profonde e stabili di funzionamento. Capire il tratto dominante del partner non è giudicare — è imparare il suo linguaggio di default.",
+    "openness": {
+      "label": "Alta Apertura",
+      "instructions": [
+        {
+          "title": "Lascia spazio all'esplorazione e alla novità",
+          "content": "Chi ha alta apertura si nutre di nuove esperienze, idee e stimoli. La routine rigida li appesantisce. Sii disponibile a sperimentare cose nuove insieme — non devi condividere la stessa curiosità, basta non bloccarla."
+        },
+        {
+          "title": "Prendi sul serio le idee non convenzionali",
+          "content": "Non liquidare le idee fuori dagli schemi come impraticabili prima di esplorarle. Discutile genuinamente: la curiosità intellettuale è il loro modo principale di connettersi con chi amano."
+        },
+        {
+          "title": "Tollera l'ambiguità nelle decisioni",
+          "content": "Chi ha alta apertura è spesso più a suo agio nell'esplorazione che nella definizione. Prima di forzare una decisione, chiedi se hanno bisogno di più tempo per esplorare le possibilità."
+        },
+        {
+          "title": "Mostra interesse per le loro passioni anche senza condividerle",
+          "content": "Non devi avere le stesse passioni: basta mostrare interesse genuino. Chiedere, ascoltare, seguire il racconto è già una forma potente di connessione per chi ha alta apertura."
+        },
+        {
+          "title": "Stimolali intellettualmente",
+          "content": "Conversazioni profonde, idee nuove, letture condivise: sono il loro nutrimento relazionale. Una relazione intellettualmente piatta è una relazione che si spegne lentamente per chi ha questo profilo."
+        }
+      ]
+    },
+    "conscientiousness": {
+      "label": "Alta Coscienziosità",
+      "instructions": [
+        {
+          "title": "Rispetta i loro sistemi e le loro routine",
+          "content": "Chi ha alta coscienziosità funziona attraverso strutture. Disorganizzarle, anche sporadicamente, genera stress reale. Non è rigidità: è il sistema attraverso cui operano in modo efficace."
+        },
+        {
+          "title": "Sii affidabile sugli impegni che prendi",
+          "content": "Un 'ci vediamo alle 8' è un impegno, non un'indicazione di massima. Arrivare in ritardo o cancellare senza preavviso viene letto come mancanza di rispetto reale, non come disorganizzazione."
+        },
+        {
+          "title": "Dai preavviso sui cambiamenti di piano",
+          "content": "I cambiamenti improvvisi sono una fonte significativa di stress per chi pianifica molto. Comunica le variazioni il prima possibile, con il motivo — non dopo il fatto."
+        },
+        {
+          "title": "Riconosci il loro contributo operativo",
+          "content": "Chi ha alta coscienziosità tende a prendere su di sé molto. Riconoscere esplicitamente il loro impegno e la loro attenzione non è scontato — per loro ha peso reale."
+        },
+        {
+          "title": "Non svalutare la loro attenzione ai dettagli",
+          "content": "Quello che ti sembra eccessivo è la loro modalità di funzionamento. Puoi avere preferenze diverse, ma critica i risultati specifici che non ti vanno — non il fatto che ci tengano."
+        }
+      ]
+    },
+    "extraversion": {
+      "label": "Alta Estroversione",
+      "instructions": [
+        {
+          "title": "La vita sociale non ti sottrae energia — gliene dà",
+          "content": "Chi è estroverso si ricarica stando con gli altri. Non è che ti sta sottraendo attenzione quando cerca stimoli sociali: è come si nutre energeticamente. Non è in competizione con te."
+        },
+        {
+          "title": "Non interpretare la comunicatività come superficialità",
+          "content": "Parlare tanto, condividere molto, connettersi facilmente con gli altri: sono caratteristiche, non mancanza di profondità. Non chiedere loro di filtrarsi per sembrare più 'seri'."
+        },
+        {
+          "title": "Lascia spazio all'elaborazione verbale",
+          "content": "Gli estroversi elaborano pensando ad alta voce — il flusso di parola è il loro modo di capire cosa pensano. Non interrompere o concludere al posto loro: è come pensano, non come chiacchierano."
+        },
+        {
+          "title": "Partecipa alla vita sociale senza sentirti in obbligo totale",
+          "content": "Non devi fare tutto insieme: negozia un equilibrio. Ma essere completamente assente dalla loro vita sociale li isola in modo reale. Trova la soglia che funziona per entrambi."
+        },
+        {
+          "title": "Valorizza l'energia che portano",
+          "content": "In momenti di staticità o difficoltà, un partner estroverso porta vitalità. Riconoscilo invece di sentirti prosciugato/a: è una risorsa della coppia."
+        }
+      ]
+    },
+    "agreeableness": {
+      "label": "Alta Gradevolezza",
+      "instructions": [
+        {
+          "title": "Crea spazio esplicito per i loro bisogni e disaccordi",
+          "content": "Chi ha alta gradevolezza fatica a portare spontaneamente i propri bisogni e disaccordi. Chiedi attivamente: 'cosa vorresti tu?' e trattalo come una risposta da prendere sul serio."
+        },
+        {
+          "title": "Non accettare il loro cedere come accordo",
+          "content": "La facilità con cui acconsentono non significa che siano sempre davvero d'accordo. Verifica: 'vuoi davvero farlo o stai cedendo?' — e accetta onestamente la risposta."
+        },
+        {
+          "title": "Riconosci il costo della loro flessibilità",
+          "content": "Cedere continuamente ha un prezzo emotivo che si accumula. Ringraziare esplicitamente e a volte rifiutare il loro cedere ('no, dimmi cosa vuoi davvero') bilancia il rapporto."
+        },
+        {
+          "title": "Non prendere sistematicamente le decisioni al posto loro",
+          "content": "Anche se si adattano facilmente, sentire che le proprie preferenze non contano genera risentimento silenzioso nel tempo. Includi attivamente la loro voce nelle decisioni condivise."
+        },
+        {
+          "title": "Valida la loro sensibilità relazionale come risorsa",
+          "content": "L'attenzione agli altri, la cura, la sensibilità alle dinamiche interpersonali: sono risorse rare e preziose nella relazione. Nominale esplicitamente come qualità."
+        }
+      ]
+    },
+    "neuroticism": {
+      "label": "Alta Reattività Emotiva",
+      "instructions": [
+        {
+          "title": "Non minimizzare le loro preoccupazioni",
+          "content": "Quello che ti sembra eccessivo è reale per loro. 'Non è niente' non aiuta — peggiora. Valida l'emozione prima di proporre soluzioni o rassicurazioni: 'capisco che sia pesante' viene prima di 'andrà bene'."
+        },
+        {
+          "title": "Sii una fonte di stabilità, non di imprevedibilità",
+          "content": "Chi ha alta reattività emotiva è già in costante allerta. Non aggiungere variabili evitabili: sii prevedibile, coerente, chiaro/a su orari e piani. La prevedibilità è una forma d'amore concreta."
+        },
+        {
+          "title": "Distingui tra sfogo e richiesta di soluzione",
+          "content": "Spesso chi è molto emotivamente reattivo vuole essere ascoltato, non risolto. Prima di offrire soluzioni, chiedi: 'vuoi che ti ascolti o stai cercando idee?'. Sbagliare il formato è frustrante per entrambi."
+        },
+        {
+          "title": "Non assumere che il loro umore sia sempre causato da te",
+          "content": "Il loro stato emotivo non è automaticamente una risposta a qualcosa che hai fatto. Chiedi prima di assumere responsabilità: evita sia di ignorare sia di sentirti in colpa per default."
+        },
+        {
+          "title": "Proponi routine di decompressione come parte della relazione",
+          "content": "Una struttura di gestione dello stress — una passeggiata serale, un rituale di fine giornata — aiuta più di soluzioni ad hoc. Costruitela insieme come accordo di coppia."
+        }
+      ]
+    }
+  },
+
+  "communication": {
+    "moduleLabel": "Stile Comunicativo",
+    "moduleNumber": "§ 4",
+    "moduleCode": "COMM",
+    "intro": "Il modo in cui ognuno di voi si muove nel dialogo è radicato nel suo modo di elaborare e connettersi. Adattare il formato non significa cambiare chi siete — significa parlare la stessa lingua.",
+    "rapport": {
+      "label": "Rapport",
+      "instructions": [
+        {
+          "title": "Partecipa emotivamente, non solo informativamente",
+          "content": "Chi ha stile rapport non cerca solo dati: cerca connessione nel dialogo. Condividi come ti senti riguardo ai temi discussi, non solo cosa pensi. Il tono relazionale conta quanto il contenuto."
+        },
+        {
+          "title": "Tollera le divagazioni narrative",
+          "content": "Le conversazioni rapport si allargano, si perdono, tornano. Non reindirizzarle sistematicamente al punto: la digressione è parte integrante di come chi ha questo stile si connette e processa."
+        },
+        {
+          "title": "Non trasformare ogni conversazione in problem-solving",
+          "content": "Non ogni scambio deve avere un output pratico. A volte parlare insieme è l'obiettivo, non il mezzo. Resisti all'impulso di concludere o sintetizzare quando l'altro sta ancora elaborando."
+        },
+        {
+          "title": "Non interrompere per finire le frasi",
+          "content": "Finire le frasi dell'altro o sintetizzare prima che abbiano terminato tronca il processo relazionale del loro stile. Aspetta, anche quando credi di sapere dove sta andando."
+        },
+        {
+          "title": "Porta elementi personali anche nelle conversazioni pratiche",
+          "content": "Anche su argomenti logistici, un tocco personale — come ti riguarda, come ti senti — rende la conversazione più nutritiva per chi ha stile rapport. Non separare il pratico dal relazionale."
+        }
+      ]
+    },
+    "report": {
+      "label": "Report",
+      "instructions": [
+        {
+          "title": "Struttura le comunicazioni importanti",
+          "content": "Chi ha stile report elabora meglio informazioni organizzate. Per discussioni importanti, prepara i punti chiave invece di parlare in modo esplorativo e circolare. Chiarezza è rispetto per il loro stile."
+        },
+        {
+          "title": "Non interpretare la concisione come distanza",
+          "content": "Comunicare in modo efficiente non significa non tenere. Lo stile report esprime cura attraverso la chiarezza e la precisione, non attraverso l'intensità emotiva."
+        },
+        {
+          "title": "Accetta le soluzioni come forma di supporto",
+          "content": "Quando porta soluzioni invece di empatia, è il suo modo di aiutare. Non è insensibilità: è il linguaggio di cura del profilo report. Puoi chiedere ascolto esplicito se ne hai bisogno."
+        },
+        {
+          "title": "Parla di fatti e bisogni concreti nelle situazioni difficili",
+          "content": "In momenti di tensione, le conversazioni emotive non strutturate disorientano chi ha stile report. Prova: 'quando succede X, ho bisogno di Y'. Diretto e specifico funziona meglio."
+        },
+        {
+          "title": "Non prendere la coerenza logica come attacco",
+          "content": "Se fa notare un'incoerenza in quello che dici, non è una critica a te: è il suo modo di capire e costruire chiarezza. Rispondi al contenuto senza sentirti interrogato."
+        }
+      ]
+    },
+    "balanced": {
+      "label": "Bilanciato",
+      "instructions": [
+        {
+          "title": "Usa la loro flessibilità, ma non darla per scontata",
+          "content": "Chi ha stile bilanciato si adatta a entrambe le modalità. Puoi guidare il formato della conversazione verso ciò di cui hai più bisogno — ma chiedi di tanto in tanto anche le loro preferenze."
+        },
+        {
+          "title": "Dichiara esplicitamente cosa cerchi dal dialogo",
+          "content": "Poiché si adattano facilmente, rischiano di non sapere cosa stai cercando. Dì chiaramente: 'ho bisogno di essere ascoltato' oppure 'ho bisogno di trovare una soluzione insieme'. Li orienta."
+        },
+        {
+          "title": "Riconosci la loro capacità di mediazione come risorsa",
+          "content": "In momenti di tensione comunicativa con terzi o tra di voi, chi ha stile bilanciato è un punto di equilibrio. Riconoscerlo aumenta il valore che portano nella coppia."
+        },
+        {
+          "title": "Non sovraccaricarli di adattamento unilaterale",
+          "content": "Il fatto che riescano ad adattarsi non significa che non costi. Incontrali a metà strada attivamente — non lasciare che siano sempre loro a fare l'aggiustamento."
+        },
+        {
+          "title": "Chiedi come vogliono gestire conversazioni importanti",
+          "content": "Anche chi è bilanciato ha momenti in cui preferisce una modalità specifica. 'Come preferisci che gestiamo questa conversazione?' è una domanda che li valorizza e migliora il risultato."
+        }
+      ]
+    }
+  },
+
+  "conflictStyle": {
+    "moduleLabel": "Stile nel Conflitto",
+    "moduleNumber": "§ 5",
+    "moduleCode": "CONF",
+    "intro": "Lo stile con cui ognuno di voi gestisce le tensioni non è una scelta consapevole — è un sistema appreso. Conoscerlo permette di navigare i conflitti come strategia condivisa invece che come scontro di default.",
+    "competing": {
+      "label": "Competitivo",
+      "instructions": [
+        {
+          "title": "Separa la modalità dall'intenzione",
+          "content": "Chi compete nei conflitti non sta cercando di distruggerti: sta cercando di risolvere. L'intensità non è ostilità — è il loro sistema attivato. Separare la forma dal contenuto ti permette di rispondere invece di reagire."
+        },
+        {
+          "title": "Tieni il punto su ciò che conta davvero",
+          "content": "Con chi compete, cedere sistematicamente crea squilibrio e risentimento a lungo termine. Identifica i tuoi non negoziabili e mantienili — non come scontro, ma come chiarezza sulle priorità."
+        },
+        {
+          "title": "Porta struttura nelle discussioni importanti",
+          "content": "Un tema per volta, turni di parola, separazione dei fatti dalle interpretazioni: la struttura riduce l'escalation con chi compete. Proponila come accordo preventivo, non durante il conflitto."
+        },
+        {
+          "title": "Nomina l'escalation presto",
+          "content": "'Sto iniziando a sentirmi sopraffatto/a' è molto più efficace detto al primo segnale che al picco. Chi compete risponde meglio a segnali precoci che a muri alzati a fine partita."
+        },
+        {
+          "title": "Usa la loro chiarezza posizionale come vantaggio",
+          "content": "Chi compete sa esattamente cosa vuole e lo dichiara. È un vantaggio: sai con chi hai a che fare. Usa questa trasparenza per negoziare su basi concrete invece di dover indovinare."
+        }
+      ]
+    },
+    "collaborating": {
+      "label": "Collaborativo",
+      "instructions": [
+        {
+          "title": "Impegnati nel processo, non solo nel risultato",
+          "content": "Chi collabora vuole che entrambe le prospettive siano esplorate genuinamente prima di arrivare a una soluzione. Accelerare verso la risposta salta quello che conta per loro nel processo."
+        },
+        {
+          "title": "Porta i tuoi bisogni reali sul tavolo",
+          "content": "Il collaboratore non può trovare una soluzione win-win se non sa cosa vuoi davvero. Sii onesto/a sui tuoi bisogni, anche quando è scomodo. La vaghezza blocca il loro processo."
+        },
+        {
+          "title": "Non chiudere la discussione prima che si senta pronto/a",
+          "content": "Una soluzione percepita come imposta o prematura crea risentimento silenzioso. Chi collabora ha bisogno di sentire che il processo è stato completato, non solo che il risultato è stato raggiunto."
+        },
+        {
+          "title": "Rispetta il tempo che richiede l'approccio collaborativo",
+          "content": "Trovare soluzioni win-win costa più tempo di imporre o cedere. Quel tempo produce accordi più duraturi. Rispetta il processo anche quando sembra lento rispetto all'urgenza che senti."
+        },
+        {
+          "title": "Calibra l'intensità dello strumento al problema",
+          "content": "Non tutti i disaccordi richiedono un processo completo. Imparate insieme a distinguere i conflitti che meritano collaborazione profonda da quelli che si risolvono con una decisione rapida."
+        }
+      ]
+    },
+    "compromising": {
+      "label": "Compromesso",
+      "instructions": [
+        {
+          "title": "Sii disposto/a a cedere qualcosa tu per primo/a",
+          "content": "Chi preferisce il compromesso cerca mutualità. Se cedi solo sotto pressione, il compromesso perde significato. Fare il primo passo ti posiziona come partner collaborativo, non come perdente."
+        },
+        {
+          "title": "Non sfruttare la loro tendenza a trovare vie di mezzo",
+          "content": "La facilità con cui arrivano a metà strada non significa che il loro bisogno originale fosse meno importante. Incontrali genuinamente a metà, non approfittare della loro disponibilità."
+        },
+        {
+          "title": "Verifica che il compromesso sia genuinamente accettato",
+          "content": "'Va bene' detto troppo in fretta può nascondere insoddisfazione. Chiedi: 'sei davvero a posto con questo?' — e prenditi il tempo per ricevere una risposta vera, non di cortesia."
+        },
+        {
+          "title": "Per i temi centrali, cerca soluzioni complete prima di accontentarti",
+          "content": "Il compromesso non è sempre la soluzione migliore. Per le questioni più importanti della relazione, vale la pena investire in un processo collaborativo completo invece di accontentarsi di una via di mezzo."
+        },
+        {
+          "title": "Valorizza la loro agilità nel trovare accordi",
+          "content": "La capacità di trovare soluzioni pratiche rapidamente e senza irrigidirsi è una risorsa della coppia. Non svalutarla come superficialità: è flessibilità operativa."
+        }
+      ]
+    },
+    "avoiding": {
+      "label": "Evitante del Conflitto",
+      "instructions": [
+        {
+          "title": "Avvisa in anticipo quando vuoi affrontare un tema difficile",
+          "content": "Chi evita il conflitto ha bisogno di tempo per prepararsi a una conversazione difficile. 'Vorrei parlare di X — quando ti senti pronto/a?' è molto più efficace di affrontare il tema sul momento."
+        },
+        {
+          "title": "Abbassa la posta in gioco prima di iniziare",
+          "content": "'Non voglio litigare, voglio capirci' riduce la percezione di minaccia prima ancora di iniziare. La sicurezza percepita è la condizione per cui chi evita rimane presente nella conversazione."
+        },
+        {
+          "title": "Usa domande invece di affermazioni",
+          "content": "'Come ti senti riguardo a X?' genera meno chiusura di 'X mi ha fatto sentire Y e tu non hai risposto'. Le domande aprono, le dichiarazioni accusatorie chiudono — anche involontariamente."
+        },
+        {
+          "title": "Accetta le pause come parte del processo",
+          "content": "Il bisogno di staccarsi durante un conflitto non è abbandonare la discussione: è regolazione emotiva. Concordate una pausa con un orario di ripresa esplicito — e rispettalo."
+        },
+        {
+          "title": "Nomina il pattern senza accusare",
+          "content": "'Noto che tendiamo a non affrontare certi temi insieme — vorrei trovare un modo che funzioni per entrambi' è un'apertura. 'Eviti sempre tutto' è un attacco. La differenza cambia completamente la risposta."
+        }
+      ]
+    },
+    "accommodating": {
+      "label": "Accomodante",
+      "instructions": [
+        {
+          "title": "Crea spazio esplicito per i loro bisogni",
+          "content": "Chi si accomoda non porta spontaneamente i propri bisogni in un conflitto. Chiedi attivamente: 'cosa vorresti tu in questa situazione?' e tratta la risposta come pienamente valida."
+        },
+        {
+          "title": "Non accettare ciecamente il loro cedere",
+          "content": "'Come vuoi tu' non significa sempre accordo reale. Verifica: il cedere viene da un accordo genuino o dalla fatica? Puoi rispettare i loro bisogni solo se li conosci davvero."
+        },
+        {
+          "title": "Riconosci il costo della loro flessibilità",
+          "content": "Cedere continuamente ha un peso emotivo che si accumula nel tempo. Ringraziare esplicitamente e rifiutare il cedere quando non è necessario ('no, dimmi cosa vuoi davvero') bilancia attivamente il rapporto."
+        },
+        {
+          "title": "Non prendere sistematicamente le decisioni",
+          "content": "Anche se si adattano, sentire che le proprie preferenze non influenzano mai il risultato genera risentimento silenzioso nel tempo. Insisti per includere la loro voce nelle decisioni condivise."
+        },
+        {
+          "title": "Costruite un accordo su come gestire i conflitti importanti",
+          "content": "Dite esplicitamente — fuori dai momenti di tensione — che quando si tratta di temi centrali vuoi conoscere la loro posizione reale anche se è diversa dalla tua. L'accordo precede l'episodio."
+        }
+      ]
+    }
+  },
+
+  "apologyLanguages": {
+    "moduleLabel": "Linguaggi delle Scuse",
+    "moduleNumber": "§ 6",
+    "moduleCode": "APOL",
+    "intro": "Il modo in cui ognuno di voi si sente davvero riparato dopo un conflitto è specifico e non universale. Sapere cosa serve all'altro per chiudere il cerchio è la differenza tra una scusa che ripara e una che passa inosservata.",
+    "regret": {
+      "label": "Rimpianto Espresso",
+      "instructions": [
+        {
+          "title": "Nomina il dolore causato prima di qualsiasi altra cosa",
+          "content": "Non basta dire 'mi dispiace': chi ha bisogno di sentire il rimpianto ha bisogno che tu mostri di capire come si è sentito/a. 'Mi dispiace per come ti ho fatto sentire' è diverso da 'mi dispiace per quello che è successo'."
+        },
+        {
+          "title": "Stai nel disagio prima di proporre soluzioni",
+          "content": "Passare alle soluzioni prima che l'altro abbia elaborato il danno emotivo segnala fuga dalla responsabilità emotiva. Resta presente nel disagio condiviso — anche solo per qualche minuto in più."
+        },
+        {
+          "title": "Usa le parole giuste, non solo le intenzioni",
+          "content": "Le intenzioni da sole non riparano: servono parole specifiche che dimostrano comprensione del danno. Impara il vocabolario emotivo che funziona per loro — e usalo."
+        },
+        {
+          "title": "Non ridimensionare il dolore altrui con il tuo",
+          "content": "'Ma anche io stavo male' può essere vero, ma non è il momento. Il loro dolore va riconosciuto da solo prima che tu possa portare il tuo. L'ordine conta."
+        },
+        {
+          "title": "Ripeti se la scusa non è arrivata",
+          "content": "Se senti che la scusa non è stata ricevuta, non irrigidirti. Chiedi cosa manca e riprova. La disponibilità a ripetere è parte della scusa stessa per chi ha questo linguaggio."
+        }
+      ]
+    },
+    "responsibility": {
+      "label": "Assunzione di Responsabilità",
+      "instructions": [
+        {
+          "title": "Di' 'ho sbagliato io' senza condizioni",
+          "content": "Nessun 'ma', nessun 'anche tu', nessuna spiegazione prima. La responsabilità netta, senza riserve, è l'inizio della riparazione per chi ha questo linguaggio. Il resto può venire dopo."
+        },
+        {
+          "title": "Non spiegare prima di ammettere",
+          "content": "Le spiegazioni, anche valide e vere, suonano come giustificazioni quando arrivano prima dell'ammissione. Prima la responsabilità, poi il contesto — solo se viene chiesto."
+        },
+        {
+          "title": "Evita il passivo 'mi dispiace che tu ti sia sentito così'",
+          "content": "Questa formulazione sposta il problema su di loro — implica che la reazione sia il problema, non l'azione. Prendi la responsabilità dell'azione concreta: 'ho sbagliato quando ho fatto X'."
+        },
+        {
+          "title": "Sii specifico su cosa hai fatto di sbagliato",
+          "content": "'Ho sbagliato' generico vale meno di 'ho sbagliato quando ho fatto X senza considerare Y'. La specificità dimostra comprensione reale di cosa è successo — non solo parole di chiusura."
+        },
+        {
+          "title": "La responsabilità si dimostra anche nel comportamento successivo",
+          "content": "Tornare all'argomento come se non fosse successo, senza cambio visibile, vanifica la scusa. La responsabilità va presa e poi confermata nel comportamento concreto che segue."
+        }
+      ]
+    },
+    "restitution": {
+      "label": "Restituzione",
+      "instructions": [
+        {
+          "title": "Proponi un gesto concreto di riparazione",
+          "content": "Chi ha questo linguaggio ha bisogno di vedere che la scusa si traduce in azione. 'Cosa posso fare per rimediare?' non è debolezza: è la domanda che avvia la riparazione reale."
+        },
+        {
+          "title": "Non basta dire — bisogna fare",
+          "content": "Le parole da sole non chiudono il cerchio. Identifica un'azione — proporzionata e concreta — che dimostri impegno nel riparare il danno, non solo nell'annunciarlo."
+        },
+        {
+          "title": "Chiedi cosa li farebbe sentire riparati",
+          "content": "Non assumere di sapere: ognuno ha la propria idea di restituzione. Chiedere è già un atto di cura e rispetto — e ti salva dall'investire nel gesto sbagliato."
+        },
+        {
+          "title": "Includi il non ripetere nel gesto di restituzione",
+          "content": "La restituzione non è solo riparare il danno passato: include il comportamento futuro. Un gesto senza cambio nel tempo è parziale, non completo."
+        },
+        {
+          "title": "Non usare la restituzione per evitare la conversazione emotiva",
+          "content": "Il gesto riparativo non sostituisce il dialogo: li affianca. Fa entrambe le cose: parla del danno E agisci per ripararlo."
+        }
+      ]
+    },
+    "repentance": {
+      "label": "Impegno al Cambiamento",
+      "instructions": [
+        {
+          "title": "Articola cosa cambierà concretamente",
+          "content": "'Non lo farò più' è vuoto senza un piano. Spiega cosa farai diversamente nella prossima situazione simile: questo è il linguaggio dell'impegno reale per chi ha questo linguaggio delle scuse."
+        },
+        {
+          "title": "Non promettere quello che non puoi mantenere",
+          "content": "Una promessa di cambiamento non mantenuta è più dannosa di non averla fatta. Sii realistico/a sull'entità del cambiamento che puoi garantire — e fai solo quello."
+        },
+        {
+          "title": "Distingui intenzione da impegno",
+          "content": "Voler cambiare e cambiare sono cose diverse. Se non sai ancora come cambiare qualcosa, dillo onestamente e cerca attivamente un piano — non solo la dichiarazione di volerlo."
+        },
+        {
+          "title": "Il cambiamento si mostra nel comportamento, non nelle parole",
+          "content": "Ogni volta che gestisci meglio una situazione simile a quella che ha causato il conflitto, stai completando la scusa. Il comportamento nel tempo è la prova che la scusa era reale."
+        },
+        {
+          "title": "Riconosci le ricadute apertamente e prima",
+          "content": "Se ricadi nel comportamento, nominalo prima che lo noti l'altro: 'ho fatto di nuovo X, me ne accorgo, sto cercando di cambiarlo'. L'autoconsapevolezza e la trasparenza contano quanto il cambiamento stesso."
+        }
+      ]
+    },
+    "forgiveness": {
+      "label": "Richiesta di Perdono",
+      "instructions": [
+        {
+          "title": "Chiedi il perdono esplicitamente",
+          "content": "Non aspettare che passi da solo o che il tempo faccia il lavoro. 'Mi perdoni?' non è debolezza: è il gesto che chiude il cerchio per chi ha questo linguaggio. Va chiesto — non aspettato."
+        },
+        {
+          "title": "Non pressare il perdono immediato",
+          "content": "Chi ha questo linguaggio ha bisogno di tempo per concederlo genuinamente. Rispetta il processo: chiedilo, poi lascia spazio. Il perdono dato sotto pressione non è riparazione."
+        },
+        {
+          "title": "Non comportarti come se fossi già perdonato/a",
+          "content": "Andare avanti come nulla fosse prima del perdono esplicito è letto come mancanza di rispetto per il processo di riparazione. Aspetta il segnale — verbale o comportamentale — che il perdono è avvenuto."
+        },
+        {
+          "title": "Crea le condizioni perché il perdono sia possibile",
+          "content": "Il perdono si dà quando ci si sente sicuri di farlo. Comportamenti coerenti nel tempo creano quella sicurezza — non la pressione a perdonare in fretta."
+        },
+        {
+          "title": "Distingui perdono da dimenticanza",
+          "content": "Ottenere il perdono non significa che l'evento venga cancellato. La relazione può andare avanti, ma l'episodio rimane parte della storia condivisa. Non aspettarti che sia come se non fosse mai successo."
+        }
+      ]
+    }
+  },
+
+  "careStyle": {
+    "moduleLabel": "Stile di Cura",
+    "moduleNumber": "§ 7",
+    "moduleCode": "CARE",
+    "intro": "Il modo in cui ognuno di voi si prende cura dell'altro è profondamente connesso a come ha imparato a ricevere cura. Conoscere lo stile del partner ti permette di riconoscere l'amore anche quando arriva in un formato diverso dal tuo.",
+    "emotional": {
+      "label": "Cura Emotiva",
+      "instructions": [
+        {
+          "title": "Riconosci la loro presenza emotiva come atto d'amore",
+          "content": "Chi si prende cura in modo emotivo vuole stare con te nel disagio, non risolverlo. Quando si avvicina durante una difficoltà, non è invadenza: è la sua forma più alta di cura."
+        },
+        {
+          "title": "Condividi le tue emozioni — anche brevemente",
+          "content": "Chi ha cura emotiva si nutre della condivisione. Anche un breve 'mi sento sopraffatto/a in questo periodo' è un atto di intimità che ricevono come connessione reale."
+        },
+        {
+          "title": "Non chiuderti quando si avvicinano emotivamente",
+          "content": "La loro tendenza a essere presenti in modo emotivo intenso può sembrare oppressiva se hai bisogno di spazio. Prima di chiuderti, spiega cosa ti serve: non sparire senza dare contesto."
+        },
+        {
+          "title": "Valorizza verbalmente i loro gesti di supporto",
+          "content": "Un abbraccio, una parola di conforto, la presenza in un momento difficile: nomina questi gesti esplicitamente. Per chi ha cura emotiva, il riconoscimento verbale è nutrimento diretto."
+        },
+        {
+          "title": "Avvisa quando hai bisogno di spazio invece di scomparire",
+          "content": "Se la loro intensità emotiva è troppa in un dato momento, dillo chiaramente e gentilmente. 'Ho bisogno di un'ora per me, poi torno' è molto meglio di una chiusura silenziosa."
+        }
+      ]
+    },
+    "practical": {
+      "label": "Cura Pratica",
+      "instructions": [
+        {
+          "title": "Riconosci le azioni come atti d'amore",
+          "content": "Quando organizza, risolve, anticipa problemi, gestisce la logistica: sono gesti d'amore in forma pratica. Non svalutarli perché non hanno la forma emotiva a cui sei abituato/a."
+        },
+        {
+          "title": "Chiedi aiuto concreto quando ne hai bisogno",
+          "content": "Chi ha cura pratica risponde meglio a richieste specifiche che a lamentele generali. 'Puoi fare X?' funziona meglio di 'non mi aiuti mai con Y'. La concretezza è il loro linguaggio."
+        },
+        {
+          "title": "Non aspettarti supporto emotivo nel momento del caos",
+          "content": "In situazioni di stress, chi ha cura pratica tende ad agire prima di elaborare. Il supporto emotivo può arrivare dopo, quando la crisi è gestita. Riconosci il valore di entrambe le fasi."
+        },
+        {
+          "title": "Contribuisci attivamente alla logistica condivisa",
+          "content": "Lasciare tutta la gestione pratica sulle loro spalle senza riconoscimento genera risentimento. Partecipa, e ringrazia esplicitamente il loro contributo — non è scontato."
+        },
+        {
+          "title": "Traduci i bisogni emotivi in richieste pratiche",
+          "content": "Se hai bisogno di supporto, aiuta la traduzione: 'ho bisogno che tu rimanga con me stasera' o 'puoi venire con me a X' è più navigabile per loro di 'ho bisogno di sentirti vicino/a'."
+        }
+      ]
+    },
+    "presence": {
+      "label": "Cura attraverso la Presenza",
+      "instructions": [
+        {
+          "title": "Apprezza lo stare insieme senza agenda",
+          "content": "Chi si prende cura attraverso la presenza non ha bisogno di fare qualcosa di speciale: vuole esserci. Non interpretare lo stare insieme tranquillo come mancanza di iniziativa o di energia."
+        },
+        {
+          "title": "Invitali nei tuoi momenti, anche in quelli banali",
+          "content": "La loro forma di cura è essere presenti. Invitarli in un'attività quotidiana — cucinare, passeggiare, leggere insieme — è ricevere il loro amore nel formato che sanno dare."
+        },
+        {
+          "title": "Non riempire automaticamente ogni spazio con stimoli",
+          "content": "Il silenzio condiviso ha valore per chi ha questo stile. Non spingere costantemente verso conversazioni o attività: il quieto insieme è già connessione per loro."
+        },
+        {
+          "title": "Riconosci la presenza stessa come azione",
+          "content": "'Sei qui' è una forma d'amore attiva, non passiva. Non deprezzarla perché meno visibile o drammatica di altre forme: l'essere lì, costantemente, è il loro impegno più profondo."
+        },
+        {
+          "title": "Comunica quando hai bisogno di qualcosa di più",
+          "content": "Se in un momento difficile hai bisogno di parole o azioni specifiche oltre alla presenza, chiedile esplicitamente. Non assumere che debbano capire da soli — e non svalutare quello che già danno."
+        }
+      ]
+    },
+    "autonomy": {
+      "label": "Cura attraverso l'Autonomia",
+      "instructions": [
+        {
+          "title": "Interpreta lo spazio che ti danno come rispetto",
+          "content": "Chi si prende cura attraverso l'autonomia crede profondamente che rispettare il tuo spazio sia il più alto atto d'amore. Non è indifferenza: è la forma di cura che conosce meglio."
+        },
+        {
+          "title": "Comunica esplicitamente quando hai bisogno di più presenza",
+          "content": "Il carer autonomia non legge automaticamente il bisogno di vicinanza. 'Ho bisogno che tu sia più presente in questo periodo' è necessario — non aspettare che capiscano da soli."
+        },
+        {
+          "title": "Non confondere la loro indipendenza con egoismo",
+          "content": "Il bisogno di spazio personale non riduce lo spazio che riservano alla relazione. Le due cose sono indipendenti: il loro bisogno di autonomia non è in competizione con il tuo bisogno di connessione."
+        },
+        {
+          "title": "Costruite rituali fissi di connessione",
+          "content": "Poiché non tendono a cercare contatto spontaneamente, create insieme momenti strutturati e fissi di connessione. La struttura compensa la spontaneità in modo che funzioni per entrambi."
+        },
+        {
+          "title": "Valuta la loro non-invasività come forma di rispetto",
+          "content": "Non tenerti sotto pressione, non monitorare, non aspettarsi reportistica costante: è un tipo preciso di rispetto per la tua autonomia. Riconoscila come tale invece di leggerla come disinteresse."
+        }
+      ]
+    }
+  },
+
+  "coreValues": {
+    "moduleLabel": "Valori Fondamentali",
+    "moduleNumber": "§ 8",
+    "moduleCode": "VAL",
+    "intro": "I valori fondamentali guidano le grandi decisioni di vita — dove vivere, come usare il denaro, cosa sacrificare. Quando i valori divergono, il conflitto è sistemico: non è su quello specifico episodio, è su chi siete.",
+    "security": {
+      "label": "Sicurezza",
+      "instructions": [
+        {
+          "title": "Sii prevedibile e coerente nel comportamento",
+          "content": "Chi valorizza la sicurezza si nutre di stabilità. Cambiamenti improvvisi, decisioni impulsive, inconsistenza nel comportamento sono fonti di stress reale — non capricci. La prevedibilità è una forma concreta d'amore."
+        },
+        {
+          "title": "Includi il partner nelle decisioni importanti",
+          "content": "Le decisioni significative prese unilateralmente sono lette come minaccia alla sicurezza condivisa. Anche quando sei sicuro/a della scelta, il processo di coinvolgimento conta quanto il risultato."
+        },
+        {
+          "title": "Costruisci rituali e routine stabili insieme",
+          "content": "Routine condivise, tradizioni, abitudini prevedibili: sono l'equivalente emotivo di una base sicura. Non svalutarle come rigidità — per chi valorizza la sicurezza sono struttura portante."
+        },
+        {
+          "title": "Rassicura esplicitamente nei momenti di cambiamento",
+          "content": "Quando la vita è incerta — lavoro, salute, piano futuro — nomina cosa rimane stabile nella relazione. 'Non so cosa succederà su X, ma noi siamo stabili' è una frase potente e necessaria."
+        },
+        {
+          "title": "Prendi sul serio le loro preoccupazioni pratiche",
+          "content": "L'attenzione alla sicurezza economica, alla stabilità abitativa, alla previdenza: sono espressioni del loro valore centrale, non ansie da gestire. Trattale come priorità reali nella pianificazione condivisa."
+        }
+      ]
+    },
+    "freedom": {
+      "label": "Libertà",
+      "instructions": [
+        {
+          "title": "Interpreta il bisogno di spazio come condizione, non rifiuto",
+          "content": "Chi valorizza la libertà ha bisogno di autonomia come condizione per stare bene nella relazione — non come alternativa ad essa. La libertà che dai è il motivo per cui restano, non per cui se ne andrebbero."
+        },
+        {
+          "title": "Negozia gli accordi, non imporli",
+          "content": "Le restrizioni percepite come controllo unilaterale sono il trigger principale per chi valorizza la libertà. Ogni accordo di coppia va raggiunto insieme: il processo di negoziazione conta quanto il contenuto."
+        },
+        {
+          "title": "Sostieni le loro avventure anche quando non le condividi",
+          "content": "Viaggi, passioni, amici, attività autonome: il supporto alla loro autonomia è uno degli atti d'amore più potenti che puoi fare. Non è perdere qualcosa — è investire nella loro vitalità."
+        },
+        {
+          "title": "Porta novità nella vita condivisa",
+          "content": "La routine senza variazione soffoca chi valorizza la libertà. Proponi esperienze nuove, sorprese, variazioni nel quotidiano: la novità condivisa alimenta la relazione senza richiedere autonomia separata."
+        },
+        {
+          "title": "Differenzia libertà da irresponsabilità verso la relazione",
+          "content": "Libertà e impegno relazionale non si escludono per chi valorizza davvero la libertà. Se un comportamento è irresponsabile verso la coppia, affrontalo come tale — separando il valore dal comportamento specifico."
+        }
+      ]
+    },
+    "achievement": {
+      "label": "Realizzazione",
+      "instructions": [
+        {
+          "title": "Celebra i loro traguardi genuinamente",
+          "content": "Chi valorizza la realizzazione ha bisogno che i propri successi vengano riconosciuti dalle persone importanti. Non minimizzare i risultati: anche il traguardo che per te sembra piccolo può essere enorme per loro."
+        },
+        {
+          "title": "Sostieni le loro ambizioni anche quando richiedono sacrifici",
+          "content": "Periodi di intensa focalizzazione su obiettivi possono ridurre la disponibilità verso la relazione. Sostieni invece di competere per attenzione: il loro successo è un successo della coppia."
+        },
+        {
+          "title": "Non svalutare l'importanza del successo nella loro identità",
+          "content": "Per te il successo professionale potrebbe essere secondario: per loro è parte centrale di come costruiscono significato e identità. Non è superficialità o materialismo."
+        },
+        {
+          "title": "Porta i tuoi obiettivi nella relazione",
+          "content": "Chi valorizza la realizzazione si connette profondamente a chi ha ambizioni proprie. Parla dei tuoi progetti e progressi: crea un terreno comune di crescita reciproca."
+        },
+        {
+          "title": "Sii la voce del bilanciamento quando necessario",
+          "content": "Chi ha questo valore tende a mettere gli obiettivi davanti a tutto. Quando vedi l'eccesso, dillo — non come freno, ma come cura per la persona che ami. La distinzione di tono è tutto."
+        }
+      ]
+    },
+    "connection": {
+      "label": "Connessione",
+      "instructions": [
+        {
+          "title": "Mostra che la relazione è una priorità attiva",
+          "content": "Chi valorizza la connessione ha bisogno di sentire che stai investendo nella relazione deliberatamente, non vivendola come sfondo. Azioni concrete e regolari sono più potenti delle dichiarazioni."
+        },
+        {
+          "title": "Condividi le relazioni importanti della tua vita",
+          "content": "Chi valorizza la connessione si connette attraverso la condivisione di legami. Parla della tua famiglia, degli amici, delle relazioni significative — non come report, ma come finestra su chi sei."
+        },
+        {
+          "title": "Sii presente nelle cerimonie e nei momenti relazionali",
+          "content": "Compleanni, anniversari, eventi significativi per loro: la tua presenza in questi momenti è una dichiarazione d'amore esplicita per chi valorizza la connessione. Non è formalità — è linguaggio."
+        },
+        {
+          "title": "Non trattare la relazione come garantita",
+          "content": "La connessione va nutrita attivamente — non aspettare che sia l'altro a farlo sempre. Piccoli gesti di cura, attenzione, curiosità verso l'altro: mantengono viva la connessione nel quotidiano."
+        },
+        {
+          "title": "Rispetta i loro investimenti nelle altre relazioni",
+          "content": "Le relazioni con amici e famiglia non sono in competizione con la vostra. Chi valorizza la connessione ha bisogno di un tessuto relazionale ricco: è come si nutrono, non come si distraggono."
+        }
+      ]
+    },
+    "growth": {
+      "label": "Crescita",
+      "instructions": [
+        {
+          "title": "Mostra interesse per il loro sviluppo personale",
+          "content": "Chi valorizza la crescita è sempre in movimento su sé stesso. Chiedere dei loro percorsi, letture, insight, cambiamenti interni: è un atto di intimità profonda, non curiosità di cortesia."
+        },
+        {
+          "title": "Accogli i cambiamenti invece di resisterli",
+          "content": "Chi cresce cambia — nel modo di pensare, nelle priorità, negli interessi. Non ogni cambiamento è una minaccia alla relazione: alcune evoluzioni vanno accolte come parte di chi stai amando."
+        },
+        {
+          "title": "Porta la tua crescita nella relazione",
+          "content": "Chi valorizza la crescita ha bisogno che il partner evolva con loro nel tempo. Condividi i tuoi percorsi, le cose che stai imparando, i cambiamenti che stai attraversando: è connessione reale."
+        },
+        {
+          "title": "Non svalutare i loro investimenti su sé stessi",
+          "content": "Terapia, corsi, ritiri, coaching: non sono spese voluttuarie ma investimenti centrali per chi ha questo valore. Rispettarli è rispettare chi sono."
+        },
+        {
+          "title": "Sfidali intellettualmente e personalmente",
+          "content": "Chi valorizza la crescita si impoverisce con chi non li stimola. Porta domande difficili, disaccordi costruttivi, prospettive che non hanno considerato: la sfida rispettosa è una delle forme più alte di cura."
+        }
+      ]
+    }
+  }
+}

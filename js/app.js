@@ -5,12 +5,12 @@ import { initAuth, onAuthChange, getCurrentUser, getCurrentProfile,
          signInGoogle, signInEmail, signUpEmail, resetPassword,
          signOutUser, refreshProfile } from './auth.js';
 import { loadQuestions, renderTestIntro, renderTestRunner, getTestList } from './test-engine.js';
-import { loadManualTemplates, generateManual, generateCoupleReport } from './manual-generator.js';
+import { loadManualTemplates, generateManual, loadCoupleTemplates, generateCoupleManual } from './manual-generator.js';
 import { getTestResults, findUserByPartnerCode, linkPartners,
          getPartnerProfile, updateUserProfile } from './db.js';
 import { showToast, showLoading, hideLoading,
          renderManualChapter, renderTOC, animateScoreBars,
-         renderCompareTable, renderFrictionCard, renderSynergyCard } from './ui.js';
+         renderCoupleChapter, renderCoupleTOC } from './ui.js';
 
 // ── State ─────────────────────────────────────────────────
 const state = {
@@ -28,7 +28,8 @@ async function init() {
 
   await Promise.all([
     loadQuestions(state.lang),
-    loadManualTemplates(state.lang)
+    loadManualTemplates(state.lang),
+    loadCoupleTemplates(state.lang)
   ]);
 
   // Prima onAuthChange risolve lo stato, poi avviamo il router
@@ -562,50 +563,50 @@ function showSyncError(msg) {
 
 async function renderReport() {
   showView('report');
-  const profile  = getCurrentProfile();
-  const partner  = state.partnerProfile;
+  const profile = getCurrentProfile();
+  const partner = state.partnerProfile;
+  const it = state.lang === 'it';
 
   if (!partner) {
-    document.getElementById('report-content').innerHTML = `
+    document.getElementById('report-body').innerHTML = `
       <div class="empty-state">
         <div class="empty-state-icon">🔗</div>
         <div class="empty-state-title">
-          ${state.lang === 'it' ? 'Nessun partner collegato' : 'No partner linked'}
+          ${it ? 'Nessun partner collegato' : 'No partner linked'}
         </div>
         <div class="empty-state-desc">
-          ${state.lang === 'it'
-            ? 'Collega un partner per generare il Report di Interfaccia.'
-            : 'Link a partner to generate the Interface Report.'}
+          ${it
+            ? 'Collega un partner per generare il Manuale di Coppia.'
+            : 'Link a partner to generate the Couple Manual.'}
         </div>
         <button class="btn-secondary" style="margin-top:24px" onclick="window.app.navigate('sync')">
-          ${state.lang === 'it' ? '→ Collega Partner' : '→ Link Partner'}
+          ${it ? '→ Collega Partner' : '→ Link Partner'}
         </button>
       </div>
     `;
     return;
   }
 
-  // Update header
-  document.getElementById('report-my-name').textContent =
-    profile?.displayName?.split(' ')[0] || 'Tu';
-  document.getElementById('report-partner-name').textContent =
-    partner.displayName?.split(' ')[0] || 'Partner';
+  const myName = profile?.displayName?.split(' ')[0] || 'Tu';
+  const ptName = partner.displayName?.split(' ')[0] || 'Partner';
+  document.getElementById('report-my-name').textContent = myName;
+  document.getElementById('report-partner-name').textContent = ptName;
 
-  // Load partner results
   const partnerResults = partner.testResults || {};
   const myResults = state.testResults;
+  const totalModules = 8;
+  const myModules  = Object.keys(myResults).length;
+  const ptModules  = Object.keys(partnerResults).length;
 
-  const hasEnoughData = Object.keys(myResults).length > 0 && Object.keys(partnerResults).length > 0;
-
-  if (!hasEnoughData) {
+  if (myModules === 0 || ptModules === 0) {
     document.getElementById('report-body').innerHTML = `
       <div class="empty-state">
         <div class="empty-state-icon">📋</div>
         <div class="empty-state-title">
-          ${state.lang === 'it' ? 'Dati insufficienti' : 'Not enough data'}
+          ${it ? 'Dati insufficienti' : 'Not enough data'}
         </div>
         <div class="empty-state-desc">
-          ${state.lang === 'it'
+          ${it
             ? 'Entrambi i partner devono completare almeno un test.'
             : 'Both partners need to complete at least one test.'}
         </div>
@@ -614,249 +615,50 @@ async function renderReport() {
     return;
   }
 
-  const report = generateCoupleReport(myResults, partnerResults, state.lang);
-
-  const myName = profile?.displayName?.split(' ')[0] || 'Tu';
-  const ptName = partner.displayName?.split(' ')[0] || 'Partner';
-  const totalModules = 8;
-  const myModules  = Object.keys(myResults).length;
-  const ptModules  = Object.keys(partnerResults).length;
-  const it = state.lang === 'it';
+  const manual = generateCoupleManual(myResults, partnerResults, state.lang);
 
   const introHtml = `
     <div class="report-intro">
       <div class="report-intro-pair">
         <div class="report-intro-person">
           <div class="report-intro-name">${myName}</div>
-          <div class="report-intro-modules">${myModules}/${totalModules} ${it ? 'moduli completati' : 'modules completed'}</div>
+          <div class="report-intro-modules">${myModules}/${totalModules} ${it ? 'moduli' : 'modules'}</div>
         </div>
         <div class="report-intro-arrow">⟷</div>
         <div class="report-intro-person">
           <div class="report-intro-name">${ptName}</div>
-          <div class="report-intro-modules">${ptModules}/${totalModules} ${it ? 'moduli completati' : 'modules completed'}</div>
+          <div class="report-intro-modules">${ptModules}/${totalModules} ${it ? 'moduli' : 'modules'}</div>
         </div>
       </div>
       <div class="report-intro-desc">
-        ${it
-          ? 'Questo report confronta i profili psicologici di entrambi i partner, identificando dove i vostri stili si incontrano o si scontrano — e come trasformare le differenze in protocolli operativi condivisi.'
-          : 'This report compares both partners\' psychological profiles, identifying where your styles align or clash — and how to turn differences into shared operational protocols.'}
+        ${manual.modulesInCommon > 0
+          ? (it
+              ? `${manual.modulesInCommon} ${manual.modulesInCommon === 1 ? 'modulo in comune' : 'moduli in comune'}. Per ogni area: istruzioni su come rapportarti con ${ptName} e cosa ${ptName} dovrebbe sapere di te.`
+              : `${manual.modulesInCommon} module${manual.modulesInCommon === 1 ? '' : 's'} in common. For each area: instructions on how to interact with ${ptName} and what ${ptName} should know about you.`)
+          : (it
+              ? 'Nessun modulo in comune ancora. Completate gli stessi test per generare il manuale.'
+              : 'No modules in common yet. Complete the same tests to generate the manual.')}
       </div>
     </div>
   `;
 
-  let bodyHtml = introHtml;
-
-  // Section A: Comparison table
-  if (report.comparisonRows.length > 0) {
-    bodyHtml += `
-      <div class="report-section">
-        <div class="report-section-header">
-          <span class="report-section-code">SEZ. A</span>
-          <h3 class="report-section-title">
-            ${it ? 'Profili a Confronto' : 'Profile Comparison'}
-          </h3>
-        </div>
-        <p class="report-section-desc">
-          ${it
-            ? 'Panoramica dei vostri stili dominanti modulo per modulo. Il simbolo = indica allineamento, ≠ indica differenza — le differenze non sono necessariamente problematiche, dipende dal contesto.'
-            : 'Overview of your dominant styles module by module. = means alignment, ≠ means difference — differences are not necessarily problematic, context matters.'}
-        </p>
-        ${renderCompareTable(report.comparisonRows, myName, ptName, state.lang)}
-      </div>
-    `;
+  if (manual.modulesInCommon === 0) {
+    document.getElementById('report-body').innerHTML = introHtml;
+    return;
   }
 
-  // Section B: Friction points
-  bodyHtml += `
-    <div class="report-section">
-      <div class="report-section-header">
-        <span class="report-section-code">SEZ. B</span>
-        <h3 class="report-section-title">
-          ${it ? 'Punti di Attrito' : 'Friction Points'}
-        </h3>
-      </div>
-      <p class="report-section-desc">
-        ${it
-          ? 'Incompatibilità rilevate algoritmicamente tra i vostri profili. Per ognuna: cosa succede, perché succede, e come gestirla concretamente.'
-          : 'Algorithmically detected incompatibilities between your profiles. For each: what happens, why it happens, and how to handle it concretely.'}
-      </p>
-      ${report.frictions.length > 0
-        ? report.frictions.map(f => renderFrictionCard(f, state.lang)).join('')
-        : `<div class="sync-card">
-             <div class="sync-tag">✓ ${it ? 'NESSUN ATTRITO CRITICO' : 'NO CRITICAL FRICTION'}</div>
-             <div class="sync-name">${it ? 'Profili compatibili' : 'Compatible profiles'}</div>
-             <div class="sync-desc">
-               ${it
-                 ? 'Non sono state rilevate incompatibilità critiche basate sui profili attuali.'
-                 : 'No critical incompatibilities detected based on current profiles.'}
-             </div>
-           </div>`
-      }
-    </div>
-  `;
+  const tocHtml = renderCoupleTOC(manual.chapters, myName, ptName, state.lang);
+  const chaptersHtml = manual.chapters
+    .map(ch => renderCoupleChapter(ch, myName, ptName, state.lang))
+    .join('');
 
-  // Section C: Synergies
-  if (report.synergies.length > 0) {
-    bodyHtml += `
-      <div class="report-section">
-        <div class="report-section-header">
-          <span class="report-section-code">SEZ. C</span>
-          <h3 class="report-section-title">
-            ${it ? 'Aree di Sinergia' : 'Synergy Areas'}
-          </h3>
-        </div>
-        <p class="report-section-desc">
-          ${it
-            ? 'Dove i vostri profili si allineano naturalmente — punti di forza della coppia che potete usare come base nei momenti di tensione.'
-            : 'Where your profiles naturally align — couple strengths you can use as a foundation during tension.'}
-        </p>
-        ${report.synergies.map(renderSynergyCard).join('')}
-      </div>
-    `;
-  }
+  document.getElementById('report-body').innerHTML = introHtml + tocHtml + chaptersHtml;
 
-  // Section D: Compatibility score
-  if (report.compatibility) {
-    const c = report.compatibility;
-    bodyHtml += `
-      <div class="report-section">
-        <div class="report-section-header">
-          <span class="report-section-code">SEZ. D</span>
-          <h3 class="report-section-title">
-            ${it ? 'Indice di Compatibilità' : 'Compatibility Score'}
-          </h3>
-        </div>
-        <p class="report-section-desc">
-          ${it
-            ? 'Punteggio aggregato calcolato su tutti i moduli completati. Non misura "quanto siete adatti" — misura quanto i vostri stili si sovrappongono nativamente, prima di qualsiasi adattamento.'
-            : 'Aggregate score calculated across all completed modules. It does not measure "how suited you are" — it measures how much your styles natively overlap, before any adaptation.'}
-        </p>
-        <div class="compat-block">
-          <div class="compat-score-ring" style="--pct:${c.overall}">
-            <div class="compat-score-num">${c.overall}<span style="font-size:14px">%</span></div>
-          </div>
-          <div class="compat-text">
-            <div class="compat-level">${c.label}</div>
-            <div class="compat-desc">${c.desc}</div>
-          </div>
-        </div>
-        <div class="compat-breakdown">
-          ${c.breakdown.map(b => `
-            <div class="compat-item">
-              <div class="compat-item-dot ${b.score>=70?'green':b.score>=45?'yellow':'red'}"></div>
-              ${b.label}: ${b.score}%
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-  }
-
-  // Section E: Scenarios
-  if (report.scenarios?.length > 0) {
-    bodyHtml += `
-      <div class="report-section">
-        <div class="report-section-header">
-          <span class="report-section-code">SEZ. E</span>
-          <h3 class="report-section-title">
-            ${it ? 'Simulazioni Operative' : 'Operational Scenarios'}
-          </h3>
-        </div>
-        <p class="report-section-desc">
-          ${it
-            ? 'Come reagisce ognuno di voi in situazioni specifiche, e il protocollo per gestirle insieme.'
-            : 'How each of you reacts in specific situations, and the protocol for handling them together.'}
-        </p>
-        ${report.scenarios.map(s => `
-          <div class="scenario-card">
-            <div class="scenario-header">
-              <span class="scenario-icon">${s.icon}</span>
-              <span class="scenario-title">${s.title}</span>
-            </div>
-            <div class="scenario-body">
-              <div class="scenario-col">
-                <div class="scenario-col-label">${s.meLabel}</div>
-                <div class="scenario-col-text">${s.meText}</div>
-              </div>
-              <div class="scenario-col">
-                <div class="scenario-col-label">${s.ptLabel}</div>
-                <div class="scenario-col-text">${s.ptText}</div>
-              </div>
-            </div>
-            <div class="scenario-protocol">
-              <strong>${it ? 'PROTOCOLLO CONSIGLIATO' : 'RECOMMENDED PROTOCOL'}</strong>
-              ${s.protocol}
-            </div>
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  // Section F: Cross-module insights
-  if (report.crossInsights?.length > 0) {
-    bodyHtml += `
-      <div class="report-section">
-        <div class="report-section-header">
-          <span class="report-section-code">SEZ. F</span>
-          <h3 class="report-section-title">
-            ${it ? 'Pattern Individuali' : 'Individual Patterns'}
-          </h3>
-        </div>
-        <p class="report-section-desc">
-          ${it
-            ? 'Pattern che emergono dall\'incrocio di più moduli nello stesso profilo. Riguardano uno specifico partner — indicano un comportamento sistemico che l\'altro deve conoscere.'
-            : 'Patterns emerging from the intersection of multiple modules in the same profile. They concern one specific partner — indicating a systemic behavior the other needs to understand.'}
-        </p>
-        ${report.crossInsights.map(ins => `
-          <div class="friction-card insight-card">
-            <div class="friction-tag insight-tag">
-              ⚡ PATTERN — ${ins.who === 'me' ? myName.toUpperCase() : ptName.toUpperCase()}
-            </div>
-            ${ins.condition ? `<div class="insight-condition">${ins.condition}</div>` : ''}
-            <div class="friction-name">${ins.name}</div>
-            <div class="friction-desc">${ins.description}</div>
-            ${ins.protocol ? `
-              <div class="friction-protocol">
-                <strong>${it ? 'NOTA PER IL PARTNER' : 'PARTNER NOTE'}</strong>
-                ${ins.protocol}
-              </div>
-            ` : ''}
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  // Section G: Weekly actions
-  if (report.weeklyActions?.length > 0) {
-    bodyHtml += `
-      <div class="report-section">
-        <div class="report-section-header">
-          <span class="report-section-code">SEZ. G</span>
-          <h3 class="report-section-title">
-            ${state.lang === 'it' ? 'Piano Azioni Settimanali' : 'Weekly Action Plan'}
-          </h3>
-        </div>
-        <div class="weekly-plan">
-          <div class="weekly-plan-header">
-            📋 ${state.lang === 'it' ? 'AZIONI RACCOMANDATE' : 'RECOMMENDED ACTIONS'}
-          </div>
-          ${report.weeklyActions.map((a, i) => `
-            <div class="weekly-action-item">
-              <div class="weekly-action-num">W${i+1}</div>
-              <div class="weekly-action-content">
-                <div class="weekly-action-from">${a.friction}</div>
-                <div class="weekly-action-text">${a.action}</div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-  }
-
-  document.getElementById('report-body').innerHTML = bodyHtml;
+  document.getElementById('report-body').querySelectorAll('.toc-item[data-target]').forEach(item => {
+    item.addEventListener('click', () => {
+      document.getElementById(item.dataset.target)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 }
 
 // ── UI Helpers ────────────────────────────────────────────
@@ -910,8 +712,11 @@ function setupLangSwitcher() {
         b.classList.toggle('active', b.dataset.lang === newLang)
       );
       showLoading(newLang === 'it' ? 'Cambio lingua...' : 'Switching language...');
-      await loadQuestions(newLang);
-      await loadManualTemplates(newLang);
+      await Promise.all([
+        loadQuestions(newLang),
+        loadManualTemplates(newLang),
+        loadCoupleTemplates(newLang)
+      ]);
       hideLoading();
       renderView(state.currentView);
     });

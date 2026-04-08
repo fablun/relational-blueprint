@@ -224,3 +224,76 @@ export function renderSynergyCard(synergy) {
     </div>
   `;
 }
+
+// ── Couple Manual Chapter ─────────────────────────────────
+
+export function renderCoupleChapter(chapter, myName, ptName, lang) {
+  const it = lang === 'it';
+
+  const ptInstructionsHtml = chapter.partnerInstructions.map((inst, i) => `
+    <div class="instruction-card" data-index="${i + 1}">
+      <div class="instruction-title">${inst.title}</div>
+      <div class="instruction-content">${inst.content}</div>
+    </div>
+  `).join('');
+
+  const myInstructionsHtml = chapter.myInstructions.map((inst, i) => `
+    <div class="instruction-card instruction-card-alt" data-index="${i + 1}">
+      <div class="instruction-title">${inst.title}</div>
+      <div class="instruction-content">${inst.content}</div>
+    </div>
+  `).join('');
+
+  return `
+    <section class="couple-chapter" id="couple-${chapter.id}">
+      <div class="chapter-header">
+        <div class="chapter-num">${chapter.number}</div>
+        <div class="chapter-title-block">
+          <div class="chapter-code">${chapter.code}</div>
+          <h2 class="chapter-title">${chapter.moduleLabel}</h2>
+          <div class="couple-styles-row">
+            <span class="couple-style-tag couple-style-me">${it ? 'Tu' : 'You'}: ${chapter.myLabel}</span>
+            <span class="couple-style-sep">•</span>
+            <span class="couple-style-tag couple-style-pt">${ptName}: ${chapter.ptLabel}</span>
+          </div>
+        </div>
+      </div>
+
+      ${chapter.intro ? `<div class="chapter-intro">${chapter.intro}</div>` : ''}
+
+      <div class="couple-section">
+        <div class="couple-section-label">
+          ${it ? `COME RAPPORTARTI CON ${ptName.toUpperCase()}` : `HOW TO INTERACT WITH ${ptName.toUpperCase()}`}
+        </div>
+        <div class="instructions-grid">${ptInstructionsHtml}</div>
+      </div>
+
+      <div class="couple-section couple-section-mine">
+        <div class="couple-section-label">
+          ${it ? `COSA ${ptName.toUpperCase()} DOVREBBE SAPERE DI TE` : `WHAT ${ptName.toUpperCase()} SHOULD KNOW ABOUT YOU`}
+        </div>
+        <div class="instructions-grid">${myInstructionsHtml}</div>
+      </div>
+    </section>
+  `;
+}
+
+export function renderCoupleTOC(chapters, myName, ptName, lang) {
+  const it = lang === 'it';
+  const items = chapters.map(ch => `
+    <div class="toc-item" data-target="couple-${ch.id}">
+      <span class="toc-num">${ch.number}</span>
+      <span class="toc-name">${ch.moduleLabel}</span>
+      <span class="couple-toc-styles">${it ? 'Tu' : 'You'}: ${ch.myLabel} / ${ptName}: ${ch.ptLabel}</span>
+    </div>
+  `).join('');
+
+  return `
+    <div class="manual-toc">
+      <div class="manual-toc-title">
+        ${it ? 'MANUALE DI COPPIA — INDICE' : 'COUPLE MANUAL — TABLE OF CONTENTS'}
+      </div>
+      ${items}
+    </div>
+  `;
+}

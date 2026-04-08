@@ -3,6 +3,7 @@
 // ============================================================
 
 let manualTemplates = null;
+let coupleTemplates = null;
 let currentLang = 'it';
 
 export async function loadManualTemplates(lang) {
@@ -10,6 +11,68 @@ export async function loadManualTemplates(lang) {
   const resp = await fetch(`./data/manual-${lang}.json`);
   manualTemplates = await resp.json();
   return manualTemplates;
+}
+
+export async function loadCoupleTemplates(lang) {
+  const resp = await fetch(`./data/couple-${lang}.json`);
+  coupleTemplates = await resp.json();
+}
+
+// ── Couple Manual Generator ───────────────────────────────
+
+export function generateCoupleManual(myResults, partnerResults, lang = 'it') {
+  if (!coupleTemplates) throw new Error('Couple templates not loaded. Call loadCoupleTemplates() first.');
+
+  const modules = [
+    { id: 'attachment',       getStyle: r => r.style   },
+    { id: 'loveLanguages',    getStyle: r => r.primary  },
+    { id: 'bigFive',          getStyle: r => r.dominant },
+    { id: 'communication',    getStyle: r => r.style   },
+    { id: 'conflictStyle',    getStyle: r => r.primary  },
+    { id: 'apologyLanguages', getStyle: r => r.primary  },
+    { id: 'careStyle',        getStyle: r => r.primary  },
+    { id: 'coreValues',       getStyle: r => r.primary  }
+  ];
+
+  const chapters = [];
+
+  for (const mod of modules) {
+    const myResult = myResults[mod.id];
+    const ptResult = partnerResults[mod.id];
+    if (!myResult || !ptResult) continue;
+
+    const myStyle = mod.getStyle(myResult);
+    const ptStyle = mod.getStyle(ptResult);
+
+    const tpl = coupleTemplates[mod.id];
+    if (!tpl) continue;
+
+    const myTpl = tpl[myStyle];
+    const ptTpl = tpl[ptStyle];
+    if (!myTpl || !ptTpl) continue;
+
+    chapters.push({
+      id: mod.id,
+      number: tpl.moduleNumber,
+      code: tpl.moduleCode,
+      moduleLabel: tpl.moduleLabel,
+      intro: tpl.intro,
+      myStyle,
+      ptStyle,
+      myLabel: myTpl.label,
+      ptLabel: ptTpl.label,
+      // How to interact with a partner of their style
+      partnerInstructions: ptTpl.instructions,
+      // What the partner should know about the user's style (top 3)
+      myInstructions: myTpl.instructions.slice(0, 3)
+    });
+  }
+
+  return {
+    chapters,
+    generatedAt: new Date().toISOString(),
+    modulesInCommon: chapters.length
+  };
 }
 
 // ── Main: Genera il "Manuale di Me" ──────────────────────
