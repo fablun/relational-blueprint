@@ -29,22 +29,28 @@ export function getCurrentProfile() { return currentProfile; }
 export function initAuth(lang) {
   onAuthStateChanged(auth, async (user) => {
     currentUser = user;
-    if (user) {
-      let profile = await getUserProfile(user.uid);
-      if (!profile) {
-        await createUserProfile(user.uid, {
-          displayName: user.displayName || user.email.split('@')[0],
-          email: user.email,
-          photoURL: user.photoURL || '',
-          lang
-        });
-        profile = await getUserProfile(user.uid);
+    try {
+      if (user) {
+        let profile = await getUserProfile(user.uid);
+        if (!profile) {
+          await createUserProfile(user.uid, {
+            displayName: user.displayName || user.email.split('@')[0],
+            email: user.email,
+            photoURL: user.photoURL || '',
+            lang
+          });
+          profile = await getUserProfile(user.uid);
+        }
+        currentProfile = profile;
+      } else {
+        currentProfile = null;
       }
-      currentProfile = profile;
-    } else {
+    } catch (err) {
+      console.error('[auth] initAuth error:', err);
       currentProfile = null;
+    } finally {
+      authListeners.forEach(cb => cb(currentUser, currentProfile));
     }
-    authListeners.forEach(cb => cb(currentUser, currentProfile));
   });
 }
 
